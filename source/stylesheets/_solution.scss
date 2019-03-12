@@ -1,0 +1,112 @@
+@import "common";
+
+@media screen and (min-width: 1280px) {
+  .solution {
+    article {
+      padding: 60px;
+      padding-bottom: 0;
+      background-color: $body-bg-color;
+    }
+  }
+}
+
+.solution .content {
+  h1 {
+    color: $primary-color;
+    font-size: 1.25rem;
+    @include responsive(font-size, 1.5rem, 640px);
+    @include responsive(font-size, 2rem, 800px);
+    margin: 0 0 10px 0;
+    @include responsive(margin, 30px 0, 640px);
+  }
+  .block-container {
+    display: flex;
+    flex-direction: column;
+    @include responsive(flex-direction, row, 1024px);
+    height: 610px;
+    @include responsive(height, 410px, 640px);
+    @include responsive(height, 520px, 1024px);
+  }
+  .block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    @include responsive(flex-direction, row, 640px);
+    @include responsive(flex-direction, column, 1024px);
+    background-color: $main-bg-color;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    height: 300px;
+    @include responsive(height, 200px, 640px);
+    @include responsive(height, 520px, 1024px);
+    align-items: center;
+    @include responsive(align-items, stretch, 640px);
+    @include responsive(align-items, center, 1024px);
+    padding: 0;
+    @include responsive(padding, 40px 0, 640px);
+    border-left: none;
+    @include responsive(border-left, 10px solid $primary-color, 640px);
+    @include responsive(border-left, none, 1024px);
+  }
+  .block:first-child {
+    margin-right: 0;
+    @include responsive(margin-right, 20px, 1024px);
+    @include responsive(margin-right, 60px, 1280px);
+  }
+  .image {
+    flex: 1;
+    @include responsive(flex, none, 640px);
+    @include responsive(margin, 0 30px, 640px);
+
+    width: 100px;
+    height: 100px;
+    @include icon-size(120px, 640px);
+    @include icon-size(200px, 1024px);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .threat-sonar .image {
+    background-image: image-url("images/sonar.svg");
+  }
+  .threat-vision .image {
+    background-image: image-url("images/threatVision.svg");
+  }
+  .desc-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @include responsive(align-items, flex-start, 640px);
+    @include responsive(align-items, center, 1024px);
+    font-weight: bold;
+  }
+  .slogan {
+    text-transform: uppercase;
+    font-size: 1rem;
+    @include responsive(font-size, 1.25rem, 640px);
+  }
+  .name {
+    font-size: 1.5rem;
+    @include responsive(font-size, 2.5em, 640px);
+    @include responsive(font-size, 2em, 1024px);
+    color: $primary-color;
+    @include responsive(color, $invert-font-color, 1024px);
+    a {
+      color: $primary-color;
+      @include responsive(color, $invert-font-color, 1024px);
+    }
+    text-align: left;
+    @include responsive(text-align, center, 1024px);
+    /* */
+    @include responsive(background-color, $primary-color, 1024px);
+    @include responsive(width, 420px, 1024px);
+    @include responsive(height, 50px, 1024px);
+    @include responsive(line-height, 50px, 1024px);
+  }
+  .desc {
+    font-size: 1rem;
+    @include responsive(font-size, 1.25rem, 640px);
+  }
+}

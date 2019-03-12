@@ -1,0 +1,63 @@
+@import "common";
+
+body > article > header {
+  height: 640px;
+  @include responsive(height, 600px, 1440px);
+  position: relative;
+  border-top: 10px solid $primary-color;
+
+  &:before {
+    @media screen and (min-width: 1024px) {
+      @include pseudo-element(0, 0, absolute);
+      border-left: 220px solid $primary-color;
+      border-top: 220px solid transparent;
+      border-bottom: 220px solid transparent;
+      left: -80px;
+    }
+    @media screen and (min-width: 1440px) {
+      left: 0;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    left: 20px;
+    @include responsive(left, 40px, 640px);
+    @include responsive(left, 80px, 1280px);
+    @include responsive(left, 140px, 1440px);
+    top: 30px;
+    @include responsive(top, 40px, 640px);
+    width: 100px;
+    @include responsive(width, 200px, 640px);
+  }
+
+  .content {
+    position: relative;
+    margin: 0 20px;
+    @include responsive(margin, 0 40px, 640px);
+    @include responsive(margin, 0 auto, 1280px);
+    top: 90px;
+    @include responsive(top, 140px, 640px);
+    @include responsive(top, 160px, 800px);
+    max-width: 1280px;
+
+    .slogan {
+      font-size: 1.5rem;
+      @include responsive(font-size, 1.825rem, 640px);
+      @include responsive(font-size, 2.75rem, 800px);
+      color: $primary-color;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .desc {
+      font-size: 0.825rem;
+      @include responsive(font-size, 1rem, 640px);
+      width: auto;
+      @include responsive(width, 700px, 800px);
+      @include responsive(width, 890px, 1280px);
+      margin: 0 auto;
+      text-align: justify;
+    }
+  }
+}

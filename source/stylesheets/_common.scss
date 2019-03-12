@@ -1,0 +1,36 @@
+$default-font-color: #4c433f;
+$body-bg-color: #ffffff;
+$main-bg-color: #f5f2e9;
+$team-bg-color: rgba(245,242,233,0.90);
+$primary-color: #d83751;
+$invert-font-color: #ffffff;
+$main-border-color: $primary-color;
+$image-color: #d3cec7;
+
+@mixin pseudo-element($width, $height, $position: relative) {
+  content: "";
+  display: block;
+  position: $position;
+  width: $width;
+  height: $height;
+}
+
+@mixin responsive($attr, $value, $min-width) {
+  @media screen and (min-width: $min-width) {
+    #{$attr}: $value;
+  }
+}
+
+@mixin icon-size($value, $min-width) {
+  @media screen and (min-width: $min-width) {
+    width: $value;
+    height: $value;
+  }
+}
+
+@mixin photo-size($value, $min-width) {
+  @media screen and (min-width: $min-width) {
+    width: $value;
+    height: calc(#{$value} * 51 / 52);
+  }
+}
