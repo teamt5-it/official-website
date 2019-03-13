@@ -91,18 +91,23 @@
     font-size: 1.5rem;
     @include responsive(font-size, 2.5em, 640px);
     @include responsive(font-size, 2em, 1024px);
-    color: $primary-color;
+    color: $invert-font-color;
+    @include responsive(color, $primary-color, 640px);
     @include responsive(color, $invert-font-color, 1024px);
-    a {
-      color: $primary-color;
-      @include responsive(color, $invert-font-color, 1024px);
-    }
-    text-align: left;
+    text-align: center;
+    @include responsive(text-align, left, 640px);
     @include responsive(text-align, center, 1024px);
     /* */
+    background-color: $primary-color;
+    @include responsive(background-color, transparent, 640px);
     @include responsive(background-color, $primary-color, 1024px);
+    width: 200px;
+    @include responsive(width, auto, 640px);
     @include responsive(width, 420px, 1024px);
+    height: 50px;
+    @include responsive(height, auto, 640px);
     @include responsive(height, 50px, 1024px);
+    line-height: 50px;
     @include responsive(line-height, 50px, 1024px);
   }
   .desc {

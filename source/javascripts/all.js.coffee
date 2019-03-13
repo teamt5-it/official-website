@@ -122,6 +122,12 @@ doScroll = (top) ->
 window.onload = ->
   particlesJS("particles-js", PARTICLES_JS_OPTIONS)
 
+  links = document.querySelectorAll("[data-link]")
+  for node in links
+    node.addEventListener "click", ->
+      link = node.dataset.link
+      window.open(link, "_blank")
+
   document.querySelector(".to-top").addEventListener "click", ->
     doScroll 0
 
