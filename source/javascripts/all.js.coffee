@@ -115,3 +115,8 @@ window.onload = ->
   document.querySelector(".to-top").addEventListener "click", ->
     window.scrollTo { top: 0, behavior: "smooth" }
 
+  document.querySelector(".scroll-down").addEventListener "click", ->
+    element = document.querySelector("section.solution")
+    solutionTop = element.offsetTop
+    window.scrollTo { top: solutionTop, behavior: "smooth" }
+

@@ -1,10 +1,12 @@
 @import "common";
 
 body > article > header {
-  height: 640px;
+  height: 560px;
   @include responsive(height, 600px, 1440px);
   position: relative;
   border-top: 10px solid $primary-color;
+  margin-bottom: 60px;
+  @include responsive(margin-bottom, 0, 1280px);
 
   &:before {
     @media screen and (min-width: 1024px) {
@@ -58,6 +60,61 @@ body > article > header {
       @include responsive(width, 890px, 1280px);
       margin: 0 auto;
       text-align: justify;
+    }
+  }
+
+  .scroll-down-container {
+    position: absolute;
+    bottom: -18px;
+    @include responsive(bottom, -28px, 1440px);
+    height: 135px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .scroll-down {
+      position: relative;
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+      color: $invert-font-color;
+
+      > div {
+        position: relative;
+        padding-top: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+      }
+
+      &:before {
+        @include pseudo-element(100%, 100%, absolute);
+        transform: rotate(45deg);
+        background-color: $primary-color;
+        top: 0;
+        left: 0;
+      }
+      &:after {
+        @include pseudo-element(30%, 30%, absolute);
+        transform: rotate(225deg);
+        border: solid $invert-font-color;
+        border-width: 2px 0 0 2px;
+        border-radius: 2px;
+        top: 10%;
+        left: 34%;
+      }
+    }
+    .diamond-container {
+      .diamond {
+        width: 5px;
+        height: 5px;
+        margin-bottom: 5px;
+        transform: rotate(45deg);
+        background-color: $primary-color;
+      }
     }
   }
 }

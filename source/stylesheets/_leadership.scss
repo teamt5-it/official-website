@@ -1,7 +1,7 @@
 @import "common";
 
 .leadership .content {
-  background-color: #F5F2E9;
+  background-color: $main-bg-color;
   padding: 20px;
   @media screen and (min-width: 640px) and (max-width: 800px) {
     padding: 20px !important;

@@ -16,7 +16,7 @@ body {
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 640px;
+  height: 560px;
   @include responsive(height, 800px, 1440px);
   background-color: $main-bg-color;
   z-index: -1;
@@ -93,5 +93,4 @@ a {
 
 .map {
   height: 342px;
-  background-color: rgba(200, 200, 200, 0.5);
 }
