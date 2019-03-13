@@ -109,14 +109,23 @@ PARTICLES_JS_OPTIONS = {
   "retina_detect": true
 }
 
+isMicrosoftBrowser = ->
+  patterns = ["MSIE", "Trident/", "Edge"]
+  return new RegExp(patterns.join("|")).test(navigator.userAgent)
+
+doScroll = (top) ->
+  if isMicrosoftBrowser()
+    window.scrollTo 0, top
+  else
+    window.scrollTo { top: top, behavior: "smooth" }
+
 window.onload = ->
   particlesJS("particles-js", PARTICLES_JS_OPTIONS)
 
   document.querySelector(".to-top").addEventListener "click", ->
-    window.scrollTo { top: 0, behavior: "smooth" }
+    doScroll 0
 
   document.querySelector(".scroll-down").addEventListener "click", ->
     element = document.querySelector("section.solution")
     solutionTop = element.offsetTop
-    window.scrollTo { top: solutionTop, behavior: "smooth" }
-
+    doScroll solutionTop
