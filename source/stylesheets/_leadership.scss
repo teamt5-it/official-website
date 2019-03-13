@@ -42,8 +42,10 @@
     @include responsive(flex, 1, 800px);
   }
   .desc {
+    text-align: justify;
     flex: 1;
     @include responsive(padding, 30px 30px, 800px);
-    @include responsive(padding, 80px 70px, 1280px);
+    @include responsive(padding, 10px 30px, 1024px);
+    @include responsive(padding, 30px 70px, 1280px);
   }
 }
