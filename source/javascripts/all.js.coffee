@@ -122,6 +122,10 @@ doScroll = (top) ->
 window.onload = ->
   particlesJS("particles-js", PARTICLES_JS_OPTIONS)
 
+  mailTo = 'sales@teamt5.tw'
+  for node in document.getElementsByClassName('mail-to')
+    node.innerHTML = "<a href='mailto:#{mailTo}'>#{mailTo}</a>"
+
   links = document.querySelectorAll("[data-link]")
   for node in links
     node.addEventListener "click", ->
