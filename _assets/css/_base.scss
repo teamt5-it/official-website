@@ -1,0 +1,158 @@
+$background-color: #f5f2e9;
+$light-background-color: #d3cec7;
+$normal-color: #4c433f;
+$primary-color: #d83751;
+$secondary-color: #f6ac19;
+$figcaption-color: #848484;
+
+$tablet: 769px;
+$square-root-of-two: 1.414;
+$square-side-length: 60px;
+
+$xs-margin-horizontal: 10px;
+$sm-margin-horizontal: 20px;
+$md-margin-horizontal: 40px;
+$lg-margin-horizontal: 80px;
+$xl-margin-horizontal: 160px;
+
+$xs-margin-vertical: 14px;
+$sm-margin-vertical: 18px;
+$md-margin-vertical: 22px;
+$lg-margin-vertical: 26px;
+$xl-margin-vertical: 30px;
+
+$new-height: 60px;
+
+@mixin page-margin {
+  margin: $xs-margin-vertical $xs-margin-horizontal;
+  @include responsive(320px) {
+    margin: $sm-margin-vertical $sm-margin-horizontal;
+  }
+  @include responsive(640px) {
+    margin: $md-margin-vertical $md-margin-horizontal;
+  }
+  @include responsive(1024px) {
+    margin: $lg-margin-vertical $lg-margin-horizontal;
+  }
+  @include responsive(1280px) {
+    margin: $xl-margin-vertical $xl-margin-horizontal;
+  }
+}
+
+@mixin page-margin-horizontal {
+  margin-left: $xs-margin-horizontal;
+  margin-right: $xs-margin-horizontal;
+  @include responsive(320px) {
+    margin-left: $sm-margin-horizontal;
+    margin-right: $sm-margin-horizontal;
+  }
+  @include responsive(640px) {
+    margin-left: $md-margin-horizontal;
+    margin-right: $md-margin-horizontal;
+  }
+  @include responsive(1024px) {
+    margin-left: $lg-margin-horizontal;
+    margin-right: $lg-margin-horizontal;
+  }
+  @include responsive(1280px) {
+    margin-left: $xl-margin-horizontal;
+    margin-right: $xl-margin-horizontal;
+  }
+}
+
+@mixin page-padding {
+  padding: $xs-margin-vertical $xs-margin-horizontal;
+  @include responsive(320px) {
+    padding: $sm-margin-vertical $sm-margin-horizontal;
+  }
+  @include responsive(640px) {
+    padding: $md-margin-vertical $md-margin-horizontal;
+  }
+  @include responsive(1024px) {
+    padding: $lg-margin-vertical $lg-margin-horizontal;
+  }
+  @include responsive(1280px) {
+    padding: $xl-margin-vertical $xl-margin-horizontal;
+  }
+}
+
+@mixin page-padding-horizontal {
+  padding-left: $xs-margin-horizontal;
+  padding-right: $xs-margin-horizontal;
+  @include responsive(320px) {
+    padding-left: $sm-margin-horizontal;
+    padding-right: $sm-margin-horizontal;
+  }
+  @include responsive(640px) {
+    padding-left: $md-margin-horizontal;
+    padding-right: $md-margin-horizontal;
+  }
+  @include responsive(1024px) {
+    padding-left: $lg-margin-horizontal;
+    padding-right: $lg-margin-horizontal;
+  }
+  @include responsive(1280px) {
+    padding-left: $xl-margin-horizontal;
+    padding-right: $xl-margin-horizontal;
+  }
+}
+
+$xs-post-margin-horizontal: 20px;
+$sm-post-margin-horizontal: 40px;
+$md-post-margin-horizontal: 140px;
+$lg-post-margin-horizontal: 270px;
+$xl-post-margin-horizontal: 340px;
+
+@mixin post-page-margin-horizontal {
+  margin: 0 $xs-post-margin-horizontal;
+  @include responsive(320px) {
+    margin: 0 $sm-post-margin-horizontal;
+  }
+  @include responsive(640px) {
+    margin: 0 $md-post-margin-horizontal;
+  }
+  @include responsive(1024px) {
+    margin: 0 $lg-post-margin-horizontal;
+  }
+  @include responsive(1280px) {
+    margin: 0 $xl-post-margin-horizontal;
+  }
+}
+@mixin flex-center-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mobile() {
+  @media screen and (max-width: $tablet - 1px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (min-width: $tablet - 1px) {
+    @content;
+  }
+}
+
+@mixin responsive($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin pseudo-element($width, $height, $position: relative) {
+  content: "";
+  display: block;
+  position: $position;
+  width: $width;
+  height: $height;
+}
+
+.rotate-clockwise-45 {
+  transform: rotate(45deg);
+}
+.rotate-counterwise-45 {
+  transform: rotate(-45deg);
+}

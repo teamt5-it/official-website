@@ -1,0 +1,7 @@
+<div class="page-item">
+  <a href="{{ trail.path | prepend: site.baseurl }}" class="page-link
+  {% if page.pagination_info.curr_page == trail.num %}
+   is-current
+  {% endif %}
+">{{ trail.num }}</a>
+</div>

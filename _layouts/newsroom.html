@@ -1,0 +1,59 @@
+---
+layout: page
+---
+
+<div class="news-and-media-inquiries">
+    <div class="news-and-media-inquiries-title title title-xl title-underline">
+        {%t news.title %}
+    </div>
+    <div class="news-and-media-inquiries-content">
+        <div class="news">
+            {% for post in paginator.posts %}
+            <div class="new">
+                <div class="date">
+                    {{ post.date| date: "%Y-%m-%d" }}
+                </div>
+                <div class="tags">
+                    {% for tag in post.tags %}
+                    <span class="tag">
+                        {{tag}}
+                    </span>
+                    {% endfor %}
+                </div>
+                <a class="title" href="{{ post.url | relative_url }}">
+                    <div class="headline">
+                        {{ post.title }}
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+            {% include pagination.html %}
+        </div>
+        <div class="media-inquiries-and-browse-by-type">
+            <div class="media-inquiries">
+                <div class="title">
+                    {% t media-inquiries.title %}
+                </div>
+                <div class="content">
+                    mk@teamt5.tw
+                </div>
+            </div>
+            <div class="browse-by-type">
+                <div class="title">
+                    {% t browse-by-type.title %}
+                </div>
+                {% for post in site.categories.newsroom %}
+                {% assign types = types | concat: post.tags %}
+                {% assign types = types | uniq %}
+                {% endfor %}
+                <div class="types">
+                    {% for type in types %}
+                    <div class="type">
+                        {{type}}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

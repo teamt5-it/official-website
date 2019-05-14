@@ -1,0 +1,100 @@
+---
+layout: default
+---
+<div class="hero">
+    hero-slider
+</div>
+<div class="banner">
+    <h1 class="banner-title">
+        {% t banner.title %}
+    </h1>
+    <p class="banner-content">
+        {% t banner.content %}
+    </p>
+    <div class="scroll-down">
+        <div class="square rotate-clockwise-45">
+            <div class="content rotate-counterwise-45">
+                <div class="arrow rotate-clockwise-45">
+                </div>
+                <p class="title">
+                    {% t scroll_down %}
+                </p>
+            </div>
+        </div>
+        <div class="diamonds">
+            <div class="diamond rotate-clockwise-45">
+            </div>
+            <div class="diamond rotate-clockwise-45">
+            </div>
+            <div class="diamond rotate-clockwise-45">
+            </div>
+            <div class="diamond rotate-clockwise-45">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="products">
+    <div class="products-title title-xl title-underline">
+        {% t products.title %}
+    </div>
+    <div class="products-subtitle title title-lg">
+        {% t products.subtitle %}
+    </div>
+    <div class="products-content">
+        <div class="product">
+            <div class="product-title">
+                {% t products.sonar.title %}
+            </div>
+            {% asset sonar_logo_circle.svg class=logo %}
+            <div class="product-name title-xl">
+                {% t products.sonar.name %}
+            </div>
+            <div class="product-subtitle title-md">
+                {% t products.sonar.subtitle %}
+            </div>
+            <a class="product-learn-more button" href="{{ site.data.links.products.threat-sonar }}">{% t learn-more %}</a>
+        </div>
+        <div class="product">
+            <div class="product-title">
+                {% t products.vision.title %}
+            </div>
+            {% asset vision_logo_circle.svg class=logo %}
+            <div class="product-name title-xl">
+                {% t products.vision.name %}
+            </div>
+            <div class="product-subtitle title-md">
+                {% t products.vision.subtitle %}
+            </div>
+            <a class="product-learn-more button" href="{{ site.data.links.products.threat-vision }}">{% t learn-more %}</a>
+        </div>
+    </div>
+</div>
+<div class="news">
+    <div class="news-title title title-xl title-underline">
+        {% t news.title %}
+    </div>
+    <div class="news-content">
+        {% for post in paginator.posts %}
+        <div class="new">
+            <div class="date">
+                {{ post.date | date: "%Y-%m-%d" }}
+            </div>
+            <div class="tags">
+                {% for tag in post.tags %}
+                <div class="tag">
+                    {{ tag }}
+                </div>
+                {% endfor %}
+            </div>
+            <a class="title" href="{{ post.url | relative_url }}">
+                <div class="headline">
+                    {{ post.title }}
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="news-more-button button">
+        {% t news.more %}
+    </div>
+</div>

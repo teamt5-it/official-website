@@ -1,0 +1,22 @@
+---
+layout: default
+i18n_prefix: position
+---
+
+{% include post-page-title.html %}
+<div class="meta">
+    <div class="tags">
+        {% for tag in page.tags %}
+        <span class="tag">
+            {{ tag }}
+        </span>
+        {% endfor %}
+    </div>
+    <div class="location">
+        {{ page.location }}
+    </div>
+</div>
+<div class="content">
+    {{ content }}
+</div>
+{% include position-form.html %}

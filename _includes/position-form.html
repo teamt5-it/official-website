@@ -1,0 +1,70 @@
+<form class="position-form" id="position-form">
+    <h1 class="title">{% t position-form.title %}</h1>
+    <div class="form-inputs">
+        <div class="form-group">
+            <label for="chinese_name">{% t position-form.chinese_name %}</label>
+            <input type="text" placeholder="{% t position-form.chinese_name %}" name="chinese_name"
+                class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="english_name">{% t position-form.english_name %}</label>
+            <input type="text" placeholder="{% t position-form.english_name %}" name="english_name"
+                class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="email">{% t position-form.email %}</label>
+            <input type="email" placeholder="{% t position-form.email %}" name="" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="phone_number">{% t position-form.phone_number %}</label>
+            <input type="number" placeholder="{% t position-form.phone_number %}" name="phone_number"
+                class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="position_sought">{% t position-form.position_sought %}</label>
+            <input type="text" placeholder="{% t position-form.position_sought %}" name="position_sought"
+                class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="how_do_you_know_our_company">{% t position-form.how_do_you_know_our_company %}</label>
+            <input type="text" placeholder="{% t position-form.how_do_you_know_our_company %}"
+                name="how_do_you_know100_our_company" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="available_start_date">{% t position-form.available_start_date %}</label>
+            <textarea placeholder="{% t position-form.available_start_date %}" name="available_start_date"
+                class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label
+                for="remark_or_anything_you_want_to_tell_us">{% t position-form.remark_or_anything_you_want_to_tell_us %}</label>
+            <textarea placeholder="{% t position-form.remark_or_anything_you_want_to_tell_us %}"
+                name="remark_or_anything_you_want_to_tell_us" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="education_resume_url">{% t position-form.education_resume_url %}</label>
+            <textarea placeholder="{% t position-form.education_resume_url %}" name="education_resume_url"
+                class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="portfolio_url">{% t position-form.portfolio_url %}</label>
+            <textarea placeholder="{% t position-form.portfolio_url %}" name="portfolio_url"
+                class="form-control"></textarea>
+        </div>
+
+        <div class="form-submit">
+            <button type="submit" class="button" id="contact-us-form-submit">
+                {% t position-form.submit %}
+            </button>
+        </div>
+    </div>
+</form>

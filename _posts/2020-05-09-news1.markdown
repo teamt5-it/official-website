@@ -1,0 +1,11 @@
+---
+title:  "12314516161sfdsdfgsdfgsgfdsgsfdgsfdg6416"
+date:   2019-05-20 11:54:41 +0800
+categories:
+  - newsroom
+tags:
+  - technical
+  - case studies
+locale: en
+---
+news1

@@ -1,0 +1,222 @@
+@import "base";
+$banner-max-width: 1280px;
+main.index {
+  .hero {
+    height: 300px;
+    background: $background-color;
+    @include flex-center-align;
+  }
+  .banner {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: $square-side-length * $square-root-of-two * 2;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    background-image: asset_url("persistent_cyber_threat_hunters_bg.svg");
+    background-color: $background-color;
+    max-width: $banner-max-width;
+    .banner-title{
+      color: $primary-color;
+    }
+    .scroll-down {
+      position: absolute;
+      top: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      width: $square-side-length * $square-root-of-two;
+      height: $square-side-length * (1+3 * $square-root-of-two)/ 2;
+
+      cursor: pointer;
+      .square {
+        width: $square-side-length;
+        height: $square-side-length;
+
+        background: $primary-color;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .content {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .arrow {
+            width: $square-side-length/3;
+            height: $square-side-length/3;
+
+            border: solid white;
+            border-width: 0 3px 3px 0;
+
+            position: absolute;
+            top: -$square-side-length/$square-root-of-two/2;
+          }
+          .title {
+            font-size: 12px;
+            color: white;
+            position: absolute;
+          }
+        }
+      }
+      .diamonds {
+        height: $square-side-length * $square-root-of-two;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .diamond {
+          width: 7.1px;
+          height: 7.1px;
+          background: $primary-color;
+        }
+      }
+    }
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    @include responsive(800px) {
+      margin: 20px;
+    }
+    @include responsive(1024px) {
+      margin: 40px;
+    }
+    @include responsive(1280px) {
+      margin: 60px;
+    }
+    @include responsive(1440px) {
+      margin: 100px;
+    }
+    .products-title {
+      align-self: flex-start;
+    }
+    .products-subtitle {
+      align-self: flex-start;
+      color: $primary-color;
+    }
+    .products-content {
+      display: grid;
+      grid-auto-flow: row;
+      grid-gap: 10px;
+      @include responsive(640px) {
+        grid-auto-flow: column;
+        grid-gap: 20px;
+      }
+      .product {
+        position: relative;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 30px;
+        background-color: $background-color;
+        text-align: center;
+
+        @include responsive(640px) {
+          flex-wrap: nowrap;
+          padding: 30px 0px;
+        }
+
+        .logo {
+          order: -1;
+          flex: 1 100%;
+          @include responsive(640px){
+            width: 35%;
+            height: auto;
+            order: 0;
+          }
+        }
+
+        .product-name {
+          color: $primary-color;
+        }
+
+        .product-learn-more {
+          width: 60%;
+          height: 40px;
+          font-size: 20px;
+          line-height: 40px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          @include responsive(640px){
+            position: initial;
+          }
+        }
+      }
+    }
+  }
+  .news {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    @include responsive(800px) {
+      margin: 20px;
+    }
+    @include responsive(1024px) {
+      margin: 40px;
+    }
+    @include responsive(1280px) {
+      margin: 60px;
+    }
+    @include responsive(1440px) {
+      margin: 100px;
+    }
+    .news-title {
+      align-self: flex-start;
+    }
+    .news-content {
+      display: flex;
+      flex-direction: column;
+      .new {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid $light-background-color;
+        & > *:not(:last-child) {
+          margin-right: 0.5em;
+        }
+        @include desktop() {
+          height: $new-height;
+          flex-wrap: no-wrap;
+          grid-template-columns: repeat(3, min-content);
+        }
+        .date {
+          white-space: nowrap;
+          height: 20px;
+          line-height: 20px;
+          color: $primary-color;
+        }
+        .title {
+          width: 100%;
+          word-break: break-all;
+          white-space: normal;
+          @include desktop() {
+            width: auto;
+          }
+        }
+      }
+    }
+    .news-more-button {
+      align-self: flex-end;
+      width: 90px;
+      @include responsive(640px) {
+        width: 120px;
+      }
+      @include responsive(800px) {
+        width: 145px;
+      }
+    }
+  }
+}

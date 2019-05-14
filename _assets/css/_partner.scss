@@ -1,0 +1,39 @@
+@import "base";
+main.partner {
+  .partners {
+    display: flex;
+    flex-direction: column;
+    @include page-margin-horizontal;
+    .partner {
+      display: flex;
+      flex-direction: column;
+      .title{
+        align-self: flex-start;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: repeat(1,min-content);
+        grid-gap: 20px;
+        @include desktop(){
+          grid-template-columns: repeat(2,min-content);
+        }
+        .logo {
+          background: black;
+          width: 200px;
+          height: 200px;
+        }
+        .name-and-contact-information{
+          display: grid;
+          grid-auto-rows: 1fr;
+          align-content: center;
+          .contact-information{
+            display: grid;
+            align-content: center;
+            grid-gap: 10px;
+            grid-auto-rows: 1fr;
+          }
+        }
+      }
+    }
+  }
+}

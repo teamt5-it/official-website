@@ -1,19 +1,52 @@
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-plugins:
-  - jekyll-coffeescript
-  - jekyll-assets
-  - bootstrap
-
-# jekyll-assets
-assets:
-  caching:
-    type: memory
+host: 0.0.0.0
+# Set default value
 
 defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      layout: "default"
+      lang: en
+
+  -
+    scope:
+      path: "_positions"
+      type: "pages"
+    values:
+      layout: "position"
+
+# Include positions directory
+
+include: ['_positions']
+
+
+plugins:
+  - jekyll-coffeescript
+  - jekyll-assets
+  - normalize-scss
+  - font-awesome-sass
+  - jekyll-paginate-v2
+  - jekyll-admin
+
+# jekyll-assets
+
+assets:
+  caching:
+    type: memory
+
+
+# jekyll-paginate-v2
+
+pagination:
+  per_page: 1
+  permalink: '/:num/'
+  enabled: true
+  debug: true
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2 # The number of links before the current page
+    after: 2  # The number of links after the current page

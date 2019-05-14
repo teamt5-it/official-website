@@ -1,0 +1,12 @@
+home: /
+products:
+  threat-sonar: /product/threat-sonar
+  threat-vision: /product/threat-vision
+partner: /partner
+support: /support
+resource: /resource
+company:
+  about-us: /about-us
+  contact-us: /contact-us
+  careers: /careers
+  newsroom: /newsroom

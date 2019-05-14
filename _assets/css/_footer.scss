@@ -1,0 +1,115 @@
+$footer-padding: 20px;
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  margin-top: $square-side-length/$square-root-of-two*2;
+  @include desktop() {
+    padding-top: $square-side-length/$square-root-of-two;
+  }
+  .logo_and_product_and_partner_and_company {
+    display: flex;
+    flex-direction: column;
+    padding: $footer-padding;
+
+    @include desktop() {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .logo {
+      width: 200px;
+    }
+    .product_and_partner_and_company {
+      display: flex;
+      justify-content: space-between;
+      @include desktop() {
+        width: 50%;
+      }
+      ul{
+        li::before {
+          content:none;
+        }
+      }
+    }
+  }
+
+  hr {
+    margin: 0 $footer-padding;
+  }
+  .informations {
+    margin: $footer-padding;
+    display: flex;
+    justify-content: space-between;
+    .copyright_and_privacy_and_cookies_policy_and_terms_of_service {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include desktop() {
+        flex-direction: row;
+      }
+      div {
+        display: flex;
+        height: 20px;
+        margin: 0 $footer-padding;
+        a {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .select {
+    font-size: 12px;
+    height: 20px;
+    width: 70px;
+    background: white;
+    border: 1px solid $light-background-color;
+    border-radius: 3px;
+    @include flex-center-align();
+  }
+  .scroll-up {
+    position: absolute;
+    top: -$square-side-length/$square-root-of-two;
+    right: 10px;
+    width: $square-side-length * $square-root-of-two;
+    height: $square-side-length * $square-root-of-two;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    .square {
+      width: $square-side-length;
+      height: $square-side-length;
+
+      background: $primary-color;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .arrow-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .arrow {
+          position: absolute;
+          top: -$square-side-length/3/$square-root-of-two;
+          width: $square-side-length/3;
+          height: $square-side-length/3;
+
+          border: solid white;
+          border-width: 3px 0 0 3px;
+        }
+        .title {
+          position: absolute;
+          font-size: 12px;
+          color: white;
+        }
+      }
+    }
+  }
+}

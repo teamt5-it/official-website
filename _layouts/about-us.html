@@ -1,0 +1,40 @@
+---
+layout: page
+---
+
+<div class="teamt5-world-class-team">
+    <div class="title title-xl title-underline">
+        {% t teamt5-world-class-team.title %}
+    </div>
+    <div class="banner">
+        {% asset teamt5-world-class-team.jpg %}
+    </div>
+    <div class="content">
+        {% capture string_with_newlines %}
+        {% t teamt5-world-class-team.content %}
+        {% endcapture %}
+        {{ string_with_newlines | newline_to_br }}
+    </div>
+</div>
+
+<div class="teamt5-leadership">
+    <div class="teamt5-leadership-title title-xl title-underline">
+        {% t teamt5-leadership.title %}
+    </div>
+    <div class="teamt5-leadership-content">
+        <div class="profile-picture">
+            {% asset TT.png %}
+        </div>
+        <div class="content">
+            <div class="name title-md">
+                {% t teamt5-leadership.content.name %}
+            </div>
+            <div class="introduction">
+                {% capture string_with_newlines %}
+                {% t teamt5-leadership.content.introduction %}
+                {% endcapture %}
+                {{ string_with_newlines | newline_to_br }}
+            </div>
+        </div>
+    </div>
+</div>

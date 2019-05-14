@@ -1,0 +1,62 @@
+<footer class="footer">
+    <div class="logo_and_product_and_partner_and_company">
+        {% asset TeamT5_EN_HT.svg class=logo %}
+        <div class="product_and_partner_and_company">
+            <div>
+                <h1>{% t footer.product %}</h1>
+                <ul>
+                    <li><a href="{{ site.data.links.products.threat-sonar }}">{% t footer.threat-sonar %}</a></li>
+                    <li><a href="{{ site.data.links.products.threat-vision }}">{% t footer.threat-vision %}</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>{% t footer.partner %}</h1>
+                <ul>
+                    <li><a href="{{ site.data.links.support }}">{% t footer.support %}</a></li>
+                    <li><a href="{{ site.data.links.resource }}">{% t footer.resource %}</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>{% t footer.company.title %}</h1>
+                <ul>
+                    <li><a href="{{ site.data.links.company.about-us }}">{% t footer.company.about-us %}</a></li>
+                    <li><a href="{{ site.data.links.company.contact-us }}">{% t footer.company.contact-us %}</a></li>
+                    <li><a href="{{ site.data.links.company.careers }}">{% t footer.company.careers %}</a></li>
+                    <li><a href="{{ site.data.links.company.newsroom }}">{% t footer.company.newsroom %}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="informations">
+        <div class="copyright_and_privacy_and_cookies_policy_and_terms_of_service">
+            <div class="copyright">
+                &copy;{% t footer.copyright %}
+            </div>
+            <div class="privacy_and_cookies_policy">
+                <a href="/privacy_and_cookies_policy">{% t footer.privacy_and_cookies_policy %}</a>
+            </div>
+            <div class="terms_of_service">
+                <a href="/terms_of_service">{% t footer.terms_of_service %}</a>
+            </div>
+        </div>
+        <div class="language-selector">
+            <select class="select">
+                <option value="en">{% t footer.english %}</option>
+                <option value="cn">{% t footer.mandarin %}</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="scroll-up">
+        <div class="square rotate-clockwise-45">
+            <div class="arrow-container rotate-counterwise-45">
+                <div class="arrow rotate-clockwise-45">
+                </div>
+                <p class="title">
+                    {% t footer.scroll_top %}
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

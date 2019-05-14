@@ -1,0 +1,19 @@
+@import "base";
+main.support {
+  .global-support{
+    display: flex;
+    flex-direction: column;
+    @include page-margin-horizontal;
+  .title {
+    align-self: flex-start;
+  }
+  .content{
+    padding: 30px 0;
+  }
+  .banner{
+    img{
+      width: 100%;
+    }
+  }
+}
+}

@@ -1,0 +1,37 @@
+---
+layout: page
+---
+<div class="hero">
+    <div class="title title-xl title-underline">
+        {% t title %}
+    </div>
+    <div class="banner">
+        {% asset career_bg.jpg %}
+    </div>
+    <div class="content">
+        {% capture string_with_newlines %}
+        {% t content %}
+        {% endcapture %}
+        {{ string_with_newlines | newline_to_br }}
+    </div>
+</div>
+<div class="positions">
+    <div class="positions-title title title-xl title-underline">
+        {% t positions.title %}
+    </div>
+    {% assign positions = site.pages | where: "layout", "position" %}
+    {% for position in positions %}
+    <div class="position">
+        <div class="position-title">
+            {{position.title}}
+        </div>
+        <div class="location-and-arrow">
+            <div class="location">
+                {{position.location}}
+            </div>
+            <a class="arrow" href="{{position.url | relative_url }}">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>

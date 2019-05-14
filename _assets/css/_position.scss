@@ -1,0 +1,13 @@
+@import "base";
+main.position{
+  @include post-page-margin-horizontal;
+  .meta{
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-columns: min-content;
+    grid-auto-flow: column;
+    .location{
+      color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "base";
+$header-top-border: 5px solid $primary-color;
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+
+  header {
+    border-top: $header-top-border;
+    display: flex;
+    justify-content: center;
+    flex: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  footer {
+    flex: none;
+  }
+}

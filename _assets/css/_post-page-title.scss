@@ -1,0 +1,15 @@
+.post-page-title {
+	display: flex;
+	align-items: center;
+	height: 48px;
+
+	@include responsive(640px){
+		height: 80px;
+	}
+	@include responsive(800px){
+		height: 100px;
+	}
+	.title {
+		padding-left: 0.5em;
+	}
+}

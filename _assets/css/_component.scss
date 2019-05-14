@@ -1,0 +1,215 @@
+$button-background-color: #d83751;
+$button-hover-background-color: #e88797;
+$button-click-background-color: #a82a3e;
+$button-color: white;
+
+html,
+* {
+	font-family: GenJyuuGothic-P-Medium;
+	font-size: 12px;
+	color: $normal-color;
+	@include desktop() {
+		font-size: 16px;
+	}
+}
+
+h1 {
+	font-size: 20px;
+}
+h2 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 16px;
+}
+h4 {
+	font-size: 14px;
+}
+h5 {
+	font-size: 12px;
+}
+h6 {
+	font-size: 10px;
+}
+p {
+	font-size: 12px;
+}
+img {
+	.is-small {
+		width: 260px;
+	}
+	.is-large {
+		width: 280px;
+	}
+}
+code {
+	width: 280px;
+}
+
+@include desktop() {
+	h1 {
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+	h4 {
+		font-size: 20px;
+	}
+	h5 {
+		font-size: 18px;
+	}
+	h6 {
+		font-size: 16px;
+	}
+	p {
+		font-size: 16px;
+	}
+
+	img {
+		.is-small {
+			width: 650px;
+		}
+		.is-large {
+			width: 740px;
+		}
+	}
+	code {
+		width: 650px;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	list-style: none;
+	li::before {
+		content: "•";
+		color: $primary-color;
+		font-weight: bold;
+		display: inline-block;
+		width: 1em;
+	}
+}
+
+.button {
+	display: block;
+	cursor: pointer;
+	font-family: GenJyuuGothic-P-Bold;
+	border-radius: 4px;
+	color: $button-color;
+	background-color: $button-background-color;
+	@include flex-center-align;
+	&:hover {
+		background-color: $button-hover-background-color;
+	}
+	&:focus {
+		background-color: $button-click-background-color;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.primary-color {
+	color: $primary-color;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	& > *:not(:last-child) {
+		margin-right: 0.5em;
+	}
+	.tag {
+		box-sizing: border-box;
+		font-family: GenJyuuGothic-P-Bold;
+		height: 20px;
+		font-size: 12px;
+		padding: 0px 10px;
+		white-space: nowrap;
+		background-color: $primary-color;
+		color: white;
+		@include flex-center-align;
+	}
+}
+
+.title {
+	font-family: GenJyuuGothic-P-Bold;
+}
+
+.title-xl {
+	line-height: 1;
+	font-size: 20px;
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+	@include responsive(320px) {
+		font-size: 24px;
+	}
+	@include desktop() {
+		font-size: 30px;
+	}
+	@include responsive(1024px) {
+		font-size: 40px;
+	}
+}
+
+.title-lg {
+	line-height: 1;
+	font-size: 16px;
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+	@include responsive(640px) {
+		font-size: 20px;
+	}
+	@include desktop() {
+		font-size: 24px;
+	}
+	@include responsive(1024px) {
+		font-size: 30px;
+	}
+}
+
+.title-md {
+	line-height: 1;
+	font-size: 20px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	@include desktop() {
+		font-size: 24px;
+	}
+}
+
+.title-underline {
+	border-bottom: 5px solid $primary-color;
+	padding-bottom: 10px;
+	@include desktop() {
+		border-bottom: 10px solid $primary-color;
+	}
+}
+
+.title-leftline {
+	border-left: 5px solid $primary-color;
+	padding-left: 10px;
+	@include desktop() {
+		border-left: 10px solid $primary-color;
+	}
+}
+
+.content-md {
+	font-size: 14px;
+	@include responsive(800px) {
+		font-size: 16px;
+	}
+}

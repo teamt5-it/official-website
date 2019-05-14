@@ -5,7 +5,10 @@ gem "jekyll", "~> 3.8.5"
 group :jekyll_plugins do
   gem "jekyll-coffeescript"
   gem "jekyll-assets"
-  gem "bootstrap"
+  gem "normalize-scss"
+  gem "font-awesome-sass"
+  gem "jekyll-paginate-v2"
+  gem "jekyll-admin"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

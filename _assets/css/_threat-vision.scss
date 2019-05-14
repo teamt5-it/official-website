@@ -1,0 +1,175 @@
+@import "base";
+$sonar-hero-banner-mobile-height: 300px;
+$sonar-hero-banner-desktop-height: 450px;
+$sonar-mac-width: 800px;
+$sonar-mac-height: 400px;
+$strength-grid-gap: 10px;
+
+main.threat-vision {
+  .hero {
+    align-self: center;
+    max-width: 1280px;
+    width: 100%;
+    .banner {
+      display: flex;
+      flex-direction: column;
+      height: 60%vw;
+      background: $secondary-color asset_url("vision_bg_circle.svg") no-repeat center bottom;
+      background-size: 100% auto;
+      @include desktop() {
+        height: $sonar-hero-banner-desktop-height;
+      }
+      .slogan {
+        width: 40%;
+        background-color: $normal-color;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: GenJyuuGothic-P-Bold;
+      }
+      .logo {
+        width: 60%;
+        align-self: center;
+        img {
+          width: 100%;
+        }
+      }
+      .title {
+        text-align: center;
+        color: white;
+      }
+    }
+    .strengths-container {
+      .title {
+        text-align: center;
+        font-size: 38px;
+      }
+      .strengths {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        @include desktop() {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        .strength {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          @include desktop() {
+            flex-direction: column;
+          }
+          .title {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .intelligence-report-subscription {
+      padding: 5%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 5%;
+      @include responsive(640px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .screenshot {
+        img {
+          width: 100%;
+        }
+      }
+      .description {
+        padding: 10%;
+        ul {
+          li::before {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+  .sample-analysis-container {
+    margin: 20px;
+    .title {
+      text-align: center;
+    }
+    .sample-analysis {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      @include desktop() {
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      .strengths {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: $strength-grid-gap;
+        width: 100%;
+        order: 1;
+        @include desktop() {
+          width: 30%;
+          grid-template-columns: auto;
+          grid-template-rows: auto;
+          order: 0;
+          overflow: hidden;
+        }
+        .strength {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 4.8px;
+          background-color: $background-color;
+
+				&:after {
+					content: "";
+					display: block;
+					padding-bottom: 100%;
+				}
+          .logo {
+            position: absolute;
+            top: 10%;
+            width: 60%;
+            img {
+              position: absolute;
+              width: 100%;
+            }
+          }
+          .content {
+            width: 90%;
+            position: absolute;
+            top: 80%;
+            font-family: GenJyuuGothic-P-Bold;
+            font-weight: bold;
+            color: $normal-color;
+            text-align: center;
+          }
+        }
+      }
+      .mac {
+        width: 100%;
+        order: 0;
+        @include desktop() {
+          position: relative;
+          padding-bottom: 60%;
+          height: 0;
+          width: 70%;
+          order: 0;
+          overflow: hidden;
+        }
+        img {
+          width: 100%;
+          @include desktop() {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: auto;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,296 @@
+@import "base";
+$sonar-hero-banner-mobile-height: 300px;
+$sonar-hero-banner-desktop-height: 450px;
+$sonar-hero-banner-background: $primary-color;
+$sonar-mac-width: 800px;
+$sonar-mac-height: 400px;
+$banner-slogan-height: 34px;
+
+main.threat-sonar {
+  .hero {
+    box-sizing: border-box;
+    align-self: center;
+    max-width: 1280px;
+    width: 100%;
+    .banner {
+      display: flex;
+      flex-direction: column;
+      height: 60%vw;
+      background: $sonar-hero-banner-background asset_url("sonar_bg_triangle.svg") no-repeat center bottom;
+      background-size: 100% auto;
+      @include desktop() {
+        height: $sonar-hero-banner-desktop-height;
+      }
+      .slogan {
+        width: 40%;
+        height: $banner-slogan-height;
+        background-color: $normal-color;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: GenJyuuGothic-P-Bold;
+      }
+      .logo {
+        width: 60%;
+        align-self: center;
+        img {
+          width: 100%;
+        }
+      }
+      .title {
+        text-align: center;
+        color: white;
+      }
+    }
+    .mac-and-strengths {
+      display: flex;
+      flex-direction: column;
+      @include desktop() {
+        display: block;
+        position: relative;
+      }
+
+      .mac {
+        width: 90%;
+        @include desktop() {
+          width: 60%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .strengths {
+        padding: 25px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-rows: repeat(3, 60px);
+        @include desktop() {
+          width: 300px;
+          position: relative;
+          left: 60%;
+        }
+        .strength {
+          display: flex;
+          align-items: center;
+          @include desktop() {
+          }
+          .logo {
+            width: 60px;
+            margin-right: 25px;
+            height: 100%;
+            img {
+              height: 100%;
+            }
+          }
+          .content {
+            width: 70%;
+            font-family: GenJyuuGothic-P-Medium;
+            font-size: 16px;
+            @include desktop() {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .more-strengths {
+    .more-strengths-title {
+      text-align: center;
+    }
+    .strengths {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      @include responsive(640px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include desktop() {
+        grid-template-columns: repeat(5, 1fr);
+      }
+      .strength {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 10px;
+        @include desktop() {
+          grid-template-columns: 1fr;
+          grid-template-rows: min-content auto;
+          justify-items: center;
+        }
+        .logo {
+          width: 60px;
+          height: 60px;
+          @include responsive(640px) {
+            width: 80px;
+            height: 80px;
+          }
+          @include responsive(800px) {
+            width: 100px;
+            height: 100px;
+          }
+          @include responsive(1024px) {
+            width: 120px;
+            height: 120px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .content {
+          .title {
+            color: $primary-color;
+            @include desktop() {
+              text-align: center;
+            }
+          }
+          ul {
+            li {
+              font-size: 14px;
+              @include desktop() {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .assessment-reports {
+    box-sizing: border-box;
+    padding: 30px;
+    align-self: center;
+    max-width: 1280px;
+    width: 100%;
+    background-color: $background-color;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 40px;
+    @include desktop() {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 60px 80px;
+    }
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .auto-investigation {
+    box-sizing: border-box;
+    align-self: center;
+    max-width: 1280px;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px 10px;
+    grid-template-columns: 1fr;
+    @include responsive(640px) {
+      grid-template-columns: 1fr 340px;
+      padding: 30px;
+    }
+    @include responsive(800px) {
+      grid-template-columns: 1fr 430px;
+      padding: 60px 30px;
+    }
+    @include responsive(1024px) {
+      grid-template-columns: 1fr 520px;
+      padding: 60px 40px;
+    }
+    @include responsive(1280px) {
+      grid-template-columns: 1fr 650px;
+      padding: 60px 100px;
+    }
+    .title-and-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .youtube {
+      height: 170px;
+      @include responsive(640px) {
+        height: 190px;
+      }
+      @include responsive(800px) {
+        height: 240px;
+      }
+      @include responsive(1024px) {
+        height: 290px;
+      }
+      @include responsive(1280px) {
+        height: 365px;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .complementary-to-antivirus {
+    background-color: $background-color;
+    .title {
+      text-align: center;
+    }
+    .threat-sonar-and-antivirus {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include desktop() {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+      }
+      .threat-sonar {
+        margin: 10px;
+        box-sizing: border-box;
+        width: 300px;
+        background-color: white;
+        @include responsive(640px) {
+          width: 420px;
+        }
+        .title {
+          box-sizing: border-box;
+          height: 60px;
+          padding: 10px;
+          background-color: $primary-color;
+          .logo {
+            height: 40px;
+            img {
+              height: 100%;
+            }
+          }
+        }
+        .content {
+          margin: 0 40px;
+        }
+      }
+      .antivirus {
+        margin: 10px;
+        width: 300px;
+        box-sizing: border-box;
+        background-color: white;
+        @include responsive(640px) {
+          width: 420px;
+        }
+        .title {
+          box-sizing: border-box;
+          height: 60px;
+          padding: 10px;
+          background-color: $normal-color;
+          .logo {
+            height: 40px;
+            img {
+              height: 100%;
+            }
+          }
+        }
+        .content {
+          margin: 0 40px;
+        }
+      }
+    }
+  }
+}
