@@ -1,14 +1,15 @@
 $footer-padding: 20px;
 .footer {
+  font-size: 12px;
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: $background-color;
-  margin-top: $square-side-length/$square-root-of-two*2;
+  margin-top: $square-side-length/$square-root-of-two * 2;
   @include desktop() {
     padding-top: $square-side-length/$square-root-of-two;
   }
-  .logo_and_product_and_partner_and_company {
+  .footer-logo-and-menu {
     display: flex;
     flex-direction: column;
     padding: $footer-padding;
@@ -17,18 +18,40 @@ $footer-padding: 20px;
       flex-direction: row;
       justify-content: space-between;
     }
-    .logo {
+    .footer-logo {
       width: 200px;
-    }
-    .product_and_partner_and_company {
-      display: flex;
-      justify-content: space-between;
-      @include desktop() {
-        width: 50%;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      @include desktop(){
+        margin: 0;
       }
-      ul{
-        li::before {
-          content:none;
+    }
+    .footer-menu {
+      display: grid;
+      grid-auto-columns: auto;
+      grid-auto-flow: column;
+      justify-content: space-between;
+      grid-gap: 0px;
+      @include desktop() {
+        margin: 0;
+        grid-gap: 50px;
+      }
+      .menu-item {
+        white-space: nowrap;
+        display: grid;
+        grid-auto-rows: min-content;
+        grid-auto-flow: row;
+        grid-gap: 10px;
+        .menu-item-title {
+          font-family: GenJyuuGothic-P-Bold;
+          font-weight: bold;
+        }
+        .menu-item-link {
+          display: block;
+					&:hover {
+            color: $font-color-hover;
+            text-decoration: underline;
+					}
         }
       }
     }
@@ -37,24 +60,22 @@ $footer-padding: 20px;
   hr {
     margin: 0 $footer-padding;
   }
-  .informations {
+  .footer-informations {
     margin: $footer-padding;
     display: flex;
     justify-content: space-between;
-    .copyright_and_privacy_and_cookies_policy_and_terms_of_service {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    .copyright-and-privacy-and-cookies-policy-and-terms-of-service {
+      display: grid;
+      grid-gap: 10px;
+      grid-auto-rows: auto;
+      grid-auto-flow: row;
       @include desktop() {
-        flex-direction: row;
+        grid-auto-columns: auto;
+        grid-gap: 20px;
+        grid-auto-flow: column;
       }
-      div {
-        display: flex;
-        height: 20px;
-        margin: 0 $footer-padding;
-        a {
-          flex: 1;
-        }
+      .privacy-and-cookies-policy, .terms-of-service{
+        text-decoration: underline;
       }
     }
   }
@@ -68,7 +89,8 @@ $footer-padding: 20px;
     border-radius: 3px;
     @include flex-center-align();
   }
-  .scroll-up {
+
+  .scroll-top {
     position: absolute;
     top: -$square-side-length/$square-root-of-two;
     right: 10px;
@@ -90,23 +112,22 @@ $footer-padding: 20px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      .arrow-container {
+      .scroll-top-arrow-container {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        .arrow {
+        .scroll-top-arrow {
           position: absolute;
           top: -$square-side-length/3/$square-root-of-two;
           width: $square-side-length/3;
           height: $square-side-length/3;
-
           border: solid white;
           border-width: 3px 0 0 3px;
         }
-        .title {
+        .scroll-top-text {
           position: absolute;
-          font-size: 12px;
+          top: 0;
           color: white;
         }
       }

@@ -26,9 +26,11 @@ footer:
     contact-us: Contact us
     careers: Careers
     newsroom: Newsroom
-  copyright: 2019 TEAM T5, Inc. All Rights Reserved.
+  copyright: >
+    &copy; 2019 TEAM T5, Inc. All Rights Reserved.
   privacy_and_cookies_policy: Privacy & Cookies Policy
   terms_of_service: Terms of Service
+  scroll_top: TOP
 
   english: English
   mandarin: 中文
@@ -90,7 +92,6 @@ news:
   more: More
 
 scroll_down: SCROLL
-scroll_top: TOP
 
 
 
