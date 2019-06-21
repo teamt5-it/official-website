@@ -12,242 +12,254 @@ $navbar-item-desktop-margin: 0 20px;
 $navbar-item-hover-box-shadow: inset 0 -5px 0 0 $primary-color;
 $navbar-item-mobile-border: 0.5px solid #948e8c;
 $navbar-item-title-height: $navbar-brand-mobile-height;
+$navbar-item-title-margin: 0 5px;
+$navbar-item-title-mobile-padding-left: 10px;
+$navbar-item-title-mobile-padding-right: 5px;
 $navbar-item-arrow-container-height: 30px;
 $navbar-item-arrow-side-length: $navbar-item-arrow-container-height/$square-root-of-two/2;
 
-$navbar-submenu-desktop-height: 30px;
+$navbar-submenu-desktop-height: 40px;
 $navbar-submenu-arrow-side-length: $navbar-brand-logo-height;
 $navbar-submenu-item-desktop-margin: $navbar-item-desktop-margin;
 $navbar-submenu-item-mobile-height: $navbar-brand-mobile-height;
-$navbar-submenu-desktop-font-size: 18px;
-$navbar-submenu-mobile-font-size: 12px;
+$navbar-submenu-item-mobile-padding: 0 15px;
 
-$navbar-desktop-padding: 0 28px;
+$navbar-desktop-padding: 0 60px;
 $navbar-mobile-padding: 0 10px;
 $navbar-item-title-padding: 0 8px;
 $navbar-submenu-mobile-background-color: $background-color;
 .navbar {
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	padding: $navbar-mobile-padding;
-	width: 100%;
-	max-width: 1280px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
 
-	@include desktop() {
-		position: relative;
-		flex-direction: row;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		align-items: center;
-		padding: $navbar-desktop-padding;
-	}
+  @include desktop() {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: $navbar-desktop-padding;
+  }
 
-	.navbar-brand {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		height: $navbar-brand-mobile-height;
+  .navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $navbar-brand-mobile-height;
+    padding: $navbar-mobile-padding;
 
-		@include desktop() {
-			height: $navbar-brand-desktop-height;
-		}
-		.navbar-brand-link {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			.logo {
-				height: $navbar-brand-logo-height;
-				display: flex;
-				justify-content: center;
-				align-content: center;
-				img {
-					height: 100%;
-				}
-			}
-		}
+    @include desktop() {
+      height: $navbar-brand-desktop-height;
+    }
+    .navbar-brand-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo {
+        height: $navbar-brand-logo-height;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        img {
+          height: 100%;
+        }
+      }
+    }
 
-		.navbar-burger {
-			position: relative;
-			width: $navbar-burger-side-length;
-			height: $navbar-burger-side-length;
-			transition: all 0.5s ease-in-out;
+    .navbar-burger {
+      position: relative;
+      width: $navbar-burger-side-length;
+      height: $navbar-burger-side-length;
+      transition: all 0.5s ease-in-out;
 
-			@include desktop() {
-				display: none;
-			}
-			span {
-				position: absolute;
-				left: 6px;
-				display: block;
-				width: 18px;
-				height: $navbar-burger-size;
-				background-color: grey;
-			}
-			@for $i from 1 through 3 {
-				span:nth-child(#{$i}) {
-					top: calc(5% + 20% * #{$i});
-					transition: all 0.5s ease-in-out;
-				}
-			}
-			&.active {
-				span {
-					&:nth-child(1) {
-						transform: translateY(6px) rotate(45deg);
-					}
-					&:nth-child(2) {
-						opacity: 0;
-					}
-					&:nth-child(3) {
-   						transform: translateY(-6px) rotate(-45deg);
-					}
-				}
-			}
-		}
-	}
+      @include desktop() {
+        display: none;
+      }
+      span {
+        position: absolute;
+        left: 6px;
+        display: block;
+        width: 18px;
 
-	.navbar-menu {
-		font-size: $navbar-submenu-mobile-font-size;
-		max-height: 0;
-		display: flex;
-		flex-direction: column;
-		transition: max-height 0.5s ease-in-out;
-		overflow: hidden;
+        border-radius: $navbar-burger-size/2;
+        height: $navbar-burger-size;
+        background-color: grey;
+      }
+      @for $i from 1 through 3 {
+        span:nth-child(#{$i}) {
+          top: calc(5% + 20% * #{$i});
+          transition: all 0.5s ease-in-out;
+        }
+      }
+      &.active {
+        span {
+          &:nth-child(1) {
+            transform: translateY(6px) rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
 
-		@include desktop() {
-			font-size: $navbar-submenu-desktop-font-size;
-			display: flex;
-			flex-direction: row;
-			max-height: none;
-		}
+  .navbar-menu {
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
 
-		&.active {
-			max-height: 100vh;
-		}
+    @include desktop() {
+      display: flex;
+      flex-direction: row;
+      max-height: none;
+    }
 
-		.navbar-item {
-			display: flex;
-			flex-direction: column;
-			display: block;
+    &.active {
+      max-height: 100vh;
+    }
 
-			@include desktop() {
-				margin: $navbar-item-desktop-margin;
-				height: $navbar-item-desktop-height;
-			}
+    .navbar-item {
+      display: flex;
+      flex-direction: column;
+      display: block;
 
-			.navbar-item-title {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				height: $navbar-item-title-height;
-				border-bottom: $navbar-item-mobile-border;
+      @include desktop() {
+        margin: $navbar-item-desktop-margin;
+        height: $navbar-item-desktop-height;
+      }
 
-				@include desktop() {
-					height: $navbar-brand-desktop-height;
-					border-bottom: 0;
-				}
-			}
+      .navbar-item-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: $navbar-item-title-height;
+        border-bottom: $navbar-item-mobile-border;
+        padding-left: $navbar-item-title-mobile-padding-left;
+        padding-right: $navbar-item-title-mobile-padding-right;
+        margin: $navbar-item-title-margin;
+        @include desktop() {
+          padding: 0;
+          margin: 0;
+          height: $navbar-brand-desktop-height;
+          border-bottom: 0;
+        }
+        .navbar-item-title {
+          line-height: $navbar-item-title-height;
+          @include desktop() {
+            line-height: $navbar-item-desktop-height;
 
-			.navbar-item-link {
-				display: block;
-				line-height: $navbar-item-title-height;
-				@include desktop() {
-					line-height: $navbar-item-desktop-height;
+            &:hover {
+              box-shadow: $navbar-item-hover-box-shadow;
+            }
+          }
+        }
+      }
+      .navbar-item-arrow-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $navbar-item-arrow-container-height;
+        height: $navbar-item-arrow-container-height;
 
-					&:hover {
-						box-shadow: $navbar-item-hover-box-shadow;
-					}
-				}
-			}
+        @include desktop() {
+          display: none;
+        }
+        .arrow {
+          position: absolute;
+          width: $navbar-item-arrow-container-height/3;
+          height: $navbar-item-arrow-container-height/3;
+          transform: rotate(-135deg);
 
-			.navbar-item-arrow-container {
-				position: relative;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: $navbar-item-arrow-container-height;
-				height: $navbar-item-arrow-container-height;
+          border: solid grey;
+          border-radius: 1.5px;
+          border-width: 3px 0 0 3px;
+          &.active {
+            position: absolute;
+            top: 50%;
+            transform: rotate(45deg);
+          }
+        }
+      }
 
-				@include desktop() {
-					display: none;
-				}
-				.arrow {
-					position: absolute;
-					width: $navbar-item-arrow-container-height/3;
-					height: $navbar-item-arrow-container-height/3;
-					transform: rotate(-135deg);
+      .navbar-submenu {
+        display: flex;
+        flex-direction: column;
+        background-color: $navbar-submenu-mobile-background-color;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+        overflow: hidden;
 
-					border: solid grey;
-					border-width: 3px 0 0 3px;
-					&.active {
-						position: absolute;
-						top: 50%;
-						transform: rotate(45deg);
-					}
-				}
-			}
+        @include desktop() {
+          position: absolute;
+          padding: $navbar-desktop-padding;
+          top: $navbar-brand-desktop-height;
+          right: 0;
+          flex-direction: row;
+          background-color: transparent;
+          overflow: hidden;
+        }
 
-			.navbar-submenu {
-				display: flex;
-				flex-direction: column;
-				background-color: $navbar-submenu-mobile-background-color;
-				max-height: 0;
-				transition: max-height 0.5s ease-in-out;
-				overflow: hidden;
+        &.active {
+          max-height: 100vh;
+          @include desktop() {
+            max-height: $navbar-submenu-desktop-height;
+          }
+        }
 
-				@include desktop() {
-					position: absolute;
-					top: $navbar-brand-desktop-height;
-					right: 0;
-					flex-direction: row;
-					background-color: transparent;
-					overflow: hidden;
-				}
+        .navbar-submenu-item {
+          display: flex;
+          align-items: center;
+          padding: $navbar-submenu-item-mobile-padding;
+          height: $navbar-submenu-item-mobile-height;
+          border-bottom: $navbar-item-mobile-border;
+          @include desktop() {
+            height: $navbar-submenu-desktop-height;
+            padding: 0;
+            border-bottom: 0;
+            margin: $navbar-submenu-item-desktop-margin;
+          }
 
-				&.active {
-					max-height: 100vh;
-					@include desktop() {
-						max-height: $navbar-submenu-desktop-height;
-					}
-				}
+          .navbar-submenu-item-link {
+            display: block;
+            line-height: $navbar-submenu-item-mobile-height;
+            @include desktop() {
+              line-height: $navbar-submenu-desktop-height;
+            }
 
-				.navbar-submenu-item {
-					display: flex;
-					align-items: center;
-					height: $navbar-submenu-item-mobile-height;
-					border-bottom: $navbar-item-mobile-border;
-					@include desktop() {
-						height: $navbar-submenu-desktop-height;
-						border-bottom: 0;
-						margin: $navbar-submenu-item-desktop-margin;
-					}
-
-					.navbar-submenu-item-link {
-						display: block;
-						line-height: $navbar-submenu-item-mobile-height;
-						@include desktop() {
-							line-height: $navbar-submenu-desktop-height;
-						}
-					}
-				}
-			}
-		}
-	}
-	.navbar-submenu-padding {
-		max-height: 0;
-		height: 50px;
-		width: 100%;
-		transition: max-height 0.5s ease-in-out;
-		overflow: hidden;
-		@include desktop() {
-		}
-		&.active {
-			@include desktop() {
-				max-height: $navbar-submenu-desktop-height;
-			}
-		}
-		.navbar-submenu-padding-content {
-			max-height: $navbar-submenu-desktop-height;
-		}
-	}
+            &:hover {
+              color: $font-color-hover;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbar-submenu-padding {
+    max-height: 0;
+    height: 50px;
+    width: 100%;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+    @include desktop() {
+    }
+    &.active {
+      @include desktop() {
+        max-height: $navbar-submenu-desktop-height;
+      }
+    }
+    .navbar-submenu-padding-content {
+      max-height: $navbar-submenu-desktop-height;
+    }
+  }
 }

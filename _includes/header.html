@@ -1,78 +1,93 @@
-<header>
-    <div class="navbar">
-        <div class="navbar-brand">
-            <a class="navbar-brand-link link" href="/">
-                <div class="logo">
-                    {% asset TeamT5-logo.svg %}
+<header class="navbar">
+    <div class="navbar-brand">
+        <a class="navbar-brand-link link" href="/">
+            <div class="logo">
+                {% asset TeamT5-logo.svg %}
+            </div>
+        </a>
+        <div class="navbar-burger">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </div>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-item">
+            <a class="navbar-item-link" href="#">
+                <div class="navbar-item-title">
+                    {% t header.product %}
+                </div>
+                <div class="navbar-item-arrow-container">
+                    <div class="arrow">
+                    </div>
                 </div>
             </a>
-            <div class="navbar-burger">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </div>
-        </div>
-        <div class="navbar-menu">
-            <div class="navbar-item">
-                <div class="navbar-item-title">
-                    <a class="navbar-item-link" href="#">{% t header.product %}</a>
-                    <div class="navbar-item-arrow-container">
-                        <div class="arrow">
-                        </div>
-                    </div>
+            <div class="navbar-submenu">
+                <div class="navbar-submenu-item">
+                    <a class="navbar-submenu-item-link" href="{{ site.data.links.products.threat-sonar }}">
+                        {% t header.threat-sonar %}
+                    </a>
                 </div>
-                <div class="navbar-submenu">
-                    <div class="navbar-submenu-item">
-                        <a class="navbar-submenu-item-link" href="{{ site.data.links.products.threat-sonar }}">{% t header.threat-sonar %}</a>
-                    </div>
-                    <div class="navbar-submenu-item">
-                        <a class="navbar-submenu-item-link" href="{{ site.data.links.products.threat-vision }}">{% t header.threat-vision %}</a>
-                    </div>
-                </div>
-            </div>
-            <div class="navbar-item">
-                <div class="navbar-item-title">
-                    <a class="navbar-item-link" href="{{ site.data.links.partner }}">{% t header.partner %}</a>
-                </div>
-            </div>
-            <div class="navbar-item">
-                <div class="navbar-item-title">
-                    <a class="navbar-item-link" href="{{ site.data.links.support }}">{% t header.support %}</a>
-                </div>
-            </div>
-            <div class="navbar-item">
-                <div class="navbar-item-title">
-                    <a class="navbar-item-link" href="{{ site.data.links.resource }}">{% t header.resource %}</a>
-                </div>
-            </div>
-            <div class="navbar-item">
-                <div class="navbar-item-title">
-                    <a class="navbar-item-link" href="#">{% t header.company.title %}</a>
-                    <div class="navbar-item-arrow-container">
-                        <div class="arrow">
-                        </div>
-                    </div>
-                </div>
-                <div class="navbar-submenu">
-                    <div class="navbar-submenu-item">
-                        <a class="navbar-submenu-item-link" href="{{ site.data.links.company.about-us }}">{% t header.company.about-us %}</a>
-                    </div>
-                    <div class="navbar-submenu-item">
-                        <a class="navbar-submenu-item-link" href="{{ site.data.links.company.contact-us }}">{% t header.company.contact-us %}</a>
-                    </div>
-                    <div class="navbar-submenu-item">
-                        <a class="navbar-submenu-item-link" href="{{ site.data.links.company.careers }}">{% t header.company.careers %}</a>
-                    </div>
-                    <div class="navbar-submenu-item">
-                        <a class="navbar-submenu-item-link" href="{{ site.data.links.company.newsroom }}">{% t header.company.newsroom %}</a>
-                    </div>
+                <div class="navbar-submenu-item">
+                    <a class="navbar-submenu-item-link" href="{{ site.data.links.products.threat-vision }}">
+                        {% t header.threat-vision %}
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="navbar-submenu-padding">
-            <div class="navbar-submenu-padding-box">
+        <div class="navbar-item">
+            <a class="navbar-item-link" href="{{ site.data.links.partner }}">
+                <div class="navbar-item-title">
+                    {% t header.partner %}
+                </div>
+            </a>
+        </div>
+        <div class="navbar-item">
+            <a class="navbar-item-link" href="{{ site.data.links.support }}">
+                <div class="navbar-item-title">
+                    {% t header.support %}
+                </div>
+            </a>
+        </div>
+        <div class="navbar-item">
+            <a class="navbar-item-link" href="{{ site.data.links.resource }}">
+                <div class="navbar-item-title">
+                    {% t header.resource %}
+                </div>
+            </a>
+        </div>
+        <div class="navbar-item">
+            <a class="navbar-item-link" href="#">
+                <div class="navbar-item-title">
+                    {% t header.company.title %}</div>
+                <div class="navbar-item-arrow-container">
+                    <div class="arrow">
+                    </div>
+                </div>
+            </a>
+            <div class="navbar-submenu">
+                <div class="navbar-submenu-item">
+                    <a class="navbar-submenu-item-link"
+                        href="{{ site.data.links.company.about-us }}">{% t header.company.about-us %}</a>
+                </div>
+                <div class="navbar-submenu-item">
+                    <a class="navbar-submenu-item-link"
+                        href="{{ site.data.links.company.contact-us }}">{% t header.company.contact-us %}</a>
+                </div>
+                <div class="navbar-submenu-item">
+                    <a class="navbar-submenu-item-link"
+                        href="{{ site.data.links.company.careers }}">{% t header.company.careers %}</a>
+                </div>
+                <div class="navbar-submenu-item">
+                    <a class="navbar-submenu-item-link"
+                        href="{{ site.data.links.company.newsroom }}">{% t header.company.newsroom %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-submenu-padding">
+        <div class="navbar-submenu-padding-box">
 
-            </div>
         </div>
     </div>
 </header>

@@ -1,22 +1,53 @@
 @import "base";
-$header-top-border: 5px solid $primary-color;
+$body-top-border: 5px solid $primary-color;
 body {
   display: flex;
   height: 100vh;
   flex-direction: column;
-
-  header {
-    border-top: $header-top-border;
-    display: flex;
-    justify-content: center;
+  border-top: $body-top-border;
+  .header-container {
     flex: none;
-  }
-  main {
     display: flex;
     flex-direction: column;
-    flex: 1 0 auto;
+    align-items: center;
+    header {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: $max-width;
+    }
   }
-  footer {
+  .main-container {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    .page-title-container {
+      background-color: $background-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .page-title {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: $max-width;
+      }
+    }
+    main {
+      align-self: center;
+      width: 100%;
+      max-width: $max-width;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .footer-container {
     flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    footer {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: $max-width;
+    }
   }
 }
