@@ -1,5 +1,4 @@
 @import "base";
-$banner-max-width: 1280px;
 main.index {
   .hero {
     height: 300px;
@@ -17,8 +16,7 @@ main.index {
     text-align: center;
     background-image: asset_url("persistent_cyber_threat_hunters_bg.svg");
     background-color: $background-color;
-    max-width: $banner-max-width;
-    .banner-title{
+    .banner-title {
       color: $primary-color;
     }
     .scroll-down {
@@ -131,7 +129,7 @@ main.index {
         .logo {
           order: -1;
           flex: 1 100%;
-          @include responsive(640px){
+          @include responsive(640px) {
             width: 35%;
             height: auto;
             order: 0;
@@ -150,7 +148,7 @@ main.index {
           position: absolute;
           bottom: 0;
           right: 0;
-          @include responsive(640px){
+          @include responsive(640px) {
             position: initial;
           }
         }

@@ -13,7 +13,13 @@
     </div>
     <div class="navbar-menu">
         <div class="navbar-item">
-            <a class="navbar-item-link" href="#">
+            <div class="navbar-item-link
+            {% for product in site.data.links.products %}
+                {% if page.layout == product[0] %}
+                    is-current
+                {% endif %}
+            {% endfor %}
+            ">
                 <div class="navbar-item-title">
                     {% t header.product %}
                 </div>
@@ -21,7 +27,7 @@
                     <div class="arrow">
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="navbar-submenu">
                 <div class="navbar-submenu-item">
                     <a class="navbar-submenu-item-link" href="{{ site.data.links.products.threat-sonar }}">
@@ -36,35 +42,53 @@
             </div>
         </div>
         <div class="navbar-item">
-            <a class="navbar-item-link" href="{{ site.data.links.partner }}">
+            <a class="navbar-item-link
+            {% if page.layout == 'partner'%}
+                is-current
+            {% endif %}
+            " href="{{ site.data.links.partner }}">
                 <div class="navbar-item-title">
                     {% t header.partner %}
                 </div>
             </a>
         </div>
         <div class="navbar-item">
-            <a class="navbar-item-link" href="{{ site.data.links.support }}">
+            <a class="navbar-item-link
+            {% if page.layout == 'support' %}
+                is-current
+            {% endif %}
+            " href="{{ site.data.links.support }}">
                 <div class="navbar-item-title">
                     {% t header.support %}
                 </div>
             </a>
         </div>
         <div class="navbar-item">
-            <a class="navbar-item-link" href="{{ site.data.links.resource }}">
+            <a class="navbar-item-link
+            {% if page.layout == 'resource' %}
+                is-current
+            {% endif %}
+            " href="{{ site.data.links.resource }}">
                 <div class="navbar-item-title">
                     {% t header.resource %}
                 </div>
             </a>
         </div>
         <div class="navbar-item">
-            <a class="navbar-item-link" href="#">
+            <div class="navbar-item-link
+            {% for company in site.data.links.company %}
+                {% if page.layout == company[0] %}
+                    is-current
+                {% endif %}
+            {% endfor %}
+            ">
                 <div class="navbar-item-title">
                     {% t header.company.title %}</div>
                 <div class="navbar-item-arrow-container">
                     <div class="arrow">
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="navbar-submenu">
                 <div class="navbar-submenu-item">
                     <a class="navbar-submenu-item-link"

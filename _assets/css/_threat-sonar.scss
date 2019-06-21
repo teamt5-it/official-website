@@ -10,26 +10,30 @@ main.threat-sonar {
   .hero {
     box-sizing: border-box;
     align-self: center;
-    max-width: 1280px;
     width: 100%;
     .banner {
       display: flex;
       flex-direction: column;
-      height: 60%vw;
       background: $sonar-hero-banner-background asset_url("sonar_bg_triangle.svg") no-repeat center bottom;
       background-size: 100% auto;
       @include desktop() {
         height: $sonar-hero-banner-desktop-height;
       }
       .slogan {
-        width: 40%;
-        height: $banner-slogan-height;
+        align-self: flex-start;
+        white-space: nowrap;
+        margin: 20px 0px;
+        padding: 3px 60px;
         background-color: $normal-color;
         color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-family: GenJyuuGothic-P-Bold;
+        font-size: 12px;
+        @include responsive(640px) {
+          font-size: 18px;
+        }
+        @include responsive(800px) {
+          font-size: 24px;
+        }
       }
       .logo {
         width: 60%;
@@ -53,10 +57,13 @@ main.threat-sonar {
 
       .mac {
         width: 90%;
+        position: relative;
+        top: -20px;
         @include desktop() {
           width: 60%;
           position: absolute;
           left: 0;
+          top: auto;
           bottom: 0;
         }
         img {
@@ -64,17 +71,19 @@ main.threat-sonar {
         }
       }
       .strengths {
+        box-sizing: border-box;
         padding: 25px;
         display: grid;
         grid-gap: 25px;
         grid-template-rows: repeat(3, 60px);
         @include desktop() {
-          width: 300px;
+          width: 40%;
           position: relative;
           left: 60%;
         }
         .strength {
           display: flex;
+          justify-content: flex-start;
           align-items: center;
           @include desktop() {
           }
@@ -164,7 +173,6 @@ main.threat-sonar {
     box-sizing: border-box;
     padding: 30px;
     align-self: center;
-    max-width: 1280px;
     width: 100%;
     background-color: $background-color;
     display: grid;
@@ -183,7 +191,6 @@ main.threat-sonar {
   .auto-investigation {
     box-sizing: border-box;
     align-self: center;
-    max-width: 1280px;
     width: 100%;
     display: grid;
     grid-gap: 20px;

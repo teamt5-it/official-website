@@ -42,7 +42,7 @@ assets:
 
 pagination:
   per_page: 1
-  permalink: '/:num/'
+  permalink: '/page/:num/'
   enabled: true
   debug: true
   sort_field: 'date'

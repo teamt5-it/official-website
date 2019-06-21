@@ -5,86 +5,86 @@ $sonar-mac-width: 800px;
 $sonar-mac-height: 400px;
 
 main.careers {
-	.hero {
-		display: flex;
-		flex-direction: column;
-		.title {
-			align-self: flex-start;
-			@include page-margin;
-		}
-		.banner {
-			overflow: hidden;
-			align-self: center;
-			width: 100%;
-			@include responsive(1024px) {
-				@include page-padding-horizontal;
-				width: auto;
-			}
-			img {
-				width: 100%;
-				margin: -17.5% 0;
-			}
-		}
-		.content {
-			position: relative;
-			top: -30px;
-			margin-bottom: -30px;
-			align-self: center;
-			background-color: $background-color;
-			text-align: justify;
-			width: 92.5%;
-			padding: 20px 10px;
-			@include responsive(640px) {
-				top: -90px;
-				margin-bottom: -90px;
-				padding: 20px;
-			}
-			@include responsive(800px) {
-				top: -110px;
-				margin-bottom: -110px;
-				padding: 30px 50px;
-				width: 50%;
-			}
-			@include responsive(1280px) {
-				top: -140px;
-				margin-bottom: -140px;
-			}
-		}
-	}
-	.positions {
-		display: flex;
-		flex-direction: column;
-		@include page-margin;
-		.positions-title {
-			align-self: flex-start;
-		}
-	}
-	.position {
-		padding: 20px;
-		height: 60px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		border-bottom: 1px solid $light-background-color;
-		.position-title {
-			color: $primary-color;
-		}
-		.location-and-arrow {
-			display: flex;
-			justify-content: space-between;
-			.location {
-				margin-right: 20px;
-				@include responsive(320px) {
-					margin-right: 60px;
-				}
-			}
-			.arrow {
-				width: 20px / $square-root-of-two;
-				height: 20px / $square-root-of-two;
-				border: solid $primary-color;
-				border-width: 0 3px 3px 0;
-				transform: rotate(-45deg);
-			}
-		}
-	}
+  .hero {
+    display: flex;
+    flex-direction: column;
+    .title {
+      align-self: flex-start;
+      @include page-margin;
+    }
+    .banner {
+      overflow: hidden;
+      align-self: center;
+      width: 100%;
+      @include responsive(1024px) {
+        @include page-padding-horizontal;
+        width: auto;
+      }
+      img {
+        width: 100%;
+        margin: -17.5% 0;
+      }
+    }
+    .content {
+      position: relative;
+      top: -30px;
+      margin-bottom: -30px;
+      align-self: center;
+      background-color: $background-color;
+      text-align: justify;
+      width: 92.5%;
+      padding: 20px 10px;
+      @include responsive(640px) {
+        top: -90px;
+        margin-bottom: -90px;
+        padding: 20px;
+      }
+      @include responsive(800px) {
+        top: -110px;
+        margin-bottom: -110px;
+        padding: 30px 50px;
+        width: 50%;
+      }
+      @include responsive(1280px) {
+        top: -140px;
+        margin-bottom: -140px;
+      }
+    }
+  }
+  .positions {
+    display: flex;
+    flex-direction: column;
+    @include page-margin;
+    .positions-title {
+      align-self: flex-start;
+    }
+  }
+  .position {
+    padding: 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $light-background-color;
+    .position-title {
+      color: $primary-color;
+    }
+    .location-and-arrow {
+      display: flex;
+      justify-content: space-between;
+      .location {
+        margin-right: 20px;
+        @include responsive(320px) {
+          margin-right: 60px;
+        }
+      }
+      .arrow {
+        width: 20px / $square-root-of-two;
+        height: 20px / $square-root-of-two;
+        border: solid $primary-color;
+        border-width: 0 3px 3px 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
 }

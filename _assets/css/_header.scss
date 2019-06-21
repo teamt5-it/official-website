@@ -10,7 +10,7 @@ $navbar-burger-size: 2px;
 $navbar-item-desktop-height: $navbar-brand-desktop-height;
 $navbar-item-desktop-margin: 0 20px;
 $navbar-item-hover-box-shadow: inset 0 -5px 0 0 $primary-color;
-$navbar-item-mobile-border: 0.5px solid #948e8c;
+$navbar-item-mobile-border: 0.5px solid $font-color-hover;
 $navbar-item-title-height: $navbar-brand-mobile-height;
 $navbar-item-title-margin: 0 5px;
 $navbar-item-title-mobile-padding-left: 10px;
@@ -138,6 +138,7 @@ $navbar-submenu-mobile-background-color: $background-color;
       }
 
       .navbar-item-link {
+        cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -147,6 +148,9 @@ $navbar-submenu-mobile-background-color: $background-color;
         padding-right: $navbar-item-title-mobile-padding-right;
         margin: $navbar-item-title-margin;
         @include desktop() {
+          &.is-current {
+            box-shadow: $navbar-item-hover-box-shadow;
+          }
           padding: 0;
           margin: 0;
           height: $navbar-brand-desktop-height;
