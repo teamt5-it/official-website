@@ -2,14 +2,14 @@
 layout: page
 ---
 
-<div class="hero">
-    <div class="title title-xl title-underline">
+<div class="banner">
+    <div class="banner-title title title-xl title-underline">
         {% t title %}
     </div>
-    <div class="banner">
+    <div class="banner-image">
         {% asset career_bg.jpg %}
     </div>
-    <div class="content">
+    <div class="banner-content">
         {% capture string_with_newlines %}
         {% t content %}
         {% endcapture %}
@@ -22,7 +22,7 @@ layout: page
     </div>
     {% assign positions = site.pages | where: "layout", "position" %}
     {% for position in positions %}
-    <div class="position">
+    <a class="position" href="{{position.url | relative_url }}">
         <div class="position-title">
             {{position.title}}
         </div>
@@ -30,9 +30,9 @@ layout: page
             <div class="location">
                 {{position.location}}
             </div>
-            <a class="arrow" href="{{position.url | relative_url }}">
-            </a>
+            <div class="arrow">
+            </div>
         </div>
-    </div>
+    </a>
     {% endfor %}
 </div>

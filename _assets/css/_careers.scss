@@ -1,18 +1,14 @@
 @import "base";
-$sonar-hero-banner-height: 400px;
-$sonar-hero-banner-background: $primary-color;
-$sonar-mac-width: 800px;
-$sonar-mac-height: 400px;
 
 main.careers {
-  .hero {
+  .banner {
     display: flex;
     flex-direction: column;
-    .title {
+    .banner-title {
       align-self: flex-start;
       @include page-margin;
     }
-    .banner {
+    .banner-image {
       overflow: hidden;
       align-self: center;
       width: 100%;
@@ -25,15 +21,15 @@ main.careers {
         margin: -17.5% 0;
       }
     }
-    .content {
+    .banner-content {
       position: relative;
       top: -30px;
       margin-bottom: -30px;
       align-self: center;
       background-color: $background-color;
       text-align: justify;
-      width: 92.5%;
       padding: 20px 10px;
+      @include page-margin-horizontal;
       @include responsive(640px) {
         top: -90px;
         margin-bottom: -90px;
@@ -43,7 +39,11 @@ main.careers {
         top: -110px;
         margin-bottom: -110px;
         padding: 30px 50px;
-        width: 50%;
+      }
+      @include responsive(1024px) {
+        top: -110px;
+        margin-bottom: -110px;
+        width: 740px;
       }
       @include responsive(1280px) {
         top: -140px;
@@ -60,7 +60,8 @@ main.careers {
     }
   }
   .position {
-    padding: 20px;
+    cursor: pointer;
+    padding: 0 10px;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -82,7 +83,8 @@ main.careers {
         width: 20px / $square-root-of-two;
         height: 20px / $square-root-of-two;
         border: solid $primary-color;
-        border-width: 0 3px 3px 0;
+        border-radius: $arrow-width;
+        border-width: 0 $arrow-width $arrow-width 0;
         transform: rotate(-45deg);
       }
     }
