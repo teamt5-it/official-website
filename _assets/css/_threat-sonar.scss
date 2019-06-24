@@ -26,7 +26,7 @@ main.threat-sonar {
         padding: 3px 60px;
         background-color: $normal-color;
         color: white;
-        font-family: GenJyuuGothic-P-Bold;
+        font-weight: bold;
         font-size: 12px;
         @include responsive(640px) {
           font-size: 18px;
@@ -97,7 +97,6 @@ main.threat-sonar {
           }
           .content {
             width: 70%;
-            font-family: GenJyuuGothic-P-Medium;
             font-size: 16px;
             @include desktop() {
             }

@@ -26,7 +26,6 @@
       label {
         display: block;
         font-weight: bold;
-        font-family: GenJyuuGothic-P-Bold;
         color: $normal-color;
       }
       .form-control {
@@ -51,7 +50,7 @@
       height: 50px;
       line-height: 50px;
       text-align: center;
-      font-family: GenJyuuGothic-P-Bold;
+      font-weight: bold;
       @include responsive(640px) {
         grid-column: 1 / span 2;
         justify-self: center;
