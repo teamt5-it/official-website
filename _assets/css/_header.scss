@@ -21,6 +21,7 @@ $navbar-item-arrow-side-length: $navbar-item-arrow-container-height/$square-root
 $navbar-submenu-desktop-height: 40px;
 $navbar-submenu-arrow-side-length: $navbar-brand-logo-height;
 $navbar-submenu-item-desktop-margin: $navbar-item-desktop-margin;
+$navbar-submenu-item-desktop-height: $navbar-submenu-desktop-height;
 $navbar-submenu-item-mobile-height: $navbar-brand-mobile-height;
 $navbar-submenu-item-mobile-padding: 0 15px;
 
@@ -226,24 +227,17 @@ $navbar-submenu-mobile-background-color: $background-color;
           padding: $navbar-submenu-item-mobile-padding;
           height: $navbar-submenu-item-mobile-height;
           border-bottom: $navbar-item-mobile-border;
+          line-height: $navbar-submenu-item-mobile-height;
           @include desktop() {
-            height: $navbar-submenu-desktop-height;
+            line-height: $navbar-submenu-desktop-height;
+            height: $navbar-submenu-item-desktop-height;
             padding: 0;
             border-bottom: 0;
             margin: $navbar-submenu-item-desktop-margin;
           }
-
-          .navbar-submenu-item-link {
-            display: block;
-            line-height: $navbar-submenu-item-mobile-height;
-            @include desktop() {
-              line-height: $navbar-submenu-desktop-height;
-            }
-
-            &:hover {
-              color: $font-color-hover;
-              text-decoration: underline;
-            }
+          &:hover {
+            color: $font-color-hover;
+            text-decoration: underline;
           }
         }
       }
