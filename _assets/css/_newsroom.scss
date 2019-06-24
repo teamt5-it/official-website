@@ -54,7 +54,9 @@ main.newsroom {
         background-color: $background-color;
       }
       .browse-by-type {
-        display: flex;
+        display: none;
+        //TODO: newsroom browse by type
+        //display: flex;
         flex-direction: column;
         .title {
           padding: 20px;
