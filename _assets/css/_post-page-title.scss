@@ -1,15 +1,21 @@
-.post-page-title {
-	display: flex;
-	align-items: center;
-	height: 48px;
-
-	@include responsive(640px){
-		height: 80px;
-	}
-	@include responsive(800px){
-		height: 100px;
-	}
-	.title {
-		padding-left: 0.5em;
-	}
+@import "base";
+.post-page-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .post-page-title {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $max-width;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    @include post-page-padding-horizontal;
+    @include responsive(640px) {
+      height: 80px;
+    }
+    @include responsive(800px) {
+      height: 100px;
+    }
+  }
 }

@@ -7,10 +7,10 @@ desktop = ->
 	return window.matchMedia('(min-width: 768px)').matches
 
 $ ->
-	$(".scroll-up").click ->
+	$(".scroll-top").click ->
 		window.scrollTo {top: 0, behavior: 'smooth'}
 
-	$(".scroll-down").click ->
+	$(".scroll-bottom").click ->
 		window.scrollTo {top: document.body.scrollHeight, behavior: 'smooth'}
 
 

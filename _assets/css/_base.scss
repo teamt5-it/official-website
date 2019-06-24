@@ -106,7 +106,7 @@ $xs-post-margin-horizontal: 20px;
 $sm-post-margin-horizontal: 40px;
 $md-post-margin-horizontal: 140px;
 $lg-post-margin-horizontal: 270px;
-$xl-post-margin-horizontal: 340px;
+$xl-post-margin-horizontal: 270px;
 
 @mixin post-page-margin-horizontal {
   margin: 0 $xs-post-margin-horizontal;
@@ -121,6 +121,23 @@ $xl-post-margin-horizontal: 340px;
   }
   @include responsive(1280px) {
     margin: 0 $xl-post-margin-horizontal;
+  }
+}
+
+
+@mixin post-page-padding-horizontal {
+  padding: 0 $xs-post-margin-horizontal;
+  @include responsive(320px) {
+    padding: 0 $sm-post-margin-horizontal;
+  }
+  @include responsive(640px) {
+    padding: 0 $md-post-margin-horizontal;
+  }
+  @include responsive(1024px) {
+    padding: 0 $lg-post-margin-horizontal;
+  }
+  @include responsive(1280px) {
+    padding: 0 $xl-post-margin-horizontal;
   }
 }
 @mixin flex-center-align {

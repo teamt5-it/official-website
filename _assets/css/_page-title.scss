@@ -1,13 +1,22 @@
-.page-title {
-  display: flex;
-  align-items: center;
+.page-title-container {
   background-color: $background-color;
-  height: 48px;
-  @include page-padding-horizontal;
-  @include responsive(640px) {
-    height: 80px;
-  }
-  @include responsive(800px) {
-    height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .page-title {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $max-width;
+    display: flex;
+    align-items: center;
+    background-color: $background-color;
+    height: 48px;
+    @include page-padding-horizontal;
+    @include responsive(640px) {
+      height: 80px;
+    }
+    @include responsive(800px) {
+      height: 100px;
+    }
   }
 }

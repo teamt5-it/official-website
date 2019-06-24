@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-{% include head.html %}
+---
+layout: base
+---
 
-<body>
-    <div class="header-container">
-        {% include header.html %}
-    </div>
-    <div class="main-container">
-        <div class="page-title-container">
-            {% include page-title.html %}
-        </div>
-        <main class="{{ page.layout }}">
-            {{ content }}
-        </main>
-    </div>
-    <div class="footer-container">
-        {% include footer.html %}
-    </div>
-</body>
-
-</html>
+{% include page-title.html %}
+<main class="{{ page.layout }}">
+    {{ content }}
+</main>

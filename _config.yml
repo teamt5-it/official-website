@@ -17,6 +17,12 @@ defaults:
       type: "pages"
     values:
       layout: "position"
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
 
 # Include positions directory
 

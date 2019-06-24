@@ -1,13 +1,14 @@
 @import "base";
-main.position{
-  @include post-page-margin-horizontal;
+main.position {
+  @include post-page-padding-horizontal;
   .meta{
-    display: grid;
-    grid-gap: 10px;
-    grid-auto-columns: min-content;
-    grid-auto-flow: column;
-    .location{
-      color: $primary-color;
-    }
+	  display: flex;
+	  & > *:not(:last-child) {
+		  margin-right: 10px;
+	  }
+	  .location {
+		color: $primary-color;
+		font-weight: $font-weight-medium;
+	  }
   }
 }
