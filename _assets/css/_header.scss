@@ -178,15 +178,15 @@ $navbar-submenu-mobile-background-color: $background-color;
         @include desktop() {
           display: none;
         }
-        .arrow {
+        .navbar-item-arrow {
           position: absolute;
           width: $navbar-item-arrow-container-height/3;
           height: $navbar-item-arrow-container-height/3;
           transform: rotate(-135deg);
 
           border: solid grey;
-          border-radius: 1.5px;
-          border-width: 3px 0 0 3px;
+          border-radius: $navbar-burger-size;
+          border-width: $navbar-burger-size 0 0 $navbar-burger-size;
           &.active {
             position: absolute;
             top: 50%;

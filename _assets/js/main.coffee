@@ -23,8 +23,9 @@ $ ->
 		cur_navbar_submenu_padding_active = $(".navbar-submenu-padding").hasClass('active')
 		if !cur_navbar_submenu_active
 			$(".navbar-submenu").removeClass('active')
+			$(".navbar-item-arrow").removeClass('active')
 
-		$(e.currentTarget).find(".arrow").toggleClass('active')
+		$(e.currentTarget).find(".navbar-item-arrow").toggleClass('active')
 		$(e.currentTarget).children(".navbar-submenu").toggleClass('active')
 
 		if (cur_navbar_submenu_active && cur_navbar_submenu_padding_active) || (!cur_navbar_submenu_active && !cur_navbar_submenu_padding_active)
