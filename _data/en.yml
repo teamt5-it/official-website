@@ -152,7 +152,7 @@ complementary-to-antivirus:
     d: Inspecting memory, file system for unknown threats like just your CSIRT team expert.
     e: Non-residential agent, scan on-demand via task scheduler. Driver-less, minimum performance impact and compatibility issues.
     f: Highlighting potential risky endpoints. Incident Response team can do threat-hunting or clean-up manually.
-    g: High efficiency, only scans suspicious locati\ons and intrusion traces. About 20 minutes per endpoint depending on hardware.
+    g: High efficiency, only scans suspicious locations and intrusion traces. About 20 minutes per endpoint depending on hardware.
   antivirus:
     a: Preventing any kind of malicious program from execution.
     b: Detecting common (non-APT) malware. Such as botnet, worm, banking trojan, or ransomware.

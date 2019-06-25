@@ -5,6 +5,7 @@ $normal-color: #4c433f;
 $primary-color: #d83751;
 $secondary-color: #f6ac19;
 $figcaption-color: #848484;
+$sonar-color: #c71532;
 
 $max-width: 1280px;
 $tablet: 769px;
@@ -27,6 +28,7 @@ $xl-margin-vertical: 30px;
 $font-weight-medium: 500;
 
 $new-height: 60px;
+$arrow-width: 2px;
 
 @mixin page-margin {
   margin: $xs-margin-vertical $xs-margin-horizontal;
@@ -123,7 +125,6 @@ $xl-post-margin-horizontal: 270px;
     margin: 0 $xl-post-margin-horizontal;
   }
 }
-
 
 @mixin post-page-padding-horizontal {
   padding: 0 $xs-post-margin-horizontal;

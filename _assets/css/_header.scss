@@ -5,7 +5,7 @@ $navbar-brand-desktop-height: 62px;
 $navbar-brand-mobile-padding: 0 10px;
 $navbar-brand-logo-height: 30px;
 $navbar-burger-side-length: $navbar-brand-logo-height;
-$navbar-burger-size: 2px;
+$navbar-burger-width: 2px;
 
 $navbar-item-desktop-height: $navbar-brand-desktop-height;
 $navbar-item-desktop-margin: 0 20px;
@@ -85,8 +85,8 @@ $navbar-submenu-mobile-background-color: $background-color;
         display: block;
         width: 18px;
 
-        border-radius: $navbar-burger-size/2;
-        height: $navbar-burger-size;
+        border-radius: $navbar-burger-width/2;
+        height: $navbar-burger-width;
         background-color: grey;
       }
       @for $i from 1 through 3 {
@@ -186,8 +186,8 @@ $navbar-submenu-mobile-background-color: $background-color;
           transform: rotate(-135deg);
 
           border: solid grey;
-          border-radius: $navbar-burger-size;
-          border-width: $navbar-burger-size 0 0 $navbar-burger-size;
+          border-radius: $arrow-width;
+          border-width: $arrow-width 0 0 $arrow-width;
           &.active {
             position: absolute;
             top: 50%;

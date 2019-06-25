@@ -1,70 +1,109 @@
 @import "base";
 $sonar-hero-banner-mobile-height: 300px;
 $sonar-hero-banner-desktop-height: 450px;
-$sonar-hero-banner-background: $primary-color;
+$sonar-hero-banner-background: $sonar-color;
 $sonar-mac-width: 800px;
 $sonar-mac-height: 400px;
 $banner-slogan-height: 34px;
 
 main.threat-sonar {
-  .hero {
-    box-sizing: border-box;
-    align-self: center;
-    width: 100%;
+  .banner-container {
     .banner {
+      box-sizing: border-box;
+      height: 250px;
+      padding: 20px 0;
       display: flex;
       flex-direction: column;
       background: $sonar-hero-banner-background asset_url("sonar_bg_triangle.svg") no-repeat center bottom;
       background-size: 100% auto;
-      @include desktop() {
-        height: $sonar-hero-banner-desktop-height;
+      @include responsive(640px) {
+        height: 300px;
       }
-      .slogan {
+      @include responsive(800px) {
+        height: 350px;
+        padding: 25px 0;
+      }
+      @include responsive(1024px) {
+        height: 450px;
+      }
+      .banner-slogan {
         align-self: flex-start;
         white-space: nowrap;
-        margin: 20px 0px;
-        padding: 3px 60px;
+        height: 24px;
+        padding: 0px 20px;
+        margin-bottom: 25px;
         background-color: $normal-color;
         color: white;
         font-weight: bold;
         font-size: 12px;
+        @include flex-center-align;
         @include responsive(640px) {
+          height: 34px;
           font-size: 18px;
+          margin-bottom: 40px;
         }
         @include responsive(800px) {
           font-size: 24px;
         }
       }
-      .logo {
-        width: 60%;
+      .banner-logo {
+        margin-bottom: 25px;
+        height: 45px;
         align-self: center;
+        @include responsive(640px) {
+          height: 60px;
+          margin-bottom: 40px;
+        }
+        @include responsive(800px) {
+          height: 80px;
+        }
+        @include responsive(1024px) {
+          height: 120px;
+        }
         img {
-          width: 100%;
+          height: 100%;
         }
       }
-      .title {
+      .banner-title {
+        align-self: center;
+        width: 200px;
+        font-size: 16px;
         text-align: center;
         color: white;
+        @include responsive(800px) {
+          font-size: 24px;
+          width: auto;
+        }
       }
     }
     .mac-and-strengths {
       display: flex;
       flex-direction: column;
-      @include desktop() {
+      align-items: center;
+      @include responsive(1024px) {
         display: block;
         position: relative;
       }
 
       .mac {
-        width: 90%;
+        width: 310px;
         position: relative;
         top: -20px;
-        @include desktop() {
-          width: 60%;
+        @include responsive(640px) {
+          width: 520px;
+        }
+        @include responsive(800px) {
+          width: 700px;
+        }
+        @include responsive(1024px) {
+          width: 700px;
           position: absolute;
-          left: 0;
+          left: 30px;
           top: auto;
           bottom: 0;
+        }
+        @include responsive(1280px) {
+          width: 800px;
         }
         img {
           width: 100%;
@@ -75,30 +114,37 @@ main.threat-sonar {
         padding: 25px;
         display: grid;
         grid-gap: 25px;
-        grid-template-rows: repeat(3, 60px);
-        @include desktop() {
-          width: 40%;
+        grid-template-rows: repeat(3, 40px);
+        @include responsive(640px) {
+          grid-template-rows: repeat(3, 60px);
+        }
+        @include responsive(800px) {
+        }
+        @include responsive(1024px) {
+          grid-template-rows: repeat(3, 80px);
           position: relative;
-          left: 60%;
+          left: 700px;
+          width: 330px;
+        }
+        @include responsive(1280px) {
+          left: 870px;
         }
         .strength {
           display: flex;
-          justify-content: flex-start;
           align-items: center;
-          @include desktop() {
-          }
-          .logo {
-            width: 60px;
-            margin-right: 25px;
+          .strength-logo {
+            margin-right: 10px;
             height: 100%;
+            @include responsive(1024px) {
+              margin-right: 15px;
+            }
             img {
               height: 100%;
             }
           }
-          .content {
-            width: 70%;
-            font-size: 16px;
-            @include desktop() {
+          .strength-content {
+            @include responsive(1024px) {
+              width: 230px;
             }
           }
         }
@@ -108,9 +154,11 @@ main.threat-sonar {
 
   .more-strengths {
     .more-strengths-title {
+      line-height: 1.5;
+      font-weight: bolder;
       text-align: center;
     }
-    .strengths {
+    .more-strengths-content {
       padding: 30px;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -120,7 +168,7 @@ main.threat-sonar {
       @include desktop() {
         grid-template-columns: repeat(5, 1fr);
       }
-      .strength {
+      .more-strength {
         display: grid;
         grid-template-columns: auto 1fr;
         grid-gap: 10px;
@@ -129,7 +177,7 @@ main.threat-sonar {
           grid-template-rows: min-content auto;
           justify-items: center;
         }
-        .logo {
+        .more-strength-logo {
           width: 60px;
           height: 60px;
           @include responsive(640px) {
@@ -149,8 +197,8 @@ main.threat-sonar {
             height: 100%;
           }
         }
-        .content {
-          .title {
+        .more-strength-content {
+          .more-strength-title {
             color: $primary-color;
             @include desktop() {
               text-align: center;
@@ -158,9 +206,19 @@ main.threat-sonar {
           }
           ul {
             li {
-              font-size: 14px;
+              padding-left: 1em;
+              position: relative;
               @include desktop() {
+                padding-left: 0;
                 text-align: center;
+              }
+            }
+            li::before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              @include desktop() {
+                position: static;
               }
             }
           }
@@ -170,7 +228,7 @@ main.threat-sonar {
   }
   .assessment-reports {
     box-sizing: border-box;
-    padding: 30px;
+    padding: 30px 25px;
     align-self: center;
     width: 100%;
     background-color: $background-color;
@@ -181,9 +239,24 @@ main.threat-sonar {
       grid-template-columns: repeat(2, 1fr);
       padding: 60px 80px;
     }
-    .image {
+    .assessment-reports-image {
       img {
         width: 100%;
+      }
+    }
+    .assessment-reports-content {
+      ul {
+        li {
+          line-height: 1.5;
+          padding-left: 1em;
+          margin: 1em 0;
+          position: relative;
+        }
+        li::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
       }
     }
   }
@@ -193,7 +266,7 @@ main.threat-sonar {
     width: 100%;
     display: grid;
     grid-gap: 20px;
-    padding: 20px 10px;
+    padding: 30px 25px;
     grid-template-columns: 1fr;
     @include responsive(640px) {
       grid-template-columns: 1fr 340px;
@@ -211,9 +284,18 @@ main.threat-sonar {
       grid-template-columns: 1fr 650px;
       padding: 60px 100px;
     }
-    .title-and-content {
-      display: flex;
-      flex-direction: column;
+    .auto-investigation-title-and-content {
+      display: grid;
+      grid-auto-rows: auto;
+      align-content: center;
+      grid-gap: 10px;
+
+      @include responsive(640px) {
+        grid-gap: 25px;
+      }
+      .auto-investigation-content {
+        line-height: 1.5;
+      }
     }
     .youtube {
       height: 170px;
@@ -236,11 +318,20 @@ main.threat-sonar {
     }
   }
   .complementary-to-antivirus {
+    padding: 30px 0;
+    margin: 60px 0;
     background-color: $background-color;
-    .title {
-      text-align: center;
+    @include responsive(1024px) {
+      padding: 60px 0;
     }
-    .threat-sonar-and-antivirus {
+    .complementary-to-antivirus-title {
+      text-align: center;
+      margin-bottom: 20px;
+      @include responsive(640px) {
+        margin-bottom: 30px;
+      }
+    }
+    .complementaries {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -249,7 +340,7 @@ main.threat-sonar {
         justify-content: center;
         align-items: stretch;
       }
-      .threat-sonar {
+      .complementary {
         margin: 10px;
         box-sizing: border-box;
         width: 300px;
@@ -257,44 +348,49 @@ main.threat-sonar {
         @include responsive(640px) {
           width: 420px;
         }
-        .title {
-          box-sizing: border-box;
-          height: 60px;
+        .complementary-title {
           padding: 10px;
-          background-color: $primary-color;
-          .logo {
+          .complementary-logo {
             height: 40px;
+            @include flex-center-align;
             img {
               height: 100%;
             }
           }
         }
-        .content {
-          margin: 0 40px;
+
+        .complementary-content {
+          padding: 10px 20px;
+          ul {
+            li {
+              line-height: 1.5;
+              padding-left: 1em;
+              margin: 1em 0;
+              position: relative;
+            }
+            li::before {
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+      .threat-sonar {
+        .complementary-title {
+          background-color: $sonar-color;
         }
       }
       .antivirus {
-        margin: 10px;
-        width: 300px;
-        box-sizing: border-box;
-        background-color: white;
-        @include responsive(640px) {
-          width: 420px;
-        }
-        .title {
-          box-sizing: border-box;
-          height: 60px;
-          padding: 10px;
+        .complementary-title {
           background-color: $normal-color;
-          .logo {
-            height: 40px;
-            img {
-              height: 100%;
+        }
+        .complementary-content {
+          ul {
+            li::before {
+              color: $normal-color;
             }
           }
-        }
-        .content {
-          margin: 0 40px;
         }
       }
     }
