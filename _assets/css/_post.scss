@@ -4,8 +4,13 @@ main.post {
   @include post-page-padding-horizontal;
   .meta {
     display: flex;
+    align-items: center;
     & > *:not(:last-child) {
       margin-right: 10px;
+    }
+    .date{
+      font-size: 14px;
+      color: $primary-color;
     }
   }
 }

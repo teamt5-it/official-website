@@ -151,8 +151,7 @@ a {
 
 .title-xl {
   font-size: 20px;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  line-height: 1.5;
   @include responsive(320px) {
     font-size: 24px;
   }
@@ -223,4 +222,9 @@ a {
   @include responsive(1024px) {
     font-size: 40px;
   }
+}
+
+.page-title{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }

@@ -12,8 +12,8 @@ layout: base
             </span>
             {% endfor %}
         </div>
-        <div class="location">
-            {{ page.location }}
+        <div class="date">
+            {{ page.date | date: "%Y-%m-%d" }}
         </div>
     </div>
     <div class="content">

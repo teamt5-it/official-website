@@ -10,13 +10,6 @@
     display: flex;
     align-items: center;
     background-color: $background-color;
-    height: 48px;
     @include page-padding-horizontal;
-    @include responsive(640px) {
-      height: 80px;
-    }
-    @include responsive(800px) {
-      height: 100px;
-    }
   }
 }
