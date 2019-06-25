@@ -3,6 +3,7 @@
 main.post {
   @include post-page-padding-horizontal;
   .meta {
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     & > *:not(:last-child) {
@@ -11,6 +12,11 @@ main.post {
     .date{
       font-size: 14px;
       color: $primary-color;
+    }
+  }
+  .post-banner{
+    img{
+      width: 100%;
     }
   }
 }
