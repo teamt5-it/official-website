@@ -39,12 +39,12 @@ footer:
 
 contact-us-form:
   title: Contact Us
-  first_name: First name
-  last_name: Last name
+  first-name: First name
+  last-name: Last name
   email: Email
-  phone_number: Phone Number
-  company_name: Company Name
-  job_title: Job title
+  phone-number: Phone Number
+  company-name: Company Name
+  job-title: Job title
   country: Country
   submit: Submit
 
@@ -53,18 +53,18 @@ contact-us-form:
 
 position-form:
   title: I'm interested
-  chinese_name: Chinese Name
-  english_name: English Name
+  chinese-name: Chinese Name
+  english-name: English Name
   email: Email
-  phone_number: Phone Number
-  position_sought: Position Sought
-  how_do_you_know_our_company: How Do You Know Our Company?
-  available_start_date: Available Start Date
-  currently_employed_company: Currently Employed Company
-  job_expectation: Job Expectation
-  remark_or_anything_you_want_to_tell_us: Remark or Anything You Want To Tell Us
-  education_resume_url: Education, Resume URL
-  portfolio_url: Portfolio URL
+  phone-number: Phone Number
+  position-sought: Position Sought
+  how-do-you-know-our-company: How Do You Know Our Company?
+  available-start-date: Available Start Date
+  currently-employed-company: Currently Employed Company
+  job-expectation: Job Expectation
+  remark-or-anything-you-want-to-tell-us: Remark or Anything You Want To Tell Us
+  education-resume-url: Education, Resume URL
+  portfolio-url: Portfolio URL
   submit: Submit
 
 # index

@@ -32,14 +32,25 @@ $ ->
 			$(".navbar-submenu-padding").toggleClass('active')
 
 
-	# form
+	# contact-us-form
 	$('textarea').autoResize();
 	$("#contact-us-form-submit").click (e) ->
 		e.preventDefault();
 		data = $("#contact-us-form").serializeJSON()
-		console.log(data)
 		$.get
 			url: "https://script.google.com/macros/s/AKfycbx533dQP94GOW3F0S2K3GEGStL-Vzr8bwFM1VQyAR4tnmHBg_Py/exec"
+			data: data
+			dataType: "JSON"
+			success: (response) ->
+				console.log(response)
+				alert('succeed')
+
+	# form
+	$("#position-form-submit").click (e) ->
+		e.preventDefault();
+		data = $("#position-form").serializeJSON()
+		$.get
+			url: "https://script.google.com/macros/s/AKfycbxzOuA3U8N30yy711X_4th_2ty4WqBiepxjcPAauda1hp3cM9I/exec"
 			data: data
 			dataType: "JSON"
 			success: (response) ->
