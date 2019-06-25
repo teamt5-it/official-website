@@ -1,11 +1,24 @@
 ---
-title:  "12314516161sfdsdfgsdfgsgfdsgsfdgsfdg6416"
-date:   2019-05-20 11:54:41 +0800
+title: "Venezuela crisis: White House 'will respond to threats against diplomats'"
+lang: en
+date: '2019-05-20 11:54:41 +0800'
 categories:
-  - newsroom
+- newsroom
 tags:
-  - technical
-  - case studies
+- technical
+- case studies
 locale: en
 ---
-news1
+
+TeamT5 CEO TT Tsai is honored to be the one of the key note speaker on the topic “Respond Before Incident, intelligence-driven proactive threat hunting case-study from Taiwan” at Australia Cyber Conference
+
+
+
+
+Time:       2019 7th-9th Oct
+Location:       Melbourne, Australia
+Web site:   https://cyberconference.com.au/
+
+Organization:   The Australian Information Security Association (AISA) is the premier industry body for information security professionals in Australia. As a nationally recognized not-for-profit organization, AISA champions the development of a robust information security sector by building the capacity of professionals in Australia and advancing the cyber security and safety of the Australian public, as well as businesses and government.
+![](/assets/images/australian-cyber-security-centre.png)
+![](https://i.imgur.com/ezlsOup.jpg)
