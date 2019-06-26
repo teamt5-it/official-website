@@ -12,6 +12,11 @@ html {
   }
 }
 
+textarea,
+input {
+  -webkit-appearance: none;
+}
+
 h1 {
   font-size: 20px;
 }
@@ -88,9 +93,9 @@ ul {
   list-style: none;
   li::before {
     font-family: initial;
-    content: "\25cf";
+    content: "\2022";
     color: $primary-color;
-    font-weight: bold;
+    font-weight: 1000;
     display: inline-block;
     width: 1em;
   }
@@ -152,6 +157,8 @@ a {
 .title-xl {
   font-size: 20px;
   line-height: 1.5;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   @include responsive(320px) {
     font-size: 24px;
   }
@@ -165,8 +172,8 @@ a {
 
 .title-lg {
   font-size: 16px;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   @include responsive(640px) {
     font-size: 20px;
   }
@@ -222,9 +229,4 @@ a {
   @include responsive(1024px) {
     font-size: 40px;
   }
-}
-
-.page-title{
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
 }
