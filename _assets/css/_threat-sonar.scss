@@ -44,6 +44,7 @@ main.threat-sonar {
         }
         @include responsive(800px) {
           font-size: 24px;
+          padding: 0px 60px;
         }
       }
       .banner-logo {
@@ -164,22 +165,22 @@ main.threat-sonar {
     grid-auto-rows: auto;
     grid-gap: 10px;
     padding: 20px;
-    @include responsive(640px){
+    @include responsive(640px) {
       grid-gap: 20px;
       padding: 30px;
     }
-    @include responsive(800px){
+    @include responsive(800px) {
       grid-gap: 20px;
       padding: 40px 75px;
     }
-    @include responsive(1024px){
+    @include responsive(1024px) {
       grid-gap: 50px;
       padding: 40px;
     }
-    @include responsive(1280px){
+    @include responsive(1280px) {
       padding: 40px 70px;
     }
-    @include responsive(1440px){
+    @include responsive(1440px) {
       padding: 40px 130px;
     }
     .more-strengths-title {
@@ -226,7 +227,7 @@ main.threat-sonar {
             height: 100%;
           }
         }
-        .more-strength-content {
+        .more-strength-title-and-content {
           line-height: 1.5;
           .more-strength-title {
             color: $primary-color;
@@ -234,21 +235,19 @@ main.threat-sonar {
               text-align: center;
             }
           }
-          ul {
-            li {
-              padding-left: 1em;
-              position: relative;
-              @include desktop() {
-                padding-left: 0;
-                text-align: center;
+          .more-strength-content {
+            ul {
+              li {
+                margin: 0;
+                @include desktop() {
+                  padding-left: 0;
+                  text-align: center;
+                }
               }
-            }
-            li::before {
-              position: absolute;
-              top: 0;
-              left: 0;
-              @include desktop() {
-                position: static;
+              li::before {
+                @include desktop() {
+                  position: static;
+                }
               }
             }
           }
@@ -257,35 +256,55 @@ main.threat-sonar {
     }
   }
   .assessment-reports {
-    box-sizing: border-box;
     padding: 30px 25px;
-    align-self: center;
-    width: 100%;
     background-color: $background-color;
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 40px;
-    @include desktop() {
+    grid-gap: 40px;
+    @include responsive(640px) {
       grid-template-columns: repeat(2, 1fr);
+    }
+    @include responsive(800px) {
+      padding: 40px 30px;
+    }
+    @include responsive(1024px) {
+      padding: 60px 40px;
+    }
+    @include responsive(1280px) {
       padding: 60px 80px;
     }
-    .assessment-reports-image {
+    .assessment-reports-screenshot {
       img {
         width: 100%;
       }
     }
-    .assessment-reports-content {
-      ul {
-        li {
-          line-height: 1.5;
-          padding-left: 1em;
-          margin: 1em 0;
-          position: relative;
+    .assessment-reports-title-and-content {
+      display: grid;
+      grid-auto-rows: auto;
+      grid-gap: 10px;
+      align-content: center;
+      @include responsive(640px) {
+        grid-gap: 20px;
+      }
+      @include responsive(800px) {
+        grid-gap: 30px;
+      }
+      .intelligence-report-subscription-content {
+        font-size: 12px;
+        @include responsive(640px) {
+          font-size: 16px;
         }
-        li::before {
-          position: absolute;
-          top: 0;
-          left: 0;
+        @include responsive(800px) {
+          font-size: 20px;
+        }
+        ul {
+          li {
+            margin: 1em 0;
+          }
+          li::before {
+            color: $secondary-color;
+          }
         }
       }
     }
@@ -348,7 +367,13 @@ main.threat-sonar {
     }
   }
   .complementary-to-antivirus {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
     padding: 30px 0;
+    @include responsive(640px) {
+      grid-gap: 30px;
+    }
     background-color: $background-color;
     @include responsive(1024px) {
       padding: 60px 0;
@@ -356,10 +381,6 @@ main.threat-sonar {
     .complementary-to-antivirus-title {
       padding: 0 30px;
       text-align: center;
-      margin-bottom: 20px;
-      @include responsive(640px) {
-        margin-bottom: 30px;
-      }
     }
     .complementaries {
       display: flex;
@@ -391,19 +412,6 @@ main.threat-sonar {
 
         .complementary-content {
           padding: 10px 20px;
-          ul {
-            li {
-              line-height: 1.5;
-              padding-left: 1em;
-              margin: 1em 0;
-              position: relative;
-            }
-            li::before {
-              position: absolute;
-              top: 0;
-              left: 0;
-            }
-          }
         }
       }
       .threat-sonar {

@@ -1,7 +1,4 @@
-$button-background-color: #d83751;
-$button-hover-background-color: #e88797;
-$button-click-background-color: #a82a3e;
-$button-color: white;
+@import "base";
 
 html {
   font-family: "Noto Sans TC", sans-serif;
@@ -12,92 +9,149 @@ html {
   }
 }
 
+// reset style set by webkit
 textarea,
 input {
   -webkit-appearance: none;
 }
 
-h1 {
-  font-size: 20px;
-}
-h2 {
-  font-size: 18px;
-}
-h3 {
-  font-size: 16px;
-}
-h4 {
-  font-size: 14px;
-}
-h5 {
-  font-size: 12px;
-}
-h6 {
-  font-size: 10px;
-}
-p {
-  font-size: 12px;
-}
-img {
+.content {
+  line-height: 1.5;
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+  p {
+    font-size: 12px;
+  }
+
   .is-small {
     width: 260px;
   }
   .is-large {
     width: 280px;
   }
-}
-code {
-  width: 280px;
-}
-
-@include desktop() {
-  h1 {
-    font-size: 32px;
-  }
-  h2 {
-    font-size: 28px;
-  }
-  h3 {
-    font-size: 24px;
-  }
-  h4 {
-    font-size: 20px;
-  }
-  h5 {
-    font-size: 18px;
-  }
-  h6 {
-    font-size: 16px;
-  }
-  p {
-    font-size: 16px;
-  }
-
   img {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    max-width: 100%;
+    & + em {
+      display: block;
+      margin: 0 auto;
+      font-size: 12px;
+      color: $figcaption-color;
+    }
+  }
+
+  pre, code{
+    overflow: auto;
+    background-color: $code-background-color;
+    border: 1px solid $code-border-color;
+    border-radius: 4px;
+  }
+  pre{
+    padding: 10px 20px;
+  }
+
+  blockquote {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+    padding-block-start: 1em;
+    padding-block-end: 1em;
+    padding-inline-start: 1em;
+    padding-inline-end: 1em;
+    border-left: 6px solid $primary-color;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: 1em 0;
+      padding-left: 1em;
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: initial;
+        content: $list-bullet;
+        color: $primary-color;
+        font-weight: 1000;
+        width: 1em;
+        display: inline-block;
+      }
+    }
+  }
+
+  ol {
+    margin: 0;
+    padding: 1em;
+    li {
+      margin: 1em 0;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    color: $primary-color;
+  }
+
+  @include desktop() {
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 18px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 16px;
+    }
+
     .is-small {
       width: 650px;
     }
     .is-large {
       width: 740px;
     }
-  }
-  code {
-    width: 650px;
-  }
-}
 
-ul {
-  margin: 0;
-  padding: 0;
-  text-indent: 0;
-  list-style: none;
-  li::before {
-    font-family: initial;
-    content: "\2022";
-    color: $primary-color;
-    font-weight: 1000;
-    display: inline-block;
-    width: 1em;
+    img {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -120,14 +174,6 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.primary-color {
-  color: $primary-color;
-}
-
-.bold {
-  font-weight: bold;
 }
 
 .tags {
@@ -155,14 +201,14 @@ a {
 }
 
 .title-xl {
-  font-size: 20px;
   line-height: 1.5;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  font-size: 20px;
   @include responsive(320px) {
     font-size: 24px;
   }
-  @include desktop() {
+  @include responsive(800px) {
     font-size: 30px;
   }
   @include responsive(1024px) {
@@ -228,5 +274,22 @@ a {
   }
   @include responsive(1024px) {
     font-size: 40px;
+  }
+}
+
+.post-meta {
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+  & > *:not(:last-child) {
+    margin-right: 10px;
+  }
+  .date {
+    font-size: 14px;
+    color: $primary-color;
+  }
+  .location {
+    color: $primary-color;
+    font-weight: $font-weight-medium;
   }
 }

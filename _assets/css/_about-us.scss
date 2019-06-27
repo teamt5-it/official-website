@@ -61,34 +61,33 @@ main.about-us {
 				grid-gap: 0px;
 				padding: 0px;
 			}
-			.profile-picture {
+			.teamt5-leadership-picture {
 				box-sizing: border-box;
 				position: relative;
 				width: 120px;
+				height: 120px;
 				@include responsive(640px) {
 					width: 160px;
+					height: 160px;
 				}
 				@include responsive(800px) {
 					width: 300px;
+					height: 300px;
 				}
 				@include responsive(1024px) {
 					width: 340px;
+					height: 340px;
 				}
 				@include responsive(1280px) {
 					width: 400px;
-				}
-				&:after {
-					content: "";
-					display: block;
-					padding-bottom: 100%;
+					height: 400px;
 				}
 				img {
-					position: absolute;
 					width: 100%;
 					height: 100%;
 				}
 			}
-			.content {
+			.teamt5-leadership-description {
 				@include responsive(1024px) {
 					padding: 30px;
 				}

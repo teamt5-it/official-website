@@ -6,7 +6,7 @@ main.careers {
     flex-direction: column;
     .banner-title {
       align-self: flex-start;
-      @include page-margin;
+      @include page-margin-horizontal;
     }
     .banner-image {
       overflow: hidden;
@@ -54,7 +54,7 @@ main.careers {
   .positions {
     display: flex;
     flex-direction: column;
-    @include page-margin;
+    @include page-margin-horizontal;
     .positions-title {
       align-self: flex-start;
     }

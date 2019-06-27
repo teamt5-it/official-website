@@ -18,9 +18,9 @@ main.partner {
           grid-template-columns: repeat(2,min-content);
         }
         .logo {
-          background: black;
           width: 200px;
           height: 200px;
+          @include flex-center-align;
         }
         .name-and-contact-information{
           display: grid;

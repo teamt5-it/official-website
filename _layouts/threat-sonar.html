@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div class="banner-container">
     <div class="banner">
         <div class="banner-slogan">
@@ -22,25 +23,25 @@ layout: default
                 <div class="strength-logo">
                     {% asset powerful.svg %}
                 </div>
-                <p class="strength-content">
+                <div class="strength-content">
                     {% t strengths.powerful %}
-                </p>
+                </div>
             </div>
             <div class="strength">
                 <div class="strength-logo">
                     {% asset automate.svg %}
                 </div>
-                <p class="strength-content">
+                <div class="strength-content">
                     {% t strengths.automate %}
-                </p>
+                </div>
             </div>
             <div class="strength">
                 <div class="strength-logo">
                     {% asset flexible.svg %}
                 </div>
-                <p class="strength-content">
+                <div class="strength-content">
                     {% t strengths.flexible %}
-                </p>
+                </div>
             </div>
         </div>
     </div>
@@ -54,81 +55,101 @@ layout: default
             <div class="more-strength-logo">
                 {% asset elegant.svg %}
             </div>
-            <div class="more-strength-content">
+            <div class="more-strength-title-and-content">
                 <div class="more-strength-title title"> {% t more-strengths.strengths.elegant.title %}
                 </div>
-                <ul>
-                    <li>{% t more-strengths.strengths.elegant.a %}</li>
-                    <li>{% t more-strengths.strengths.elegant.b %}</li>
-                    <li>{% t more-strengths.strengths.elegant.c %}</li>
-                </ul>
+                <div class="more-strength-content content">
+                    <ul>
+                        <li>{% t more-strengths.strengths.elegant.a %}</li>
+                        <li>{% t more-strengths.strengths.elegant.b %}</li>
+                        <li>{% t more-strengths.strengths.elegant.c %}</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="more-strength">
             <div class="more-strength-logo">
                 {% asset premise.svg %}
             </div>
-            <div class="more-strength-content">
-                <div class="more-strength-title title"> {% t more-strengths.strengths.premise.title %} </div>
-                <ul>
-                    <li>{% t more-strengths.strengths.premise.a %}</li>
-                    <li>{% t more-strengths.strengths.premise.b %}</li>
-                </ul>
+            <div class="more-strength-title-and-content">
+                <div class="more-strength-title title">
+                    {% t more-strengths.strengths.premise.title %}
+                </div>
+                <div class="more-strength-content content">
+                    <ul>
+                        <li>{% t more-strengths.strengths.premise.a %}</li>
+                        <li>{% t more-strengths.strengths.premise.b %}</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="more-strength">
             <div class="more-strength-logo">
                 {% asset threat_hunting.svg %}
             </div>
-            <div class="more-strength-content">
-                <div class="more-strength-title title"> {% t more-strengths.strengths.threat_hunting.title %} </div>
-                <ul>
-                    <li>{% t more-strengths.strengths.threat_hunting.a %} </li>
-                    <li>{% t more-strengths.strengths.threat_hunting.b %} </li>
-                    <li>{% t more-strengths.strengths.threat_hunting.c %} </li>
-                </ul>
+            <div class="more-strength-title-and-content">
+                <div class="more-strength-title title">
+                    {% t more-strengths.strengths.threat_hunting.title %}
+                </div>
+                <div class="more-strength-content content">
+                    <ul>
+                        <li>{% t more-strengths.strengths.threat_hunting.a %} </li>
+                        <li>{% t more-strengths.strengths.threat_hunting.b %} </li>
+                        <li>{% t more-strengths.strengths.threat_hunting.c %} </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="more-strength">
             <div class="more-strength-logo">
                 {% asset auto-investigation.svg class=logo %}
             </div>
-            <div class="more-strength-content">
-                <div class="more-strength-title title">{% t more-strengths.strengths.auto-investigation.title %} </div>
-                <ul>
-                    <li>{% t more-strengths.strengths.auto-investigation.a %}</li>
-                    <li>{% t more-strengths.strengths.auto-investigation.b %}</li>
-                </ul>
+            <div class="more-strength-title-and-content">
+                <div class="more-strength-title title">
+                    {% t more-strengths.strengths.auto-investigation.title %}
+                </div>
+                <div class="more-strength-content content">
+                    <ul>
+                        <li>{% t more-strengths.strengths.auto-investigation.a %}</li>
+                        <li>{% t more-strengths.strengths.auto-investigation.b %}</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="more-strength">
             <div class="more-strength-logo">
                 {% asset orchestration.svg class=logo %}
             </div>
-            <div class="more-strength-content">
-                <div class="more-strength-title title"> {% t more-strengths.strengths.orchestration.title %} </div>
-                <ul>
-                    <li>{% t more-strengths.strengths.orchestration.a %}</li>
-                    <li>{% t more-strengths.strengths.orchestration.b %}</li>
-                </ul>
+            <div class="more-strength-title-and-content">
+                <div class="more-strength-title title">
+                    {% t more-strengths.strengths.orchestration.title %}
+                </div>
+                <div class="more-strength-content content">
+                    <ul>
+                        <li>{% t more-strengths.strengths.orchestration.a %}</li>
+                        <li>{% t more-strengths.strengths.orchestration.b %}</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <div class="assessment-reports">
-    <div class="assessment-reports-image">
+    <div class="assessment-reports-screenshot">
         {% asset sonar_assessment_reports.png %}
     </div>
-    <div class="assessment-reports-content">
+    <div class="assessment-reports-title-and-content">
         <div class="assessment-reports-title title sonar-title">
             {% t assessment-reports.title %}
         </div>
-        <ul>
-            <li>{% t assessment-reports.a %}</li>
-            <li>{% t assessment-reports.b %}</li>
-            <li>{% t assessment-reports.c %}</li>
-            <li>{% t assessment-reports.d %}</li>
-        </ul>
+        <div class="assessment-reports-content content">
+            <ul>
+                <li>{% t assessment-reports.a %}</li>
+                <li>{% t assessment-reports.b %}</li>
+                <li>{% t assessment-reports.c %}</li>
+                <li>{% t assessment-reports.d %}</li>
+            </ul>
+        </div>
     </div>
 </div>
 <div class="auto-investigation">
@@ -136,7 +157,7 @@ layout: default
         <div class="auto-investigation-title title sonar-title">
             {% t auto-investigation.title %}
         </div>
-        <div class="auto-investigation-content">
+        <div class="auto-investigation-content content">
             {% t auto-investigation.content %}
         </div>
     </div>
@@ -156,7 +177,7 @@ layout: default
                     {% asset sonar_logo_reverse.svg %}
                 </div>
             </div>
-            <div class="complementary-content">
+            <div class="complementary-content content">
                 <ul>
                     <li>{% t complementary-to-antivirus.threat-sonar.a %}</li>
                     <li>{% t complementary-to-antivirus.threat-sonar.b %}</li>
@@ -174,7 +195,7 @@ layout: default
                     {% asset antivirus.svg %}
                 </div>
             </div>
-            <div class="complementary-content">
+            <div class="complementary-content content">
                 <ul>
                     <li>{% t complementary-to-antivirus.antivirus.a %}</li>
                     <li>{% t complementary-to-antivirus.antivirus.b %}</li>

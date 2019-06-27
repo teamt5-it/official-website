@@ -131,41 +131,57 @@ sonar:
         a: SIEM Integration
         b: HTTP Restful API
 
-assessment-reports:
-  title: ThreatSonar Assessment Reports
-  a: Organizational incident timeline.
-  b: Memory, process, network connections, registry, eventlog, task scheduler, MBR, WMI, etc.
-  c: Expand and pivot to find out hidden infections with similar TTP (tactics techniques procedures)
-  d: Highlighting unique executables, memory attributes, abused system tools or rarely-seen digital certificates.
+  assessment-reports:
+    title: ThreatSonar Assessment Reports
+    a: Organizational incident timeline.
+    b: Memory, process, network connections, registry, eventlog, task scheduler, MBR, WMI, etc.
+    c: Expand and pivot to find out hidden infections with similar TTP (tactics techniques procedures)
+    d: Highlighting unique executables, memory attributes, abused system tools or rarely-seen digital certificates.
 
-auto-investigation:
-  title: ThreatSonar Auto-investigation
-  content: >
-    Discovering related infection origins,
-    lateral-movement traces and data exfiltration through graph visualization
-complementary-to-antivirus:
-  title: ThreatSonar is Complementary to Antivirus
-  threat-sonar:
-    a: Performing compromise assessment on APT (Advanced Persistent Threat) risks.
-    b: Detecting malicious backdoor, hacking tools, abnormal system configurations.
-    c: Mixed dynamic + static engine, built-in indicators + external threat intelligence.
-    d: Inspecting memory, file system for unknown threats like just your CSIRT team expert.
-    e: Non-residential agent, scan on-demand via task scheduler. Driver-less, minimum performance impact and compatibility issues.
-    f: Highlighting potential risky endpoints. Incident Response team can do threat-hunting or clean-up manually.
-    g: High efficiency, only scans suspicious locations and intrusion traces. About 20 minutes per endpoint depending on hardware.
-  antivirus:
-    a: Preventing any kind of malicious program from execution.
-    b: Detecting common (non-APT) malware. Such as botnet, worm, banking trojan, or ransomware.
-    c: Relying on signature matching which is easy to bypass. Can only detect widely spread known malware.
-    d: Unable to triage grey-area risky programs such as abused legitimate VPN tools or new threats.
-    e: Residential agent with kernel-mode driver hook often slowing down system performance or causing compatibility issues.
-    f: Can block or quarantine infected files, but usually not able to clean-up hidden backdoor automatically.
-    g: Full disk scanning always takes up to several hours
+  auto-investigation:
+    title: ThreatSonar Auto-investigation
+    content: >
+      Discovering related infection origins,
+      lateral-movement traces and data exfiltration through graph visualization
+  complementary-to-antivirus:
+    title: ThreatSonar is Complementary to Antivirus
+    threat-sonar:
+      a: Performing compromise assessment on APT (Advanced Persistent Threat) risks.
+      b: Detecting malicious backdoor, hacking tools, abnormal system configurations.
+      c: Mixed dynamic + static engine, built-in indicators + external threat intelligence.
+      d: Inspecting memory, file system for unknown threats like just your CSIRT team expert.
+      e: Non-residential agent, scan on-demand via task scheduler. Driver-less, minimum performance impact and compatibility issues.
+      f: Highlighting potential risky endpoints. Incident Response team can do threat-hunting or clean-up manually.
+      g: High efficiency, only scans suspicious locations and intrusion traces. About 20 minutes per endpoint depending on hardware.
+    antivirus:
+      a: Preventing any kind of malicious program from execution.
+      b: Detecting common (non-APT) malware. Such as botnet, worm, banking trojan, or ransomware.
+      c: Relying on signature matching which is easy to bypass. Can only detect widely spread known malware.
+      d: Unable to triage grey-area risky programs such as abused legitimate VPN tools or new threats.
+      e: Residential agent with kernel-mode driver hook often slowing down system performance or causing compatibility issues.
+      f: Can block or quarantine infected files, but usually not able to clean-up hidden backdoor automatically.
+      g: Full disk scanning always takes up to several hours
 
 
 # vision
 vision:
-  sample_analysis:
+  banner:
+    slogan: KNOW YOUR ENEMIES
+    title: A Portal for cyberspace peacemakers
+  strengths:
+    title: A cyber threat intelligence platform
+    a: Discover and Identify potential threats
+    b: Know the adversary
+    c: Increase situational awareness
+    d: Turn passive to proactive
+  intelligence-report-subscription:
+    title: Intelligence Reports subscription
+    a: Malware
+    b: Incident
+    c: Advanced Campaign Report
+    d: DDW information
+    e: OSINT collection
+  sample-analysis:
     title: Sample analysis
   malicious_indicator_collection: Malicious indicator collection
   linkage_discovery: Linkage discovery

@@ -3,82 +3,213 @@ $sonar-hero-banner-mobile-height: 300px;
 $sonar-hero-banner-desktop-height: 450px;
 $sonar-mac-width: 800px;
 $sonar-mac-height: 400px;
-$strength-grid-gap: 10px;
 
 main.threat-vision {
-  .hero {
-    align-self: center;
-    width: 100%;
+  overflow: hidden;
+  .banner-container {
     .banner {
+      box-sizing: border-box;
+      height: 250px;
+      padding: 20px 0;
       display: flex;
       flex-direction: column;
-      height: 60%vw;
+
       background: $secondary-color asset_url("vision_bg_circle.svg") no-repeat center bottom;
       background-size: 100% auto;
-      @include desktop() {
-        height: $sonar-hero-banner-desktop-height;
+      @include responsive(640px) {
+        height: 300px;
       }
-      .slogan {
-        width: 40%;
+      @include responsive(800px) {
+        height: 350px;
+        padding: 25px 0;
+      }
+      @include responsive(1024px) {
+        height: 450px;
+      }
+      .banner-slogan {
+        align-self: flex-start;
+        white-space: nowrap;
+        height: 24px;
+        padding: 0px 20px;
+        margin-bottom: 25px;
         background-color: $normal-color;
         color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-weight: bold;
-      }
-      .logo {
-        width: 60%;
-        align-self: center;
-        img {
-          width: 100%;
+        font-size: 12px;
+        @include flex-center-align;
+        @include responsive(640px) {
+          height: 34px;
+          font-size: 18px;
+          margin-bottom: 40px;
+        }
+        @include responsive(800px) {
+          font-size: 24px;
+          padding: 0px 60px;
         }
       }
-      .title {
+      .banner-logo {
+        margin-bottom: 25px;
+        height: 45px;
+        align-self: center;
+        @include responsive(640px) {
+          height: 60px;
+          margin-bottom: 40px;
+        }
+        @include responsive(800px) {
+          height: 80px;
+        }
+        @include responsive(1024px) {
+          height: 120px;
+        }
+        img {
+          height: 100%;
+        }
+      }
+      .banner-title {
+        align-self: center;
+        width: 200px;
+        font-size: 16px;
         text-align: center;
         color: white;
-      }
-    }
-    .strengths-container {
-      .title {
-        text-align: center;
-        font-size: 38px;
-      }
-      .strengths {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        @include desktop() {
-          grid-template-columns: repeat(4, 1fr);
-        }
-        .strength {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          @include desktop() {
-            flex-direction: column;
-          }
-          .title {
-            text-align: center;
-          }
+        @include responsive(800px) {
+          font-size: 24px;
+          width: auto;
         }
       }
     }
-    .intelligence-report-subscription {
-      padding: 5%;
+  }
+  .strengths-container {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @include page-margin-horizontal;
+    @include responsive(640px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      grid-gap: 20px;
+    }
+    @include responsive(800px) {
+      grid-gap: 40px;
+    }
+    @include responsive(1024px) {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      grid-gap: 50px;
+    }
+    .strengths-title {
+      line-height: 1.5;
+      font-weight: bolder;
+      text-align: center;
+    }
+    .strengths {
       display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 5%;
+      grid-template-rows: repeat(1, 1fr);
+      grid-gap: 10px;
       @include responsive(640px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 50px;
       }
-      .screenshot {
-        img {
-          width: 100%;
+      @include responsive(800px) {
+        grid-gap: 75px;
+      }
+      @include responsive(1280px) {
+        grid-gap: 160px;
+      }
+      .strength {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: start;
+        align-items: center;
+        grid-gap: 10px;
+        @include responsive(640px) {
+          grid-gap: 20px;
+          grid-auto-flow: row;
+          grid-template-rows: min-content auto;
+          align-items: stretch;
+          justify-items: center;
+        }
+        .strength-logo {
+          width: 60px;
+          height: 60px;
+          @include responsive(640px) {
+            width: 100px;
+            height: 100px;
+          }
+          @include responsive(1024px) {
+            width: 140px;
+            height: 140px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .strength-title {
+          font-size: 12px;
+          font-size: 16px;
+          @include responsive(640px) {
+            text-align: center;
+            font-size: 16px;
+          }
+          @include responsive(1024px) {
+            font-size: 20px;
+          }
         }
       }
-      .description {
-        padding: 10%;
+    }
+  }
+  .intelligence-report-subscription {
+    background-color: $background-color;
+    padding: 20px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    @include responsive(640px) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 30px;
+    }
+    @include responsive(800px) {
+      padding: 50px 40px;
+      grid-gap: 40px;
+    }
+    @include responsive(1024px) {
+      padding: 100px 40px;
+    }
+    @include responsive(1280px) {
+      padding: 100px 80px;
+      grid-gap: 120px;
+    }
+    .intelligence-report-subscription-screenshot {
+      img {
+        width: 100%;
+      }
+    }
+    .intelligence-report-subscription-title-and-content {
+      display: grid;
+      grid-auto-rows: auto;
+      grid-gap: 10px;
+      align-content: center;
+      @include responsive(640px) {
+        grid-gap: 20px;
+      }
+      @include responsive(800px) {
+        grid-gap: 30px;
+      }
+      .intelligence-report-subscription-content {
+        font-size: 12px;
+        @include responsive(640px) {
+          font-size: 16px;
+        }
+        @include responsive(800px) {
+          font-size: 20px;
+        }
         ul {
+          li {
+            margin: 1em 0;
+          }
           li::before {
             color: $secondary-color;
           }
@@ -86,87 +217,115 @@ main.threat-vision {
       }
     }
   }
-  .sample-analysis-container {
-    margin: 20px;
-    .title {
-      text-align: center;
-    }
-    .sample-analysis {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
-      @include desktop() {
-        flex-direction: row;
-        flex-wrap: nowrap;
-      }
-      .strengths {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: $strength-grid-gap;
-        width: 100%;
-        order: 1;
-        @include desktop() {
-          width: 30%;
-          grid-template-columns: auto;
-          grid-template-rows: auto;
-          order: 0;
-          overflow: hidden;
-        }
-        .strength {
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          border-radius: 4.8px;
-          background-color: $background-color;
+}
+.sample-analysis-container {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @include page-margin-horizontal;
+  @include responsive(640px) {
+    grid-gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @include responsive(800px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-gap: 40px;
+  }
+  @include responsive(1024px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 
-          &:after {
-            content: "";
-            display: block;
-            padding-bottom: 100%;
-          }
-          .logo {
+  .sample-analysis-title {
+    text-align: center;
+  }
+  .sample-analysis {
+    display: grid;
+    grid-gap: 10px;
+    @include responsive(640px) {
+      grid-template-columns: 30% auto;
+      grid-auto-flow: column;
+    }
+    @include responsive(1024px) {
+      grid-gap: 20px;
+    }
+    .sample-analysis-strengths {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 10px;
+      width: 100%;
+      order: 1;
+      @include responsive(640px) {
+        width: auto;
+        grid-auto-flow: row;
+        order: 0;
+      }
+      @include responsive(1024px) {
+        grid-gap: 20px;
+      }
+      .sample-analysis-strength {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4.8px;
+        background-color: $background-color;
+
+        &:after {
+          content: "";
+          display: block;
+          padding-bottom: 100%;
+        }
+        .sample-analysis-strength-logo {
+          position: absolute;
+          top: 10%;
+          width: 60%;
+          img {
             position: absolute;
-            top: 10%;
-            width: 60%;
-            img {
-              position: absolute;
-              width: 100%;
-            }
+            width: 100%;
           }
-          .content {
-            width: 90%;
-            position: absolute;
-            top: 80%;
-            font-weight: bold;
-            font-weight: bold;
-            color: $normal-color;
-            text-align: center;
+        }
+        .sample-analysis-strength-title {
+          font-size: 12px;
+          @include responsive(640px) {
+            font-size: 14px;
           }
+          @include responsive(800px) {
+            font-size: 16px;
+          }
+          @include responsive(1280px) {
+            font-size: 20px;
+          }
+          width: 90%;
+          position: absolute;
+          top: 80%;
+          color: $normal-color;
+          text-align: center;
         }
       }
-      .mac {
-        width: 100%;
+    }
+    .mac {
+      width: 100%;
+      order: 0;
+      @include responsive(640px) {
+        position: relative;
+        padding-bottom: 100%;
+        height: 0;
         order: 0;
-        @include desktop() {
-          position: relative;
-          padding-bottom: 60%;
-          height: 0;
-          width: 70%;
-          order: 0;
-          overflow: hidden;
-        }
-        img {
-          width: 100%;
-          @include desktop() {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: auto;
-            height: 100%;
-          }
+      }
+      img {
+        width: 100%;
+        @include responsive(640px) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: auto;
+          height: 100%;
         }
       }
     }

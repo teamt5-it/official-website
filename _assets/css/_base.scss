@@ -1,11 +1,22 @@
 $background-color: #f5f2e9;
 $light-background-color: #d3cec7;
+$code-background-color: #f5f5f5;
+$code-border-color: #e3e3e3;
 $font-color-hover: #948e8c;
 $normal-color: #4c433f;
 $primary-color: #d83751;
 $secondary-color: #f6ac19;
 $figcaption-color: #848484;
 $sonar-color: #c71532;
+$list-bullet: "\2022";
+
+$button-background-color: $primary-color;
+$button-hover-background-color: #e88797;
+$button-click-background-color: #a82a3e;
+$button-color: white;
+$font-weight-medium: 500;
+$new-height: 60px;
+$arrow-width: 2px;
 
 $max-width: 1280px;
 $tablet: 769px;
@@ -17,43 +28,33 @@ $xs-margin-horizontal: 10px;
 $sm-margin-horizontal: 20px;
 $md-margin-horizontal: 40px;
 $lg-margin-horizontal: 80px;
-$xl-margin-horizontal: 160px;
 
-$xs-margin-vertical: 14px;
-$sm-margin-vertical: 18px;
-$md-margin-vertical: 22px;
-$lg-margin-vertical: 26px;
-$xl-margin-vertical: 30px;
-
-$font-weight-medium: 500;
-
-$new-height: 60px;
-$arrow-width: 2px;
+$xs-padding-horizontal: $xs-margin-horizontal;
+$sm-padding-horizontal: $sm-margin-horizontal;
+$md-padding-horizontal: $md-margin-horizontal;
+$lg-padding-horizontal: $lg-margin-horizontal;
 
 @mixin page-margin {
   margin: $xs-margin-vertical $xs-margin-horizontal;
-  @include responsive(320px) {
+  @include responsive(640px) {
     margin: $sm-margin-vertical $sm-margin-horizontal;
   }
-  @include responsive(640px) {
+  @include responsive(800px) {
     margin: $md-margin-vertical $md-margin-horizontal;
   }
-  @include responsive(1024px) {
-    margin: $lg-margin-vertical $lg-margin-horizontal;
-  }
   @include responsive(1280px) {
-    margin: $xl-margin-vertical $xl-margin-horizontal;
+    margin: $xl-margin-vertical $lg-margin-horizontal;
   }
 }
 
 @mixin page-margin-horizontal {
   margin-left: $xs-margin-horizontal;
   margin-right: $xs-margin-horizontal;
-  @include responsive(320px) {
+  @include responsive(640px) {
     margin-left: $sm-margin-horizontal;
     margin-right: $sm-margin-horizontal;
   }
-  @include responsive(640px) {
+  @include responsive(800px) {
     margin-left: $md-margin-horizontal;
     margin-right: $md-margin-horizontal;
   }
@@ -61,46 +62,22 @@ $arrow-width: 2px;
     margin-left: $lg-margin-horizontal;
     margin-right: $lg-margin-horizontal;
   }
-  @include responsive(1280px) {
-    margin-left: $xl-margin-horizontal;
-    margin-right: $xl-margin-horizontal;
-  }
-}
-
-@mixin page-padding {
-  padding: $xs-margin-vertical $xs-margin-horizontal;
-  @include responsive(320px) {
-    padding: $sm-margin-vertical $sm-margin-horizontal;
-  }
-  @include responsive(640px) {
-    padding: $md-margin-vertical $md-margin-horizontal;
-  }
-  @include responsive(1024px) {
-    padding: $lg-margin-vertical $lg-margin-horizontal;
-  }
-  @include responsive(1280px) {
-    padding: $xl-margin-vertical $xl-margin-horizontal;
-  }
 }
 
 @mixin page-padding-horizontal {
-  padding-left: $xs-margin-horizontal;
-  padding-right: $xs-margin-horizontal;
-  @include responsive(320px) {
-    padding-left: $sm-margin-horizontal;
-    padding-right: $sm-margin-horizontal;
-  }
+  padding-left: $xs-padding-horizontal;
+  padding-right: $xs-padding-horizontal;
   @include responsive(640px) {
-    padding-left: $md-margin-horizontal;
-    padding-right: $md-margin-horizontal;
+    padding-left: $sm-padding-horizontal;
+    padding-right: $sm-padding-horizontal;
+  }
+  @include responsive(800px) {
+    padding-left: $md-padding-horizontal;
+    padding-right: $md-padding-horizontal;
   }
   @include responsive(1024px) {
-    padding-left: $lg-margin-horizontal;
-    padding-right: $lg-margin-horizontal;
-  }
-  @include responsive(1280px) {
-    padding-left: $xl-margin-horizontal;
-    padding-right: $xl-margin-horizontal;
+    padding-left: $lg-padding-horizontal;
+    padding-right: $lg-padding-horizontal;
   }
 }
 
@@ -108,39 +85,38 @@ $xs-post-margin-horizontal: 20px;
 $sm-post-margin-horizontal: 40px;
 $md-post-margin-horizontal: 140px;
 $lg-post-margin-horizontal: 270px;
-$xl-post-margin-horizontal: 270px;
+
+$xs-post-padding-horizontal: $xs-post-margin-horizontal;
+$sm-post-padding-horizontal: $sm-post-margin-horizontal;
+$md-post-padding-horizontal: $md-post-margin-horizontal;
+$lg-post-padding-horizontal: $lg-post-margin-horizontal;
 
 @mixin post-page-margin-horizontal {
   margin: 0 $xs-post-margin-horizontal;
-  @include responsive(320px) {
+  @include responsive(640px) {
     margin: 0 $sm-post-margin-horizontal;
   }
-  @include responsive(640px) {
+  @include responsive(800px) {
     margin: 0 $md-post-margin-horizontal;
   }
   @include responsive(1024px) {
     margin: 0 $lg-post-margin-horizontal;
   }
-  @include responsive(1280px) {
-    margin: 0 $xl-post-margin-horizontal;
-  }
 }
 
 @mixin post-page-padding-horizontal {
-  padding: 0 $xs-post-margin-horizontal;
-  @include responsive(320px) {
-    padding: 0 $sm-post-margin-horizontal;
-  }
+  padding: 0 $xs-post-padding-horizontal;
   @include responsive(640px) {
-    padding: 0 $md-post-margin-horizontal;
+    padding: 0 $sm-post-padding-horizontal;
+  }
+  @include responsive(800px) {
+    padding: 0 $md-post-padding-horizontal;
   }
   @include responsive(1024px) {
-    padding: 0 $lg-post-margin-horizontal;
-  }
-  @include responsive(1280px) {
-    padding: 0 $xl-post-margin-horizontal;
+    padding: 0 $lg-post-padding-horizontal;
   }
 }
+
 @mixin flex-center-align {
   display: flex;
   justify-content: center;

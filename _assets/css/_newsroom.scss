@@ -3,7 +3,7 @@ main.newsroom {
   .news-and-media-inquiries {
     display: flex;
     flex-direction: column;
-    @include page-margin;
+    @include page-margin-horizontal;
     .news-and-media-inquiries-title {
       align-self: flex-start;
     }

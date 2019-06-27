@@ -1,14 +1,4 @@
 @import "base";
 main.position {
   @include post-page-padding-horizontal;
-  .meta{
-	  display: flex;
-	  & > *:not(:last-child) {
-		  margin-right: 10px;
-	  }
-	  .location {
-		color: $primary-color;
-		font-weight: $font-weight-medium;
-	  }
-  }
 }

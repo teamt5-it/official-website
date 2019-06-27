@@ -4,7 +4,7 @@ layout: base
 
 {% include post-page-title.html %}
 <main class="{{ page.layout }}">
-    <div class="meta">
+    <div class="post-meta">
         <div class="tags">
             {% for tag in page.tags %}
             <span class="tag">
@@ -19,7 +19,7 @@ layout: base
     <div class="post-banner">
         <img src="{{page.banner}}">
     </div>
-    <div class="content">
+    <div class="post-content content">
         {{ content }}
     </div>
 </main>
