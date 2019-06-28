@@ -1,97 +1,124 @@
 @import "base";
 main.about-us {
-	.teamt5-world-class-team {
-		display: flex;
-		flex-direction: column;
-		@include page-margin-horizontal;
-		.title {
-			align-self: flex-start;
-		}
-		.banner {
-			overflow: hidden;
-			img {
-				width: 100%;
-				margin: -17.5% 0;
-			}
-		}
-		.content {
-			position: relative;
-			top: -30px;
-			margin-bottom: -30px;
-			align-self: center;
-			background-color: $background-color;
-			text-align: justify;
-			width: 92.5%;
-			padding: 20px 10px;
-			@include responsive(640px) {
-				top: -90px;
-				margin-bottom: -90px;
-				padding: 20px;
-			}
-			@include responsive(800px) {
-				top: -110px;
-				margin-bottom: -110px;
-				padding: 30px 50px;
-				width: 50%;
-			}
-			@include responsive(1280px) {
-				top: -140px;
-				margin-bottom: -140px;
-			}
-		}
-	}
-	.teamt5-leadership {
-		display: flex;
-		flex-direction: column;
-		@include page-margin-horizontal;
-		.teamt5-leadership-title {
-			align-self: flex-start;
-		}
-		.teamt5-leadership-content {
-			display: grid;
-			grid-template-columns: 1fr;
-			padding: 20px;
-			grid-gap: 20px;
-			background-color: $background-color;
-			@include responsive(640px) {
-				grid-template-columns: auto 1fr;
-				align-items: center;
-			}
-			@include responsive(1024px) {
-				grid-gap: 0px;
-				padding: 0px;
-			}
-			.teamt5-leadership-picture {
-				box-sizing: border-box;
-				position: relative;
-				width: 120px;
-				height: 120px;
-				@include responsive(640px) {
-					width: 160px;
-					height: 160px;
-				}
-				@include responsive(800px) {
-					width: 300px;
-					height: 300px;
-				}
-				@include responsive(1024px) {
-					width: 340px;
-					height: 340px;
-				}
-				@include responsive(1280px) {
-					width: 400px;
-					height: 400px;
-				}
-				img {
-					width: 100%;
-					height: 100%;
-				}
-			}
-			.teamt5-leadership-description {
-				@include responsive(1024px) {
-					padding: 30px;
-				}
-			}
-		}
-	}
+  .teamt5-world-class-team {
+    display: flex;
+    flex-direction: column;
+    .banner-title {
+      align-self: flex-start;
+      @include page-margin-horizontal;
+    }
+    .banner-image {
+      overflow: hidden;
+      align-self: center;
+      width: 100%;
+      @include responsive(1024px) {
+        @include page-padding-horizontal;
+        width: auto;
+      }
+      img {
+        width: 100%;
+        margin: -17.5% 0;
+      }
+    }
+    .banner-content {
+      position: relative;
+      top: -30px;
+      margin-bottom: -30px;
+      align-self: center;
+      background-color: $background-color;
+      text-align: justify;
+      padding: 20px 10px;
+      @include page-margin-horizontal;
+      @include responsive(640px) {
+        top: -90px;
+        margin-bottom: -90px;
+        padding: 20px;
+      }
+      @include responsive(800px) {
+        top: -110px;
+        margin-bottom: -110px;
+        padding: 30px 50px;
+      }
+      @include responsive(1024px) {
+        top: -110px;
+        margin-bottom: -110px;
+        width: 740px;
+      }
+      @include responsive(1280px) {
+        top: -140px;
+        margin-bottom: -140px;
+      }
+    }
+  }
+  .teamt5-leadership {
+    display: flex;
+    flex-direction: column;
+    @include responsive(1024px) {
+      @include page-margin-horizontal;
+    }
+    .teamt5-leadership-title {
+      align-self: flex-start;
+    }
+    .teamt5-leadership-content {
+      display: grid;
+      padding: 20px;
+      grid-gap: 10px;
+      background-color: $background-color;
+      @include responsive(640px) {
+        grid-auto-flow: column;
+        align-items: center;
+        grid-gap: 20px;
+      }
+      @include responsive(800px) {
+        padding: 30px;
+      }
+      @include responsive(1024px) {
+        grid-gap: 0px;
+        padding: 0px;
+      }
+      .teamt5-leadership-picture {
+        width: 120px;
+        height: 120px;
+        @include responsive(640px) {
+          width: 160px;
+          height: 160px;
+        }
+        @include responsive(800px) {
+          width: 300px;
+          height: 300px;
+        }
+        @include responsive(1024px) {
+          width: 350px;
+          height: 350px;
+        }
+        @include responsive(1280px) {
+          width: 400px;
+          height: 400px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .teamt5-leadership-description {
+        display: grid;
+        @include responsive(1024px) {
+          grid-gap: 20px;
+          padding: 10px 20px;
+        }
+        @include responsive(1024px) {
+          padding: 50px;
+        }
+        .teamt5-leadership-name {
+          font-size: 20px;
+          @include responsive(800px) {
+            font-size: 24px;
+          }
+        }
+        .teamt5-leadership-introduction {
+          text-align: justify;
+        }
+      }
+    }
+  }
 }

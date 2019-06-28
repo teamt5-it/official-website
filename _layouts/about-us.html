@@ -3,37 +3,34 @@ layout: page
 ---
 
 <div class="teamt5-world-class-team">
-    <div class="title title-xl title-underline">
+    <div class="banner-title title title-xl title-underline">
         {% t teamt5-world-class-team.title %}
     </div>
-    <div class="banner">
+    <div class="banner-image">
         {% asset teamt5-world-class-team.jpg %}
     </div>
-    <div class="content">
-        {% capture string_with_newlines %}
-        {% t teamt5-world-class-team.content %}
-        {% endcapture %}
-        {{ string_with_newlines | newline_to_br }}
+    <div class="banner-content">
+        {% capture string-with-newlines %}{% t teamt5-world-class-team.content %}{% endcapture %}
+        {{ string-with-newlines | newline_to_br }}
     </div>
 </div>
 
 <div class="teamt5-leadership">
-    <div class="teamt5-leadership-title title-xl title-underline">
+    <div class="teamt5-leadership-title title title-xl title-underline">
         {% t teamt5-leadership.title %}
     </div>
     <div class="teamt5-leadership-content">
-        <div class="profile-picture">
-            {% asset TT.png %}
+        <div class="teamt5-leadership-picture">
+            {% asset TT.jpg %}
         </div>
-        <div class="content">
-            <div class="name title-md">
+        <div class="teamt5-leadership-description">
+            <div class="teamt5-leadership-name title">
                 {% t teamt5-leadership.content.name %}
             </div>
-            <div class="introduction">
-                {% capture string_with_newlines %}
-                {% t teamt5-leadership.content.introduction %}
+            <div class="teamt5-leadership-introduction content">
+                {% capture string-with-newlines %}{% t teamt5-leadership.content.introduction %}
                 {% endcapture %}
-                {{ string_with_newlines | newline_to_br }}
+                {{ string-with-newlines | newline_to_br }}
             </div>
         </div>
     </div>
