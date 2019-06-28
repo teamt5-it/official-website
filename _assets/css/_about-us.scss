@@ -57,6 +57,11 @@ main.about-us {
       @include page-margin-horizontal;
     }
     .teamt5-leadership-title {
+      @include page-margin-horizontal;
+      @include responsive(1024px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
       align-self: flex-start;
     }
     .teamt5-leadership-content {
