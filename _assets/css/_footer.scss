@@ -46,6 +46,10 @@ $footer-padding: 20px;
           grid-gap: 10px;
           .menu-item-title {
             font-weight: bold;
+            &.resource {
+              //TODO: resource page
+              display: none;
+            }
           }
           .menu-item-link {
             display: block;
@@ -114,7 +118,7 @@ $footer-padding: 20px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
         .scroll-top-content {
           position: relative;
           display: flex;

@@ -138,6 +138,10 @@ $navbar-submenu-mobile-background-color: $background-color;
         height: $navbar-item-desktop-height;
       }
 
+      &.resource {
+        //TODO: resource page
+        display: none;
+      }
       .navbar-item-link {
         cursor: pointer;
         display: flex;
