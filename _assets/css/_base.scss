@@ -13,6 +13,7 @@ $list-bullet: "\2022";
 $button-background-color: $primary-color;
 $button-hover-background-color: #e88797;
 $button-click-background-color: #a82a3e;
+$button-success-color: green;
 $button-color: white;
 $font-weight-medium: 500;
 $new-height: 60px;
@@ -34,19 +35,6 @@ $sm-padding-horizontal: $sm-margin-horizontal;
 $md-padding-horizontal: $md-margin-horizontal;
 $lg-padding-horizontal: $lg-margin-horizontal;
 
-@mixin page-margin {
-  margin: $xs-margin-vertical $xs-margin-horizontal;
-  @include responsive(640px) {
-    margin: $sm-margin-vertical $sm-margin-horizontal;
-  }
-  @include responsive(800px) {
-    margin: $md-margin-vertical $md-margin-horizontal;
-  }
-  @include responsive(1280px) {
-    margin: $xl-margin-vertical $lg-margin-horizontal;
-  }
-}
-
 @mixin page-margin-horizontal {
   margin-left: $xs-margin-horizontal;
   margin-right: $xs-margin-horizontal;
@@ -58,7 +46,7 @@ $lg-padding-horizontal: $lg-margin-horizontal;
     margin-left: $md-margin-horizontal;
     margin-right: $md-margin-horizontal;
   }
-  @include responsive(1024px) {
+  @include responsive(1280px) {
     margin-left: $lg-margin-horizontal;
     margin-right: $lg-margin-horizontal;
   }
@@ -75,7 +63,7 @@ $lg-padding-horizontal: $lg-margin-horizontal;
     padding-left: $md-padding-horizontal;
     padding-right: $md-padding-horizontal;
   }
-  @include responsive(1024px) {
+  @include responsive(1280px) {
     padding-left: $lg-padding-horizontal;
     padding-right: $lg-padding-horizontal;
   }
@@ -99,7 +87,7 @@ $lg-post-padding-horizontal: $lg-post-margin-horizontal;
   @include responsive(800px) {
     margin: 0 $md-post-margin-horizontal;
   }
-  @include responsive(1024px) {
+  @include responsive(1280px) {
     margin: 0 $lg-post-margin-horizontal;
   }
 }
@@ -112,7 +100,7 @@ $lg-post-padding-horizontal: $lg-post-margin-horizontal;
   @include responsive(800px) {
     padding: 0 $md-post-padding-horizontal;
   }
-  @include responsive(1024px) {
+  @include responsive(1280px) {
     padding: 0 $lg-post-padding-horizontal;
   }
 }

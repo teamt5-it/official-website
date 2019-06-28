@@ -67,13 +67,13 @@ input {
     padding: 2px;
   }
 
-  pre{
+  pre {
     padding: 10px 20px;
     overflow: auto;
     background-color: $code-background-color;
     border: 1px solid $code-border-color;
     border-radius: 4px;
-    code{
+    code {
       border: 0;
       padding: 0;
     }
@@ -165,18 +165,47 @@ input {
 }
 
 .button {
+  -webkit-appearance: none;
+  border: none;
   display: block;
   cursor: pointer;
   font-weight: bold;
   border-radius: 4px;
   color: $button-color;
   background-color: $button-background-color;
+  transition: background-color 1s ease-in-out;
   @include flex-center-align;
   &:hover {
     background-color: $button-hover-background-color;
   }
   &:focus {
     background-color: $button-click-background-color;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+  &.success {
+    transition: background-color 1s ease-in-out;
+    background-color: $button-success-color;
+  }
+
+  &.loading {
+    cursor: wait;
+    animation-name: shrink-to-circle;
+    animation-duration: 1s;
+  }
+  @keyframes shrink-to-circle {
+    0% {
+      border-radius: 4px;
+    }
+    50% {
+      content: "";
+      width: 50px;
+      border-radius: 25px;
+    }
+    100% {
+      border-radius: 4px;
+    }
   }
 }
 

@@ -218,13 +218,10 @@ support:
 about-us:
   teamt5-world-class-team:
     title: TeamT5 World Class Team
-    content: >
+    content: |-
       We are the world-leading malware research and Solution provider to cyber espionage in Asia and Pacific.
 
-
       We monitor, analyze and track cyber threats and helping customers to gain advantaged position facing cyber threats. And we provide Threat intrellgence and research report, cyber espionage solutions, threat analysis service and incident response / investigation services.
-
-
 
       Our members frequently publish the latest and top research at the world's top security conferences, including Black Hat, Kaspersky Security Analyst Summit, Syscan, Code Blue/AVTokyo, Troopers, Codegate, VXCON/DragonCon, Power of Community (Korea), Hack in the Box, and FIRST.
 
@@ -232,9 +229,8 @@ about-us:
     title: TeamT5 Leadership
     content:
       name: Sung-ting Tsai (TT)
-      introduction: >
+      introduction: |-
         TT is founder and CEO of TeamT5. He has more than 15 years’ experience in cyber security industry. With solid technical background and understanding of cyber threats, he has been leading the team invented and developed many unique threat hunting technologies and solutions. TeamT5 is really proud of their researches, they frequently publish papers in many global security/hacker conferences.
-
 
         With great passion in cyber security, TT has volunteered himself as a core member in HITCON community more than 15 years. During his leading in HITCON, he founded association of Hackers in Taiwan, collaborating with Government, community, and security industry.
 

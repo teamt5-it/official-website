@@ -42,8 +42,13 @@ $ ->
 			data: data
 			dataType: "JSON"
 			success: (response) ->
-				console.log(response)
-				alert('succeed')
+				$(e.currentTarget).prop('disabled', true)
+				$(e.currentTarget).addClass('success')
+				$(e.currentTarget).text('Success')
+			error: (response) ->
+				$(e.currentTarget).addClass('error')
+				$(e.currentTarget).text('Error')
+
 
 	# form
 	$("#position-form-submit").click (e) ->
@@ -54,5 +59,9 @@ $ ->
 			data: data
 			dataType: "JSON"
 			success: (response) ->
-				console.log(response)
-				alert('succeed')
+				$(e.currentTarget).prop('disabled', true)
+				$(e.currentTarget).addClass('success')
+				$(e.currentTarget).text('Success')
+			error: (response) ->
+				$(e.currentTarget).addClass('error')
+				$(e.currentTarget).text('Error')

@@ -10,9 +10,7 @@ layout: page
         {% asset career_bg.jpg %}
     </div>
     <div class="banner-content">
-        {% capture string_with_newlines %}
-        {% t content %}
-        {% endcapture %}
+        {% capture string_with_newlines %}{% t content %}{% endcapture %}
         {{ string_with_newlines | newline_to_br }}
     </div>
 </div>
