@@ -250,8 +250,6 @@ main.index {
         }
       }
       .news-more-button {
-        position: relative;
-        border-radius: 0px;
         align-self: flex-end;
         width: 90px;
         height: 20px;
@@ -264,16 +262,6 @@ main.index {
         @include responsive(800px) {
           font-size: 20px;
           width: 145px;
-        }
-        .news-more-button-arrow{
-          position: absolute;
-          right: $news-more-button-arrow-side-length/$square-root-of-two*2;
-          width: $news-more-button-arrow-side-length;
-          height: $news-more-button-arrow-side-length;
-          border: solid white;
-          border-radius: $arrow-width;
-          border-width: $arrow-width $arrow-width 0  0;
-          transform: rotate(45deg);
         }
       }
     }

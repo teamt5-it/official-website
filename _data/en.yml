@@ -199,10 +199,17 @@ partner:
   asean:
     title: ASEAN
     name: netpoleon
-    T: ???
-    M: ???
+    T: 627A Aljunied Rd, Singapore 389842
+    M: +65 6858 5645
     W: https://www.netpoleons.com
 
+
+
+
+# resource
+resource:
+  sticky-post:
+    more: Read More
 
 
 # support
@@ -253,7 +260,7 @@ contact-us:
 # careers
 careers:
     title: TeamT5 Careers
-    content: >
+    content: |-
       TeamT5 杜浦數位安全是專注於亞太地區網路威脅分析研究的公司，旨在提供武藝高深的駭客更多溫暖和希望。
 
 

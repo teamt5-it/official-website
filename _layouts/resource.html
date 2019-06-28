@@ -1,3 +1,47 @@
 ---
 layout: page
 ---
+
+<div class="sticky-post">
+    <div class="sticky-post-banner">
+        {% assign post = paginator.posts | first %}
+        <img src="{{post.banner}}">
+    </div>
+    <div class="sticky-post-information">
+        <div class="sticky-post-meta">
+            <div class="date">
+                {{ post.date | date: "%Y-%m-%d" }}
+            </div>
+            <div class="tags">
+                {% for tag in post.tags %}
+                <span class="tag">
+                    {{ tag }}
+                </span>
+                {% endfor %}
+            </div>
+        </div>
+        <a class="sticky-post-read-moure-button button" href="{{ post.url }}">
+            {% t sticky-post.more %}
+        </a>
+    </div>
+</div>
+<div class="posts">
+</div>
+<div class="browse-by-type">
+    <div class="browse-by-type-title">
+        {% t browse-by-type.title %}
+    </div>
+    {% for post in site.categories.newsroom %}
+    {% assign types = types | concat: post.tags %}
+    {% assign types = types | uniq %}
+    {% endfor %}
+    <div class="browse-by-type-types">
+        {% for type in types %}
+        <div class="browse-by-type-type">
+            {{ type }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% include pagination.html %}

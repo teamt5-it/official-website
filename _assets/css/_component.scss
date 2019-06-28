@@ -175,6 +175,21 @@ input {
   background-color: $button-background-color;
   transition: background-color 1s ease-in-out;
   @include flex-center-align;
+  &.button-with-arrow {
+    position: relative;
+    border-radius: 0px;
+    &::after {
+      content: "";
+      position: absolute;
+      right: $news-more-button-arrow-side-length/$square-root-of-two * 2;
+      width: $news-more-button-arrow-side-length;
+      height: $news-more-button-arrow-side-length;
+      border: solid white;
+      border-radius: $arrow-width;
+      border-width: $arrow-width $arrow-width 0 0;
+      transform: rotate(45deg);
+    }
+  }
   &:hover {
     background-color: $button-hover-background-color;
   }
