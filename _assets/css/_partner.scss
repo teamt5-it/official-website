@@ -1,36 +1,55 @@
 @import "base";
 main.partner {
   .partners {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-gap: 30px;
     @include page-margin-horizontal;
+    @include responsive(800px) {
+      grid-gap: 60px;
+    }
     .partner {
-      display: flex;
-      flex-direction: column;
-      .title{
-        align-self: flex-start;
+      display: grid;
+      .partner-title {
+        justify-self: start;
       }
-      .content {
+      .partner-content {
         display: grid;
-        grid-template-columns: repeat(1,min-content);
-        grid-gap: 20px;
-        @include desktop(){
-          grid-template-columns: repeat(2,min-content);
+        justify-content: start;
+        @include responsive(640px) {
+          grid-gap: 20px;
         }
-        .logo {
-          width: 200px;
-          height: 200px;
+        @include responsive(800px) {
+          grid-gap: 30px;
+          grid-auto-flow: column;
+        }
+        .partner-logo {
+          overflow: hidden;
+          width: 120px;
+          height: 80px;
           @include flex-center-align;
+          @include responsive(640px) {
+            width: 180px;
+            width: 120px;
+          }
+          @include responsive(800px) {
+            width: 300px;
+            height: 200px;
+          }
+          img {
+            width: 100%;
+          }
         }
-        .name-and-contact-information{
+
+        .partner-name-and-contact-information {
           display: grid;
-          grid-auto-rows: 1fr;
           align-content: center;
-          .contact-information{
+          .partner-contact-information {
             display: grid;
-            align-content: center;
             grid-gap: 10px;
-            grid-auto-rows: 1fr;
+            @include responsive(800px){
+
+              grid-gap: 20px;
+            }
           }
         }
       }
