@@ -8,7 +8,6 @@ $navbar-burger-side-length: $navbar-brand-logo-height;
 $navbar-burger-width: 2px;
 
 $navbar-item-desktop-height: $navbar-brand-desktop-height;
-$navbar-item-desktop-margin: 0 20px;
 $navbar-item-hover-box-shadow: inset 0 -5px 0 0 $primary-color;
 $navbar-item-mobile-border: 0.5px solid $font-color-hover;
 $navbar-item-title-height: $navbar-brand-mobile-height;
@@ -20,7 +19,7 @@ $navbar-item-arrow-side-length: $navbar-item-arrow-container-height/$square-root
 
 $navbar-submenu-desktop-height: 40px;
 $navbar-submenu-arrow-side-length: $navbar-brand-logo-height;
-$navbar-submenu-item-desktop-margin: $navbar-item-desktop-margin;
+
 $navbar-submenu-item-desktop-height: $navbar-submenu-desktop-height;
 $navbar-submenu-item-mobile-height: $navbar-brand-mobile-height;
 $navbar-submenu-item-mobile-padding: 0 15px;
@@ -36,7 +35,7 @@ $navbar-submenu-mobile-background-color: $background-color;
   width: 100%;
   max-width: 1280px;
 
-  @include desktop() {
+  @include responsive(800px) {
     position: relative;
     flex-direction: row;
     justify-content: space-between;
@@ -52,7 +51,7 @@ $navbar-submenu-mobile-background-color: $background-color;
     height: $navbar-brand-mobile-height;
     padding: $navbar-mobile-padding;
 
-    @include desktop() {
+    @include responsive(800px) {
       height: $navbar-brand-desktop-height;
       padding: 0;
     }
@@ -77,7 +76,7 @@ $navbar-submenu-mobile-background-color: $background-color;
       height: $navbar-burger-side-length;
       transition: all 0.5s ease-in-out;
 
-      @include desktop() {
+      @include responsive(800px) {
         display: none;
       }
       span {
@@ -114,15 +113,18 @@ $navbar-submenu-mobile-background-color: $background-color;
 
   .navbar-menu {
     max-height: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     transition: max-height 0.5s ease-in-out;
     overflow: hidden;
 
-    @include desktop() {
-      display: flex;
-      flex-direction: row;
+    @include responsive(800px) {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 20px;
       max-height: none;
+    }
+    @include responsive(1280px) {
+      grid-gap: 40px;
     }
 
     &.active {
@@ -134,8 +136,7 @@ $navbar-submenu-mobile-background-color: $background-color;
       flex-direction: column;
       display: block;
 
-      @include desktop() {
-        margin: $navbar-item-desktop-margin;
+      @include responsive(800px) {
         height: $navbar-item-desktop-height;
       }
 
@@ -153,7 +154,7 @@ $navbar-submenu-mobile-background-color: $background-color;
         padding-left: $navbar-item-title-mobile-padding-left;
         padding-right: $navbar-item-title-mobile-padding-right;
         margin: $navbar-item-title-margin;
-        @include desktop() {
+        @include responsive(800px) {
           &.is-current {
             box-shadow: $navbar-item-hover-box-shadow;
           }
@@ -164,7 +165,7 @@ $navbar-submenu-mobile-background-color: $background-color;
         }
         .navbar-item-title {
           line-height: $navbar-item-title-height;
-          @include desktop() {
+          @include responsive(800px) {
             line-height: $navbar-item-desktop-height;
 
             &:hover {
@@ -181,7 +182,7 @@ $navbar-submenu-mobile-background-color: $background-color;
         width: $navbar-item-arrow-container-height;
         height: $navbar-item-arrow-container-height;
 
-        @include desktop() {
+        @include responsive(800px) {
           display: none;
         }
         .navbar-item-arrow {
@@ -202,26 +203,30 @@ $navbar-submenu-mobile-background-color: $background-color;
       }
 
       .navbar-submenu {
-        display: flex;
-        flex-direction: column;
+        display: grid;
         background-color: $navbar-submenu-mobile-background-color;
         max-height: 0;
         transition: max-height 0.5s ease-in-out;
         overflow: hidden;
 
-        @include desktop() {
+        @include responsive(800px) {
           position: absolute;
+          display: grid;
+          grid-auto-flow: column;
+          grid-gap: 20px;
           padding: $navbar-desktop-padding;
           top: $navbar-brand-desktop-height;
           right: 0;
-          flex-direction: row;
           background-color: transparent;
           overflow: hidden;
+        }
+        @include responsive(1280px) {
+          grid-gap: 40px;
         }
 
         &.active {
           max-height: 100vh;
-          @include desktop() {
+          @include responsive(800px) {
             max-height: $navbar-submenu-desktop-height;
           }
         }
@@ -233,12 +238,11 @@ $navbar-submenu-mobile-background-color: $background-color;
           height: $navbar-submenu-item-mobile-height;
           border-bottom: $navbar-item-mobile-border;
           line-height: $navbar-submenu-item-mobile-height;
-          @include desktop() {
+          @include responsive(800px) {
             line-height: $navbar-submenu-desktop-height;
             height: $navbar-submenu-item-desktop-height;
             padding: 0;
             border-bottom: 0;
-            margin: $navbar-submenu-item-desktop-margin;
           }
           &:hover {
             color: $font-color-hover;
@@ -254,10 +258,10 @@ $navbar-submenu-mobile-background-color: $background-color;
     width: 100%;
     transition: max-height 0.5s ease-in-out;
     overflow: hidden;
-    @include desktop() {
+    @include responsive(800px) {
     }
     &.active {
-      @include desktop() {
+      @include responsive(800px) {
         max-height: $navbar-submenu-desktop-height;
       }
     }

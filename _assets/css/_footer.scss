@@ -1,12 +1,12 @@
 $footer-mobile-padding: 20px;
-$footer-desktop-padding: 20px 60px;
+$footer-desktop-padding: 60px;
 .footer {
   font-size: 12px;
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: $background-color;
-  @include desktop() {
+  @include responsive(800px) {
     padding-top: $square-side-length/$square-root-of-two;
   }
   .footer-logo-and-menu {
@@ -14,8 +14,9 @@ $footer-desktop-padding: 20px 60px;
     flex-direction: column;
 
     padding: $footer-mobile-padding;
-    @include desktop() {
-      padding: $footer-desktop-padding;
+    @include responsive(800px) {
+      padding-left: $footer-desktop-padding;
+      padding-right: $footer-desktop-padding;
       flex-direction: row;
       justify-content: space-between;
     }
@@ -23,7 +24,7 @@ $footer-desktop-padding: 20px 60px;
       width: 200px;
       margin-top: 30px;
       margin-bottom: 50px;
-      @include desktop() {
+      @include responsive(800px) {
         margin: 0;
       }
     }
@@ -33,7 +34,7 @@ $footer-desktop-padding: 20px 60px;
       grid-auto-flow: column;
       justify-content: space-between;
       grid-gap: 0px;
-      @include desktop() {
+      @include responsive(800px) {
         margin: 0;
         grid-gap: 50px;
       }
@@ -65,19 +66,20 @@ $footer-desktop-padding: 20px 60px;
     margin: 0 20px;
   }
   .footer-informations {
-    padding: $footer-mobile-padding;
     font-weight: $font-weight-medium;
     display: flex;
     justify-content: space-between;
-    @include desktop() {
-      padding: $footer-desktop-padding;
+    padding: $footer-mobile-padding;
+    @include responsive(800px) {
+      padding-left: $footer-desktop-padding;
+      padding-right: $footer-desktop-padding;
     }
     .copyright-and-privacy-and-cookies-policy-and-terms-of-service {
       display: grid;
       grid-gap: 10px;
       grid-auto-rows: auto;
       grid-auto-flow: row;
-      @include desktop() {
+      @include responsive(800px) {
         grid-auto-columns: auto;
         grid-gap: 20px;
         grid-auto-flow: column;
@@ -101,13 +103,16 @@ $footer-desktop-padding: 20px 60px;
   .scroll-top {
     position: absolute;
     top: -$square-side-length/$square-root-of-two;
-    right: 10px;
+    right: $footer-mobile-padding;
     width: $square-side-length * $square-root-of-two;
     height: $square-side-length * $square-root-of-two;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    @include desktop(){
+      right: $footer-desktop-padding;
+    }
 
     cursor: pointer;
     .scroll-top-square {
