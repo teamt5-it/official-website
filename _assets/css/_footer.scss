@@ -1,144 +1,145 @@
-$footer-padding: 20px;
-.footer-container {
+$footer-mobile-padding: 20px;
+$footer-desktop-padding: 20px 60px;
+.footer {
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: $background-color;
-  margin-top: $square-side-length/$square-root-of-two * 4;
-  .footer {
-    font-size: 12px;
-    position: relative;
+  @include desktop() {
+    padding-top: $square-side-length/$square-root-of-two;
+  }
+  .footer-logo-and-menu {
     display: flex;
     flex-direction: column;
-    background-color: $background-color;
+
+    padding: $footer-mobile-padding;
     @include desktop() {
-      padding-top: $square-side-length/$square-root-of-two;
+      padding: $footer-desktop-padding;
+      flex-direction: row;
+      justify-content: space-between;
     }
-    .footer-logo-and-menu {
+    .footer-logo {
+      width: 200px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      @include desktop() {
+        margin: 0;
+      }
+    }
+    .footer-menu {
+      display: grid;
+      grid-auto-columns: auto;
+      grid-auto-flow: column;
+      justify-content: space-between;
+      grid-gap: 0px;
+      @include desktop() {
+        margin: 0;
+        grid-gap: 50px;
+      }
+      .menu-item {
+        white-space: nowrap;
+        display: grid;
+        grid-auto-rows: min-content;
+        grid-auto-flow: row;
+        grid-gap: 10px;
+        .menu-item-title {
+          font-weight: bold;
+          &.resource {
+            //TODO: resource page
+            display: none;
+          }
+        }
+        .menu-item-link {
+          display: block;
+          &:hover {
+            color: $font-color-hover;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    margin: 0 20px;
+  }
+  .footer-informations {
+    padding: $footer-mobile-padding;
+    font-weight: $font-weight-medium;
+    display: flex;
+    justify-content: space-between;
+    @include desktop() {
+      padding: $footer-desktop-padding;
+    }
+    .copyright-and-privacy-and-cookies-policy-and-terms-of-service {
+      display: grid;
+      grid-gap: 10px;
+      grid-auto-rows: auto;
+      grid-auto-flow: row;
+      @include desktop() {
+        grid-auto-columns: auto;
+        grid-gap: 20px;
+        grid-auto-flow: column;
+      }
+      .privacy-and-cookies-policy,
+      .terms-of-service {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .select {
+    height: 20px;
+    width: 70px;
+    background: white;
+    border: 1px solid $light-background-color;
+    border-radius: 3px;
+    @include flex-center-align();
+  }
+
+  .scroll-top {
+    position: absolute;
+    top: -$square-side-length/$square-root-of-two;
+    right: 10px;
+    width: $square-side-length * $square-root-of-two;
+    height: $square-side-length * $square-root-of-two;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    .scroll-top-square {
+      width: $square-side-length;
+      height: $square-side-length;
+
+      background: $primary-color;
+
       display: flex;
       flex-direction: column;
-      padding: $footer-padding;
-
-      @include desktop() {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      .footer-logo {
-        width: 200px;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        @include desktop() {
-          margin: 0;
-        }
-      }
-      .footer-menu {
-        display: grid;
-        grid-auto-columns: auto;
-        grid-auto-flow: column;
-        justify-content: space-between;
-        grid-gap: 0px;
-        @include desktop() {
-          margin: 0;
-          grid-gap: 50px;
-        }
-        .menu-item {
-          white-space: nowrap;
-          display: grid;
-          grid-auto-rows: min-content;
-          grid-auto-flow: row;
-          grid-gap: 10px;
-          .menu-item-title {
-            font-weight: bold;
-            &.resource {
-              //TODO: resource page
-              display: none;
-            }
-          }
-          .menu-item-link {
-            display: block;
-            &:hover {
-              color: $font-color-hover;
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-    }
-
-    hr {
-      margin: 0 $footer-padding;
-    }
-    .footer-informations {
-      font-weight: $font-weight-medium;
-      margin: $footer-padding;
-      display: flex;
-      justify-content: space-between;
-      .copyright-and-privacy-and-cookies-policy-and-terms-of-service {
-        display: grid;
-        grid-gap: 10px;
-        grid-auto-rows: auto;
-        grid-auto-flow: row;
-        @include desktop() {
-          grid-auto-columns: auto;
-          grid-gap: 20px;
-          grid-auto-flow: column;
-        }
-        .privacy-and-cookies-policy,
-        .terms-of-service {
-          text-decoration: underline;
-        }
-      }
-    }
-
-    .select {
-      height: 20px;
-      width: 70px;
-      background: white;
-      border: 1px solid $light-background-color;
-      border-radius: 3px;
-      @include flex-center-align();
-    }
-
-    .scroll-top {
-      position: absolute;
-      top: -$square-side-length/$square-root-of-two;
-      right: 10px;
-      width: $square-side-length * $square-root-of-two;
-      height: $square-side-length * $square-root-of-two;
-
-      display: flex;
       justify-content: center;
       align-items: center;
 
-      cursor: pointer;
-      .scroll-top-square {
-        width: $square-side-length;
-        height: $square-side-length;
-
-        background: $primary-color;
-
+      .scroll-top-content {
+        position: relative;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        .scroll-top-arrow {
+          position: absolute;
+          top: -$square-side-length/3/$square-root-of-two;
+          width: $square-side-length/3;
+          height: $square-side-length/3;
 
-        .scroll-top-content {
-          position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          .scroll-top-arrow {
-            position: absolute;
-            top: -$square-side-length/3/$square-root-of-two;
-            width: $square-side-length/3;
-            height: $square-side-length/3;
-
-            border: solid white;
-            border-width: 3px 0 0 3px;
-          }
-          .scroll-top-text {
-            position: absolute;
-            top: 0;
-            font-size: 12px;
-            color: white;
-          }
+          border: solid white;
+          border-width: 3px 0 0 3px;
+        }
+        .scroll-top-text {
+          position: absolute;
+          top: 0;
+          font-size: 12px;
+          color: white;
         }
       }
     }

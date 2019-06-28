@@ -54,6 +54,7 @@ $navbar-submenu-mobile-background-color: $background-color;
 
     @include desktop() {
       height: $navbar-brand-desktop-height;
+      padding: 0;
     }
     .navbar-brand-link {
       display: flex;

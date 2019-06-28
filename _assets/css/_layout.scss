@@ -30,6 +30,8 @@ body {
     }
   }
   .footer-container {
+    margin-top: $square-side-length/$square-root-of-two * 4;
+    background-color: $background-color;
     flex: none;
     display: flex;
     flex-direction: column;
