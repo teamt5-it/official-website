@@ -101,9 +101,12 @@ main.threat-sonar {
         @include responsive(1024px) {
           width: 700px;
           position: absolute;
-          left: 30px;
           top: auto;
+          left: -30px;
           bottom: 0;
+        }
+        @include responsive(1280px) {
+          left: 30px;
         }
         @include responsive(1280px) {
           width: 800px;
@@ -124,21 +127,22 @@ main.threat-sonar {
         @include responsive(800px) {
         }
         @include responsive(1024px) {
-          padding: 30px;
+          padding: 20px;
           grid-template-rows: repeat(3, 80px);
           position: relative;
-          left: 700px;
+          left: 650px;
           width: 330px;
         }
         @include responsive(1280px) {
           left: 870px;
         }
         .strength {
-          display: flex;
-          justify-content: flex-start;
+          display: grid;
+          grid-gap: 10px;
+          grid-auto-flow: column;
+          justify-content: start;
           align-items: center;
           .strength-logo {
-            margin-right: 10px;
             height: 40px;
             @include responsive(640px) {
               height: 60px;
@@ -152,7 +156,7 @@ main.threat-sonar {
           }
           .strength-content {
             @include responsive(1024px) {
-              width: 230px;
+              width: 200px;
             }
           }
         }
