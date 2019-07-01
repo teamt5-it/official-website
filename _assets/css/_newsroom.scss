@@ -1,11 +1,14 @@
 @import "base";
 main.newsroom {
   .news-and-media-inquiries {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-gap: 10px;
     @include page-margin-horizontal;
+    @include responsive(800px) {
+      grid-gap: 20px;
+    }
     .news-and-media-inquiries-title {
-      align-self: flex-start;
+      justify-self: start;
     }
     .news-and-media-inquiries-content {
       display: grid;

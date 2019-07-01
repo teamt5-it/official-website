@@ -255,8 +255,6 @@ a {
 
 .title-xl {
   line-height: 1.5;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
   font-size: 20px;
   @include responsive(640) {
     font-size: 24px;
@@ -295,8 +293,10 @@ a {
 
 .title-underline {
   border-bottom: 5px solid $primary-color;
+  padding-top: 15px;
   padding-bottom: 10px;
   @include desktop() {
+    padding-top: 20px;
     border-bottom: 10px solid $primary-color;
   }
 }

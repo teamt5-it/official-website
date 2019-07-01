@@ -1,29 +1,32 @@
 @import "base";
 main.contact-us {
-	.locations {
-		.location {
-			display: flex;
-			flex-direction: column;
-			.title {
-				align-self: flex-start;
-				@include page-margin-horizontal;
-			}
-			.contact-information {
-				@include page-margin-horizontal;
-				margin-top: 10px;
-				margin-bottom: 10px;
-			}
-			.map {
-				height: 280px;
-				@include responsive(800px) {
-					@include page-margin-horizontal;
-					height: 340px;
-                }
-                iframe{
-                    width: 100%;
-					height: 100%;
-                }
-			}
-		}
-	}
+  .locations {
+    display: grid;
+    grid-gap: 30px;
+    @include responsive(640px) {
+      grid-gap: 40px;
+    }
+    .location {
+      display: grid;
+      grid-gap: 10px;
+      .location-title {
+        justify-self: start;
+        @include page-margin-horizontal;
+      }
+      .location-contact-information {
+        @include page-margin-horizontal;
+      }
+      .location-google-map {
+        height: 280px;
+        @include responsive(800px) {
+          @include page-margin-horizontal;
+          height: 340px;
+        }
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 }

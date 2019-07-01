@@ -1,17 +1,14 @@
 @import "base";
 main.support {
   .global-support {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     @include page-margin-horizontal;
-    .global-support-title {
-      align-self: flex-start;
+    grid-gap: 20px;
+    @include responsive(800px) {
+      grid-gap: 30px;
     }
-    .global-support-content {
-      padding: 20px 0;
-      @include responsive(800px){
-        padding: 30px 0;
-      }
+    .global-support-title {
+      justify-self: flex-start;
     }
     .global-support-banner {
       img {

@@ -12,15 +12,19 @@ main.index {
   .banner {
     position: relative;
     padding: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: asset_url("persistent_cyber_threat_hunters_bg.svg");
     background-color: $background-color;
     @include responsive(640px) {
-      margin-bottom: $scroll-bottom-margin;
+      margin-bottom: $scroll-bottom-margin + 20px;
       padding: 40px;
       padding-bottom: $square-side-length * $square-root-of-two + 40px;
+    }
+    @include responsive(1024px) {
+      margin-bottom: $scroll-bottom-margin + 40px;
     }
     .banner-title {
       color: $primary-color;
@@ -100,28 +104,35 @@ main.index {
     }
   }
   .products-and-news {
-    margin: 10px;
+    display: grid;
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     @include responsive(800px) {
-      margin: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      grid-gap: 20px;
     }
     @include responsive(1024px) {
-      margin: 40px;
+      margin-left: 40px;
+      margin-right: 40px;
+      grid-gap: 40px;
     }
     @include responsive(1280px) {
-      margin: 60px;
-    }
-    @include responsive(1440px) {
-      margin: 100px;
+      margin-left: 60px;
+      margin-right: 60px;
+      grid-gap: 60px;
     }
     .products {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      display: grid;
+      grid-gap: 10px;
+      @include responsive(800px) {
+        grid-gap: 20px;
+      }
       .products-title {
-        align-self: flex-start;
+        justify-self: start;
       }
       .products-subtitle {
-        align-self: flex-start;
         color: $primary-color;
       }
       .products-content {
@@ -211,10 +222,13 @@ main.index {
       }
     }
     .news {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-gap: 10px;
+      @include responsive(800px) {
+        grid-gap: 20px;
+      }
       .news-title {
-        align-self: flex-start;
+        justify-self: start;
       }
       .news-content {
         display: flex;
@@ -250,7 +264,7 @@ main.index {
         }
       }
       .news-more-button {
-        align-self: flex-end;
+        justify-self: end;
         width: 90px;
         height: 20px;
         font-size: 12px;

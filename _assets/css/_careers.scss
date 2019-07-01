@@ -2,10 +2,13 @@
 
 main.careers {
   .banner {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-gap: 10px;
+    @include responsive(800px) {
+      grid-gap: 20px;
+    }
     .banner-title {
-      align-self: flex-start;
+      justify-self: start;
       @include page-margin-horizontal;
     }
     .banner-image {
@@ -24,39 +27,42 @@ main.careers {
     .banner-content {
       position: relative;
       top: -30px;
-      margin-bottom: -30px;
-      align-self: center;
+      margin-bottom: 20px - 30px;
+      justify-self: center;
       background-color: $background-color;
       text-align: justify;
       padding: 20px 10px;
       @include page-margin-horizontal;
       @include responsive(640px) {
         top: -90px;
-        margin-bottom: -90px;
         padding: 20px;
+        margin-bottom: 20px - 90px;
       }
       @include responsive(800px) {
         top: -110px;
-        margin-bottom: -110px;
         padding: 30px 50px;
+        margin-bottom: 40px - 110px;
       }
       @include responsive(1024px) {
         top: -110px;
-        margin-bottom: -110px;
         width: 740px;
+        margin-bottom: 60px - 110px;
       }
       @include responsive(1280px) {
         top: -140px;
-        margin-bottom: -140px;
+        margin-bottom: 60px - 140px;
       }
     }
   }
   .positions {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-gap: 10px;
+    @include responsive(800px) {
+      grid-gap: 20px;
+    }
     @include page-margin-horizontal;
     .positions-title {
-      align-self: flex-start;
+      justify-self: start;
     }
   }
   .position {
