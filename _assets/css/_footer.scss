@@ -98,6 +98,8 @@ $footer-desktop-padding: 60px;
     border: 1px solid $light-background-color;
     border-radius: 3px;
     @include flex-center-align();
+    //TODO: i18n
+    display: none;
   }
 
   .scroll-top {
