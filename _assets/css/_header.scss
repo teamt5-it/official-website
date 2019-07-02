@@ -55,18 +55,10 @@ $navbar-submenu-mobile-background-color: $background-color;
       height: $navbar-brand-desktop-height;
       padding: 0;
     }
-    .navbar-brand-link {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .logo {
-        height: $navbar-brand-logo-height;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        img {
-          height: 100%;
-        }
+    .navbar-brand-logo {
+      height: $navbar-brand-logo-height;
+      img {
+        height: 100%;
       }
     }
 

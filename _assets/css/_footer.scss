@@ -112,7 +112,7 @@ $footer-desktop-padding: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    @include desktop(){
+    @include desktop() {
       right: $footer-desktop-padding;
     }
 
