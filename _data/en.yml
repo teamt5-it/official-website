@@ -15,8 +15,8 @@ header:
 
 footer:
   product: Product
-  threat-sonar: Threat Sonar
-  threat-vision: Threat Vision
+  threat-sonar: ThreatSonar
+  threat-vision: ThreatVision
   partner: Partner
   support: Support
   resource: Resource
