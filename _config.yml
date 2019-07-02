@@ -47,7 +47,6 @@ assets:
 # jekyll-paginate-v2
 
 pagination:
-  per_page: 1
   permalink: '/page/:num/'
   enabled: true
   debug: true
