@@ -1,22 +1,22 @@
 @import "base";
 main.contact-us {
-  .locations {
+  .branches {
     display: grid;
     grid-gap: 30px;
     @include responsive(640px) {
       grid-gap: 40px;
     }
-    .location {
+    .branch {
       display: grid;
       grid-gap: 10px;
-      .location-title {
+      .branch-title {
         justify-self: start;
         @include page-margin-horizontal;
       }
-      .location-contact-information {
+      .branch-contact-information {
         @include page-margin-horizontal;
       }
-      .location-google-map {
+      .branch-google-map {
         height: 280px;
         @include responsive(800px) {
           @include page-margin-horizontal;
