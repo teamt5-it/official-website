@@ -10,7 +10,6 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       lang: en
-
   -
     scope:
       path: "_positions"

@@ -221,49 +221,18 @@ main.index {
         }
       }
     }
-    .news {
+    .latest-news {
       display: grid;
       grid-gap: 10px;
       @include responsive(800px) {
         grid-gap: 20px;
       }
-      .news-title {
+      .latest-news-title {
         justify-self: start;
       }
-      .news-content {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-        .new {
-          padding: 0 10px;
-          height: 60px;
-          display: flex;
-          align-items: center;
-          flex-wrap: wrap;
-          border-bottom: 1px solid $light-background-color;
-          & > *:not(:last-child) {
-            margin-right: 0.5em;
-          }
-          @include desktop() {
-            height: $new-height;
-            flex-wrap: no-wrap;
-          }
-          .new-date {
-            white-space: nowrap;
-            height: 20px;
-            line-height: 20px;
-            color: $primary-color;
-          }
-          .new-title {
-            width: 100%;
-            word-break: break-all;
-            @include desktop() {
-              width: auto;
-            }
-          }
-        }
+      .latest-news-content {
       }
-      .news-more-button {
+      .latest-news-more-button {
         justify-self: end;
         width: 90px;
         height: 20px;

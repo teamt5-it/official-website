@@ -25,8 +25,7 @@ body {
       align-self: center;
       width: 100%;
       max-width: $max-width;
-      display: flex;
-      flex-direction: column;
+      display: grid;
     }
   }
   .footer-container {

@@ -35,6 +35,10 @@ footer:
   english: English
   mandarin: 中文
 
+# browse-by-type
+browse-by-type:
+  title: Browse by type
+
 # contact us form
 
 contact-us-form:
@@ -287,5 +291,3 @@ newsroom:
   media-inquiries:
     title: Media media-inquiries
     email: mk@teamt5.tw
-  browse-by-type:
-    title: Browse by type

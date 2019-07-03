@@ -1,0 +1,19 @@
+@import "base";
+.browse-by-type {
+  //TODO: newsroom browse by type
+  //display: flex;
+  display: grid;
+  .browse-by-type-title {
+    font-size: 18px;
+    padding: 20px;
+    border-bottom: 1px solid $light-background-color;
+  }
+  .browse-by-type-types {
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    .browse-by-type-type{
+      font-size: 14px;
+    }
+  }
+}

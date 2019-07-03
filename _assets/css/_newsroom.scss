@@ -1,74 +1,47 @@
 @import "base";
 main.newsroom {
-  .news-and-media-inquiries {
+  .latest-news-and-media-inquiries-and-browse-by-type {
     display: grid;
     grid-gap: 10px;
     @include page-margin-horizontal;
-    @include responsive(800px) {
-      grid-gap: 20px;
+    @include responsive(640px) {
+      max-width: 600px;
     }
-    .news-and-media-inquiries-title {
+    @include responsive(800px) {
+      max-width: 740px;
+    }
+    @include responsive(1280px) {
+      max-width: none;
+      grid-gap: 40px;
+    }
+    .latest-news-and-media-inquiries-and-browse-by-type-title {
       justify-self: start;
     }
-    .news-and-media-inquiries-content {
+    .latest-news-and-media-inquiries-and-browse-by-type-content {
       display: grid;
       grid-gap: 40px;
+      align-items: start;
       grid-template-columns: 1fr;
-      @include desktop() {
-        grid-template-columns: 1fr 340px;
+      @include responsive(1280px) {
+        grid-template-columns: 740px 1fr;
       }
-      .news {
-        display: flex;
-        flex-direction: column;
-        .new {
-          padding: 10px;
-          display: flex;
-          flex-wrap: wrap;
-          border-bottom: 1px solid $light-background-color;
-          & > *:not(:last-child) {
-            margin-right: 0.5em;
-          }
-          @include desktop() {
-            height: $new-height;
-            flex-wrap: no-wrap;
-            grid-template-columns: repeat(3, min-content);
-          }
-          .date {
-            white-space: nowrap;
-            height: 20px;
-            line-height: 20px;
-            color: $primary-color;
-          }
-          .title {
-            width: 100%;
-            word-break: break-all;
-            white-space: normal;
-            @include desktop() {
-              width: auto;
-            }
-          }
-        }
+      .latest-news-and-pagination {
+        display: grid;
+        grid-gap: 20px;
         .pagination {
-          align-self: flex-end;
+          @include responsive(640px) {
+            justify-self: end;
+          }
         }
       }
-      .media-inquiries {
-        padding: 20px;
-        background-color: $background-color;
-      }
-      .browse-by-type {
-        display: none;
-        //TODO: newsroom browse by type
-        //display: flex;
-        flex-direction: column;
-        .title {
-          padding: 20px;
-          border-bottom: 1px solid $light-background-color;
-        }
-        .types {
+      .media-inquiries-and-browse-by-type {
+        display: grid;
+        grid-gap: 10px;
+        .media-inquiries {
+          padding: 30px;
           display: grid;
-          grid-gap: 20px;
-          padding: 20px;
+          grid-gap: 10px;
+          background-color: $background-color;
         }
       }
     }

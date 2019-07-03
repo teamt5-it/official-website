@@ -176,18 +176,30 @@ input {
   transition: background-color 1s ease-in-out;
   @include flex-center-align;
   &.button-with-arrow {
+    box-sizing: border-box;
     position: relative;
     border-radius: 0px;
+    padding-right: 20px / $square-root-of-two;
+    @include responsive(640px) {
+      padding-right: 36px / $square-root-of-two;
+    }
     &::after {
       content: "";
+      display: block;
       position: absolute;
-      right: $news-more-button-arrow-side-length/$square-root-of-two * 2;
-      width: $news-more-button-arrow-side-length;
-      height: $news-more-button-arrow-side-length;
+      right: calc(20px / 4);
+      width: 20px / $square-root-of-two/2;
+      height: 20px / $square-root-of-two/2;
+
       border: solid white;
       border-radius: $arrow-width;
       border-width: $arrow-width $arrow-width 0 0;
       transform: rotate(45deg);
+      @include responsive(640px) {
+        right: calc(36px / 4);
+        width: 36px / $square-root-of-two/2;
+        height: 36px / $square-root-of-two/2;
+      }
     }
   }
   &:hover {
@@ -247,6 +259,16 @@ a {
     color: white;
     @include flex-center-align;
   }
+}
+.date {
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  color: $primary-color;
+}
+
+.location {
+  color: $primary-color;
 }
 
 .title {
@@ -331,18 +353,9 @@ a {
 }
 
 .post-meta {
-  margin-bottom: 0.5em;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
   align-items: center;
-  & > *:not(:last-child) {
-    margin-right: 10px;
-  }
-  .date {
-    font-size: 14px;
-    color: $primary-color;
-  }
-  .location {
-    color: $primary-color;
-    font-weight: $font-weight-medium;
-  }
+  grid-column-gap: 10px;
 }

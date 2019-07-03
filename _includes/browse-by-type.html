@@ -1,0 +1,16 @@
+<div class="browse-by-type">
+    <div class="browse-by-type-title title">
+        {% t browse-by-type.title %}
+    </div>
+    {% for post in site.categories.newsroom %}
+    {% assign types = types | concat: post.tags %}
+    {% assign types = types | uniq %}
+    {% endfor %}
+    <div class="browse-by-type-types">
+        {% for type in types %}
+        <div class="browse-by-type-type">
+            {{ type }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
