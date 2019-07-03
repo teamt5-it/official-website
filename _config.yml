@@ -25,8 +25,8 @@ defaults:
 
 # Include positions directory
 
-include: ['_positions']
-
+include:
+  - _positions
 
 plugins:
   - jekyll-coffeescript
