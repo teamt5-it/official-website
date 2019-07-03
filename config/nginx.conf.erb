@@ -50,11 +50,13 @@ http {
 
   server {
     listen <%= ENV["PORT"] %>;
-    server_name teamt5.org teamt5.tw;
+    server_name teamt5.org;
     keepalive_timeout 5;
     client_max_body_size <%= ENV['NGINX_CLIENT_MAX_BODY_SIZE'] || 1 %>M;
 
     root /app/_site; # path to your app
+
+    try_files $uri $uri.html $uri/ =404;
 
     error_page 404 451 /404.html;
     location = /404.html {
