@@ -6,5 +6,6 @@ TARGET=${DIR}/config
 
 erb "${TARGET}/allowed.conf.erb" > "${TARGET}/allowed.conf"
 erb "${TARGET}/locations.conf.erb" > "${TARGET}/locations.conf"
+erb "${TARGET}/sites.conf.erb" > "${TARGET}/sites.conf"
 
 exec $*
