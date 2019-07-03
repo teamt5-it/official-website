@@ -1,41 +1,174 @@
 @import "base";
 main.resource {
+  grid-gap: 10px;
+  @include responsive(640px) {
+    grid-gap: 20px;
+  }
   .sticky-post {
-
+    display: block;
+    position: relative;
     @include responsive(640px) {
       margin-top: 20px;
       @include page-margin-horizontal;
+      max-width: 600px;
+    }
+    @include responsive(800px) {
+      max-width: 740px;
     }
 
     @include responsive(1280px) {
+      max-width: none;
       display: grid;
-      grid-template-columns: auto 1fr;
+      grid-template-columns: 740px auto;
       grid-auto-flow: column;
     }
-    .sticky-post-banner{
-      @include responsive(800px) {
-        max-width: 740px;
-      }
+    .sticky-post-banner {
+      width: 100%;
+      padding-top: 56.25%;
+      position: relative;
+      overflow: hidden;
       img {
+        position: absolute;
+        top: 50%;
         width: 100%;
+        transform: translateY(-50%);
       }
     }
-    .sticky-post-information{
-      background: $background-color;
-    }
-    .sticky-post-read-more-button {
-      align-self: flex-end;
-      width: 90px;
-      height: 20px;
-      font-size: 12px;
+    .sticky-post-information {
+      padding: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.6);
       @include responsive(640px) {
-        font-size: 14px;
-        width: 120px;
-        height: 36px;
+        padding: 15px;
       }
       @include responsive(800px) {
-        font-size: 20px;
-        width: 145px;
+        padding: 20px;
+      }
+      @include responsive(1280px) {
+        @include flex-center-align;
+        position: relative;
+        background-color: $background-color;
+      }
+      .sticky-post-meta {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-column-gap: 10px;
+        justify-content: stretch;
+        grid-auto-flow: row;
+        position: relative;
+        @include responsive(800px) {
+          grid-column-gap: 10px;
+        }
+        @include responsive(1280px) {
+          display: block;
+        }
+        .sticky-post-date {
+          color: white;
+          @include responsive(1280px) {
+            color: $primary-color;
+            position: absolute;
+            bottom: calc(100% + 40px);
+          }
+        }
+        .sticky-post-tags {
+          @include responsive(1280px) {
+            position: absolute;
+            bottom: calc(100% + 10px);
+          }
+        }
+        .sticky-post-title {
+          grid-column: 1 / span 2;
+          font-size: 20px;
+          color: white;
+          @include responsive(640px) {
+            font-size: 22px;
+          }
+          @include responsive(1280px) {
+            grid-column: auto;
+            color: $normal-color;
+          }
+        }
+      }
+      .sticky-post-read-more-button {
+        display: none;
+        @include responsive(1280px) {
+          display: flex;
+          align-self: flex-end;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          font-size: 20px;
+          height: 36px;
+          width: 145px;
+        }
+      }
+    }
+  }
+  .posts-and-browse-by-type {
+    display: grid;
+    grid-gap: 40px;
+    align-items: start;
+    grid-template-columns: 1fr;
+    @include page-margin-horizontal;
+    @include responsive(640px) {
+      max-width: 600px;
+    }
+    @include responsive(800px) {
+      max-width: 740px;
+    }
+    @include responsive(1280px) {
+      max-width: none;
+      grid-template-columns: 740px 1fr;
+    }
+    .posts-and-pagination {
+      display: grid;
+      grid-gap: 20px;
+      .posts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        @include responsive(640px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @include responsive(800px) {
+          grid-gap: 20px;
+        }
+        .post {
+          box-sizing: border-box;
+          padding: 20px;
+          background-color: $background-color;
+          display: grid;
+          grid-gap: 15px;
+          grid-auto-flow: column;
+          align-items: center;
+          border: 3px solid transparent;
+          &:hover {
+            border: 3px solid $primary-color;
+          }
+          .post-logo {
+            width: 60px;
+            @include responsive(800px) {
+              width: 80px;
+            }
+            img {
+              width: 100%;
+            }
+          }
+          .post-meta {
+            display: grid;
+            grid-gap: 10px;
+            grid-auto-flow: row;
+            justify-content: start;
+          }
+        }
+      }
+      .pagination {
+        @include responsive(640px) {
+          justify-self: end;
+        }
       }
     }
   }

@@ -2,46 +2,65 @@
 layout: page
 ---
 
-<div class="sticky-post">
+{% assign post = paginator.posts | first %}
+<a class="sticky-post" href="{{ post.url }}">
     <div class="sticky-post-banner">
-        {% assign post = paginator.posts | first %}
-        <img src="{{post.banner}}">
+        <img src="{{post.banner}}" alt="aa">
     </div>
     <div class="sticky-post-information">
-        <div class="sticky-post-meta">
-            <div class="date">
+        <div class="sticky-post-meta post-meta">
+            <div class="sticky-post-date post-date">
                 {{ post.date | date: "%Y-%m-%d" }}
             </div>
-            <div class="tags">
+            <div class="sticky-post-tags post-tags tags">
                 {% for tag in post.tags %}
                 <span class="tag">
                     {{ tag }}
                 </span>
                 {% endfor %}
             </div>
+            <div class="sticky-post-title post-title title">
+                {{ post.title }}
+            </div>
         </div>
-        <a class="sticky-post-read-moure-button button" href="{{ post.url }}">
+        <div class="sticky-post-read-more-button button button-with-arrow">
             {% t sticky-post.more %}
-        </a>
-    </div>
-</div>
-<div class="posts">
-</div>
-<div class="browse-by-type">
-    <div class="browse-by-type-title">
-        {% t browse-by-type.title %}
-    </div>
-    {% for post in site.categories.newsroom %}
-    {% assign types = types | concat: post.tags %}
-    {% assign types = types | uniq %}
-    {% endfor %}
-    <div class="browse-by-type-types">
-        {% for type in types %}
-        <div class="browse-by-type-type">
-            {{ type }}
         </div>
-        {% endfor %}
     </div>
+</a>
+<div class="posts-and-browse-by-type">
+    <div class="posts-and-pagination">
+        <div class="posts">
+            {% for post in paginator.posts %}
+            <a class="post" href="{{ post.url | relative_url }}">
+                <div class="post-logo">
+                    {% if post.tags contains 'case study' %}
+                    {% asset case-study.svg %}
+                    {% elsif post.tags contains 'datasheet' %}
+                    {% asset datasheet.svg %}
+                    {% elsif post.tags contains 'technical' %}
+                    {% asset technical.svg %}
+                    {% endif %}
+                </div>
+                <div class="post-meta">
+                    <div class="post-date date">
+                        {{ post.date | date: "%Y-%m-%d" }}
+                    </div>
+                    <div class="post-tags tags">
+                        {% for tag in post.tags %}
+                        <div class="tag">
+                            {{ tag }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="post-title">
+                        {{ post.title }}
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% include pagination.html %}
+    </div>
+    {% include browse-by-type.html %}
 </div>
-
-{% include pagination.html %}
