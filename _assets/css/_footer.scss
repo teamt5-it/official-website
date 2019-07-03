@@ -46,10 +46,6 @@ $footer-desktop-padding: 60px;
         grid-gap: 10px;
         .menu-item-title {
           font-weight: bold;
-          &.resource {
-            //TODO: resource page
-            display: none;
-          }
         }
         .menu-item-link {
           display: block;

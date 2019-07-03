@@ -35,6 +35,10 @@ footer:
   english: English
   mandarin: 中文
 
+# sticky-post
+sticky-post:
+    read-more: Read More
+
 # browse-by-type
 browse-by-type:
   title: Browse by type
@@ -166,7 +170,6 @@ sonar:
       f: Can block or quarantine infected files, but usually not able to clean-up hidden backdoor automatically.
       g: Full disk scanning always takes up to several hours
 
-
 # vision
 vision:
   banner:
@@ -190,8 +193,6 @@ vision:
   malicious_indicator_collection: Malicious indicator collection
   linkage_discovery: Linkage discovery
 
-
-
 # partner
 partner:
   japan:
@@ -207,15 +208,6 @@ partner:
     M: +65 6858 5645
     W: https://www.netpoleons.com
 
-
-
-
-# resource
-resource:
-  sticky-post:
-    more: Read More
-
-
 # support
 support:
   title: Global Support
@@ -223,7 +215,6 @@ support:
     T: +886.2.7706.1299
     timezone: 0900 - 1800 (UTC+8)
     M: support@teamt5.tw
-
 
 # about us
 about-us:

@@ -32,7 +32,7 @@ $ ->
 			$(".navbar-submenu-padding").toggleClass('active')
 
 
-	# contact-us-form
+	# threat-sonar-contact-us-form
 	$('textarea').autoResize();
 	$("#contact-us-form-submit").click (e) ->
 		e.preventDefault();
@@ -48,6 +48,24 @@ $ ->
 			error: (response) ->
 				$(e.currentTarget).addClass('error')
 				$(e.currentTarget).text('Error')
+
+	# threat-vision-contact-us-form
+	$('textarea').autoResize();
+	$("#contact-us-form-submit").click (e) ->
+		e.preventDefault();
+		data = $("#threat-sonar-contact-us-form").serializeJSON()
+		$.get
+			url: "https://script.google.com/a/teamt5.org/macros/s/AKfycbx3MWJ11MHfQnxVLkh6WhJVtsC-00DFELeniPHy6Hp9LpuP5ZI/exec"
+			data: data
+			dataType: "JSON"
+			success: (response) ->
+				$(e.currentTarget).prop('disabled', true)
+				$(e.currentTarget).addClass('success')
+				$(e.currentTarget).text('Success')
+			error: (response) ->
+				$(e.currentTarget).addClass('error')
+				$(e.currentTarget).text('Error')
+
 
 
 	# form

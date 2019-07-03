@@ -127,14 +127,8 @@ $navbar-submenu-mobile-background-color: $background-color;
       display: flex;
       flex-direction: column;
       display: block;
-
       @include responsive(800px) {
         height: $navbar-item-desktop-height;
-      }
-
-      &.resource {
-        //TODO: resource page
-        display: none;
       }
       .navbar-item-link {
         cursor: pointer;

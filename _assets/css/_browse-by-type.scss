@@ -1,8 +1,8 @@
 @import "base";
 .browse-by-type {
-  //TODO: newsroom browse by type
-  //display: flex;
+  //TODO: browse by type
   display: grid;
+  display: none;
   .browse-by-type-title {
     font-size: 18px;
     padding: 20px;
