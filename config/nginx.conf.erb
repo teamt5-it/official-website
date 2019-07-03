@@ -56,6 +56,10 @@ http {
 
     root /app/_site; # path to your app
 
+    if ($fqdn ~* "www") {
+        rewrite ^/(.*)(\/|$) https://teamt5.org/$1 break;
+    }
+
     if ($tld !~* "org") {
         rewrite ^/(.*)(\/|$) https://${fqdn}teamt5.org/$1 break;
     }
