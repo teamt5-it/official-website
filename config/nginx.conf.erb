@@ -50,11 +50,15 @@ http {
 
   server {
     listen <%= ENV["PORT"] %>;
-    server_name teamt5.org;
+    server_name ~^(?<fqdn>.+\.)?teamt5.(?<tld>(org|tw))$;
     keepalive_timeout 5;
     client_max_body_size <%= ENV['NGINX_CLIENT_MAX_BODY_SIZE'] || 1 %>M;
 
     root /app/_site; # path to your app
+
+    if ($tld !~* "org") {
+        rewrite ^/(.*)(\/|$) https://${fqdn}teamt5.org/$1 break;
+    }
 
     try_files $uri $uri.html $uri/ =404;
 
@@ -77,7 +81,7 @@ http {
 
   server {
     listen <%= ENV["PORT"] %>;
-    server_name ~^(?<fqdnsub>(?<subdomain>.+)\.)?(?<domain>threatsonar.org)$;
+    server_name ~^(?<fqdnsub>(?<subdomain>.+)\.)?(?<domain>threatsonar.(org|tw})$;
     keepalive_timeout 5;
     client_max_body_size <%= ENV['NGINX_CLIENT_MAX_BODY_SIZE'] || 1 %>M;
 
