@@ -2,15 +2,15 @@
 layout: page
 ---
 
-<div class="banner">
+<div class="banner-with-text">
     <div class="banner-title title title-xl title-underline">
-        {% t title %}
+        {% t banner.title %}
     </div>
     <div class="banner-image">
-        {% asset career_bg.jpg %}
+        {% asset career-banner.jpg %}
     </div>
     <div class="banner-content">
-        {% capture string_with_newlines %}{% t content %}{% endcapture %}
+        {% capture string_with_newlines %}{% t banner.content %}{% endcapture %}
         {{ string_with_newlines | newline_to_br }}
     </div>
 </div>

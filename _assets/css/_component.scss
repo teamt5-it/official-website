@@ -360,3 +360,62 @@ a {
   align-items: center;
   grid-column-gap: 10px;
 }
+
+.banner-with-text {
+  display: grid;
+  grid-gap: 10px;
+  @include responsive(800px) {
+    grid-gap: 20px;
+  }
+  .banner-title {
+    justify-self: start;
+    @include page-margin-horizontal;
+  }
+  .banner-image {
+    position: relative;
+    overflow: hidden;
+    @include responsive(1024px) {
+      @include page-margin-horizontal;
+    }
+    &:after {
+      content: "";
+      display: block;
+      padding-top: 37.5%;
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .banner-content {
+    position: relative;
+    top: -30px;
+    margin-bottom: 20px - 30px;
+    justify-self: center;
+    background-color: $background-color;
+    text-align: justify;
+    padding: 20px 10px;
+    @include page-margin-horizontal;
+    @include responsive(640px) {
+      top: -90px;
+      padding: 20px;
+      margin-bottom: 20px - 90px;
+    }
+    @include responsive(800px) {
+      top: -110px;
+      padding: 30px 50px;
+      margin-bottom: 40px - 110px;
+    }
+    @include responsive(1024px) {
+      top: -110px;
+      width: 740px;
+      margin-bottom: 60px - 110px;
+    }
+    @include responsive(1280px) {
+      top: -140px;
+      margin-bottom: 60px - 140px;
+    }
+  }
+}

@@ -1,63 +1,10 @@
 @import "base";
 
 main.careers {
-  .banner {
-    //TODO
-    //display: grid;
-    display: none;
-    grid-gap: 10px;
-    @include responsive(800px) {
-      grid-gap: 20px;
-    }
-    .banner-title {
-      justify-self: start;
-      @include page-margin-horizontal;
-    }
-    .banner-image {
-      overflow: hidden;
-      align-self: center;
-      width: 100%;
-      @include responsive(1024px) {
-        @include page-padding-horizontal;
-        width: auto;
-      }
-      img {
-        width: 100%;
-        margin: -17.5% 0;
-      }
-    }
-    .banner-content {
-      position: relative;
-      top: -30px;
-      margin-bottom: 20px - 30px;
-      justify-self: center;
-      background-color: $background-color;
-      text-align: justify;
-      padding: 20px 10px;
-      @include page-margin-horizontal;
-      @include responsive(640px) {
-        top: -90px;
-        padding: 20px;
-        margin-bottom: 20px - 90px;
-      }
-      @include responsive(800px) {
-        top: -110px;
-        padding: 30px 50px;
-        margin-bottom: 40px - 110px;
-      }
-      @include responsive(1024px) {
-        top: -110px;
-        width: 740px;
-        margin-bottom: 60px - 110px;
-      }
-      @include responsive(1280px) {
-        top: -140px;
-        margin-bottom: 60px - 140px;
-      }
-    }
-  }
   .positions {
-    display: grid;
+    // TODO
+    // display: grid;
+    display: none;
     grid-gap: 10px;
     @include responsive(800px) {
       grid-gap: 20px;

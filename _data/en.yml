@@ -219,7 +219,7 @@ support:
 
 # about us
 about-us:
-  teamt5-world-class-team:
+  banner:
     title: TeamT5 World Class Team
     content: |-
       We are the world-leading malware research and Solution provider to cyber espionage in Asia and Pacific.
@@ -255,6 +255,7 @@ contact-us:
 
 # careers
 careers:
+  banner:
     title: TeamT5 Careers
     content: |-
       TeamT5 杜浦數位安全是專注於亞太地區網路威脅分析研究的公司，旨在提供武藝高深的駭客更多溫暖和希望。
@@ -273,8 +274,8 @@ careers:
       我們的 mission 是守護世界和平，如果現實世界做不到至少 cyber 還有機會。
 
       我們的 vision 是給優秀年輕人舞台，如果台灣沉了至少 cyber 還有位元留存。
-    positions:
-      title: Open Positions
+  positions:
+    title: Open Positions
 
 # newsroom
 newsroom:
