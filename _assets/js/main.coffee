@@ -31,14 +31,14 @@ $ ->
 		if (cur_navbar_submenu_active && cur_navbar_submenu_padding_active) || (!cur_navbar_submenu_active && !cur_navbar_submenu_padding_active)
 			$(".navbar-submenu-padding").toggleClass('active')
 
+	$('textarea').autoResize();
 
 	# threat-sonar-contact-us-form
-	$('textarea').autoResize();
-	$("#contact-us-form-submit").click (e) ->
+	$("#threat-sonar-contact-us-form-submit").click (e) ->
 		e.preventDefault();
-		data = $("#contact-us-form").serializeJSON()
+		data = $("#threat-sonar-contact-us-form").serializeJSON()
 		$.get
-			url: "https://script.google.com/macros/s/AKfycbx533dQP94GOW3F0S2K3GEGStL-Vzr8bwFM1VQyAR4tnmHBg_Py/exec"
+			url: "https://script.google.com/a/teamt5.org/macros/s/AKfycbzn7LjNQ5YQR97mQERARgPmsA8n3U7EyrN63x1Adw/exec"
 			data: data
 			dataType: "JSON"
 			success: (response) ->
@@ -50,12 +50,11 @@ $ ->
 				$(e.currentTarget).text('Error')
 
 	# threat-vision-contact-us-form
-	$('textarea').autoResize();
-	$("#contact-us-form-submit").click (e) ->
+	$("#threat-vision-contact-us-form-submit").click (e) ->
 		e.preventDefault();
-		data = $("#threat-sonar-contact-us-form").serializeJSON()
+		data = $("#threat-vision-contact-us-form").serializeJSON()
 		$.get
-			url: "https://script.google.com/a/teamt5.org/macros/s/AKfycbx3MWJ11MHfQnxVLkh6WhJVtsC-00DFELeniPHy6Hp9LpuP5ZI/exec"
+			url: "https://script.google.com/a/teamt5.org/macros/s/AKfycbw5tsN8yq4g5D5XCoIsn0DPold7kgpBbuDCXqVL/exec"
 			data: data
 			dataType: "JSON"
 			success: (response) ->
@@ -68,12 +67,12 @@ $ ->
 
 
 
-	# form
+	# position form
 	$("#position-form-submit").click (e) ->
 		e.preventDefault();
 		data = $("#position-form").serializeJSON()
 		$.get
-			url: "https://script.google.com/macros/s/AKfycbxzOuA3U8N30yy711X_4th_2ty4WqBiepxjcPAauda1hp3cM9I/exec"
+			url: "https://script.google.com/a/teamt5.org/macros/s/AKfycbyhx4Py9s91JBYEEZiKVqf7fgbaq0ENK2hwRP_S/exec"
 			data: data
 			dataType: "JSON"
 			success: (response) ->

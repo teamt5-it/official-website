@@ -15,7 +15,7 @@
 
         <div class="form-group">
             <label for="email">{% t position-form.email %}</label>
-            <input type="email" placeholder="{% t position-form.email %}" name="" class="form-control">
+            <input type="email" placeholder="{% t position-form.email %}" name="email" class="form-control">
         </div>
 
         <div class="form-group">
@@ -69,11 +69,15 @@
 
         <div class="form-group">
             <label for="portfolio-url">{% t position-form.portfolio-url %}</label>
-            <textarea placeholder="{% t position-form.portfolio-url %}" name="portfolio_url"
+            <textarea placeholder="{% t position-form.portfolio-url %}" name="portfolio-url"
                 class="form-control"></textarea>
         </div>
 
-        <button class="button form-submit" id="contact-us-form-submit">
+        <div class="form-group">
+            <input type="hidden" name="position" value="{{include.position}}">
+        </div>
+
+        <button class="button form-submit" id="position-form-submit">
             {% t position-form.submit %}
         </button>
     </div>

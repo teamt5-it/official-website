@@ -1,4 +1,4 @@
-<form class="contact-us-form form" id="contact-us-form">
+<form class="contact-us-form form" id="{{include.id}}">
     <div class="form-title title">{% t contact-us-form.title %}</div>
     <div class="form-inputs">
         <div class="form-group">
@@ -38,7 +38,14 @@
             <input type="text" placeholder="{% t contact-us-form.country %}" name="country" class="form-control">
         </div>
 
-        <button class="button form-submit" id="contact-us-form-submit">
+        <div class="form-group">
+            <label
+                for="anything-you-want-to-know-about-product">{% t contact-us-form.anything-you-want-to-know-about-product %}</label>
+            <textarea placeholder="{% t contact-us-form.anything-you-want-to-know-about-product %}"
+                name="anything-you-want-to-know-about-product" class="form-control"></textarea>
+        </div>
+
+        <button class="button form-submit" id="{{include.id}}-submit">
             {% t contact-us-form.submit %}
         </button>
     </div>
