@@ -2,7 +2,9 @@
 
 main.careers {
   .banner {
-    display: grid;
+    //TODO
+    //display: grid;
+    display: none;
     grid-gap: 10px;
     @include responsive(800px) {
       grid-gap: 20px;
