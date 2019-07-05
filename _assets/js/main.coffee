@@ -31,6 +31,13 @@ $ ->
 		if (cur_navbar_submenu_active && cur_navbar_submenu_padding_active) || (!cur_navbar_submenu_active && !cur_navbar_submenu_padding_active)
 			$(".navbar-submenu-padding").toggleClass('active')
 
+	# carousel
+	$(".carousel .carousel-items .carousel-item[data-index=1]").addClass('active')
+	$(".carousel .carousel-indicators .carousel-indicator[data-index=1]").addClass('active')
+	a = 1
+	$(".carousel .carousel-items .carousel-item[data-index=#{a}]").addClass('left')
+	$(".carousel .carousel-items .carousel-item[data-index=#{a}]").addClass('center')
+
 	$('textarea').autoResize();
 
 	# threat-sonar-contact-us-form

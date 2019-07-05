@@ -8,18 +8,40 @@ main.index {
   .carousel {
     display: none;
     .carousel-items {
-      position: relative;
-      overflow: hidden;
-      &:after{
-        content: "";
-        display: block;
-        padding-top: 37.5%;
-      }
-      img {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        transform: translateY(-50%);
+      .carousel-item {
+        display: none;
+        position: relative;
+        overflow-y: hidden;
+        transition: all 5s ease-in-out;
+        &.left {
+          left: -100%;
+        }
+        &.right {
+          right: -100%;
+        }
+        &:hover {
+          left: 0;
+          right: 0;
+        }
+        &.active {
+          display: block;
+        }
+        &.center {
+        }
+        &:after {
+          content: "";
+          display: block;
+          clip-path: polygon(0 0%, 40% 0%, 40% 100%, 0% 100%);
+          opacity: 0.8;
+          background-color: $primary-color;
+          padding-top: 37.5%;
+        }
+        img {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          transform: translateY(-50%);
+        }
       }
     }
     .carousel-indicators {
@@ -31,6 +53,15 @@ main.index {
       grid-auto-columns: min-content;
       justify-content: center;
       align-items: center;
+      @include responsive(800px) {
+        height: 40px;
+      }
+      @include responsive(1024px) {
+        height: 50px;
+      }
+      @include responsive(1280px) {
+        height: 60px;
+      }
 
       .carousel-indicator {
         width: 10px;

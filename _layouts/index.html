@@ -3,23 +3,18 @@ layout: default
 ---
 <div class="carousel">
     <div class="carousel-items">
-        <div class="carousel-item">
-            <img src="https://img1.cookinglight.timeinc.net/sites/default/files/styles/4_3_horizontal_-_1200x900/public/1502826406/1708w-getty-fruit-closeup-CarstenSchanter-EyeEm.jpg">
+        {% for post in paginator.posts %}
+        <div class="carousel-item" data-index="{{ forloop.index }}">
+            <img src="{{post.banner}}">
         </div>
-        <div class="carousel-item">
-
-        </div>
+        {% endfor %}
     </div>
     <div class="carousel-indicators">
-        <div class="carousel-indicator">
+        {% for post in paginator.posts %}
+        <div class="carousel-indicator" data-index="{{ forloop.index }}">
 
         </div>
-        <div class="carousel-indicator active">
-
-        </div>
-        <div class="carousel-indicator">
-
-        </div>
+        {% endfor %}
     </div>
 </div>
 <div class="banner">
@@ -54,6 +49,17 @@ layout: default
     </div>
 </div>
 <div class="products-and-news">
+    <div class="latest-news">
+        <div class="latest-news-title title title-xl title-underline">
+            {% t news.title %}
+        </div>
+        <div class="latest-news-content">
+            {% include news.html %}
+        </div>
+        <a class="latest-news-more-button button button-with-arrow" href="{{ site.data.links.company.newsroom }}">
+            {% t news.more %}
+        </a>
+    </div>
     <div class="products">
         <div class="products-title title title-xl title-underline">
             {% t products.title %}
@@ -95,16 +101,5 @@ layout: default
                     href="{{ site.data.links.products.threat-vision }}">{% t learn-more %}</a>
             </div>
         </div>
-    </div>
-    <div class="latest-news">
-        <div class="latest-news-title title title-xl title-underline">
-            {% t news.title %}
-        </div>
-        <div class="latest-news-content">
-            {% include news.html %}
-        </div>
-        <a class="latest-news-more-button button button-with-arrow" href="{{ site.data.links.company.newsroom }}">
-            {% t news.more %}
-        </a>
     </div>
 </div>
