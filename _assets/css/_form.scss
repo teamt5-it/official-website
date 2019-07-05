@@ -39,6 +39,7 @@
     .form-group {
       display: grid;
       grid-auto-rows: auto;
+      align-content: start;
       grid-gap: 5px;
       label {
         line-height: 1.5;
