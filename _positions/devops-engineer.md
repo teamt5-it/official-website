@@ -6,8 +6,7 @@ location: taipei
 tags: Full-time
 ---
 
-# Duties
-
+# Duties / 職位內容描述
 ## Responsibilities
 
 - Operate and daily maintain production environment. Inspect and triage service outage
@@ -38,5 +37,4 @@ or malfunction.
 - Service HA: Haproxy, k8s, knative
 
 # Compensation
-
 ## Negotiable
