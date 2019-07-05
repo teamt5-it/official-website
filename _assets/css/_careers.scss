@@ -1,10 +1,12 @@
 @import "base";
 
 main.careers {
-  .positions {
+  .banner-with-text{
     // TODO
-    // display: grid;
     display: none;
+  }
+  .positions {
+    display: grid;
     grid-gap: 10px;
     @include responsive(800px) {
       grid-gap: 20px;
