@@ -293,21 +293,13 @@ main.threat-sonar {
       @include responsive(800px) {
         grid-gap: 30px;
       }
-      .intelligence-report-subscription-content {
+      .assessment-reports-content {
         font-size: 12px;
         @include responsive(640px) {
           font-size: 16px;
         }
         @include responsive(800px) {
           font-size: 20px;
-        }
-        ul {
-          li {
-            margin: 1em 0;
-          }
-          li::before {
-            color: $secondary-color;
-          }
         }
       }
     }
