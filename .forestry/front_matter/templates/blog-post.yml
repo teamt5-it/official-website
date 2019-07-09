@@ -38,17 +38,6 @@ fields:
     - datasheet
     - technical
   label: tags
-- name: date
-  type: datetime
-  label: date
-  description: ''
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
-  default: now
-  hidden: true
 - name: locale
   type: select
   default: en
@@ -62,5 +51,16 @@ fields:
       file: 
       path: 
   label: locale
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+  hidden: true
 pages:
 - _posts/2019-07-09-test.md
