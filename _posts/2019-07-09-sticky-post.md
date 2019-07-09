@@ -8,6 +8,5 @@ categories:
 tags:
 - case study
 sticky: true
-
 ---
 sticky post

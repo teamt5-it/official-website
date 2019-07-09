@@ -1,6 +1,5 @@
 ---
 title: DevOps Engineer
-lang: en
 locale: en
 location: taipei
 tags: Full-time

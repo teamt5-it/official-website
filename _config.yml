@@ -9,7 +9,7 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      lang: en
+      locale: en
   -
     scope:
       path: "_positions"
