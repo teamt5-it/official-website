@@ -1,4 +1,50 @@
 ---
 label: Blog post
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: title
+- name: categories
+  type: list
+  config:
+    use_select: true
+    min: '1'
+    max: 
+    source:
+      type: simple
+    options:
+    - newsroom
+    - resource
+  label: categories
+- name: tags
+  type: list
+  config:
+    use_select: true
+    min: '1'
+    max: 
+    source:
+      type: simple
+    options:
+    - case study
+    - datasheet
+    - technical
+  label: tags
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+  hidden: true
+- name: banner
+  type: file
+  config:
+    maxSize: 250
+  label: banner
