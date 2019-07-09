@@ -2,16 +2,29 @@
 layout: default
 ---
 <div class="carousel">
-    <div class="carousel-items">
+    <div class="carousel-items" data-count="{{paginator.posts | size}}" >
         {% for post in paginator.posts %}
-        <div class="carousel-item" data-index="{{ forloop.index }}">
+        <a class="carousel-item
+        {% if forloop.index == 1 %}
+        active
+        {% endif %}
+        " data-index="{{ forloop.index | minus: 1 }}" href={{post.url}}>
             <img src="{{post.banner}}">
-        </div>
+            <div class="carousel-item-title-container">
+                <div class="carousel-item-title title">
+                    {{post.title}}
+                </div>
+            </div>
+        </a>
         {% endfor %}
     </div>
     <div class="carousel-indicators">
         {% for post in paginator.posts %}
-        <div class="carousel-indicator" data-index="{{ forloop.index }}">
+        <div class="carousel-indicator
+        {% if forloop.index == 1 %}
+        active
+        {% endif %}
+        " data-index="{{ forloop.index | minus: 1 }}">
 
         </div>
         {% endfor %}
@@ -49,17 +62,6 @@ layout: default
     </div>
 </div>
 <div class="products-and-news">
-    <div class="latest-news">
-        <div class="latest-news-title title title-xl title-underline">
-            {% t news.title %}
-        </div>
-        <div class="latest-news-content">
-            {% include news.html %}
-        </div>
-        <a class="latest-news-more-button button button-with-arrow" href="{{ site.data.links.company.newsroom }}">
-            {% t news.more %}
-        </a>
-    </div>
     <div class="products">
         <div class="products-title title title-xl title-underline">
             {% t products.title %}
@@ -101,5 +103,16 @@ layout: default
                     href="{{ site.data.links.products.threat-vision }}">{% t learn-more %}</a>
             </div>
         </div>
+    </div>
+    <div class="latest-news">
+        <div class="latest-news-title title title-xl title-underline">
+            {% t news.title %}
+        </div>
+        <div class="latest-news-content">
+            {% include news.html %}
+        </div>
+        <a class="latest-news-more-button button button-with-arrow" href="{{ site.data.links.company.newsroom }}">
+            {% t news.more %}
+        </a>
     </div>
 </div>

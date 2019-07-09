@@ -11,7 +11,7 @@ $ ->
 		window.scrollTo {top: 0, behavior: 'smooth'}
 
 	$(".scroll-bottom").click ->
-		window.scrollTo {top: document.body.scrollHeight, behavior: 'smooth'}
+		window.scrollTo {top: $(".products").offset().top, behavior: 'smooth'}
 
 
 	$(".navbar-brand").click ->
@@ -32,12 +32,121 @@ $ ->
 			$(".navbar-submenu-padding").toggleClass('active')
 
 	# carousel
-	$(".carousel .carousel-items .carousel-item[data-index=1]").addClass('active')
-	$(".carousel .carousel-indicators .carousel-indicator[data-index=1]").addClass('active')
-	a = 1
-	$(".carousel .carousel-items .carousel-item[data-index=#{a}]").addClass('left')
-	$(".carousel .carousel-items .carousel-item[data-index=#{a}]").addClass('center')
+	class Carousel
+		duration = 200
+		constructor: () ->
+			@count = $(".carousel .carousel-items").data('count')
+			@cur_active_index = 0
+			@register_event_handler()
+			@start_timer()
 
+		get_item: (index) ->
+			$(".carousel .carousel-items .carousel-item[data-index=#{index}]")
+
+		get_item_title_container: (index) ->
+			$(".carousel .carousel-items .carousel-item[data-index=#{index}] .carousel-item-title-container")
+
+		get_item_title: (index) ->
+			$(".carousel .carousel-items .carousel-item[data-index=#{index}] .carousel-item-title-container .carousel-item-title")
+
+		get_item_indicator: (index) ->
+			$(".carousel .carousel-indicators .carousel-indicator[data-index=#{index}]")
+
+		register_event_handler: () ->
+			$(".carousel .carousel-indicators .carousel-indicator").click (e) =>
+				index = $(e.currentTarget).data('index')
+				@reset_timer()
+				@set_active_item index
+
+		start_timer: () ->
+			@timer = setInterval =>
+				@set_active_item (@cur_active_index+1)%@count
+			, 3000
+
+		reset_timer: () ->
+			clearInterval(@timer)
+			@start_timer()
+
+		slide_item_left_and_disappear: (index) ->
+			@get_item(index).addClass('left')
+			new Promise((resolve)=>
+				setTimeout =>
+					@get_item(index).removeClass('active')
+					@get_item(index).removeClass('left')
+					resolve
+				, duration
+			)
+		slide_item_right_and_disappear: (index) ->
+			@get_item(index).addClass('right')
+			new Promise((resolve)=>
+				setTimeout =>
+					@get_item(index).removeClass('active')
+					@get_item(index).removeClass('right')
+					resolve
+				, duration
+			)
+		slide_item_from_right_to_center: (index) ->
+			@get_item(index).addClass('right active')
+			@get_item_title_container(index).addClass('left')
+			@get_item_title(index).addClass('bottom')
+			new Promise((resolve)=>
+				setTimeout =>
+					@get_item(index).addClass('center')
+				, 0
+				setTimeout =>
+					@get_item(index).removeClass('right')
+					@get_item(index).removeClass('center')
+					@get_item_title_container(index).addClass('center')
+				, duration
+				setTimeout =>
+					@get_item_title_container(index).removeClass('left')
+					@get_item_title_container(index).removeClass('center')
+					@get_item_title(index).addClass('center')
+				, duration*2
+				setTimeout =>
+					@get_item_title(index).removeClass('bottom')
+					@get_item_title(index).removeClass('center')
+					resolve
+				, duration*3
+			)
+		slide_item_from_left_to_center: (index) ->
+			console.log(index)
+			@get_item(index).addClass('left active')
+			@get_item_title_container(index).addClass('left')
+			@get_item_title(index).addClass('bottom')
+			new Promise((resolve)=>
+				setTimeout =>
+					@get_item(index).addClass('center')
+				, 0
+				setTimeout =>
+					@get_item(index).removeClass('left')
+					@get_item(index).removeClass('center')
+					@get_item_title_container(index).addClass('center')
+				, duration
+				setTimeout =>
+					@get_item_title_container(index).removeClass('left')
+					@get_item_title_container(index).removeClass('center')
+					@get_item_title(index).addClass('center')
+				, duration*2
+				setTimeout =>
+					@get_item_title(index).removeClass('bottom')
+					@get_item_title(index).removeClass('center')
+					resolve
+				, duration*3
+			)
+
+		set_active_item: (index) ->
+			@get_item_indicator(@cur_active_index).removeClass('active')
+			@get_item_indicator(index).addClass('active')
+			if @cur_active_index==index
+				return
+			else if @cur_active_index < index
+				# coffeescript gem doesn't support await
+				Promise.all([@slide_item_left_and_disappear @cur_active_index, @slide_item_from_right_to_center index])
+			else
+				Promise.all([@slide_item_right_and_disappear @cur_active_index, @slide_item_from_left_to_center index])
+			@cur_active_index = index
+	carousel = new Carousel
 	$('textarea').autoResize();
 
 	# threat-sonar-contact-us-form
