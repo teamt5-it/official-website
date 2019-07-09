@@ -7,6 +7,11 @@ fields:
   config:
     required: true
   label: title
+- name: banner
+  type: file
+  config:
+    maxSize: 250
+  label: banner
 - name: categories
   type: list
   config:
@@ -43,8 +48,3 @@ fields:
     display_utc: false
   default: now
   hidden: true
-- name: banner
-  type: file
-  config:
-    maxSize: 250
-  label: banner
