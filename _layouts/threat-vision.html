@@ -15,6 +15,7 @@ layout: default
         </div>
     </div>
 </div>
+
 <div class="strengths-container">
     <div class="strengths-title sonar-title">
         {% t strengths.title %}
@@ -54,50 +55,37 @@ layout: default
         </div>
     </div>
 </div>
-<div class="intelligence-report-subscription">
-    <div class="intelligence-report-subscription-screenshot">
+<div class="intelligence-report">
+    <div class="intelligence-report-screenshot">
         {% asset intelligence_report_subscription_screenshot.png %}
     </div>
-    <div class="intelligence-report-subscription-title-and-content">
-        <div class="intelligence-report-subscription-title title sonar-title">
-            {% t intelligence-report-subscription.title %}
+    <div class="intelligence-report-title-and-content">
+        <div class="intelligence-report-title title sonar-title">
+            {% t intelligence-report.title %}
         </div>
-        <div class="intelligence-report-subscription-content content">
+        <div class="intelligence-report-content content sonar-content">
             <ul>
-                <li> {% t intelligence-report-subscription.a %}</li>
-                <li> {% t intelligence-report-subscription.b %}</li>
-                <li> {% t intelligence-report-subscription.c %}</li>
-                <li> {% t intelligence-report-subscription.d %}</li>
-                <li> {% t intelligence-report-subscription.e %}</li>
+                <li> {% t intelligence-report.a %}</li>
+                <li> {% t intelligence-report.b %}</li>
+                <li> {% t intelligence-report.c %}</li>
             </ul>
         </div>
     </div>
 </div>
-<div class="sample-analysis-container">
-    <div class="sample-analysis-title title sonar-title">
-        {% t sample-analysis.title %}
+<div class="malware-analysis">
+    <div class="malware-analysis-title title sonar-title">
+        {% t malware-analysis.title %}
     </div>
-    <div class="sample-analysis">
-        <div class="sample-analysis-strengths">
-            <div class="sample-analysis-strength">
-                <div class="sample-analysis-strength-logo">
-                    {% asset malicious_indicator_collection.svg %}
-                </div>
-                <div class="sample-analysis-strength-title title">
-                    {% t malicious_indicator_collection %}
-                </div>
-            </div>
-            <div class="sample-analysis-strength">
-                <div class="sample-analysis-strength-logo">
-                    {% asset linkage_discovery.svg %}
-                </div>
-                <div class="sample-analysis-strength-title title">
-                    {% t linkage_discovery %}
-                </div>
-            </div>
-
+    <div class="malware-analysis-content-and-mac">
+        <div class="malware-analysis-content content sonar-content">
+            <ul>
+                <li> {% t malware-analysis.a %}</li>
+                <li> {% t malware-analysis.b %}</li>
+                <li> {% t malware-analysis.c %}</li>
+                <li> {% t malware-analysis.d %}</li>
+            </ul>
         </div>
-        <div class="mac">
+        <div class="malware-analysis-mac">
             {% asset vision-mac.png %}
         </div>
     </div>

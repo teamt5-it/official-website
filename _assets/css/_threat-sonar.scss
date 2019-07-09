@@ -249,6 +249,7 @@ main.threat-sonar {
               }
               li::before {
                 @include desktop() {
+                  display: inline-block;
                   position: static;
                 }
               }
@@ -292,15 +293,6 @@ main.threat-sonar {
       }
       @include responsive(800px) {
         grid-gap: 30px;
-      }
-      .assessment-reports-content {
-        font-size: 12px;
-        @include responsive(640px) {
-          font-size: 16px;
-        }
-        @include responsive(800px) {
-          font-size: 20px;
-        }
       }
     }
   }

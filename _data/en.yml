@@ -182,17 +182,17 @@ vision:
     b: Know the adversary
     c: Increase situational awareness
     d: Turn passive to proactive
-  intelligence-report-subscription:
-    title: Intelligence Reports subscription
-    a: Malware
-    b: Incident
-    c: Advanced Campaign Report
-    d: DDW information
-    e: OSINT collection
-  sample-analysis:
-    title: Sample analysis
-  malicious_indicator_collection: Malicious indicator collection
-  linkage_discovery: Linkage discovery
+  intelligence-report:
+    title: Intelligence Report
+    a: Cyber threat newsflash
+    b: Comprehensive and in-depth analysis of cyber threat campaigns, groups and actors
+    c: Asia-pacific cyberspace event analysis
+  malware-analysis:
+    title: Malware analysis
+    a: Automated Analysis
+    b: Malware identification and linkage discovery
+    c: Malicious indicators collection
+    d: Adversary Identification
 
 # partner
 partner:
