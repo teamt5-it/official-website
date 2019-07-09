@@ -18,7 +18,7 @@ fields:
   config:
     use_select: true
     min: '1'
-    max: 
+    max: '2'
     source:
       type: simple
     options:
@@ -38,18 +38,6 @@ fields:
     - datasheet
     - technical
   label: tags
-- name: locale
-  type: list
-  config:
-    use_select: true
-    min: '1'
-    max: 
-    source:
-      type: simple
-      section: jekyll-posts
-    options:
-    - en
-  label: locale
 - name: date
   type: datetime
   label: date
@@ -61,5 +49,18 @@ fields:
     display_utc: false
   default: now
   hidden: true
+- name: locale
+  type: select
+  default: en
+  config:
+    required: true
+    options:
+    - en
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: locale
 pages:
 - _posts/2019-07-09-test.md
