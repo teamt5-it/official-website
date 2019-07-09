@@ -60,3 +60,5 @@ fields:
     display_utc: false
   default: now
   hidden: true
+pages:
+- _posts/2019-07-09-test.md
