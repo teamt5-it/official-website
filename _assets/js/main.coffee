@@ -110,7 +110,6 @@ $ ->
 				, duration*3
 			)
 		slide_item_from_left_to_center: (index) ->
-			console.log(index)
 			@get_item(index).addClass('left active')
 			@get_item_title_container(index).addClass('left')
 			@get_item_title(index).addClass('bottom')
