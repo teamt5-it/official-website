@@ -37,6 +37,18 @@ fields:
     - datasheet
     - technical
   label: tags
+- name: locale
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: simple
+      section: jekyll-posts
+    options:
+    - en
+  label: locale
 - name: date
   type: datetime
   label: date
@@ -48,5 +60,3 @@ fields:
     display_utc: false
   default: now
   hidden: true
-pages:
-- _posts/test.md
