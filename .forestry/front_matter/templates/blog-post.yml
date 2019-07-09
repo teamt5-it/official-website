@@ -67,4 +67,5 @@ fields:
   default: now
   hidden: true
 pages:
+- _posts/sticky-post.md
 - _posts/2019-07-09-test.md
