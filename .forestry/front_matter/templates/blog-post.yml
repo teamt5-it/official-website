@@ -48,3 +48,5 @@ fields:
     display_utc: false
   default: now
   hidden: true
+pages:
+- _posts/test.md
