@@ -51,6 +51,10 @@ fields:
       file: 
       path: 
   label: locale
+- name: sticky
+  type: boolean
+  label: sticky
+  default: false
 - name: date
   type: datetime
   label: date
