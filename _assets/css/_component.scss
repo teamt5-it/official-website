@@ -249,6 +249,7 @@ a {
     margin-right: 0.5em;
   }
   .tag {
+    text-transform: capitalize;
     box-sizing: border-box;
     font-weight: bold;
     height: 20px;
@@ -270,6 +271,7 @@ a {
 
 .location {
   color: $primary-color;
+  text-transform: capitalize;
 }
 
 .title {
