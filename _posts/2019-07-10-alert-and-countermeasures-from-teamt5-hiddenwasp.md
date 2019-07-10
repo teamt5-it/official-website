@@ -35,8 +35,9 @@ Our analyst discovered “HiddenWasp” contains rootkit that is able to hide it
 
 ![(ThreatSonar detects related shell script of HiddenWasp)](/assets/images/img2.png "(ThreatSonar detects related shell script of HiddenWasp)")
 *ThreatSonar detects related shell script of HiddenWasp*
-You can find our demo video from the link below: [https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL](https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL "https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL")
-
+You can find our demo video from the link below: [https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL](https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL "https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL")          
+            
+            
 ### **Bring Your Own Intelligence**
 
 TeamT5 optimized the Intezer’s yara rule for “HiddenWasp” \[1\]. We suggest importing it to ThreatSonar as the steps below:
@@ -48,11 +49,14 @@ TeamT5 optimized the Intezer’s yara rule for “HiddenWasp” \[1\]. We sugges
 
 ![(Built-in yara rule editor)](/assets/images/img3.png "(Built-in yara rule editor)")
 *Built-in yara rule editor*
+               
+               
 IoC of “HiddenWasp” \[2\] can be imported to ThreatSonar for direct match as well.
-
-
+              
+              
 Should you have any questions, please contact support@teamt5.tw
-
+                
+                
 
 \[1\] [https://drive.google.com/open?id=1zDArnZxvj2ClyJIV2NwdZv7VMAhA5bJg](https://drive.google.com/open?id=1zDArnZxvj2ClyJIV2NwdZv7VMAhA5bJg "https://drive.google.com/open?id=1zDArnZxvj2ClyJIV2NwdZv7VMAhA5bJg")
 
