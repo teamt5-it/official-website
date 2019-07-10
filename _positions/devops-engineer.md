@@ -36,5 +36,5 @@ tags:
 * MySQL cluster, MySQL replication, Elasticsearch cluster
 * Service HA: Haproxy, k8s, knative
 
-### Compensation
+## Compensation
 Negotiable
