@@ -41,12 +41,15 @@ main.index {
         }
         .carousel-item-title-container {
           position: absolute;
-          width: 40%;
+          width: 70%;
           height: 100%;
           clip-path: polygon(0 0%, 75% 0, 100% 50%, 75% 100%, 0 100%);
           background-color: $primary-opacity-color;
           color: white;
           transition: all 0.2s;
+          @include responsive(640px){
+            width: 40%;
+          }
           &.left {
             left: -100%;
           }
