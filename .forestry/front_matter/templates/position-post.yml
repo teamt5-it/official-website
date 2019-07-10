@@ -5,12 +5,40 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: locale
-  label: locale
-- type: text
-  name: location
+- name: location
+  type: select
+  default: Taipei
+  config:
+    required: true
+    options:
+    - Taipei
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: location
-- type: text
-  name: tags
+- name: tags
+  type: list
+  config:
+    use_select: true
+    min: '1'
+    max: 
+    source:
+      type: simple
+    options:
+    - full-time
   label: tags
+- name: locale
+  type: select
+  default: en
+  config:
+    required: true
+    options:
+    - en
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: locale
