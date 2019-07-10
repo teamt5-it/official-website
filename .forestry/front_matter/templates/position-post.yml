@@ -42,3 +42,5 @@ fields:
       file: 
       path: 
   label: locale
+pages:
+- _positions/devops-engineer.md

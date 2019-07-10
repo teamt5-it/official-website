@@ -2,9 +2,10 @@
 title: DevOps Engineer
 locale: en
 location: taipei
-tags: Full-time
----
+tags:
+- full-time
 
+---
 # Duties / 職位內容描述
 ## Responsibilities
 
