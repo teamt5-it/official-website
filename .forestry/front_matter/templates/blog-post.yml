@@ -70,5 +70,5 @@ fields:
   default: now
   hidden: true
 pages:
-- _posts/alert-and-countermeasures-from-teamt5-hiddenwasp.md
+- _posts/2019-07-10-alert-and-countermeasures-from-teamt5-hiddenwasp.md
 - _posts/2019-07-09-test.md
