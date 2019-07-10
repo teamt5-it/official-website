@@ -42,9 +42,11 @@ input {
   .is-small {
     width: 260px;
   }
+
   .is-large {
     width: 280px;
   }
+
   img {
     display: block;
     margin-top: 20px;
@@ -54,10 +56,15 @@ input {
     max-width: 100%;
     & + em {
       display: block;
+      text-align: center;
       margin: 0 auto;
       font-size: 12px;
       color: $figcaption-color;
     }
+  }
+
+  a {
+    word-break: break-all;
   }
 
   code {
