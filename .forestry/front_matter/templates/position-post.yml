@@ -7,11 +7,11 @@ fields:
   label: title
 - name: location
   type: select
-  default: Taipei
+  default: taipei
   config:
     required: true
     options:
-    - Taipei
+    - taipei
     source:
       type: simple
       section: 
