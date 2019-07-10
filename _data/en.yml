@@ -199,14 +199,14 @@ partner:
   japan:
     title: Japan
     name: Macnica Networks
+    A: ???
     T: ???
-    M: ???
     W: https://www.macnica.net/english/
   asean:
     title: ASEAN
     name: netpoleon
-    T: 627A Aljunied Rd, Singapore 389842
-    M: +65 6858 5645
+    A: 627A Aljunied Rd, Singapore 389842
+    T: +65 6858 5645
     W: https://www.netpoleons.com
 
 # support
