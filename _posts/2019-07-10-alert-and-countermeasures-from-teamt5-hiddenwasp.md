@@ -52,9 +52,12 @@ TeamT5 optimized the Intezer’s yara rule for “HiddenWasp” \[1\]. We sugges
                
                
 IoC of “HiddenWasp” \[2\] can be imported to ThreatSonar for direct match as well.
+                         
+                         
               
-              
-Should you have any questions, please contact support@teamt5.tw
+Should you have any questions, please contact support@teamt5.tw              
+                 
+                 
                 
                 
 
