@@ -41,7 +41,6 @@ You can find our demo video from the link below: [https://drive.google.com/open?
 ### **Bring Your Own Intelligence**
 
 TeamT5 optimized the Intezer’s yara rule for “HiddenWasp” \[1\]. We suggest importing it to ThreatSonar as the steps below:
-
 1. Go to “Custom Yara”.
 2. Click “Add Ruleset” and paste the yara rule to the editor.
 3. Set “Ruleset Threat Level” and enable it.
