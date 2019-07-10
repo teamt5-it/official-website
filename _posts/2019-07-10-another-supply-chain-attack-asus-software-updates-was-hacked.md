@@ -1,6 +1,6 @@
 ---
 locale: en
-date: 2019-07-10T04:10:30.000+00:00
+date: 2019-03-28 12:10:30 +0800
 title: 'Another Supply Chain Attack: ASUS Software Updates was Hacked!'
 banner: "/assets/images/cover_another.png"
 categories:
