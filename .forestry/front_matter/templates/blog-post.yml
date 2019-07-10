@@ -37,6 +37,8 @@ fields:
     - case study
     - datasheet
     - technical
+    - press release
+    - event
   label: tags
 - name: locale
   type: select
