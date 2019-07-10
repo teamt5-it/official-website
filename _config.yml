@@ -13,7 +13,7 @@ defaults:
   -
     scope:
       path: "_positions"
-      type: "pages"
+      type: "positions"
     values:
       layout: "position"
   -
@@ -23,10 +23,12 @@ defaults:
     values:
       layout: "post"
 
-# Include positions directory
+# Collections
 
-include:
-  - _positions
+collections:
+  positions:
+    output: true
+    permalink: /:collection/:title
 
 plugins:
   - jekyll-coffeescript

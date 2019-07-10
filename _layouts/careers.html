@@ -18,8 +18,7 @@ layout: page
     <div class="positions-title title title-xl title-underline">
         {% t positions.title %}
     </div>
-    {% assign positions = site.pages | where: "layout", "position" %}
-    {% for position in positions %}
+    {% for position in site.positions %}
     <a class="position" href="{{position.url | relative_url }}">
         <div class="position-title">
             {{position.title}}
