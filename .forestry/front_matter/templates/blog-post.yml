@@ -63,12 +63,12 @@ fields:
   label: date
   description: ''
   config:
-    required: false
+    required: true
     date_format: 
     time_format: 
     display_utc: false
   default: now
-  hidden: true
+  hidden: false
 pages:
 - _posts/2019-07-10-acc-event-briefing.md
 - _posts/2019-07-10-alert-and-countermeasures-from-teamt5-hiddenwasp.md
