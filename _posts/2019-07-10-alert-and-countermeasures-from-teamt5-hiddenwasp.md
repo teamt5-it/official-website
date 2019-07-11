@@ -4,6 +4,7 @@ date: 2019-07-10T03:13:37.000+00:00
 title: Alert and Countermeasures from TeamT5 – “HiddenWasp”
 banner: "/assets/images/technical01.jpg"
 categories:
+- resource
 - newsroom
 tags:
 - technical
