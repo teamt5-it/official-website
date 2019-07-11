@@ -13,6 +13,31 @@ fields:
   config:
     maxSize: 250
   label: banner
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+  hidden: false
+- name: locale
+  type: select
+  default: en
+  config:
+    required: true
+    options:
+    - en
+    - zh
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: locale
 - name: categories
   type: list
   config:
@@ -40,38 +65,13 @@ fields:
     - press release
     - event
   label: tags
-- name: locale
-  type: select
-  default: en
-  config:
-    required: true
-    options:
-    - en
-    - zh
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: locale
+- name: resource_sticky
+  type: boolean
+  label: resource_sticky
 - name: newsroom_sticky
   type: boolean
   label: newsroom_sticky
   default: false
-- name: date
-  type: datetime
-  label: date
-  description: ''
-  config:
-    required: true
-    date_format: 
-    time_format: 
-    display_utc: false
-  default: now
-  hidden: false
-- name: resource_sticky
-  type: boolean
-  label: resource_sticky
 pages:
 - _posts/2019-07-10-another-supply-chain-attack-asus-software-updates-was-hacked.md
 - _posts/2019-07-10-acc-event-briefing.md
