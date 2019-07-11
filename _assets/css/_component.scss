@@ -16,7 +16,6 @@ input {
 }
 
 .content {
-  overflow: hidden;
   line-height: 1.5;
   h1 {
     font-size: 20px;
@@ -103,6 +102,7 @@ input {
     padding: 0;
     list-style: none;
     li {
+      overflow-wrap: break-word;
       margin: 1em 0;
       padding-left: 1em;
       position: relative;

@@ -26,6 +26,7 @@ body {
       width: 100%;
       max-width: $max-width;
       display: grid;
+      grid-template-columns: 100%;
     }
   }
   .footer-container {
