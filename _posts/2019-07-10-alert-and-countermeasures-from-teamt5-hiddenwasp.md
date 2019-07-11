@@ -9,7 +9,7 @@ categories:
 tags:
 - technical
 sticky: false
-resource_sticky: false
+resource_sticky: true
 newsroom_sticky: false
 
 ---
