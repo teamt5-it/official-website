@@ -116,7 +116,7 @@ _Import IOC into ThreatSonar Intel._
 2. The malware is using valid “ASUSTek” certificate, the thumbprint of the certificate can be searched in “Hunter” page.
 
 ![Details of abused certificate.](/assets/images/02_03.png "Details of abused certificate.")
-
+*Details of abused certificate.*
 In “Hunter” page, you are able to search “thumbprint = 626646d29c5b0e7c53aa84698a4a97be323cf17f” by switching scope to “Certificate” (Please select “Engine Version” to All).
 
 p.s. If you find any matched results, don’t be hesitate to contact with us.
