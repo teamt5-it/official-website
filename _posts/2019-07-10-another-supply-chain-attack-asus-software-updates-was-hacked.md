@@ -4,7 +4,6 @@ date: 2019-03-28T04:10:30.000+00:00
 title: 'Another Supply Chain Attack: ASUS Software Updates was Hacked!'
 banner: "/assets/images/cover_another.png"
 categories:
-- resource
 - newsroom
 tags:
 - case study
