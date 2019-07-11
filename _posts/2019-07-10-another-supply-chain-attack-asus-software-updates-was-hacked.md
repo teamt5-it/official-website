@@ -1,6 +1,6 @@
 ---
 locale: en
-date: 2019-03-28 12:10:30 +0800
+date: 2019-03-28T04:10:30.000+00:00
 title: 'Another Supply Chain Attack: ASUS Software Updates was Hacked!'
 banner: "/assets/images/cover_another.png"
 categories:
@@ -19,6 +19,8 @@ TeamT5 was able to find several samples of this serial attack and performed tech
 
 ![Figure 1 Shellcode encoding routine in ASUS sample, which is the same as PlugX Fast version](/assets/images/02_01.png "Figure 1 Shellcode encoding routine in ASUS sample, which is the same as PlugX Fast version")
 _Figure 1 Shellcode encoding routine in ASUS sample, which is the same as PlugX Fast version_
+                     
+                     
 The result suggests China as the origin of this attack for using PlugX Crypt for the shellcode derived from the file. Besides, TeamT5 observed several similar techniques between the attack and the previous supply chain attacks, such as inserting malicious shellcode in the run-time initialization routine in C program. TeamT5 possess with high confidence that the ASUS case was China originated and linked to the CCleaner and NetSarang attacks.
 
 From the C2 domain activation history, TeamT5 believes the initial campaign itself started from May 2018 and ended in around Oct. 2018. However, the computers in the target list will be implanted with other malware and keep being controlled by the threat actors. The only knowledge regarding the targets is a list of MAC address hashes and could not be mapped to organizations or individuals. We are to inform our clients to check the IDS/IPS or try to use TeamT5’s ThreatSonar to scan for further detect and defense.
