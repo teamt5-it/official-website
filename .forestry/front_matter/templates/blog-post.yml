@@ -54,9 +54,9 @@ fields:
       file: 
       path: 
   label: locale
-- name: sticky
+- name: newsroom_sticky
   type: boolean
-  label: sticky
+  label: newsroom_sticky
   default: false
 - name: date
   type: datetime
@@ -69,6 +69,9 @@ fields:
     display_utc: false
   default: now
   hidden: false
+- name: resource_sticky
+  type: boolean
+  label: resource_sticky
 pages:
 - _posts/2019-07-10-another-supply-chain-attack-asus-software-updates-was-hacked.md
 - _posts/2019-07-10-acc-event-briefing.md
