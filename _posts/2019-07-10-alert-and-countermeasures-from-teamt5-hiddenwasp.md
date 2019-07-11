@@ -35,6 +35,8 @@ Our analyst discovered “HiddenWasp” contains rootkit that is able to hide it
 
 ![(ThreatSonar detects related shell script of HiddenWasp)](/assets/images/img2.png "(ThreatSonar detects related shell script of HiddenWasp)")
 *ThreatSonar detects related shell script of HiddenWasp*
+                    
+                    
 You can find our demo video from the link below: [https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL](https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL "https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL")          
             
             
