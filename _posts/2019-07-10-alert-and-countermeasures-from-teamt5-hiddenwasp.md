@@ -1,6 +1,6 @@
 ---
 locale: en
-date: 2019-07-10T03:13:37.000+00:00
+date: 2019-07-01 11:13:37 +0800
 title: Alert and Countermeasures from TeamT5 – “HiddenWasp”
 banner: "/assets/images/technical01.jpg"
 categories:
@@ -9,6 +9,8 @@ categories:
 tags:
 - technical
 sticky: false
+resource_sticky: false
+newsroom_sticky: false
 
 ---
 ### **Threat Overview**
