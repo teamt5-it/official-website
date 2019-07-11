@@ -18,7 +18,7 @@ It was alleged that the malware had been delivered to millions of computers. Due
 TeamT5 was able to find several samples of this serial attack and performed technical analysis on it. The C2 is [https://asushotfix\[.\]com](https://asushotfix\[.\]com/logo2.jpg), which was shut down while analyzing. Thus, we are not able to provide further information yet.
 
 ![Figure 1 Shellcode encoding routine in ASUS sample, which is the same as PlugX Fast version](/assets/images/02_01.png "Figure 1 Shellcode encoding routine in ASUS sample, which is the same as PlugX Fast version")
-*Figure 1 Shellcode encoding routine in ASUS sample, which is the same as PlugX Fast version*
+_Figure 1 Shellcode encoding routine in ASUS sample, which is the same as PlugX Fast version_
 The result suggests China as the origin of this attack for using PlugX Crypt for the shellcode derived from the file. Besides, TeamT5 observed several similar techniques between the attack and the previous supply chain attacks, such as inserting malicious shellcode in the run-time initialization routine in C program. TeamT5 possess with high confidence that the ASUS case was China originated and linked to the CCleaner and NetSarang attacks.
 
 From the C2 domain activation history, TeamT5 believes the initial campaign itself started from May 2018 and ended in around Oct. 2018. However, the computers in the target list will be implanted with other malware and keep being controlled by the threat actors. The only knowledge regarding the targets is a list of MAC address hashes and could not be mapped to organizations or individuals. We are to inform our clients to check the IDS/IPS or try to use TeamT5’s ThreatSonar to scan for further detect and defense.
@@ -108,25 +108,25 @@ Yara rule:
 
 #### How to use IOC in ThreatSonar
 
-1. You can import IOCs into ThreatSonar and launch “Retro Hunt” to see if there is any matches.
+A. You can import IOCs into ThreatSonar and launch “Retro Hunt” to see if there is any matches.
 
 ![Import IOC into ThreatSonar Intel.](/assets/images/02_02.png "Import IOC into ThreatSonar Intel.")
-*Import IOC into ThreatSonar Intel.*
+_Import IOC into ThreatSonar Intel._
 
-2. The malware is using valid “ASUSTek” certificate, the thumbprint of the certificate can be searched in “Hunter” page.
+B. The malware is using valid “ASUSTek” certificate, the thumbprint of the certificate can be searched in “Hunter” page.
 
 ![Details of abused certificate.](/assets/images/02_03.png "Details of abused certificate.")
-*Details of abused certificate.*
+_Details of abused certificate._
 In “Hunter” page, you are able to search “thumbprint = 626646d29c5b0e7c53aa84698a4a97be323cf17f” by switching scope to “Certificate” (Please select “Engine Version” to All).
 
 p.s. If you find any matched results, don’t be hesitate to contact with us.
 
 ![Thumbprint matched endpoints and programs.](/assets/images/02_04.png "Thumbprint matched endpoints and programs.")
-*Thumbprint matched endpoints and programs.*
+_Thumbprint matched endpoints and programs._
 ![The related thumbprint was found.](/assets/images/02_05.png "The related thumbprint was found.")
-*The related thumbprint was found.*
+_The related thumbprint was found._
 
-3. To use the yara rule, just create yara ruleset, then copy and paste the yara rule listed above.
+C. To use the yara rule, just create yara ruleset, then copy and paste the yara rule listed above.
 
 ![Import the yara rule.](/assets/images/02_06.png "Import the yara rule.")
-*Import the yara rule.*
+_Import the yara rule._
