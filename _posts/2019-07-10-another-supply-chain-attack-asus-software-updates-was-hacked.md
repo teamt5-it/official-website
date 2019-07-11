@@ -113,8 +113,7 @@ Yara rule:
 ![Import IOC into ThreatSonar Intel.](/assets/images/02_02.png "Import IOC into ThreatSonar Intel.")
 _Import IOC into ThreatSonar Intel._
 
-2. The malware is using valid “ASUSTek” certificate, the thumbprint of the certificate can be searched in “Hunter” page.
-
+1. The malware is using valid “ASUSTek” certificate, the thumbprint of the certificate can be searched in “Hunter” page.
 
    ![Details of abused certificate.](/assets/images/02_03.png "Details of abused certificate.")
    _Details of abused certificate._
@@ -127,8 +126,7 @@ _Thumbprint matched endpoints and programs._
 ![The related thumbprint was found.](/assets/images/02_05.png "The related thumbprint was found.")
 _The related thumbprint was found._
 
-3. To use the yara rule, just create yara ruleset, then copy and paste the yara rule listed above.
+To use the yara rule, just create yara ruleset, then copy and paste the yara rule listed above.
 
-
-	![Import the yara rule.](/assets/images/02_06.png "Import the yara rule.")
+1. ![Import the yara rule.](/assets/images/02_06.png "Import the yara rule.")
    _Import the yara rule._
