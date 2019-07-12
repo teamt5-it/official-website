@@ -1,7 +1,7 @@
 ---
 title: Research Engineer
 locale: en
-location: taipei
+location: Taipei, Taiwan
 tags:
 - full-time
 
