@@ -7,7 +7,6 @@ categories:
 - newsroom
 tags:
 - event
-sticky: true
 resource_sticky: false
 newsroom_sticky: true
 

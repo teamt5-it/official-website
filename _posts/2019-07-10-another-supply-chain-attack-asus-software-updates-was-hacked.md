@@ -8,7 +8,8 @@ categories:
 - newsroom
 tags:
 - case study
-sticky: false
+resource_sticky: false
+newsroom_sticky: false
 
 ---
 Asus, one of the world’s largest computer makers, was believed to be the newest victim of a supply chain attack. According to the up-to-date blog of Kaspersky \[1\], the live software update server of Asus was compromised and used for installing malicious backdoors on customers’ devices.
@@ -80,31 +81,31 @@ Hashes（MD5）:
 Yara rule:
 
     rule apt_trojan_AsusSetup_encoder
-    
+
     {
-    
+
     strings:
-    
+
     $plugx_crypt = { 55 8BEC 81EC 08010000 53 56 57 8DBD F8FEFFFF B9 42000000 B8 CCCCCCCC F3 AB C745 F8 00000000 C745 EC 00000000 8B45 08 8B08 894D E0 8B45 08 8B08 894D D4 8B45 08 8B08 894D C8 8B45 08 8B08 894D BC 8B45 E0 C1E8 03 8B4D E0 8D9401 EFEEEEEE 8955 E0 8B45 D4 C1E8 05 8B4D D4 8D9401 DEDDDDDD 8955 D4 8B45 C8 C1E0 07 B9 33333333 2BC8 034D C8 894D C8 8B45 BC C1E0 09 B9 44444444 2BC8 034D BC 894D EC 8B45 EC 8945 BC 8B45 08 0345 F8 0FB608 8B55 E0 81E2 FF000000 0FB6C2 8B55 D4 81E2 FF000000 0FB6D2 03C2 8B55 C8 81E2 FF000000 0FB6D2 03C2 8B55 EC 81E2 FF000000 0FB6D2 03C2 33C8 8B45 10 0345 F8 8808 8B45 F8 83C0 01 8945 F8 8B45 F8 3B45 0C 0F8C 50FFFFFF 5F 5E 5B 8BE5 5D C2 0C00 }
-    
+
     condition:
-    
+
     all of them
-    
+
     }
-    
+
     rule apt_trojan_AsusSetup_memory
-    
+
     {
-    
+
     strings:
-    
+
     $plugx_crypt = { 55 8BEC 81EC 08010000 53 56 57 8DBD F8FEFFFF B9 42000000 B8 CCCCCCCC F3 AB C745 F8 00000000 C745 EC 00000000 8B45 08 8B08 894D E0 8B45 08 8B08 894D D4 8B45 08 8B08 894D C8 8B45 08 8B08 894D BC 8B45 E0 C1E8 03 8B4D E0 8D9401 EFEEEEEE 8955 E0 8B45 D4 C1E8 05 8B4D D4 8D9401 DEDDDDDD 8955 D4 8B45 C8 C1E0 07 B9 33333333 2BC8 034D C8 894D C8 8B45 BC C1E0 09 B9 44444444 2BC8 034D BC 894D EC 8B45 EC 8945 BC 8B45 08 0345 F8 0FB608 8B55 E0 81E2 FF000000 0FB6C2 8B55 D4 81E2 FF000000 0FB6D2 03C2 8B55 C8 81E2 FF000000 0FB6D2 03C2 8B55 EC 81E2 FF000000 0FB6D2 03C2 33C8 8B45 10 0345 F8 8808 8B45 F8 83C0 01 8945 F8 8B45 F8 3B45 0C 0F8C 50FFFFFF 5F 5E 5B 8BE5 5D C2 0C00 }
-    
+
     condition:
-    
+
     all of them
-    
+
     }
 
 #### How to use IOC in ThreatSonar
