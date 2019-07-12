@@ -1,8 +1,8 @@
 # header
 header:
   product: Product
-  threat-sonar: Threat Sonar
-  threat-vision: Threat Vision
+  threatsonar: ThreatSonar
+  threatvision: ThreatVision
   partner: Partner
   support: Support
   resource: Resource
@@ -15,8 +15,8 @@ header:
 
 footer:
   product: Product
-  threat-sonar: ThreatSonar
-  threat-vision: ThreatVision
+  threatsonar: ThreatSonar
+  threatvision: ThreatVision
   partner: Partner
   support: Support
   resource: Resource
@@ -154,7 +154,7 @@ sonar:
       lateral-movement traces and data exfiltration through graph visualization
   complementary-to-antivirus:
     title: ThreatSonar is Complementary to Antivirus
-    threat-sonar:
+    threatsonar:
       a: Performing compromise assessment on APT (Advanced Persistent Threat) risks.
       b: Detecting malicious backdoor, hacking tools, abnormal system configurations.
       c: Mixed dynamic + static engine, built-in indicators + external threat intelligence.

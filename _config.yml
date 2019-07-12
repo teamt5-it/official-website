@@ -2,6 +2,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 host: 0.0.0.0
+
 # Set default value
 
 defaults:
@@ -37,6 +38,12 @@ plugins:
   - font-awesome-sass
   - jekyll-paginate-v2
   - jekyll-admin
+
+# i18n
+
+locales:
+  - en
+  - zh
 
 # jekyll-assets
 

@@ -148,10 +148,10 @@ $ ->
 	carousel = new Carousel
 	$('textarea').autoResize();
 
-	# threat-sonar-contact-us-form
-	$("#threat-sonar-contact-us-form-submit").click (e) ->
+	# threatsonar-contact-us-form
+	$("#threatsonar-contact-us-form-submit").click (e) ->
 		e.preventDefault();
-		data = $("#threat-sonar-contact-us-form").serializeJSON()
+		data = $("#threatsonar-contact-us-form").serializeJSON()
 		$.get
 			url: "https://script.google.com/a/teamt5.org/macros/s/AKfycbzn7LjNQ5YQR97mQERARgPmsA8n3U7EyrN63x1Adw/exec"
 			data: data
@@ -164,10 +164,10 @@ $ ->
 				$(e.currentTarget).addClass('error')
 				$(e.currentTarget).text('Error')
 
-	# threat-vision-contact-us-form
-	$("#threat-vision-contact-us-form-submit").click (e) ->
+	# threatvision-contact-us-form
+	$("#threatvision-contact-us-form-submit").click (e) ->
 		e.preventDefault();
-		data = $("#threat-vision-contact-us-form").serializeJSON()
+		data = $("#threatvision-contact-us-form").serializeJSON()
 		$.get
 			url: "https://script.google.com/a/teamt5.org/macros/s/AKfycbw5tsN8yq4g5D5XCoIsn0DPold7kgpBbuDCXqVL/exec"
 			data: data

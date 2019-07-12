@@ -1,7 +1,7 @@
 home: /
 products:
-  threat-sonar: /product/threat-sonar
-  threat-vision: /product/threat-vision
+  threatsonar: /products/threatsonar
+  threatvision: /products/threatvision
 partner: /partner
 support: /support
 resource: /resource
