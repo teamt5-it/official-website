@@ -73,7 +73,6 @@ fields:
   label: newsroom_sticky
   default: false
 pages:
-- _posts/teamt5-win-the-formosa-grand-challenge-2-s-fund-finals.md
 - _posts/2019-07-10-another-supply-chain-attack-asus-software-updates-was-hacked.md
 - _posts/2019-07-10-acc-event-briefing.md
 - _posts/2019-07-10-alert-and-countermeasures-from-teamt5-hiddenwasp.md
