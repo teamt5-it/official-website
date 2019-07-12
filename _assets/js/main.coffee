@@ -18,7 +18,7 @@ $ ->
 		$(".navbar-menu").toggleClass('active')
 		$(".navbar-burger").toggleClass('active')
 
-	$(".navbar-item").click (e) ->
+	$(".navbar-item-has-submenu").click (e) ->
 		cur_navbar_submenu_active = $(e.currentTarget).children(".navbar-submenu").hasClass('active')
 		cur_navbar_submenu_padding_active = $(".navbar-submenu-padding").hasClass('active')
 		if !cur_navbar_submenu_active

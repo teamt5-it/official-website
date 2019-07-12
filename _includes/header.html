@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="navbar-menu">
-        <div class="navbar-item">
+        <div class="navbar-item navbar-item-has-submenu">
             <div class="navbar-item-link
             {% for product in site.data.links.products %}
                 {% if page.layout == product[0] %}
@@ -72,7 +72,7 @@
                 </div>
             </a>
         </div>
-        <div class="navbar-item">
+        <div class="navbar-item navbar-item-has-submenu">
             <div class="navbar-item-link
             {% for company in site.data.links.company %}
                 {% if page.layout == company[0] %}
