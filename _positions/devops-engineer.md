@@ -6,7 +6,7 @@ tags:
 - full-time
 
 ---
-## Duties / 職位內容描述
+## Duties
 
 ### Responsibilities
 
@@ -37,4 +37,5 @@ tags:
 * Service HA: Haproxy, k8s, knative
 
 ## Compensation
+
 Negotiable
