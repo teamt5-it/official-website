@@ -177,20 +177,20 @@ sonar:
 vision:
   banner:
     slogan: KNOW YOUR ENEMIES
-    title: A Portal for cyberspace peacemakers
+    title: A Portal for Cyberspace Peacemakers
   strengths:
-    title: A cyber threat intelligence platform
-    a: Discover and Identify potential threats
-    b: Know the adversary
-    c: Increase situational awareness
-    d: Turn passive to proactive
+    title: A Cyber Threat Intelligence Platform
+    a: Discover and Identify Potential Threats
+    b: Know the Adversary
+    c: Increase Situational Awareness
+    d: Turn Passive to Proactive
   intelligence-report:
     title: Intelligence Report
     a: Cyber threat newsflash
     b: Comprehensive and in-depth analysis of cyber threat campaigns, groups and actors
     c: Asia-pacific cyberspace event analysis
   malware-analysis:
-    title: Malware analysis
+    title: Malware Analysis
     a: Automated Analysis
     b: Malware identification and linkage discovery
     c: Malicious indicators collection
