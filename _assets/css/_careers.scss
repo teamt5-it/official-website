@@ -1,7 +1,7 @@
 @import "base";
 
 main.careers {
-  .banner-with-text{
+  .banner-with-text {
     // TODO
     display: none;
   }
@@ -27,22 +27,30 @@ main.careers {
     .position-title {
       color: $primary-color;
     }
-    .location-and-arrow {
+    .tags-and-location-and-arrow {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      .tags {
+        margin-right: 20px;
+      }
       .location {
+        font-weight: bold;
+        color: $normal-color;
         margin-right: 20px;
         @include responsive(320px) {
           margin-right: 60px;
         }
       }
-      .arrow {
-        width: 20px / $square-root-of-two;
-        height: 20px / $square-root-of-two;
-        border: solid $primary-color;
-        border-radius: $arrow-width;
-        border-width: 0 $arrow-width $arrow-width 0;
-        transform: rotate(-45deg);
+      .arrow-container {
+        .arrow {
+          width: 20px / $square-root-of-two;
+          height: 20px / $square-root-of-two;
+          border: solid $primary-color;
+          border-radius: $arrow-width;
+          border-width: 0 $arrow-width $arrow-width 0;
+          transform: rotate(-45deg);
+        }
       }
     }
   }
