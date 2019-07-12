@@ -1,5 +1,5 @@
 <div class="carousel">
-    <div class="carousel-items" data-count="{{paginator.posts | size}}" >
+    <div class="carousel-items" data-count="{{paginator.posts | size}}">
         {% for post in paginator.posts %}
         <a class="carousel-item
         {% if forloop.index == 1 %}
@@ -7,9 +7,14 @@
         {% endif %}
         " data-index="{{ forloop.index | minus: 1 }}" href={{post.url}}>
             <img src="{{post.banner}}">
-            <div class="carousel-item-title-container">
-                <div class="carousel-item-title title">
-                    {{post.title}}
+            <div class="carousel-item-information-container">
+                <div class="carousel-item-information">
+                    <div class="carousel-item-information-date">
+                        {{post.date| date: "%Y-%m-%d"}}
+                    </div>
+                    <div class="carousel-item-information-title title">
+                        {{post.title}}
+                    </div>
                 </div>
             </div>
         </a>

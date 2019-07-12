@@ -45,10 +45,10 @@ $ ->
 			$(".carousel .carousel-items .carousel-item[data-index=#{index}]")
 
 		get_item_title_container: (index) ->
-			$(".carousel .carousel-items .carousel-item[data-index=#{index}] .carousel-item-title-container")
+			$(".carousel .carousel-items .carousel-item[data-index=#{index}] .carousel-item-information-container")
 
 		get_item_title: (index) ->
-			$(".carousel .carousel-items .carousel-item[data-index=#{index}] .carousel-item-title-container .carousel-item-title")
+			$(".carousel .carousel-items .carousel-item[data-index=#{index}] .carousel-item-information-container .carousel-item-information")
 
 		get_item_indicator: (index) ->
 			$(".carousel .carousel-indicators .carousel-indicator[data-index=#{index}]")
