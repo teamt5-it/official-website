@@ -1,0 +1,36 @@
+@import "base";
+body {
+  .page-not-found-container {
+    display: flex;
+    flex: 1 0 auto;
+    background-color: $background-color;
+    justify-content: center;
+    align-items: center;
+    main.page-not-found {
+      width: 200px;
+      display: grid;
+      justify-items: center;
+      grid-gap: 20px;
+      @include responsive(800px) {
+        width: auto;
+        grid-gap: 30px;
+      }
+      .logo{
+        width: 200px;
+        @include responsive(800px) {
+          width: auto;
+        }
+        img{
+          width: 100%;
+        }
+      }
+      .take-me-home-button {
+        width: 200px;
+        height: 40px;
+        @include responsive(800px) {
+          width: 280px;
+        }
+      }
+    }
+  }
+}

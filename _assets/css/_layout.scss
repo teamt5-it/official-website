@@ -1,6 +1,7 @@
 @import "base";
 $body-top-border: 5px solid $primary-color;
 body {
+  box-sizing: border-box;
   display: flex;
   height: 100vh;
   flex-direction: column;

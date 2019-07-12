@@ -286,3 +286,8 @@ newsroom:
   media-inquiries:
     title: Media media-inquiries
     email: mk@teamt5.tw
+
+# 404
+404:
+  instruction: Sorry, this page doesn't exist.Let's get you back on track.
+  take-me-home: Take Me Home
