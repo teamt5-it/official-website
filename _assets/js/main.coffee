@@ -34,6 +34,7 @@ $ ->
 	# carousel
 	class Carousel
 		duration = 200
+		timer_duration = 5000
 		constructor: () ->
 			@count = $(".carousel .carousel-items").data('count')
 			@cur_active_index = 0
@@ -61,7 +62,7 @@ $ ->
 		start_timer: () ->
 			@timer = setInterval =>
 				@set_active_item (@cur_active_index+1)%@count
-			, 3000
+			, timer_duration
 
 		reset_timer: () ->
 			clearInterval(@timer)
