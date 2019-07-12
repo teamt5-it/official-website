@@ -123,7 +123,7 @@ sonar:
         b: Low cost, less efforts
         c: Low risk, non-intrusive
       premise:
-        title:  On premise
+        title:  On Premise
         a: Risk control
         b: Off-line analysis
       threat_hunting:
@@ -148,7 +148,9 @@ sonar:
     d: Highlighting unique executables, memory attributes, abused system tools or rarely-seen digital certificates.
 
   auto-investigation:
-    title: ThreatSonar Auto-investigation
+    title: |-
+      ThreatSonar
+      Auto-investigation
     content: >
       Discovering related infection origins,
       lateral-movement traces and data exfiltration through graph visualization

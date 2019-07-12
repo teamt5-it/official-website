@@ -155,7 +155,8 @@ layout: default
 <div class="auto-investigation">
     <div class="auto-investigation-title-and-content">
         <div class="auto-investigation-title title sonar-title">
-            {% t auto-investigation.title %}
+            {% capture string-with-newlines %}{% t auto-investigation.title %}{% endcapture %}
+            {{ string-with-newlines | newline_to_br }}
         </div>
         <div class="auto-investigation-content content sonar-content">
             {% t auto-investigation.content %}

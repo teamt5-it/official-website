@@ -39,12 +39,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-admin
 
-# i18n
-
-locales:
-  - en
-  - zh
-
 # jekyll-assets
 
 assets:
