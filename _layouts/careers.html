@@ -14,31 +14,33 @@ layout: page
         {{ string_with_newlines | newline_to_br }}
     </div>
 </div>
-<div class="positions">
-    <div class="positions-title title title-xl title-underline">
+<div class="open-positions">
+    <div class="open-positions-title title title-xl title-underline">
         {% t positions.title %}
     </div>
-    {% for position in site.positions %}
-    <a class="position" href="{{position.url | relative_url }}">
-        <div class="position-title">
-            {{position.title}}
-        </div>
-        <div class="tags-and-location-and-arrow">
-            <div class="tags">
-                {% for tag in position.tags %}
-                <span class="tag">
-                    {{ tag }}
-                </span>
-                {% endfor %}
+    <div class="open-positions-content">
+        {% for position in site.positions %}
+        <a class="position" href="{{position.url | relative_url }}">
+            <div class="position-title">
+                {{position.title}}
             </div>
-            <div class="location">
-                {{position.location}}
-            </div>
-            <div class="arrow-container">
-                <div class="arrow">
+            <div class="tags-and-location-and-arrow">
+                <div class="tags">
+                    {% for tag in position.tags %}
+                    <span class="tag">
+                        {{ tag }}
+                    </span>
+                    {% endfor %}
+                </div>
+                <div class="location">
+                    {{position.location}}
+                </div>
+                <div class="arrow-container">
+                    <div class="arrow">
+                    </div>
                 </div>
             </div>
-        </div>
-    </a>
-    {% endfor %}
+        </a>
+        {% endfor %}
+    </div>
 </div>
