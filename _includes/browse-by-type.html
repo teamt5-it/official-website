@@ -2,15 +2,12 @@
     <div class="browse-by-type-title title">
         {% t browse-by-type.title %}
     </div>
-    {% for post in site.categories.newsroom %}
-    {% assign types = types | concat: post.tags %}
-    {% assign types = types | uniq %}
-    {% endfor %}
     <div class="browse-by-type-types">
-        {% for type in types %}
-        <div class="browse-by-type-type">
-            {{ type }}
-        </div>
+        {% assign pages = site.pages | where: "category",page.category | where_exp: "item", "item.type" %}
+        {% for page in pages %}
+        <a class="browse-by-type-type" href="{{page.url}}">
+            {{ page.type }}
+        </a>
         {% endfor %}
     </div>
 </div>

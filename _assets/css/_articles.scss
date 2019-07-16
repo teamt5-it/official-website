@@ -1,7 +1,7 @@
 @import "base";
-.news {
+.articles {
   display: grid;
-  .new {
+  .article {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 10px;
@@ -19,7 +19,7 @@
     }
     @include responsive(1280px) {
     }
-    .new-title {
+    .article-title {
       grid-column: 1 / span 2;
       @include responsive(800px) {
         grid-column: auto;

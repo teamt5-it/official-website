@@ -1,10 +1,7 @@
 @import "base";
 main.resource {
-  grid-gap: 10px;
-  @include responsive(640px) {
-    grid-gap: 20px;
-  }
   .posts-and-browse-by-type {
+    margin-top: 10px;
     display: grid;
     grid-gap: 40px;
     align-items: start;
@@ -12,6 +9,7 @@ main.resource {
     @include page-margin-horizontal;
     @include responsive(640px) {
       max-width: 600px;
+      margin-top: 20px;
     }
     @include responsive(800px) {
       max-width: 740px;
