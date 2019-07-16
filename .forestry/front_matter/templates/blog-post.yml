@@ -31,7 +31,6 @@ fields:
     required: true
     options:
     - en
-    - zh
     source:
       type: simple
       section: 
