@@ -20,12 +20,17 @@ main.careers {
       .position {
         cursor: pointer;
         padding: 10px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr auto;
+        justify-content: start;
         align-items: center;
         border-bottom: 1px solid $light-background-color;
         @include responsive(800px) {
           padding: 20px;
+          grid-template-rows: auto;
+          grid-template-columns: 1fr auto auto;
         }
         &:hover {
           background-color: $background-color;
@@ -33,33 +38,46 @@ main.careers {
         .position-title {
           color: $primary-color;
         }
-        .tags-and-location-and-arrow {
-          flex: 0 0 auto;
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          .tags {
-            margin-right: 20px;
+        .tags-and-location {
+          display: grid;
+          grid-auto-flow: column;
+          justify-content: start;
+          grid-gap: 10px;
+          @include responsive(800px){
+            grid-gap: 20px;
           }
+          align-items: center;
           .location {
             font-weight: bold;
             color: $normal-color;
             margin-right: 20px;
-            @include responsive(640px) {
+            @include responsive(800px){
               margin-right: 60px;
             }
           }
-          .arrow-container {
+        }
+        .arrow-container {
+          grid-row: 1 / span 2;
+          grid-column: 2;
+          width: 30px;
+          height: 30px;
+          @include responsive(800px){
             width: 20px;
             height: 20px;
-            @include flex-center-align;
-            .arrow {
+            grid-row: auto;
+            grid-column: auto;
+          }
+          @include flex-center-align;
+          .arrow {
+            width: 30px / $square-root-of-two;
+            height: 30px / $square-root-of-two;
+            border: solid $primary-color;
+            border-radius: $arrow-width;
+            border-width: 0 $arrow-width $arrow-width 0;
+            transform: rotate(-45deg);
+            @include responsive(800px){
               width: 20px / $square-root-of-two;
               height: 20px / $square-root-of-two;
-              border: solid $primary-color;
-              border-radius: $arrow-width;
-              border-width: 0 $arrow-width $arrow-width 0;
-              transform: rotate(-45deg);
             }
           }
         }
