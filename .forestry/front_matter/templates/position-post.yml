@@ -28,6 +28,7 @@ fields:
       type: simple
     options:
     - full-time
+    - part-time
   label: tags
 - name: locale
   type: select
@@ -36,7 +37,6 @@ fields:
     required: true
     options:
     - en
-    - zh
     source:
       type: simple
       section: 
