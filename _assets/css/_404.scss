@@ -7,12 +7,12 @@ body {
     justify-content: center;
     align-items: center;
     main.page-not-found {
-      width: 200px;
       display: grid;
       justify-items: center;
+      grid-template-columns: 200px;
       grid-gap: 20px;
       @include responsive(800px) {
-        width: auto;
+        grid-template-columns: auto;
         grid-gap: 30px;
       }
       .logo{
