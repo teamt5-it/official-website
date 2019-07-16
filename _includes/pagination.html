@@ -1,3 +1,4 @@
+{% if paginator.total_pages > 1 %}
 <div class="pagination" aria-label="Search navigation example">
   {% include pagination/prev_page.html %}
   {% if paginator.page_trail %}
@@ -7,3 +8,4 @@
   {% endif %}
   {% include pagination/next_page.html %}
 </div>
+{% endif %}
