@@ -1,22 +1,27 @@
 @import "base";
+
 main.resource-browse-by-type {
   .posts-and-browse-by-type {
+    @include page-margin-horizontal;
+    align-items: start;
     display: grid;
     grid-gap: 40px;
-    align-items: start;
     grid-template-columns: 1fr;
-    @include page-margin-horizontal;
+
     @include responsive(640px) {
-      max-width: 600px;
       margin-top: 20px;
+      max-width: 600px;
     }
+
     @include responsive(800px) {
       max-width: 740px;
     }
+
     @include responsive(1280px) {
-      max-width: none;
       grid-template-columns: 740px 1fr;
+      max-width: none;
     }
+
     .posts-and-pagination {
       .pagination {
         @include responsive(640px) {

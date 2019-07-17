@@ -1,32 +1,40 @@
 @import "base";
+
 body {
   .page-not-found-container {
+    align-items: center;
+    background-color: $background-color;
     display: flex;
     flex: 1 0 auto;
-    background-color: $background-color;
     justify-content: center;
-    align-items: center;
+
     main.page-not-found {
       display: grid;
-      justify-items: center;
-      grid-template-columns: 200px;
       grid-gap: 20px;
+      grid-template-columns: 200px;
+      justify-items: center;
+
       @include responsive(800px) {
-        grid-template-columns: auto;
         grid-gap: 30px;
+        grid-template-columns: auto;
       }
-      .logo{
+
+      .logo {
         width: 200px;
+
         @include responsive(800px) {
           width: auto;
         }
-        img{
+
+        img {
           width: 100%;
         }
       }
+
       .take-me-home-button {
-        width: 200px;
         height: 40px;
+        width: 200px;
+
         @include responsive(800px) {
           width: 280px;
         }

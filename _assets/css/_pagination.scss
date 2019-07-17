@@ -1,16 +1,18 @@
 @import "base";
-.pagination{
-  font-size: 16px;
-  margin: 20px;
-  display: grid;
-  justify-items: center;
+
+.pagination {
   align-items: center;
+  display: grid;
+  font-size: 16px;
   grid-auto-columns: 20px;
-  grid-gap: 10px;
   grid-auto-flow: column;
-  .page-item{
-    .page-link{
-      &.is-current{
+  grid-gap: 10px;
+  justify-items: center;
+  margin: 20px;
+
+  .page-item {
+    .page-link {
+      &.is-current {
         color: $primary-color;
         text-decoration: underline;
       }

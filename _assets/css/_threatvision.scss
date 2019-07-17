@@ -4,73 +4,87 @@ $sonar-hero-banner-desktop-height: 450px;
 $sonar-mac-width: 800px;
 $sonar-mac-height: 400px;
 
-main.products\/threatvision {
+main.threatvision {
   overflow: hidden;
+
   .banner-container {
     .banner {
+      background: $secondary-color asset_url("vision_bg_circle.svg") no-repeat center bottom;
+      background-size: 100% auto;
       box-sizing: border-box;
-      height: 250px;
-      padding: 20px 0;
       display: flex;
       flex-direction: column;
 
-      background: $secondary-color asset_url("vision_bg_circle.svg") no-repeat center bottom;
-      background-size: 100% auto;
+      height: 250px;
+      padding: 20px 0;
+
       @include responsive(640px) {
         height: 300px;
       }
+
       @include responsive(800px) {
         height: 350px;
         padding: 25px 0;
       }
+
       @include responsive(1024px) {
         height: 450px;
       }
+
       .banner-slogan {
-        align-self: flex-start;
-        white-space: nowrap;
-        height: 24px;
-        padding: 0px 20px;
-        margin-bottom: 25px;
-        background-color: $normal-color;
-        color: white;
-        font-weight: bold;
-        font-size: 12px;
         @include flex-center-align;
+        align-self: flex-start;
+        background-color: $normal-color;
+        color: $white;
+        font-size: 12px;
+        font-weight: bold;
+        height: 24px;
+        margin-bottom: 25px;
+        padding: 0 20px;
+        white-space: nowrap;
+
         @include responsive(640px) {
-          height: 34px;
           font-size: 18px;
+          height: 34px;
           margin-bottom: 40px;
         }
+
         @include responsive(800px) {
           font-size: 24px;
-          padding: 0px 60px;
+          padding: 0 60px;
         }
       }
+
       .banner-logo {
-        margin-bottom: 25px;
-        height: 45px;
         align-self: center;
+        height: 45px;
+        margin-bottom: 25px;
+
         @include responsive(640px) {
           height: 60px;
           margin-bottom: 40px;
         }
+
         @include responsive(800px) {
           height: 80px;
         }
+
         @include responsive(1024px) {
           height: 120px;
         }
+
         img {
           height: 100%;
         }
       }
+
       .banner-title {
         align-self: center;
-        width: 200px;
+        color: $white;
         font-size: 16px;
         text-align: center;
-        color: white;
+        width: 200px;
+
         @include responsive(800px) {
           font-size: 24px;
           width: auto;
@@ -80,80 +94,96 @@ main.products\/threatvision {
   }
 
   .strengths-container {
+    @include page-margin-horizontal;
     display: grid;
     grid-auto-rows: auto;
     grid-gap: 10px;
-    margin-top: 10px;
     margin-bottom: 10px;
-    @include page-margin-horizontal;
+    margin-top: 10px;
+
     @include responsive(640px) {
-      margin-top: 30px;
-      margin-bottom: 30px;
       grid-gap: 20px;
+      margin-bottom: 30px;
+      margin-top: 30px;
     }
+
     @include responsive(800px) {
       grid-gap: 40px;
     }
+
     @include responsive(1024px) {
-      margin-top: 60px;
-      margin-bottom: 60px;
       grid-gap: 50px;
+      margin-bottom: 60px;
+      margin-top: 60px;
     }
+
     .strengths-title {
       line-height: 1.5;
       text-align: center;
     }
+
     .strengths {
       display: grid;
-      grid-template-rows: repeat(1, 1fr);
       grid-gap: 10px;
+      grid-template-rows: repeat(1, 1fr);
+
       @include responsive(640px) {
+        grid-gap: 50px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
-        grid-gap: 50px;
       }
+
       @include responsive(800px) {
         grid-gap: 75px;
       }
+
       @include responsive(1280px) {
         grid-gap: 160px;
       }
+
       .strength {
+        align-items: center;
         display: grid;
         grid-auto-flow: column;
-        justify-content: start;
-        align-items: center;
         grid-gap: 10px;
+        justify-content: start;
+
         @include responsive(640px) {
-          grid-gap: 20px;
-          grid-auto-flow: row;
-          grid-template-rows: min-content auto;
           align-items: stretch;
+          grid-auto-flow: row;
+          grid-gap: 20px;
+          grid-template-rows: min-content auto;
           justify-items: center;
         }
+
         .strength-logo {
-          width: 60px;
           height: 60px;
+          width: 60px;
+
           @include responsive(640px) {
-            width: 100px;
             height: 100px;
+            width: 100px;
           }
+
           @include responsive(1024px) {
-            width: 140px;
             height: 140px;
+            width: 140px;
           }
+
           img {
-            width: 100%;
             height: 100%;
+            width: 100%;
           }
         }
+
         .strength-title {
           font-size: 12px;
-          font-size: 16px;
+
           @include responsive(640px) {
-            text-align: center;
             font-size: 16px;
+            text-align: center;
           }
+
           @include responsive(1024px) {
             font-size: 20px;
           }
@@ -164,40 +194,49 @@ main.products\/threatvision {
 
   .intelligence-report {
     background-color: $background-color;
-    padding: 20px;
     display: grid;
     grid-gap: 20px;
+    padding: 20px;
+
     @include responsive(640px) {
       grid-template-columns: repeat(2, 1fr);
       padding: 30px;
     }
+
     @include responsive(800px) {
-      padding: 50px 40px;
       grid-gap: 40px;
+      padding: 50px 40px;
     }
+
     @include responsive(1024px) {
       padding: 100px 40px;
     }
+
     @include responsive(1280px) {
-      padding: 100px 80px;
       grid-gap: 120px;
+      padding: 100px 80px;
     }
+
     .intelligence-report-screenshot {
       img {
         width: 100%;
       }
     }
+
     .intelligence-report-title-and-content {
+      align-content: center;
       display: grid;
       grid-auto-rows: auto;
       grid-gap: 10px;
-      align-content: center;
+
       @include responsive(640px) {
         grid-gap: 20px;
       }
+
       @include responsive(800px) {
         grid-gap: 30px;
       }
+
       .intelligence-report-content {
         ul {
           li::before {
@@ -209,49 +248,56 @@ main.products\/threatvision {
   }
 
   .malware-analysis {
+    @include page-margin-horizontal;
     display: grid;
     grid-gap: 20px;
-    margin-top: 20px;
     margin-bottom: 20px;
-    @include page-margin-horizontal;
+    margin-top: 20px;
+
     @include responsive(640px) {
       grid-gap: 20px;
     }
+
     @include responsive(800px) {
-      margin-top: 40px;
-      margin-bottom: 40px;
       grid-gap: 40px;
+      margin-bottom: 40px;
+      margin-top: 40px;
     }
+
     @include responsive(1024px) {
-      margin-top: 60px;
       margin-bottom: 60px;
+      margin-top: 60px;
     }
+
     .malware-analysis-title {
       text-align: center;
     }
 
     .malware-analysis-content-and-mac {
       display: grid;
+
       @include responsive(640px) {
-        grid-template-columns: auto 1fr;
         align-items: center;
+        grid-template-columns: auto 1fr;
       }
+
       .malware-analysis-content {
+        order: 1;
+
+        @include responsive(640px) {
+          order: 0;
+        }
+
         ul {
           li::before {
             color: $secondary-color;
           }
         }
-        order: 1;
-        @include responsive(640px) {
-          order: 0;
-        }
       }
+
       .malware-analysis-mac {
         img {
           width: 100%;
-          @include responsive(640px) {
-          }
         }
       }
     }

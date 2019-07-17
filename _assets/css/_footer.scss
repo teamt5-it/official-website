@@ -1,54 +1,65 @@
 $footer-mobile-padding: 20px;
 $footer-desktop-padding: 60px;
+
 .footer {
-  font-size: 12px;
-  position: relative;
+  background-color: $background-color;
   display: flex;
   flex-direction: column;
-  background-color: $background-color;
+  font-size: 12px;
+  position: relative;
+
   @include responsive(800px) {
-    padding-top: $square-side-length/$square-root-of-two;
+    padding-top: $square-side-length / $square-root-of-two;
   }
+
   .footer-logo-and-menu {
     display: flex;
     flex-direction: column;
-
     padding: $footer-mobile-padding;
+
     @include responsive(800px) {
-      padding-left: $footer-desktop-padding;
-      padding-right: $footer-desktop-padding;
       flex-direction: row;
       justify-content: space-between;
+      padding-left: $footer-desktop-padding;
+      padding-right: $footer-desktop-padding;
     }
+
     .footer-logo {
-      width: 200px;
-      margin-top: 30px;
       margin-bottom: 50px;
+      margin-top: 30px;
+      width: 200px;
+
       @include responsive(800px) {
         margin: 0;
       }
     }
+
     .footer-menu {
       display: grid;
       grid-auto-columns: auto;
       grid-auto-flow: column;
+      grid-gap: 0;
       justify-content: space-between;
-      grid-gap: 0px;
+
       @include responsive(800px) {
-        margin: 0;
         grid-gap: 50px;
+        margin: 0;
       }
+
       .menu-item {
-        white-space: nowrap;
         display: grid;
-        grid-auto-rows: min-content;
         grid-auto-flow: row;
+        grid-auto-rows: min-content;
         grid-gap: 10px;
+        white-space: nowrap;
+
         .menu-item-title {
           font-weight: bold;
         }
+
         .menu-item-link {
           display: block;
+
           &:hover {
             color: $font-color-hover;
             text-decoration: underline;
@@ -61,25 +72,30 @@ $footer-desktop-padding: 60px;
   hr {
     margin: 0 20px;
   }
+
   .footer-informations {
-    font-weight: $font-weight-medium;
     display: flex;
+    font-weight: $font-weight-medium;
     justify-content: space-between;
     padding: $footer-mobile-padding;
+
     @include responsive(800px) {
       padding-left: $footer-desktop-padding;
       padding-right: $footer-desktop-padding;
     }
+
     .copyright-and-privacy-and-cookies-policy-and-terms-of-service {
       display: grid;
-      grid-gap: 10px;
-      grid-auto-rows: auto;
       grid-auto-flow: row;
+      grid-auto-rows: auto;
+      grid-gap: 10px;
+
       @include responsive(800px) {
         grid-auto-columns: auto;
-        grid-gap: 20px;
         grid-auto-flow: column;
+        grid-gap: 20px;
       }
+
       .privacy-and-cookies-policy,
       .terms-of-service {
         text-decoration: underline;
@@ -88,61 +104,63 @@ $footer-desktop-padding: 60px;
   }
 
   .select {
-    height: 20px;
-    width: 70px;
-    background: white;
+    @include flex-center-align();
+    background: $white;
     border: 1px solid $light-background-color;
     border-radius: 3px;
-    @include flex-center-align();
-    //TODO: i18n
     display: none;
+    height: 20px;
+    width: 70px;
+    //TODO: i18n
   }
 
   .scroll-top {
-    position: absolute;
-    top: -$square-side-length/$square-root-of-two;
-    right: $footer-mobile-padding;
-    width: $square-side-length * $square-root-of-two;
-    height: $square-side-length * $square-root-of-two;
-
-    display: flex;
-    justify-content: center;
     align-items: center;
-    @include desktop() {
+    cursor: pointer;
+    display: flex;
+    height: $square-side-length * $square-root-of-two;
+    justify-content: center;
+    position: absolute;
+    right: $footer-mobile-padding;
+    top: -$square-side-length / $square-root-of-two;
+    width: $square-side-length * $square-root-of-two;
+
+    @include responsive(800px) {
       right: $footer-desktop-padding;
     }
 
-    cursor: pointer;
     .scroll-top-square {
-      width: $square-side-length;
-      height: $square-side-length;
-
+      align-items: center;
       background: $primary-color;
 
       display: flex;
+
       flex-direction: column;
+      height: $square-side-length;
       justify-content: center;
-      align-items: center;
+      width: $square-side-length;
 
       .scroll-top-content {
-        position: relative;
+        align-items: center;
         display: flex;
         justify-content: center;
-        align-items: center;
-        .scroll-top-arrow {
-          position: absolute;
-          top: -$square-side-length/3/$square-root-of-two;
-          width: $square-side-length/3;
-          height: $square-side-length/3;
+        position: relative;
 
-          border: solid white;
+        .scroll-top-arrow {
+          border: solid $white;
           border-width: 3px 0 0 3px;
+          height: $square-side-length / 3;
+          position: absolute;
+
+          top: -$square-side-length / 3 / $square-root-of-two;
+          width: $square-side-length / 3;
         }
+
         .scroll-top-text {
+          color: $white;
+          font-size: 12px;
           position: absolute;
           top: 0;
-          font-size: 12px;
-          color: white;
         }
       }
     }

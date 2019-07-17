@@ -1,10 +1,11 @@
 @import "base";
 
 html {
+  color: $normal-color;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 12px;
-  color: $normal-color;
-  @include desktop() {
+
+  @include responsive(800px) {
     font-size: 16px;
   }
 }
@@ -17,24 +18,76 @@ input {
 
 .content {
   line-height: 1.5;
+
+  @include responsive(800px) {
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+
+    h5 {
+      font-size: 18px;
+    }
+
+    h6 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .is-small {
+      width: 650px;
+    }
+
+    .is-large {
+      width: 740px;
+    }
+
+    img {
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+    }
+  }
+
   h1 {
     font-size: 20px;
   }
+
   h2 {
     font-size: 18px;
   }
+
   h3 {
     font-size: 16px;
   }
+
   h4 {
     font-size: 14px;
   }
+
   h5 {
     font-size: 12px;
   }
+
   h6 {
     font-size: 10px;
   }
+
   p {
     font-size: 12px;
   }
@@ -49,21 +102,24 @@ input {
 
   img {
     display: block;
-    margin-top: 20px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-top: 20px;
     max-width: 100%;
-    & + em {
-      display: block;
-      text-align: center;
-      margin: 0 auto;
-      font-size: 12px;
+
+    + em {
       color: $figcaption-color;
+      display: block;
+      font-size: 12px;
+      margin: 0 auto;
+      text-align: center;
     }
   }
 
   a {
+    color: $primary-color;
+    text-decoration: underline;
     word-break: break-all;
   }
 
@@ -75,11 +131,12 @@ input {
   }
 
   pre {
-    padding: 10px 20px;
-    overflow: auto;
     background-color: $code-background-color;
     border: 1px solid $code-border-color;
     border-radius: 4px;
+    overflow: auto;
+    padding: 10px 20px;
+
     code {
       border: 0;
       padding: 0;
@@ -87,35 +144,38 @@ input {
   }
 
   blockquote {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0em;
-    margin-inline-end: 0em;
-    padding-block-start: 1em;
-    padding-block-end: 1em;
-    padding-inline-start: 1em;
-    padding-inline-end: 1em;
     border-left: 6px solid $primary-color;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    padding-block-end: 1em;
+    padding-block-start: 1em;
+    padding-inline-end: 1em;
+    padding-inline-start: 1em;
   }
+
   ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
+
     li {
-      overflow-wrap: break-word;
       margin: 1em 0;
+      overflow-wrap: break-word;
       padding-left: 1em;
       position: relative;
+
       &::before {
+        @include flex-center-align;
+        color: $primary-color;
+        content: $list-bullet;
+        font-family: initial;
+        font-weight: 1000;
+        left: 0;
         position: absolute;
         top: 0;
-        left: 0;
-        font-family: initial;
-        content: $list-bullet;
-        color: $primary-color;
-        font-weight: 1000;
         width: 1em;
-        @include flex-center-align;
       }
     }
   }
@@ -123,121 +183,90 @@ input {
   ol {
     margin: 0;
     padding: 1em;
+
     li {
       margin: 1em 0;
-    }
-  }
-
-  a {
-    text-decoration: underline;
-    color: $primary-color;
-  }
-
-  @include desktop() {
-    h1 {
-      font-size: 32px;
-    }
-    h2 {
-      font-size: 28px;
-    }
-    h3 {
-      font-size: 24px;
-    }
-    h4 {
-      font-size: 20px;
-    }
-    h5 {
-      font-size: 18px;
-    }
-    h6 {
-      font-size: 16px;
-    }
-    p {
-      font-size: 16px;
-    }
-
-    .is-small {
-      width: 650px;
-    }
-    .is-large {
-      width: 740px;
-    }
-
-    img {
-      margin-top: 30px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 10px;
     }
   }
 }
 
 .button {
+  @include flex-center-align;
   -webkit-appearance: none;
-  border: none;
-  display: block;
-  cursor: pointer;
-  font-weight: bold;
+  background-color: $button-background-color;
+  border: 0;
   border-radius: 4px;
   color: $button-color;
-  background-color: $button-background-color;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
   transition: background-color 1s ease-in-out;
-  @include flex-center-align;
+
   &.button-with-arrow {
+    border-radius: 0;
     box-sizing: border-box;
-    position: relative;
-    border-radius: 0px;
     padding-right: 20px / $square-root-of-two;
+    position: relative;
+
     @include responsive(640px) {
       padding-right: 36px / $square-root-of-two;
     }
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      right: calc(20px / 4);
-      width: 20px / $square-root-of-two/2;
-      height: 20px / $square-root-of-two/2;
 
-      border: solid white;
+    &::after {
+      border: solid $white;
       border-radius: $arrow-width;
       border-width: $arrow-width $arrow-width 0 0;
+      content: "";
+      display: block;
+      height: 20px / $square-root-of-two / 2;
+
+      position: absolute;
+      right: calc(20px / 4);
       transform: rotate(45deg);
+      width: 20px / $square-root-of-two / 2;
+
       @include responsive(640px) {
+        height: 36px / $square-root-of-two / 2;
         right: calc(36px / 4);
-        width: 36px / $square-root-of-two/2;
-        height: 36px / $square-root-of-two/2;
+        width: 36px / $square-root-of-two / 2;
       }
     }
   }
+
   &:hover {
     background-color: $button-hover-background-color;
   }
+
   &:focus {
     background-color: $button-click-background-color;
   }
+
   &:disabled {
     cursor: not-allowed;
   }
+
   &.success {
-    transition: background-color 1s ease-in-out;
     background-color: $button-success-color;
+    transition: background-color 1s ease-in-out;
   }
 
   &.loading {
-    cursor: wait;
-    animation-name: shrink-to-circle;
     animation-duration: 1s;
+    animation-name: shrink-to-circle;
+    cursor: wait;
   }
+
   @keyframes shrink-to-circle {
     0% {
       border-radius: 4px;
     }
+
     50% {
+      border-radius: 25px;
       content: "";
       width: 50px;
-      border-radius: 25px;
     }
+
     100% {
       border-radius: 4px;
     }
@@ -245,36 +274,38 @@ input {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  & > *:not(:last-child) {
+
+  > *:not(:last-child) {
     margin-right: 0.5em;
   }
+
   .tag {
-    text-transform: capitalize;
+    @include flex-center-align;
+    background-color: $primary-color;
     box-sizing: border-box;
+    color: $white;
+    font-size: 12px;
     font-weight: bold;
     height: 20px;
-    font-size: 12px;
-    padding: 0px 10px;
+    padding: 0 10px;
+    text-transform: capitalize;
     white-space: nowrap;
-    background-color: $primary-color;
-    color: white;
-    @include flex-center-align;
   }
 }
 
 .date {
-  font-size: 14px;
-  line-height: 20px;
-  height: 20px;
   color: $primary-color;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
 }
 
 .location {
@@ -286,14 +317,17 @@ a {
 }
 
 .title-xl {
-  line-height: 1.5;
   font-size: 20px;
+  line-height: 1.5;
+
   @include responsive(640) {
     font-size: 24px;
   }
+
   @include responsive(800px) {
     font-size: 30px;
   }
+
   @include responsive(1024px) {
     font-size: 40px;
   }
@@ -301,14 +335,17 @@ a {
 
 .title-lg {
   font-size: 16px;
-  margin-top: 0.5em;
   margin-bottom: 0.5em;
+  margin-top: 0.5em;
+
   @include responsive(640px) {
     font-size: 20px;
   }
-  @include desktop() {
+
+  @include responsive(800px) {
     font-size: 24px;
   }
+
   @include responsive(1024px) {
     font-size: 30px;
   }
@@ -316,123 +353,145 @@ a {
 
 .title-md {
   font-size: 20px;
-  margin-top: 1em;
   margin-bottom: 1em;
-  @include desktop() {
+  margin-top: 1em;
+
+  @include responsive(800px) {
     font-size: 24px;
   }
 }
 
 .title-underline {
   border-bottom: 5px solid $primary-color;
-  padding-top: 15px;
   padding-bottom: 10px;
-  @include desktop() {
-    padding-top: 20px;
+  padding-top: 15px;
+
+  @include responsive(800px) {
     border-bottom: 10px solid $primary-color;
+    padding-top: 20px;
   }
 }
 
 .title-leftline {
   border-left: 5px solid $primary-color;
   padding-left: 10px;
-  @include desktop() {
+
+  @include responsive(800px) {
     border-left: 10px solid $primary-color;
   }
 }
+
 .sonar-content {
   font-size: 12px;
+
   @include responsive(640px) {
     font-size: 16px;
   }
+
   @include responsive(800px) {
     font-size: 20px;
   }
 }
+
 .content-md {
   font-size: 14px;
+
   @include responsive(800px) {
     font-size: 16px;
   }
 }
 
 .sonar-title {
-  line-height: 1.5;
   font-size: 18px;
+  line-height: 1.5;
+
   @include responsive(640px) {
     font-size: 24px;
   }
+
   @include responsive(800px) {
     font-size: 30px;
   }
+
   @include responsive(1024px) {
     font-size: 40px;
   }
 }
 
 .post-meta {
+  align-items: center;
   display: grid;
   grid-auto-flow: column;
-  justify-content: start;
-  align-items: center;
   grid-column-gap: 10px;
+  justify-content: start;
 }
 
 .banner-with-text {
   display: grid;
   grid-gap: 10px;
+
   @include responsive(800px) {
     grid-gap: 20px;
   }
+
   .banner-title {
-    justify-self: start;
     @include page-margin-horizontal;
+    justify-self: start;
   }
+
   .banner-image {
-    position: relative;
     overflow: hidden;
+    position: relative;
+
     @include responsive(1024px) {
       @include page-margin-horizontal;
     }
-    &:after {
+
+    &::after {
       content: "";
       display: block;
       padding-top: 37.5%;
     }
+
     img {
       position: absolute;
-      width: 100%;
       top: 50%;
       transform: translateY(-50%);
+      width: 100%;
     }
   }
+
   .banner-content {
-    position: relative;
-    top: -30px;
-    margin-bottom: 20px - 30px;
-    justify-self: center;
-    background-color: $background-color;
-    text-align: justify;
-    padding: 20px 10px;
     @include page-margin-horizontal;
+    background-color: $background-color;
+    justify-self: center;
+    margin-bottom: 20px - 30px;
+    padding: 20px 10px;
+    position: relative;
+    text-align: justify;
+    top: -30px;
+
     @include responsive(640px) {
-      top: -90px;
-      padding: 20px;
       margin-bottom: 20px - 90px;
+      padding: 20px;
+      top: -90px;
     }
+
     @include responsive(800px) {
-      top: -110px;
-      padding: 30px 50px;
       margin-bottom: 40px - 110px;
+      padding: 30px 50px;
+      top: -110px;
     }
+
     @include responsive(1024px) {
+      margin-bottom: 60px - 110px;
       top: -110px;
       width: 740px;
-      margin-bottom: 60px - 110px;
     }
+
     @include responsive(1280px) {
-      top: -140px;
       margin-bottom: 60px - 140px;
+      top: -140px;
     }
   }
 }

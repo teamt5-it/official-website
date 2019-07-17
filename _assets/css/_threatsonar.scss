@@ -6,154 +6,186 @@ $sonar-mac-width: 800px;
 $sonar-mac-height: 400px;
 $banner-slogan-height: 34px;
 
-main.products\/threatsonar {
+main.threatsonar {
   .banner-container {
     .banner {
-      box-sizing: border-box;
-      height: 250px;
-      padding: 20px 0;
-      display: flex;
-      flex-direction: column;
       background: $sonar-hero-banner-background asset_url("sonar_bg_triangle.svg") no-repeat center bottom;
       background-size: 100% auto;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: 250px;
+      padding: 20px 0;
+
       @include responsive(640px) {
         height: 300px;
       }
+
       @include responsive(800px) {
         height: 350px;
         padding: 25px 0;
       }
+
       @include responsive(1024px) {
         height: 450px;
       }
+
       .banner-slogan {
-        align-self: flex-start;
-        white-space: nowrap;
-        height: 24px;
-        padding: 0px 20px;
-        margin-bottom: 25px;
-        background-color: $normal-color;
-        color: white;
-        font-weight: bold;
-        font-size: 12px;
         @include flex-center-align;
+        align-self: flex-start;
+        background-color: $normal-color;
+        color: $white;
+        font-size: 12px;
+        font-weight: bold;
+        height: 24px;
+        margin-bottom: 25px;
+        padding: 0 20px;
+        white-space: nowrap;
+
         @include responsive(640px) {
-          height: 34px;
           font-size: 18px;
+          height: 34px;
           margin-bottom: 40px;
         }
+
         @include responsive(800px) {
           font-size: 24px;
-          padding: 0px 60px;
+          padding: 0 60px;
         }
       }
+
       .banner-logo {
-        margin-bottom: 25px;
-        height: 45px;
         align-self: center;
+        height: 45px;
+        margin-bottom: 25px;
+
         @include responsive(640px) {
           height: 60px;
           margin-bottom: 40px;
         }
+
         @include responsive(800px) {
           height: 80px;
         }
+
         @include responsive(1024px) {
           height: 120px;
         }
+
         img {
           height: 100%;
         }
       }
+
       .banner-title {
         align-self: center;
-        width: 200px;
+        color: $white;
         font-size: 16px;
         text-align: center;
-        color: white;
+        width: 200px;
+
         @include responsive(800px) {
           font-size: 24px;
           width: auto;
         }
       }
     }
+
     .mac-and-strengths {
+      align-items: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
       margin-bottom: 20px;
+
       @include responsive(1024px) {
-        margin-bottom: 40px;
         display: block;
+        margin-bottom: 40px;
         position: relative;
       }
 
       .mac {
-        width: 310px;
         position: relative;
         top: -20px;
+        width: 310px;
+
         @include responsive(640px) {
           width: 520px;
         }
+
         @include responsive(800px) {
           width: 700px;
         }
+
         @include responsive(1024px) {
-          width: 700px;
+          bottom: 0;
+          left: -30px;
           position: absolute;
           top: auto;
-          left: -30px;
-          bottom: 0;
+          width: 700px;
         }
+
         @include responsive(1280px) {
           left: 30px;
         }
+
         @include responsive(1280px) {
           width: 800px;
         }
+
         img {
           width: 100%;
         }
       }
+
       .strengths {
         box-sizing: border-box;
-        padding: 0 20px;
         display: grid;
         grid-gap: 25px;
         grid-template-rows: repeat(3, 40px);
+        padding: 0 20px;
+
         @include responsive(640px) {
           grid-template-rows: repeat(3, 60px);
         }
+
         @include responsive(800px) {
         }
+
         @include responsive(1024px) {
-          padding: 20px;
           grid-template-rows: repeat(3, 80px);
-          position: relative;
           left: 650px;
+          padding: 20px;
+          position: relative;
           width: 330px;
         }
+
         @include responsive(1280px) {
           left: 870px;
         }
+
         .strength {
-          display: grid;
-          grid-gap: 10px;
-          grid-auto-flow: column;
-          justify-content: start;
           align-items: center;
+          display: grid;
+          grid-auto-flow: column;
+          grid-gap: 10px;
+          justify-content: start;
+
           .strength-logo {
             height: 40px;
+
             @include responsive(640px) {
               height: 60px;
             }
+
             @include responsive(1024px) {
               height: 80px;
             }
+
             img {
               height: 100%;
             }
           }
+
           .strength-content {
             @include responsive(1024px) {
               width: 200px;
@@ -169,86 +201,108 @@ main.products\/threatsonar {
     grid-auto-rows: auto;
     grid-gap: 10px;
     padding: 20px;
+
     @include responsive(640px) {
       grid-gap: 20px;
       padding: 30px;
     }
+
     @include responsive(800px) {
       grid-gap: 20px;
       padding: 40px 75px;
     }
+
     @include responsive(1024px) {
       grid-gap: 50px;
       padding: 40px;
     }
+
     @include responsive(1280px) {
       padding: 40px 70px;
     }
+
     @include responsive(1440px) {
       padding: 40px 130px;
     }
+
     .more-strengths-title {
       line-height: 1.5;
       text-align: center;
     }
+
     .more-strengths-content {
       display: grid;
       grid-gap: 20px;
       grid-template-columns: repeat(1, 1fr);
+
       @include responsive(640px) {
         grid-template-columns: repeat(2, 1fr);
       }
-      @include desktop() {
+
+      @include responsive(800px) {
         grid-template-columns: repeat(5, 1fr);
       }
+
       .more-strength {
         display: grid;
-        grid-template-columns: auto 1fr;
         grid-gap: 10px;
-        @include desktop() {
+        grid-template-columns: auto 1fr;
+
+        @include responsive(800px) {
           grid-template-columns: 1fr;
           grid-template-rows: min-content auto;
           justify-items: center;
         }
+
         .more-strength-logo {
-          width: 60px;
           height: 60px;
+          width: 60px;
+
           @include responsive(640px) {
-            width: 80px;
             height: 80px;
+            width: 80px;
           }
+
           @include responsive(800px) {
-            width: 100px;
             height: 100px;
+            width: 100px;
           }
+
           @include responsive(1024px) {
-            width: 120px;
             height: 120px;
+            width: 120px;
           }
+
           img {
-            width: 100%;
             height: 100%;
+            width: 100%;
           }
         }
+
         .more-strength-title-and-content {
           line-height: 1.5;
+
           .more-strength-title {
             color: $primary-color;
-            @include desktop() {
+
+            @include responsive(800px) {
               text-align: center;
             }
           }
+
           .more-strength-content {
             ul {
               li {
                 margin: 0;
-                @include desktop() {
+
+                @include responsive(800px) {
                   padding-left: 0;
                   text-align: center;
                 }
               }
+
               li::before {
-                @include desktop() {
+                @include responsive(800px) {
                   display: inline-block;
                   position: static;
                 }
@@ -259,138 +313,171 @@ main.products\/threatsonar {
       }
     }
   }
+
   .assessment-reports {
-    padding: 30px 25px;
+    align-items: center;
     background-color: $background-color;
     display: grid;
-    align-items: center;
-    grid-template-columns: repeat(1, 1fr);
     grid-gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px 25px;
+
     @include responsive(640px) {
       grid-template-columns: repeat(2, 1fr);
     }
+
     @include responsive(800px) {
       padding: 40px 30px;
     }
+
     @include responsive(1024px) {
       padding: 60px 40px;
     }
+
     @include responsive(1280px) {
       padding: 60px 80px;
     }
+
     .assessment-reports-screenshot {
       img {
         width: 100%;
       }
     }
+
     .assessment-reports-title-and-content {
+      align-content: center;
       display: grid;
       grid-auto-rows: auto;
       grid-gap: 10px;
-      align-content: center;
+
       @include responsive(640px) {
         grid-gap: 20px;
       }
+
       @include responsive(800px) {
         grid-gap: 30px;
       }
     }
   }
+
   .auto-investigation {
-    box-sizing: border-box;
     align-self: center;
-    width: 100%;
+    box-sizing: border-box;
     display: grid;
     grid-gap: 20px;
-    padding: 30px 25px;
     grid-template-columns: 1fr;
+    padding: 30px 25px;
+    width: 100%;
+
     @include responsive(640px) {
       grid-template-columns: 1fr 340px;
       padding: 30px;
     }
+
     @include responsive(800px) {
       grid-template-columns: 1fr 430px;
       padding: 60px 30px;
     }
+
     @include responsive(1024px) {
       grid-template-columns: 1fr 520px;
       padding: 60px 40px;
     }
+
     @include responsive(1280px) {
       grid-template-columns: 1fr 650px;
       padding: 60px 100px;
     }
+
     .auto-investigation-title-and-content {
+      align-content: center;
       display: grid;
       grid-auto-rows: auto;
-      align-content: center;
       grid-gap: 10px;
 
       @include responsive(640px) {
         grid-gap: 25px;
       }
+
       .auto-investigation-content {
         line-height: 1.5;
       }
     }
+
     .youtube {
       height: 170px;
+
       @include responsive(640px) {
         height: 190px;
       }
+
       @include responsive(800px) {
         height: 240px;
       }
+
       @include responsive(1024px) {
         height: 290px;
       }
+
       @include responsive(1280px) {
         height: 365px;
       }
+
       iframe {
-        width: 100%;
         height: 100%;
+        width: 100%;
       }
     }
   }
+
   .complementary-to-antivirus {
+    background-color: $background-color;
     display: grid;
     grid-auto-rows: auto;
     grid-gap: 20px;
     padding: 30px 0;
+
     @include responsive(640px) {
       grid-gap: 30px;
     }
-    background-color: $background-color;
+
     @include responsive(1024px) {
       padding: 60px 0;
     }
+
     .complementary-to-antivirus-title {
       padding: 0 30px;
       text-align: center;
     }
+
     .complementaries {
+      align-items: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      @include desktop() {
+
+      @include responsive(800px) {
+        align-items: stretch;
         flex-direction: row;
         justify-content: center;
-        align-items: stretch;
       }
+
       .complementary {
-        margin: 10px;
+        background-color: $white;
         box-sizing: border-box;
+        margin: 10px;
         width: 300px;
-        background-color: white;
+
         @include responsive(640px) {
           width: 420px;
         }
+
         .complementary-title {
           padding: 10px;
+
           .complementary-logo {
-            height: 40px;
             @include flex-center-align;
+            height: 40px;
+
             img {
               height: 100%;
             }
@@ -401,15 +488,18 @@ main.products\/threatsonar {
           padding: 10px 20px;
         }
       }
+
       .threatsonar {
         .complementary-title {
           background-color: $sonar-color;
         }
       }
+
       .antivirus {
         .complementary-title {
           background-color: $normal-color;
         }
+
         .complementary-content {
           ul {
             li::before {

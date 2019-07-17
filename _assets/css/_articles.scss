@@ -1,27 +1,31 @@
 @import "base";
+
 .articles {
   display: grid;
+
   .article {
-    cursor: pointer;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 10px;
-    padding: 10px;
-    justify-content: start;
     align-items: center;
     border-bottom: 1px solid $light-background-color;
-    &:hover{
-      background-color: $background-color;
-    }
+    cursor: pointer;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 1fr;
+    justify-content: start;
+    padding: 10px;
+
     @include responsive(800px) {
       grid-auto-flow: column;
       grid-template-columns: auto;
       padding: 20px;
     }
-    @include responsive(1280px) {
+
+    &:hover {
+      background-color: $background-color;
     }
+
     .article-title {
       grid-column: 1 / span 2;
+
       @include responsive(800px) {
         grid-column: auto;
       }

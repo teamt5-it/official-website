@@ -5,18 +5,21 @@ $code-border-color: #e3e3e3;
 $font-color-hover: #948e8c;
 $normal-color: #4c433f;
 $primary-color: #d83751;
-$primary-opacity-color: rgba(216,55,81,0.8);
+$primary-opacity-color: rgba(216, 55, 81, 0.8);
 $secondary-color: #f6ac19;
 $figcaption-color: #848484;
 $sonar-color: #c71532;
 $list-bullet: "\2022";
 $button-arrow-side-length: 10px;
 
+$white: #fff;
+$grey: #808080;
+
 $button-background-color: $primary-color;
 $button-hover-background-color: #e88797;
 $button-click-background-color: #a82a3e;
 $button-success-color: #2eca72;
-$button-color: white;
+$button-color: $white;
 $font-weight-medium: 500;
 $new-height: 60px;
 $arrow-width: 2px;
@@ -40,14 +43,17 @@ $lg-padding-horizontal: $lg-margin-horizontal;
 @mixin page-margin-horizontal {
   margin-left: $xs-margin-horizontal;
   margin-right: $xs-margin-horizontal;
+
   @include responsive(640px) {
     margin-left: $sm-margin-horizontal;
     margin-right: $sm-margin-horizontal;
   }
+
   @include responsive(800px) {
     margin-left: $md-margin-horizontal;
     margin-right: $md-margin-horizontal;
   }
+
   @include responsive(1280px) {
     margin-left: $lg-margin-horizontal;
     margin-right: $lg-margin-horizontal;
@@ -57,14 +63,17 @@ $lg-padding-horizontal: $lg-margin-horizontal;
 @mixin page-padding-horizontal {
   padding-left: $xs-padding-horizontal;
   padding-right: $xs-padding-horizontal;
+
   @include responsive(640px) {
     padding-left: $sm-padding-horizontal;
     padding-right: $sm-padding-horizontal;
   }
+
   @include responsive(800px) {
     padding-left: $md-padding-horizontal;
     padding-right: $md-padding-horizontal;
   }
+
   @include responsive(1280px) {
     padding-left: $lg-padding-horizontal;
     padding-right: $lg-padding-horizontal;
@@ -83,12 +92,15 @@ $lg-post-padding-horizontal: $lg-post-margin-horizontal;
 
 @mixin post-page-margin-horizontal {
   margin: 0 $xs-post-margin-horizontal;
+
   @include responsive(640px) {
     margin: 0 $sm-post-margin-horizontal;
   }
+
   @include responsive(800px) {
     margin: 0 $md-post-margin-horizontal;
   }
+
   @include responsive(1280px) {
     margin: 0 $lg-post-margin-horizontal;
   }
@@ -96,21 +108,24 @@ $lg-post-padding-horizontal: $lg-post-margin-horizontal;
 
 @mixin post-page-padding-horizontal {
   padding: 0 $xs-post-padding-horizontal;
+
   @include responsive(640px) {
     padding: 0 $sm-post-padding-horizontal;
   }
+
   @include responsive(800px) {
     padding: 0 $md-post-padding-horizontal;
   }
+
   @include responsive(1280px) {
     padding: 0 $lg-post-padding-horizontal;
   }
 }
 
 @mixin flex-center-align {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 @mixin mobile() {
@@ -134,14 +149,15 @@ $lg-post-padding-horizontal: $lg-post-margin-horizontal;
 @mixin pseudo-element($width, $height, $position: relative) {
   content: "";
   display: block;
+  height: $height;
   position: $position;
   width: $width;
-  height: $height;
 }
 
 .rotate-clockwise-45 {
   transform: rotate(45deg);
 }
+
 .rotate-counterwise-45 {
   transform: rotate(-45deg);
 }

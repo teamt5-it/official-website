@@ -1,102 +1,123 @@
 @import "base";
+$sticky-post-information-background-color: rgba(0, 0, 0, 0.6);
+
 .sticky-post {
   display: block;
   position: relative;
+
   @include responsive(640px) {
-    margin-top: 20px;
     @include page-margin-horizontal;
+    margin-top: 20px;
     max-width: 600px;
   }
+
   @include responsive(800px) {
     max-width: 740px;
   }
 
   @include responsive(1280px) {
-    max-width: none;
     display: grid;
-    grid-template-columns: 740px auto;
     grid-auto-flow: column;
+    grid-template-columns: 740px auto;
+    max-width: none;
   }
+
   .sticky-post-banner {
-    width: 100%;
+    overflow: hidden;
     padding-top: 56.25%;
     position: relative;
-    overflow: hidden;
+    width: 100%;
+
     img {
       position: absolute;
       top: 50%;
-      width: 100%;
       transform: translateY(-50%);
+      width: 100%;
     }
   }
+
   .sticky-post-information {
-    padding: 5px;
-    position: absolute;
+    background-color: $sticky-post-information-background-color;
     bottom: 0;
     left: 0;
+    padding: 5px;
+    position: absolute;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+
     @include responsive(640px) {
       padding: 15px;
     }
+
     @include responsive(800px) {
       padding: 20px;
     }
+
     @include responsive(1280px) {
       @include flex-center-align;
-      position: relative;
       background-color: $background-color;
+      position: relative;
     }
+
     .sticky-post-meta {
       display: grid;
-      grid-template-columns: auto 1fr;
-      grid-column-gap: 10px;
-      justify-content: stretch;
       grid-auto-flow: row;
+      grid-column-gap: 10px;
+      grid-template-columns: auto 1fr;
+      justify-content: stretch;
       position: relative;
+
       @include responsive(800px) {
         grid-column-gap: 10px;
       }
+
       @include responsive(1280px) {
         display: block;
       }
+
       .sticky-post-date {
-        color: white;
+        color: $white;
+
         @include responsive(1280px) {
+          bottom: calc(100% + 40px);
           color: $primary-color;
           position: absolute;
-          bottom: calc(100% + 40px);
         }
       }
+
       .sticky-post-tags {
         @include responsive(1280px) {
-          position: absolute;
           bottom: calc(100% + 10px);
+          position: absolute;
         }
       }
+
       .sticky-post-title {
-        grid-column: 1 / span 2;
+        color: $white;
         font-size: 20px;
-        color: white;
+        grid-column: 1 / span 2;
+
         @include responsive(640px) {
           font-size: 22px;
         }
+
         @include responsive(1280px) {
-          grid-column: auto;
           color: $normal-color;
+          grid-column: auto;
         }
       }
     }
+
     .sticky-post-read-more-button {
       display: none;
+
       @include responsive(1280px) {
-        display: flex;
         align-self: flex-end;
-        position: absolute;
         bottom: 0;
-        right: 0;
+        display: flex;
         font-size: 20px;
         height: 36px;
+        position: absolute;
+        right: 0;
         width: 145px;
       }
     }

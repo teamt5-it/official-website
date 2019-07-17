@@ -110,6 +110,9 @@ GEM
     sassc (2.0.1)
       ffi (~> 1.9)
       rake
+    scss_lint (0.58.0)
+      rake (>= 0.9, < 13)
+      sass (~> 3.5, >= 3.5.5)
     sinatra (1.4.8)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -140,6 +143,7 @@ DEPENDENCIES
   jekyll-coffeescript
   jekyll-paginate-v2
   normalize-scss
+  scss_lint
   tzinfo-data
 
 BUNDLED WITH

@@ -2,17 +2,21 @@
 
 main.post {
   grid-gap: 20px;
+
   .post-meta {
     @include post-page-padding-horizontal;
   }
+
   .post-banner {
     @include responsive(640px) {
       @include post-page-padding-horizontal;
     }
+
     img {
       width: 100%;
     }
   }
+
   .post-content {
     @include post-page-padding-horizontal;
   }

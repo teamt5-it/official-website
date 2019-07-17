@@ -1,46 +1,53 @@
 @import "base";
 $body-top-border: 5px solid $primary-color;
+
 body {
+  border-top: $body-top-border;
   box-sizing: border-box;
   display: flex;
-  height: 100vh;
   flex-direction: column;
-  border-top: $body-top-border;
+  height: 100vh;
+
   .header-container {
-    flex: none;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+
     header {
       box-sizing: border-box;
-      width: 100%;
       max-width: $max-width;
+      width: 100%;
     }
   }
+
   .main-container {
-    flex: 1 0 auto;
     display: flex;
+    flex: 1 0 auto;
     flex-direction: column;
+
     main {
-      box-sizing: border-box;
       align-self: center;
-      width: 100%;
-      max-width: $max-width;
+      box-sizing: border-box;
       display: grid;
       grid-template-columns: 100%;
+      max-width: $max-width;
+      width: 100%;
     }
   }
+
   .footer-container {
-    margin-top: $square-side-length/$square-root-of-two * 4;
-    background-color: $background-color;
-    flex: none;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    background-color: $background-color;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    margin-top: $square-side-length / $square-root-of-two * 4;
+
     footer {
       box-sizing: border-box;
-      width: 100%;
       max-width: $max-width;
+      width: 100%;
     }
   }
 }

@@ -1,5 +1,6 @@
 @import "base";
+
 main.position {
-  grid-gap: 20px;
   @include post-page-padding-horizontal;
+  grid-gap: 20px;
 }

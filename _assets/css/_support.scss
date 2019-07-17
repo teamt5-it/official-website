@@ -1,15 +1,20 @@
 @import "base";
+
 main.support {
   .global-support {
-    display: grid;
     @include page-margin-horizontal;
+    display: grid;
+
     grid-gap: 20px;
+
     @include responsive(800px) {
       grid-gap: 30px;
     }
+
     .global-support-title {
       justify-self: flex-start;
     }
+
     .global-support-banner {
       img {
         width: 100%;

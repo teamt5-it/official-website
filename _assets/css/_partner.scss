@@ -1,53 +1,65 @@
 @import "base";
+
 main.partner {
   .partners {
+    @include page-margin-horizontal;
     display: grid;
     grid-gap: 30px;
-    @include page-margin-horizontal;
+
     @include responsive(800px) {
       grid-gap: 60px;
     }
+
     .partner {
       display: grid;
+
       .partner-title {
         justify-self: start;
       }
+
       .partner-content {
         display: grid;
         justify-content: start;
+
         @include responsive(640px) {
           grid-gap: 20px;
         }
+
         @include responsive(800px) {
-          grid-gap: 30px;
           grid-auto-flow: column;
+          grid-gap: 30px;
         }
+
         .partner-logo {
+          @include flex-center-align;
+          height: 80px;
           overflow: hidden;
           width: 120px;
-          height: 80px;
-          @include flex-center-align;
+
           @include responsive(640px) {
             width: 180px;
             width: 120px;
           }
+
           @include responsive(800px) {
-            width: 300px;
             height: 200px;
+            width: 300px;
           }
+
           img {
             width: 100%;
           }
         }
 
         .partner-name-and-contact-information {
-          display: grid;
           align-content: center;
+          display: grid;
+
           .partner-contact-information {
             display: grid;
             grid-gap: 10px;
-            @include responsive(800px){
 
+            @include responsive(800px) {
               grid-gap: 20px;
             }
           }

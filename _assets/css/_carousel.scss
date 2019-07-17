@@ -1,83 +1,103 @@
 @import "base";
+$carousel-item-information-text-shadow-color: rgba(0, 0, 0, 0.5);
 
 .carousel {
   background-color: $background-color;
+
   .carousel-items {
-    position: relative;
     overflow: hidden;
-    &:after {
+    position: relative;
+
+    &::after {
       content: "";
       display: block;
       padding-top: 37.5%;
     }
+
     .carousel-item {
       display: none;
-      position: absolute;
-      width: 100%;
       height: 100%;
+      position: absolute;
       transition: all 0.2s;
+      width: 100%;
+
       &.active {
         display: block;
       }
+
       &.left {
         left: -100%;
       }
+
       &.right {
         left: 100%;
       }
+
       &.center {
         left: 0;
       }
+
       img {
         position: absolute;
         top: 50%;
-        width: 100%;
         transform: translateY(-50%);
+        width: 100%;
       }
+
       .carousel-item-information-container {
-        position: absolute;
-        width: 70%;
-        height: 100%;
-        clip-path: polygon(0 0%, 75% 0, 100% 50%, 75% 100%, 0 100%);
         background-color: $primary-opacity-color;
-        color: white;
+        clip-path: polygon(0 0%, 75% 0, 100% 50%, 75% 100%, 0 100%);
+        color: $white;
+        height: 100%;
+        position: absolute;
         transition: all 0.2s;
+        width: 70%;
+
         @include responsive(640px) {
           width: 40%;
         }
+
         &.left {
           left: -100%;
         }
+
         &.center {
           left: 0;
         }
+
         .carousel-item-information {
-          color: white;
-          text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+          bottom: 50%;
+          color: $white;
+          left: 50%;
           position: absolute;
+          text-shadow: 0 2px 2px $carousel-item-information-text-shadow-color;
+          transform: translate(-50%, 50%);
           transition: all 0.2s;
           width: 65%;
-          left: 50%;
-          bottom: 50%;
-          transform: translate(-50%, 50%);
+
           &.bottom {
             bottom: -66%;
             opacity: 0;
           }
+
           &.center {
-            opacity: 1;
             bottom: 50%;
+            opacity: 1;
             transform: translate(-50%, 50%);
           }
+
           .carousel-item-information-date {
-            position: absolute;
             bottom: calc(100% + 5px);
+            position: absolute;
+
             @include responsive(800px) {
               bottom: calc(100% + 10px);
             }
           }
+
           .carousel-item-information-title {
             font-size: 14px;
+
             @include responsive(640px) {
               font-size: 24px;
             }
@@ -86,30 +106,35 @@
       }
     }
   }
+
   .carousel-indicators {
-    height: 30px;
-    display: grid;
-    grid-gap: 20px;
-    grid-auto-flow: column;
-    grid-auto-columns: min-content;
-    justify-content: center;
     align-items: center;
+    display: grid;
+    grid-auto-columns: min-content;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    height: 30px;
+    justify-content: center;
+
     @include responsive(800px) {
       height: 40px;
     }
+
     @include responsive(1024px) {
       height: 50px;
     }
+
     @include responsive(1280px) {
       height: 60px;
     }
 
     .carousel-indicator {
-      cursor: pointer;
-      width: 10px;
-      height: 10px;
-      border-radius: 5px;
       border: 1px solid $primary-color;
+      border-radius: 5px;
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+
       &.active {
         background-color: $primary-color;
       }

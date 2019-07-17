@@ -1,0 +1,13 @@
+linters:
+  SelectorDepth:
+    enabled: false
+  NestingDepth:
+    enabled: false
+  QualifyingElement:
+    enabled: false
+  StringQuotes:
+    enabled: false
+  LeadingZero:
+    enabled: false
+  NameFormat:
+    enabled: false

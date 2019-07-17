@@ -15,7 +15,8 @@ $navbar-item-title-margin: 0 5px;
 $navbar-item-title-mobile-padding-left: 10px;
 $navbar-item-title-mobile-padding-right: 5px;
 $navbar-item-arrow-container-height: 30px;
-$navbar-item-arrow-side-length: $navbar-item-arrow-container-height/$square-root-of-two/2;
+$navbar-item-arrow-side-length: $navbar-item-arrow-container-height /
+  $square-root-of-two / 2;
 
 $navbar-submenu-desktop-height: 40px;
 $navbar-submenu-arrow-side-length: $navbar-brand-logo-height;
@@ -28,73 +29,81 @@ $navbar-desktop-padding: 0 60px;
 $navbar-mobile-padding: 0 10px;
 $navbar-item-title-padding: 0 8px;
 $navbar-submenu-mobile-background-color: $background-color;
+
 .navbar {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 100%;
   max-width: 1280px;
+  width: 100%;
 
   @include responsive(800px) {
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: $navbar-desktop-padding;
+    position: relative;
   }
 
   .navbar-brand {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
     height: $navbar-brand-mobile-height;
+    justify-content: space-between;
     padding: $navbar-mobile-padding;
 
     @include responsive(800px) {
       height: $navbar-brand-desktop-height;
       padding: 0;
     }
+
     .navbar-brand-logo {
       height: $navbar-brand-logo-height;
+
       img {
         height: 100%;
       }
     }
 
     .navbar-burger {
-      position: relative;
-      width: $navbar-burger-side-length;
       height: $navbar-burger-side-length;
+      position: relative;
       transition: all 0.5s ease-in-out;
+      width: $navbar-burger-side-length;
 
       @include responsive(800px) {
         display: none;
       }
-      span {
-        position: absolute;
-        left: 6px;
-        display: block;
-        width: 18px;
 
-        border-radius: $navbar-burger-width/2;
+      span {
+        background-color: $grey;
+        border-radius: $navbar-burger-width / 2;
+        display: block;
         height: $navbar-burger-width;
-        background-color: grey;
+
+        left: 6px;
+        position: absolute;
+        width: 18px;
       }
+
       @for $i from 1 through 3 {
         span:nth-child(#{$i}) {
           top: calc(5% + 20% * #{$i});
           transition: all 0.5s ease-in-out;
         }
       }
+
       &.active {
         span {
           &:nth-child(1) {
             transform: translateY(6px) rotate(45deg);
           }
+
           &:nth-child(2) {
             opacity: 0;
           }
+
           &:nth-child(3) {
             transform: translateY(-6px) rotate(-45deg);
           }
@@ -104,10 +113,10 @@ $navbar-submenu-mobile-background-color: $background-color;
   }
 
   .navbar-menu {
-    max-height: 0;
     display: grid;
-    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 
     @include responsive(800px) {
       display: grid;
@@ -115,6 +124,7 @@ $navbar-submenu-mobile-background-color: $background-color;
       grid-gap: 20px;
       max-height: none;
     }
+
     @include responsive(1280px) {
       grid-gap: 40px;
     }
@@ -126,31 +136,36 @@ $navbar-submenu-mobile-background-color: $background-color;
     .navbar-item {
       display: flex;
       flex-direction: column;
-      display: block;
+
       @include responsive(800px) {
         height: $navbar-item-desktop-height;
       }
+
       .navbar-item-link {
+        align-items: center;
+        border-bottom: $navbar-item-mobile-border;
         cursor: pointer;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         height: $navbar-item-title-height;
-        border-bottom: $navbar-item-mobile-border;
+        justify-content: space-between;
+        margin: $navbar-item-title-margin;
         padding-left: $navbar-item-title-mobile-padding-left;
         padding-right: $navbar-item-title-mobile-padding-right;
-        margin: $navbar-item-title-margin;
+
         @include responsive(800px) {
+          border-bottom: 0;
+          height: $navbar-brand-desktop-height;
+          margin: 0;
+          padding: 0;
+
           &.is-current {
             box-shadow: $navbar-item-hover-box-shadow;
           }
-          padding: 0;
-          margin: 0;
-          height: $navbar-brand-desktop-height;
-          border-bottom: 0;
         }
+
         .navbar-item-title {
           line-height: $navbar-item-title-height;
+
           @include responsive(800px) {
             line-height: $navbar-item-desktop-height;
 
@@ -160,26 +175,28 @@ $navbar-submenu-mobile-background-color: $background-color;
           }
         }
       }
+
       .navbar-item-arrow-container {
-        position: relative;
-        display: flex;
-        justify-content: center;
         align-items: center;
-        width: $navbar-item-arrow-container-height;
+        display: flex;
         height: $navbar-item-arrow-container-height;
+        justify-content: center;
+        position: relative;
+        width: $navbar-item-arrow-container-height;
 
         @include responsive(800px) {
           display: none;
         }
-        .navbar-item-arrow {
-          position: absolute;
-          width: $navbar-item-arrow-container-height/3;
-          height: $navbar-item-arrow-container-height/3;
-          transform: rotate(-135deg);
 
-          border: solid grey;
+        .navbar-item-arrow {
+          border: solid $grey;
           border-radius: $arrow-width;
           border-width: $arrow-width 0 0 $arrow-width;
+          height: $navbar-item-arrow-container-height / 3;
+          position: absolute;
+          transform: rotate(-135deg);
+          width: $navbar-item-arrow-container-height / 3;
+
           &.active {
             position: absolute;
             top: 50%;
@@ -189,47 +206,51 @@ $navbar-submenu-mobile-background-color: $background-color;
       }
 
       .navbar-submenu {
-        display: grid;
         background-color: $navbar-submenu-mobile-background-color;
+        display: grid;
         max-height: 0;
-        transition: max-height 0.5s ease-in-out;
         overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
 
         @include responsive(800px) {
-          position: absolute;
+          background-color: transparent;
           display: grid;
           grid-auto-flow: column;
           grid-gap: 20px;
-          padding: $navbar-desktop-padding;
-          top: $navbar-brand-desktop-height;
-          right: 0;
-          background-color: transparent;
           overflow: hidden;
+          padding: $navbar-desktop-padding;
+          position: absolute;
+          right: 0;
+          top: $navbar-brand-desktop-height;
         }
+
         @include responsive(1280px) {
           grid-gap: 40px;
         }
 
         &.active {
           max-height: 100vh;
+
           @include responsive(800px) {
             max-height: $navbar-submenu-desktop-height;
           }
         }
 
         .navbar-submenu-item {
-          display: flex;
           align-items: center;
-          padding: $navbar-submenu-item-mobile-padding;
-          height: $navbar-submenu-item-mobile-height;
           border-bottom: $navbar-item-mobile-border;
+          display: flex;
+          height: $navbar-submenu-item-mobile-height;
           line-height: $navbar-submenu-item-mobile-height;
+          padding: $navbar-submenu-item-mobile-padding;
+
           @include responsive(800px) {
-            line-height: $navbar-submenu-desktop-height;
-            height: $navbar-submenu-item-desktop-height;
-            padding: 0;
             border-bottom: 0;
+            height: $navbar-submenu-item-desktop-height;
+            line-height: $navbar-submenu-desktop-height;
+            padding: 0;
           }
+
           &:hover {
             color: $font-color-hover;
             text-decoration: underline;
@@ -238,19 +259,22 @@ $navbar-submenu-mobile-background-color: $background-color;
       }
     }
   }
+
   .navbar-submenu-padding {
-    max-height: 0;
     height: 50px;
-    width: 100%;
-    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    width: 100%;
     @include responsive(800px) {
     }
+
     &.active {
       @include responsive(800px) {
         max-height: $navbar-submenu-desktop-height;
       }
     }
+
     .navbar-submenu-padding-content {
       max-height: $navbar-submenu-desktop-height;
     }
