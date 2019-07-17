@@ -4,8 +4,14 @@ DIR=$( cd "$( dirname "$0" )" && pwd )
 PATH=$DIR/sbin:$PATH
 TARGET=${DIR}/config
 
-erb "${TARGET}/allowed.conf.erb" > "${TARGET}/allowed.conf"
-erb "${TARGET}/locations.conf.erb" > "${TARGET}/locations.conf"
-erb "${TARGET}/sites.conf.erb" > "${TARGET}/sites.conf"
+cd "${TARGET}"
+erb "./allowed.conf.erb" > "./allowed.conf"
+erb "./locations.conf.erb" > "./locations.conf"
+cd sites
+for site in ./*.conf.erb
+do
+	erb "$site" > "${site%.*}"
+done
 
+cd "${DIR}"
 exec $*
