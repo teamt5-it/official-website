@@ -1,4 +1,6 @@
-# TeamT5 Official Website
+# TeamT5 Official Website 
+
+[![Build Status](https://travis-ci.org/teamt5-it/official-website.svg?branch=master)](https://travis-ci.org/teamt5-it/official-website)
 
 This website is powered by jekyll
 
