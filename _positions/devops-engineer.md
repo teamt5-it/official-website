@@ -38,4 +38,4 @@ tags:
 
 ## Compensation
 
-Negotiable
+* Negotiable
