@@ -37,4 +37,4 @@ tags:
 
 ## Compensation
 
-Negotiable / 面議
+* Negotiable / 面議
