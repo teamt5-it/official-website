@@ -3,9 +3,6 @@
 //=require 'vendor/jquery.serializejson.js'
 //=require 'vendor/autoresize.jquery.js'
 
-desktop = ->
-	return window.matchMedia('(min-width: 768px)').matches
-
 $ ->
 	$(".scroll-top").click ->
 		window.scrollTo {top: 0, behavior: 'smooth'}
@@ -31,121 +28,159 @@ $ ->
 		if (cur_navbar_submenu_active && cur_navbar_submenu_padding_active) || (!cur_navbar_submenu_active && !cur_navbar_submenu_padding_active)
 			$(".navbar-submenu-padding").toggleClass('active')
 
+
 	# carousel
+
 	class Carousel
 		duration = 200
 		timer_duration = 5000
 		constructor: () ->
 			@count = $(".carousel .carousel-items").data('count')
-			@cur_active_index = 0
-			@register_event_handler()
-			@start_timer()
+			@curActiveIndex = 0
+			@registerEventHandler()
+			@startTimer()
+			@stopTimer()
+			@ongoingTouches = []
+		copyTouch: (touch) =>
+			{ identifier: touch.identifier, pageX: touch.pageX, pageY: touch.pageY }
 
-		get_item: (index) ->
+		ongoingTouchIndexById: (idToFind) =>
+			i = 0
+			while i < @ongoingTouches.length
+				id = @ongoingTouches[i].identifier
+				if id == idToFind
+					return i
+				i++
+			-1
+
+		getItem: (index) ->
 			$(".carousel .carousel-items .carousel-item[data-index=#{index}]")
 
-		get_item_title_container: (index) ->
+		getItemTitleContainer: (index) ->
 			$(".carousel .carousel-items .carousel-item[data-index=#{index}] .carousel-item-information-container")
 
-		get_item_title: (index) ->
+		getItemTitle: (index) ->
 			$(".carousel .carousel-items .carousel-item[data-index=#{index}] .carousel-item-information-container .carousel-item-information")
 
-		get_item_indicator: (index) ->
+		getItemIndicator: (index) ->
 			$(".carousel .carousel-indicators .carousel-indicator[data-index=#{index}]")
 
-		register_event_handler: () ->
+		registerEventHandler: () =>
+			$(".carousel").on "touchstart", (e) =>
+				touches = e.changedTouches
+				for i in [0...touches.length]
+					@ongoingTouches.push(@copyTouch(touches[i]))
+
+			$(".carousel").on "touchend", (e) =>
+				touches = e.changedTouches
+				for i in [0...touches.length]
+					touchstartIndex = @ongoingTouchIndexById(touches[i].identifier)
+					if @ongoingTouches[touchstartIndex].pageX < touches[i].pageX
+						@setActiveItem Math.max(@curActiveIndex-1,0)
+					else if @ongoingTouches[touchstartIndex].pageX > touches[i].pageX
+						@setActiveItem (@curActiveIndex+1)%@count
+					@ongoingTouches.splice(@ongoingTouchIndexById(touches[i].identifier),1)
+
+			$(".carousel").mouseenter () =>
+				@stopTimer()
+			.mouseleave () =>
+				@startTimer()
+
 			$(".carousel .carousel-indicators .carousel-indicator").click (e) =>
 				index = $(e.currentTarget).data('index')
-				@reset_timer()
-				@set_active_item index
+				@setActiveItem index
 
-		start_timer: () ->
+		startTimer: () ->
 			@timer = setInterval =>
-				@set_active_item (@cur_active_index+1)%@count
+				@setActiveItem (@curActiveIndex+1)%@count
 			, timer_duration
 
-		reset_timer: () ->
+		stopTimer: () ->
 			clearInterval(@timer)
-			@start_timer()
 
-		slide_item_left_and_disappear: (index) ->
-			@get_item(index).addClass('left')
+		resetTimer: () ->
+			@stopTimer()
+			@startTimer()
+
+		slideItemLeftAndDisappear: (index) ->
+			@getItem(index).addClass('left')
 			new Promise((resolve)=>
 				setTimeout =>
-					@get_item(index).removeClass('active')
-					@get_item(index).removeClass('left')
+					@getItem(index).removeClass('active')
+					@getItem(index).removeClass('left')
 					resolve
 				, duration
 			)
-		slide_item_right_and_disappear: (index) ->
-			@get_item(index).addClass('right')
+		slideItemRightAndDisappear: (index) ->
+			@getItem(index).addClass('right')
 			new Promise((resolve)=>
 				setTimeout =>
-					@get_item(index).removeClass('active')
-					@get_item(index).removeClass('right')
+					@getItem(index).removeClass('active')
+					@getItem(index).removeClass('right')
 					resolve
 				, duration
 			)
-		slide_item_from_right_to_center: (index) ->
-			@get_item(index).addClass('right active')
-			@get_item_title_container(index).addClass('left')
-			@get_item_title(index).addClass('bottom')
+		slideItemFromRightToCenter: (index) ->
+			@getItem(index).addClass('right active')
+			@getItemTitleContainer(index).addClass('left')
+			@getItemTitle(index).addClass('bottom')
 			new Promise((resolve)=>
 				setTimeout =>
-					@get_item(index).addClass('center')
+					@getItem(index).addClass('center')
 				, 0
 				setTimeout =>
-					@get_item(index).removeClass('right')
-					@get_item(index).removeClass('center')
-					@get_item_title_container(index).addClass('center')
+					@getItem(index).removeClass('right')
+					@getItem(index).removeClass('center')
+					@getItemTitleContainer(index).addClass('center')
 				, duration
 				setTimeout =>
-					@get_item_title_container(index).removeClass('left')
-					@get_item_title_container(index).removeClass('center')
-					@get_item_title(index).addClass('center')
+					@getItemTitleContainer(index).removeClass('left')
+					@getItemTitleContainer(index).removeClass('center')
+					@getItemTitle(index).addClass('center')
 				, duration*2
 				setTimeout =>
-					@get_item_title(index).removeClass('bottom')
-					@get_item_title(index).removeClass('center')
+					@getItemTitle(index).removeClass('bottom')
+					@getItemTitle(index).removeClass('center')
 					resolve
 				, duration*3
 			)
-		slide_item_from_left_to_center: (index) ->
-			@get_item(index).addClass('left active')
-			@get_item_title_container(index).addClass('left')
-			@get_item_title(index).addClass('bottom')
+		slideItemFromLeftToCenter: (index) ->
+			@getItem(index).addClass('left active')
+			@getItemTitleContainer(index).addClass('left')
+			@getItemTitle(index).addClass('bottom')
 			new Promise((resolve)=>
 				setTimeout =>
-					@get_item(index).addClass('center')
+					@getItem(index).addClass('center')
 				, 0
 				setTimeout =>
-					@get_item(index).removeClass('left')
-					@get_item(index).removeClass('center')
-					@get_item_title_container(index).addClass('center')
+					@getItem(index).removeClass('left')
+					@getItem(index).removeClass('center')
+					@getItemTitleContainer(index).addClass('center')
 				, duration
 				setTimeout =>
-					@get_item_title_container(index).removeClass('left')
-					@get_item_title_container(index).removeClass('center')
-					@get_item_title(index).addClass('center')
+					@getItemTitleContainer(index).removeClass('left')
+					@getItemTitleContainer(index).removeClass('center')
+					@getItemTitle(index).addClass('center')
 				, duration*2
 				setTimeout =>
-					@get_item_title(index).removeClass('bottom')
-					@get_item_title(index).removeClass('center')
+					@getItemTitle(index).removeClass('bottom')
+					@getItemTitle(index).removeClass('center')
 					resolve
 				, duration*3
 			)
 
-		set_active_item: (index) ->
-			@get_item_indicator(@cur_active_index).removeClass('active')
-			@get_item_indicator(index).addClass('active')
-			if @cur_active_index==index
+		setActiveItem: (index) ->
+			@getItemIndicator(@curActiveIndex).removeClass('active')
+			@getItemIndicator(index).addClass('active')
+			if @curActiveIndex==index
 				return
-			else if @cur_active_index < index
+			else if @curActiveIndex < index
 				# coffeescript gem doesn't support await
-				Promise.all([@slide_item_left_and_disappear @cur_active_index, @slide_item_from_right_to_center index])
+				Promise.all([@slideItemLeftAndDisappear @curActiveIndex, @slideItemFromRightToCenter index])
 			else
-				Promise.all([@slide_item_right_and_disappear @cur_active_index, @slide_item_from_left_to_center index])
-			@cur_active_index = index
+				Promise.all([@slideItemRightAndDisappear @curActiveIndex, @slideItemFromLeftToCenter index])
+			@curActiveIndex = index
+			@resetTimer()
 	carousel = new Carousel
 	$('textarea').autoResize();
 
