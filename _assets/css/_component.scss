@@ -205,11 +205,9 @@ input {
   &.button-with-arrow {
     border-radius: 0;
     box-sizing: border-box;
-    padding-right: 20px / $square-root-of-two;
     position: relative;
 
     @include responsive(640px) {
-      padding-right: 36px / $square-root-of-two;
     }
 
     &::after {
@@ -218,17 +216,17 @@ input {
       border-width: $arrow-width $arrow-width 0 0;
       content: "";
       display: block;
-      height: 20px / $square-root-of-two / 2;
+      height: 6px * $square-root-of-two;
 
       position: absolute;
-      right: calc(20px / 4);
+      right: 6px;
       transform: rotate(45deg);
-      width: 20px / $square-root-of-two / 2;
+      width: 6px * $square-root-of-two;
 
       @include responsive(640px) {
-        height: 36px / $square-root-of-two / 2;
-        right: calc(36px / 4);
-        width: 36px / $square-root-of-two / 2;
+        height: 8px * $square-root-of-two;
+        right: 8px;
+        width: 8px * $square-root-of-two;
       }
     }
   }
