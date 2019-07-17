@@ -9,6 +9,7 @@ branches:
 env:
   - JEKYLL_ENV=production
 script:
+  - bundle exec rake
   - ./build.sh
 deploy:
   provider: pages

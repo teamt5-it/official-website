@@ -143,6 +143,7 @@ DEPENDENCIES
   jekyll-coffeescript
   jekyll-paginate-v2
   normalize-scss
+  rake
   scss_lint
   tzinfo-data
 

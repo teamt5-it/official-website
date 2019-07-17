@@ -11,6 +11,10 @@ group :jekyll_plugins do
   gem "jekyll-admin"
 end
 
+group :test do
+  gem "rake"
+end
+
 gem 'scss_lint', require: false
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
