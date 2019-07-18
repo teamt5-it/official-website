@@ -253,13 +253,13 @@ main.index {
 
 
   .latest-news-more-button {
+    border-radius: 0;
     display: flex;
     font-size: 12px;
     height: 20px;
     justify-self: end;
-    width: 90px;
-    border-radius: 0;
     position: relative;
+    width: 90px;
 
     @include responsive(640px) {
       font-size: 14px;
@@ -274,25 +274,26 @@ main.index {
   }
 
   .arrow-container {
+    @include flex-center-align;
+    height: 100%;
     position: absolute;
-    width: 12px;
     right: 6px;
     top: 0;
-    height: 100%;
-    @include flex-center-align;
+    width: 12px;
 
     @include responsive(640px) {
-      width: 16px;
       right: 8px;
+      width: 16px;
     }
 
     .arrow {
-      transform: rotate(45deg);
       border: solid $white;
       border-radius: $arrow-width;
       border-width: $arrow-width $arrow-width 0 0;
       height: 6px * $square-root-of-two;
+      transform: rotate(45deg);
       width: 6px * $square-root-of-two;
+
       @include responsive(640px) {
         height: 8px * $square-root-of-two;
         width: 8px * $square-root-of-two;

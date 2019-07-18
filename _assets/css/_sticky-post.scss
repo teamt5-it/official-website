@@ -128,25 +128,26 @@ $sticky-post-information-background-color: rgba(0, 0, 0, 0.6);
 }
 
 .arrow-container {
+  @include flex-center-align;
+  height: 100%;
   position: absolute;
-  width: 12px;
   right: 6px;
   top: 0;
-  height: 100%;
-  @include flex-center-align;
+  width: 12px;
 
   @include responsive(640px) {
-    width: 16px;
     right: 8px;
+    width: 16px;
   }
 
   .arrow {
-    transform: rotate(45deg);
     border: solid $white;
     border-radius: $arrow-width;
     border-width: $arrow-width $arrow-width 0 0;
     height: 6px * $square-root-of-two;
+    transform: rotate(45deg);
     width: 6px * $square-root-of-two;
+
     @include responsive(640px) {
       height: 8px * $square-root-of-two;
       width: 8px * $square-root-of-two;
