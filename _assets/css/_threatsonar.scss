@@ -292,19 +292,6 @@ main.threatsonar {
   .more-strength-content {
     li {
       margin: 0;
-      overflow-wrap: normal;
-      white-space: nowrap;
-
-      @include responsive(800px) {
-        padding-left: 0;
-      }
-    }
-
-    li::before {
-      @include responsive(800px) {
-        display: inline-block;
-        position: static;
-      }
     }
   }
 
