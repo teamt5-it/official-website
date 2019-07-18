@@ -3,49 +3,52 @@ layout: default
 ---
 
 <div class="banner-container">
-    <div class="banner">
-        <div class="banner-slogan">
-            {% t banner.slogan %}
-        </div>
-        <div class="banner-logo">
-            {% asset sonar_logo_reverse.svg %}
-        </div>
-        <div class="banner-title title">
-            {% t banner.title %}
-        </div>
+
+<div class="banner">
+    <div class="banner-slogan">
+        {% t banner.slogan %}
     </div>
-    <div class="mac-and-strengths">
-        <div class="mac">
-            {% asset sonar-mac.png %}
+    <div class="banner-logo">
+        {% asset sonar_logo_reverse.svg %}
+    </div>
+    <div class="banner-title title">
+        {% t banner.title %}
+    </div>
+</div>
+
+<div class="banner-mac-and-strengths">
+    <div class="banner-mac">
+        {% asset sonar-mac.png %}
+    </div>
+    <div class="banner-strengths">
+        <div class="banner-strength">
+            <div class="banner-strength-logo">
+                {% asset powerful.svg %}
+            </div>
+            <div class="banner-strength-content">
+                {% t strengths.powerful %}
+            </div>
         </div>
-        <div class="strengths">
-            <div class="strength">
-                <div class="strength-logo">
-                    {% asset powerful.svg %}
-                </div>
-                <div class="strength-content">
-                    {% t strengths.powerful %}
-                </div>
+        <div class="banner-strength">
+            <div class="banner-strength-logo">
+                {% asset automate.svg %}
             </div>
-            <div class="strength">
-                <div class="strength-logo">
-                    {% asset automate.svg %}
-                </div>
-                <div class="strength-content">
-                    {% t strengths.automate %}
-                </div>
+            <div class="banner-strength-content">
+                {% t strengths.automate %}
             </div>
-            <div class="strength">
-                <div class="strength-logo">
-                    {% asset flexible.svg %}
-                </div>
-                <div class="strength-content">
-                    {% t strengths.flexible %}
-                </div>
+        </div>
+        <div class="banner-strength">
+            <div class="banner-strength-logo">
+                {% asset flexible.svg %}
+            </div>
+            <div class="banner-strength-content">
+                {% t strengths.flexible %}
             </div>
         </div>
     </div>
 </div>
+</div>
+
 <div class="more-strengths">
     <div class="more-strengths-title title sonar-title">
         {% t more-strengths.title %}
@@ -162,7 +165,7 @@ layout: default
             {% t auto-investigation.content %}
         </div>
     </div>
-    <div class="youtube">
+    <div class="auto-investigation-youtube">
         <iframe frameborder="0" src="https://www.youtube.com/embed/WtABJLJVMBw">
         </iframe>
     </div>
@@ -172,13 +175,13 @@ layout: default
         {% t complementary-to-antivirus.title %}
     </div>
     <div class="complementaries">
-        <div class="complementary threatsonar">
-            <div class="complementary-title title">
+        <div class="complementary">
+            <div class="complementary-title title threatsonar">
                 <div class="complementary-logo">
                     {% asset sonar_logo_reverse.svg %}
                 </div>
             </div>
-            <div class="complementary-content content">
+            <div class="complementary-content content threatsonar">
                 <ul>
                     <li>{% t complementary-to-antivirus.threatsonar.a %}</li>
                     <li>{% t complementary-to-antivirus.threatsonar.b %}</li>
@@ -190,13 +193,13 @@ layout: default
                 </ul>
             </div>
         </div>
-        <div class="complementary antivirus">
-            <div class="complementary-title title">
+        <div class="complementary">
+            <div class="complementary-title title antivirus">
                 <div class="complementary-logo">
                     {% asset antivirus.svg %}
                 </div>
             </div>
-            <div class="complementary-content content">
+            <div class="complementary-content content antivirus">
                 <ul>
                     <li>{% t complementary-to-antivirus.antivirus.a %}</li>
                     <li>{% t complementary-to-antivirus.antivirus.b %}</li>

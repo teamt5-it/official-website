@@ -9,62 +9,62 @@ main.partner {
     @include responsive(800px) {
       grid-gap: 60px;
     }
+  }
 
-    .partner {
+  .partner {
+    display: grid;
+  }
+
+  .partner-title {
+    justify-self: start;
+  }
+
+  .partner-content {
+    align-items: center;
+    display: grid;
+    justify-content: start;
+
+    @include responsive(640px) {
+      grid-gap: 20px;
+    }
+
+    @include responsive(800px) {
+      grid-auto-flow: column;
+      grid-gap: 30px;
+    }
+  }
+
+  .partner-logo {
+    @include flex-center-align;
+    height: 80px;
+    overflow: hidden;
+    width: 120px;
+
+    @include responsive(640px) {
+      width: 180px;
+      width: 120px;
+    }
+
+    @include responsive(800px) {
+      height: 200px;
+      width: 300px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .partner-name-and-contact-information {
+    align-content: center;
+    display: grid;
+
+    .partner-contact-information {
       display: grid;
+      grid-gap: 10px;
 
-      .partner-title {
-        justify-self: start;
-      }
-
-      .partner-content {
-        align-items: center;
-        display: grid;
-        justify-content: start;
-
-        @include responsive(640px) {
-          grid-gap: 20px;
-        }
-
-        @include responsive(800px) {
-          grid-auto-flow: column;
-          grid-gap: 30px;
-        }
-
-        .partner-logo {
-          @include flex-center-align;
-          height: 80px;
-          overflow: hidden;
-          width: 120px;
-
-          @include responsive(640px) {
-            width: 180px;
-            width: 120px;
-          }
-
-          @include responsive(800px) {
-            height: 200px;
-            width: 300px;
-          }
-
-          img {
-            width: 100%;
-          }
-        }
-
-        .partner-name-and-contact-information {
-          align-content: center;
-          display: grid;
-
-          .partner-contact-information {
-            display: grid;
-            grid-gap: 10px;
-
-            @include responsive(800px) {
-              grid-gap: 20px;
-            }
-          }
-        }
+      @include responsive(800px) {
+        grid-gap: 20px;
       }
     }
   }

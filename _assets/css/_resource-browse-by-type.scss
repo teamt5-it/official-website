@@ -21,12 +21,12 @@ main.resource-browse-by-type {
       grid-template-columns: 740px 1fr;
       max-width: none;
     }
+  }
 
-    .posts-and-pagination {
-      .pagination {
-        @include responsive(640px) {
-          justify-self: end;
-        }
+  .posts-and-pagination {
+    .pagination {
+      @include responsive(640px) {
+        justify-self: end;
       }
     }
   }

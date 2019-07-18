@@ -7,38 +7,38 @@ body {
     display: flex;
     flex: 1 0 auto;
     justify-content: center;
+  }
 
-    main.page-not-found {
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: 200px;
-      justify-items: center;
+  main.page-not-found {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 200px;
+    justify-items: center;
 
-      @include responsive(800px) {
-        grid-gap: 30px;
-        grid-template-columns: auto;
-      }
+    @include responsive(800px) {
+      grid-gap: 30px;
+      grid-template-columns: auto;
+    }
+  }
 
-      .logo {
-        width: 200px;
+  .page-not-found-logo {
+    width: 200px;
 
-        @include responsive(800px) {
-          width: auto;
-        }
+    @include responsive(800px) {
+      width: auto;
+    }
 
-        img {
-          width: 100%;
-        }
-      }
+    img {
+      width: 100%;
+    }
+  }
 
-      .take-me-home-button {
-        height: 40px;
-        width: 200px;
+  .page-not-found-take-me-home-button {
+    height: 40px;
+    width: 200px;
 
-        @include responsive(800px) {
-          width: 280px;
-        }
-      }
+    @include responsive(800px) {
+      width: 280px;
     }
   }
 }

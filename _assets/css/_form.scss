@@ -24,64 +24,66 @@
   @include responsive(1024px) {
     padding: 40px 60px;
   }
+}
 
-  .form-title {
-    align-self: center;
-    font-size: 30px;
-    margin-bottom: 20px;
+.form-title {
+  align-self: center;
+  font-size: 30px;
+  margin-bottom: 20px;
 
-    @include responsive(640px) {
-      margin-bottom: 30px;
-    }
+  @include responsive(640px) {
+    margin-bottom: 30px;
   }
+}
 
-  .form-inputs {
-    display: grid;
-    font-size: 14px;
-    grid-gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
+.form-inputs {
+  display: grid;
+  font-size: 14px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
 
-    @include responsive(640px) {
-      grid-template-columns: repeat(2, 2fr);
-    }
-
-    .form-group {
-      align-content: start;
-      display: grid;
-      grid-auto-rows: auto;
-      grid-gap: 5px;
-
-      label {
-        color: $normal-color;
-        display: block;
-        font-weight: bold;
-        line-height: 1.5;
-      }
-
-      .form-control {
-        border: 1px solid $light-background-color;
-        border-radius: 4px;
-        box-sizing: border-box;
-        display: block;
-        height: 50px;
-        line-height: 50px - 4px;
-        padding-left: 1em;
-        padding-right: 1em;
-        width: 100%;
-      }
-    }
+  @include responsive(640px) {
+    grid-template-columns: repeat(2, 2fr);
   }
+}
 
-  .form-submit {
-    font-weight: bold;
-    height: 50px;
-    text-align: center;
-    width: 100%;
+.form-group {
+  align-content: start;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 5px;
+}
 
-    @include responsive(640px) {
-      grid-column: 1 / span 2;
-      justify-self: center;
-      width: 280px;
-    }
+label {
+  color: $normal-color;
+  display: block;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.form-control {
+  border: 1px solid $light-background-color;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  height: 50px;
+  line-height: 50px - 4px;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+}
+
+
+
+.form-submit {
+  font-weight: bold;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+
+  @include responsive(640px) {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    width: 280px;
   }
 }

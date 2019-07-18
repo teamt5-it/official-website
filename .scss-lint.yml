@@ -1,7 +1,5 @@
 scss_files: '_assets/css/**/*.scss'
 linters:
-  SelectorDepth:
-    enabled: false
   NestingDepth:
     enabled: false
   QualifyingElement:

@@ -8,33 +8,33 @@ main.contact-us {
     @include responsive(640px) {
       grid-gap: 40px;
     }
+  }
 
-    .branch {
-      display: grid;
-      grid-gap: 10px;
+  .branch {
+    display: grid;
+    grid-gap: 10px;
+  }
 
-      .branch-title {
-        @include page-margin-horizontal;
-        justify-self: start;
-      }
+  .branch-title {
+    @include page-margin-horizontal;
+    justify-self: start;
+  }
 
-      .branch-contact-information {
-        @include page-margin-horizontal;
-      }
+  .branch-contact-information {
+    @include page-margin-horizontal;
+  }
 
-      .branch-google-map {
-        height: 280px;
+  .branch-google-map {
+    height: 280px;
 
-        @include responsive(800px) {
-          @include page-margin-horizontal;
-          height: 340px;
-        }
+    @include responsive(800px) {
+      @include page-margin-horizontal;
+      height: 340px;
+    }
 
-        iframe {
-          height: 100%;
-          width: 100%;
-        }
-      }
+    iframe {
+      height: 100%;
+      width: 100%;
     }
   }
 }

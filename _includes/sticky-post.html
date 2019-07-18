@@ -1,12 +1,12 @@
 {% unless page.type %}
 {% assign sticky = "sticky" | prepend: '_' | prepend: page.category %}
-{% assign post = paginator.posts | where: sticky, true | first %}
+{% assign post = site.posts | where: category, page.category | where: sticky, true | first %}
 <a class="sticky-post" href="{{ post.url }}">
     <div class="sticky-post-banner">
         <img src="{{post.banner}}">
     </div>
     <div class="sticky-post-information">
-        <div class="sticky-post-meta post-meta">
+        <div class="sticky-post-meta">
             <div class="sticky-post-date post-date">
                 {{ post.date | date: "%Y-%m-%d" }}
             </div>
@@ -21,8 +21,10 @@
                 {{ post.title }}
             </div>
         </div>
-        <div class="sticky-post-read-more-button button button-with-arrow">
-            {% t sticky-post.read-more %}
+        <div class="sticky-post-read-more-button-container">
+            <div class="sticky-post-read-more-button button button-with-arrow">
+                {% t sticky-post.read-more %}
+            </div>
         </div>
     </div>
 </a>

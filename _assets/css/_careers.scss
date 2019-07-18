@@ -6,7 +6,7 @@ main.careers {
     display: none;
   }
 
-  .open-positions {
+  .open-positions-container {
     @include page-margin-horizontal;
     display: grid;
     grid-gap: 10px;
@@ -14,88 +14,87 @@ main.careers {
     @include responsive(800px) {
       grid-gap: 20px;
     }
+  }
 
-    .open-positions-title {
-      justify-self: start;
+  .open-positions-title {
+    justify-self: start;
+  }
+
+  .open-position {
+    align-items: center;
+    border-bottom: 1px solid $light-background-color;
+    cursor: pointer;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    justify-content: start;
+    padding: 10px;
+
+    @include responsive(800px) {
+      grid-template-columns: 1fr auto auto;
+      grid-template-rows: auto;
+      padding: 20px;
     }
 
-    .open-positions-content {
-      .position {
-        align-items: center;
-        border-bottom: 1px solid $light-background-color;
-        cursor: pointer;
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: 1fr auto;
-        grid-template-rows: auto 1fr;
-        justify-content: start;
-        padding: 10px;
+    &:hover {
+      background-color: $background-color;
+    }
+  }
 
-        @include responsive(800px) {
-          grid-template-columns: 1fr auto auto;
-          grid-template-rows: auto;
-          padding: 20px;
-        }
+  .open-position-title {
+    color: $primary-color;
+  }
 
-        &:hover {
-          background-color: $background-color;
-        }
+  .open-position-tags-and-location {
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    justify-content: start;
 
-        .position-title {
-          color: $primary-color;
-        }
+    @include responsive(800px) {
+      grid-gap: 20px;
+    }
+  }
 
-        .tags-and-location {
-          align-items: center;
-          display: grid;
-          grid-auto-flow: column;
-          grid-gap: 10px;
-          justify-content: start;
+  .open-position-location {
+    color: $normal-color;
+    font-weight: bold;
+    margin-right: 20px;
 
-          @include responsive(800px) {
-            grid-gap: 20px;
-          }
+    @include responsive(800px) {
+      margin-right: 60px;
+    }
+  }
 
-          .location {
-            color: $normal-color;
-            font-weight: bold;
-            margin-right: 20px;
 
-            @include responsive(800px) {
-              margin-right: 60px;
-            }
-          }
-        }
+  .arrow-container {
+    @include flex-center-align;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    height: 30px;
+    width: 30px;
 
-        .arrow-container {
-          @include flex-center-align;
-          grid-column: 2;
-          grid-row: 1 / span 2;
-          height: 30px;
-          width: 30px;
+    @include responsive(800px) {
+      grid-column: auto;
+      grid-row: auto;
+      height: 20px;
+      width: 20px;
+    }
+  }
 
-          @include responsive(800px) {
-            grid-column: auto;
-            grid-row: auto;
-            height: 20px;
-            width: 20px;
-          }
+  .arrow {
+    border: solid $primary-color;
+    border-radius: $arrow-width;
+    border-width: 0 $arrow-width $arrow-width 0;
+    height: 30px / $square-root-of-two;
+    transform: rotate(-45deg);
+    width: 30px / $square-root-of-two;
 
-          .arrow {
-            border: solid $primary-color;
-            border-radius: $arrow-width;
-            border-width: 0 $arrow-width $arrow-width 0;
-            height: 30px / $square-root-of-two;
-            transform: rotate(-45deg);
-            width: 30px / $square-root-of-two;
-
-            @include responsive(800px) {
-              height: 20px / $square-root-of-two;
-              width: 20px / $square-root-of-two;
-            }
-          }
-        }
-      }
+    @include responsive(800px) {
+      height: 20px / $square-root-of-two;
+      width: 20px / $square-root-of-two;
     }
   }
 }

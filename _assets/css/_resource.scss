@@ -22,64 +22,64 @@ main.resource {
       grid-template-columns: 740px 1fr;
       max-width: none;
     }
+  }
 
-    .posts-and-pagination {
-      display: grid;
+  .posts-and-pagination {
+    display: grid;
+    grid-gap: 20px;
+  }
+
+  .posts {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+
+    @include responsive(640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(800px) {
       grid-gap: 20px;
+    }
+  }
 
-      .posts {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(1, 1fr);
+  .post {
+    align-items: center;
+    background-color: $background-color;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 15px;
+    padding: 20px;
 
-        @include responsive(640px) {
-          grid-template-columns: repeat(2, 1fr);
-        }
+    &:hover {
+      border: 3px solid $primary-color;
+    }
+  }
 
-        @include responsive(800px) {
-          grid-gap: 20px;
-        }
+  .post-logo {
+    width: 60px;
 
-        .post {
-          align-items: center;
-          background-color: $background-color;
-          border: 3px solid transparent;
-          box-sizing: border-box;
-          display: grid;
-          grid-auto-flow: column;
-          grid-gap: 15px;
-          padding: 20px;
+    @include responsive(800px) {
+      width: 80px;
+    }
 
-          &:hover {
-            border: 3px solid $primary-color;
-          }
+    img {
+      width: 100%;
+    }
+  }
 
-          .post-logo {
-            width: 60px;
+  .post-meta {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+    justify-content: start;
+  }
 
-            @include responsive(800px) {
-              width: 80px;
-            }
-
-            img {
-              width: 100%;
-            }
-          }
-
-          .post-meta {
-            display: grid;
-            grid-auto-flow: row;
-            grid-gap: 10px;
-            justify-content: start;
-          }
-        }
-      }
-
-      .pagination {
-        @include responsive(640px) {
-          justify-self: end;
-        }
-      }
+  .pagination {
+    @include responsive(640px) {
+      justify-self: end;
     }
   }
 }

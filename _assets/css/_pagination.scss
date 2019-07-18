@@ -9,13 +9,11 @@
   grid-gap: 10px;
   justify-items: center;
   margin: 20px;
+}
 
-  .page-item {
-    .page-link {
-      &.is-current {
-        color: $primary-color;
-        text-decoration: underline;
-      }
-    }
+.page-link {
+  &.is-current {
+    color: $primary-color;
+    text-decoration: underline;
   }
 }

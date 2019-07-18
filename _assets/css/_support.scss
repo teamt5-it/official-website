@@ -10,15 +10,15 @@ main.support {
     @include responsive(800px) {
       grid-gap: 30px;
     }
+  }
 
-    .global-support-title {
-      justify-self: flex-start;
-    }
+  .global-support-title {
+    justify-self: flex-start;
+  }
 
-    .global-support-banner {
-      img {
-        width: 100%;
-      }
+  .global-support-banner {
+    img {
+      width: 100%;
     }
   }
 }
