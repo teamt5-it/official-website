@@ -41,6 +41,7 @@ $ ->
 			@startTimer()
 			@stopTimer()
 			@ongoingTouches = []
+
 		copyTouch: (touch) =>
 			{ identifier: touch.identifier, pageX: touch.pageX, pageY: touch.pageY }
 
@@ -67,11 +68,13 @@ $ ->
 
 		registerEventHandler: () =>
 			$(".carousel").on "touchstart", (e) =>
+				@stopTimer()
 				touches = e.changedTouches
 				for i in [0...touches.length]
 					@ongoingTouches.push(@copyTouch(touches[i]))
 
 			$(".carousel").on "touchend", (e) =>
+				@startTimer()
 				touches = e.changedTouches
 				for i in [0...touches.length]
 					touchstartIndex = @ongoingTouchIndexById(touches[i].identifier)
@@ -90,15 +93,15 @@ $ ->
 				index = $(e.currentTarget).data('index')
 				@setActiveItem index
 
-		startTimer: () ->
+		startTimer: () =>
 			@timer = setInterval =>
 				@setActiveItem (@curActiveIndex+1)%@count
 			, timer_duration
 
-		stopTimer: () ->
+		stopTimer: () =>
 			clearInterval(@timer)
 
-		resetTimer: () ->
+		resetTimer: () =>
 			@stopTimer()
 			@startTimer()
 
@@ -180,7 +183,7 @@ $ ->
 			else
 				Promise.all([@slideItemRightAndDisappear @curActiveIndex, @slideItemFromLeftToCenter index])
 			@curActiveIndex = index
-			@resetTimer()
+
 	carousel = new Carousel
 	$('textarea').autoResize();
 
