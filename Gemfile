@@ -9,6 +9,7 @@ group :jekyll_plugins do
   gem "font-awesome-sass"
   gem "jekyll-paginate-v2"
   gem "jekyll-admin"
+  gem 'jekyll-autoprefixer'
 end
 
 group :test do

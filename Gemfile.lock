@@ -8,6 +8,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
+    autoprefixer-rails (9.6.1)
+      execjs
     backports (3.15.0)
     coffee-script (2.4.1)
       coffee-script-source
@@ -59,6 +61,8 @@ GEM
       nokogiri (~> 1.8)
       pathutil (~> 0.16)
       sprockets (>= 3.3, < 4.1.beta)
+    jekyll-autoprefixer (1.0.2)
+      autoprefixer-rails (~> 9.3)
     jekyll-coffeescript (1.2.2)
       coffee-script (~> 2.2)
       coffee-script-source (~> 1.12)
@@ -140,6 +144,7 @@ DEPENDENCIES
   jekyll (~> 3.8.5)
   jekyll-admin
   jekyll-assets
+  jekyll-autoprefixer
   jekyll-coffeescript
   jekyll-paginate-v2
   normalize-scss
