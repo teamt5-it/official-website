@@ -8,7 +8,7 @@ categories:
 tags:
 - press release
 resource_sticky: false
-newsroom_sticky: false
+newsroom_sticky: true
 
 ---
 ### Team T5 Inc. was won the final competition of the “Formosa Grand Challenge 2: S-FUND Finals”, and received a TWD 5 million award by unanimous consensus from the review board in Taiwan.          
