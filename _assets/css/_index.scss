@@ -258,6 +258,8 @@ main.index {
     height: 20px;
     justify-self: end;
     width: 90px;
+    border-radius: 0;
+    position: relative;
 
     @include responsive(640px) {
       font-size: 14px;
@@ -268,6 +270,33 @@ main.index {
     @include responsive(800px) {
       font-size: 20px;
       width: 145px;
+    }
+  }
+
+  .arrow-container {
+    position: absolute;
+    width: 12px;
+    right: 6px;
+    top: 0;
+    height: 100%;
+    @include flex-center-align;
+
+    @include responsive(640px) {
+      width: 16px;
+      right: 8px;
+    }
+
+    .arrow {
+      transform: rotate(45deg);
+      border: solid $white;
+      border-radius: $arrow-width;
+      border-width: $arrow-width $arrow-width 0 0;
+      height: 6px * $square-root-of-two;
+      width: 6px * $square-root-of-two;
+      @include responsive(640px) {
+        height: 8px * $square-root-of-two;
+        width: 8px * $square-root-of-two;
+      }
     }
   }
 }
