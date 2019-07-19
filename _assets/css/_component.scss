@@ -203,6 +203,34 @@ input {
   font-weight: bold;
   transition: background-color 1s ease-in-out;
 
+  &.button-with-arrow {
+    border-radius: 0;
+    box-sizing: border-box;
+    position: relative;
+
+    &::after {
+      border: solid $white;
+      border-radius: $arrow-width;
+      border-width: $arrow-width $arrow-width 0 0;
+      content: "";
+      display: block;
+      height: 6px * $square-root-of-two;
+
+      position: absolute;
+      right: 6px;
+      top: calc(50% - 6px + #{$arrow-width} / #{$square-root-of-two});
+      transform: rotate(45deg);
+      width: 6px * $square-root-of-two;
+
+      @include responsive(640px) {
+        height: 8px * $square-root-of-two;
+        right: 8px;
+        top: calc(50% - 8px + #{$arrow-width} / #{$square-root-of-two});
+        width: 8px * $square-root-of-two;
+      }
+    }
+  }
+
   &:hover {
     background-color: $button-hover-background-color;
   }

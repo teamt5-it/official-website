@@ -272,32 +272,4 @@ main.index {
       width: 145px;
     }
   }
-
-  .arrow-container {
-    @include flex-center-align;
-    height: 100%;
-    position: absolute;
-    right: 6px;
-    top: 0;
-    width: 12px;
-
-    @include responsive(640px) {
-      right: 8px;
-      width: 16px;
-    }
-
-    .arrow {
-      border: solid $white;
-      border-radius: $arrow-width;
-      border-width: $arrow-width $arrow-width 0 0;
-      height: 6px * $square-root-of-two;
-      transform: rotate(45deg);
-      width: 6px * $square-root-of-two;
-
-      @include responsive(640px) {
-        height: 8px * $square-root-of-two;
-        width: 8px * $square-root-of-two;
-      }
-    }
-  }
 }
