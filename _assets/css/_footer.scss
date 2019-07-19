@@ -104,7 +104,7 @@ hr {
   text-decoration: underline;
 }
 
-.select {
+.language-selector {
   @include flex-center-align();
   background: $white;
   border: 1px solid $light-background-color;
@@ -112,7 +112,6 @@ hr {
   display: none;
   height: 20px;
   width: 70px;
-  //TODO: i18n
 }
 
 .scroll-top {

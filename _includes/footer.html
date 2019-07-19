@@ -7,29 +7,29 @@
             <div class="footer-item">
                 <div class="footer-item-title">{% t footer.product %}</div>
                 <a class="footer-item-link"
-                    href="{{ site.data.links.products.threatsonar }}">{% t footer.threatsonar %}</a>
+                    href="{% t links.products.threatsonar %}">{% t footer.threatsonar %}</a>
                 <a class="footer-item-link"
-                    href="{{ site.data.links.products.threatvision }}">{% t footer.threatvision %}</a>
+                    href="{% t links.products.threatvision %}">{% t footer.threatvision %}</a>
 
             </div>
             <div class="footer-item">
                 <a class="footer-item-title footer-item-link"
-                    href="{{ site.data.links.partner }}">{% t footer.partner %}</a>
+                    href="{% t links.partner %}">{% t footer.partner %}</a>
                 <a class="footer-item-title footer-item-link"
-                    href="{{ site.data.links.support }}">{% t footer.support %}</a>
+                    href="{% t links.support %}">{% t footer.support %}</a>
                 <a class="footer-item-title footer-item-link"
-                    href="{{ site.data.links.resource }}">{% t footer.resource %}</a>
+                    href="{% t links.resource %}">{% t footer.resource %}</a>
             </div>
             <div class="footer-item">
                 <div class="footer-item-title">{% t footer.company.title %}</div>
                 <a class="footer-item-link"
-                    href="{{ site.data.links.company.about-us }}">{% t footer.company.about-us %}</a>
+                    href="{% t links.company.about-us %}">{% t footer.company.about-us %}</a>
                 <a class="footer-item-link"
-                    href="{{ site.data.links.company.contact-us }}">{% t footer.company.contact-us %}</a>
+                    href="{% t links.company.contact-us %}">{% t footer.company.contact-us %}</a>
                 <a class="footer-item-link"
-                    href="{{ site.data.links.company.careers }}">{% t footer.company.careers %}</a>
+                    href="{% t links.company.careers %}">{% t footer.company.careers %}</a>
                 <a class="footer-item-link"
-                    href="{{ site.data.links.company.newsroom }}">{% t footer.company.newsroom %}</a>
+                    href="{% t links.company.newsroom %}">{% t footer.company.newsroom %}</a>
             </div>
         </div>
     </div>
@@ -40,18 +40,16 @@
                 {% t footer.copyright %}
             </div>
             <div class="privacy-and-cookies-policy">
-                <a href="{{ site.data.links.privacy-and-cookies-policy }}">{% t footer.privacy_and_cookies_policy %}</a>
+                <a href="{% t links.privacy-and-cookies-policy %}">{% t footer.privacy_and_cookies_policy %}</a>
             </div>
             <div class="terms-of-service">
-                <a href="{{ site.data.links.terms-of-service }}">{% t footer.terms_of_service %}</a>
+                <a href="{% t links.terms-of-service %}">{% t footer.terms_of_service %}</a>
             </div>
         </div>
-        <div class="language-selector">
-            <select class="select">
-                <option value="en">{% t footer.english %}</option>
-                <!--<option value="cn">{% t footer.mandarin %}</option> -->
-            </select>
-        </div>
+        <select class="language-selector" id="language-selector">
+            <option value="en">{% t footer.english %}</option>
+            <option value="zh">{% t footer.mandarin %}</option>
+        </select>
     </div>
     <div class="scroll-top">
         <div class="scroll-top-square rotate-clockwise-45">

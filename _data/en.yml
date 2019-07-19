@@ -1,4 +1,23 @@
+# links
+
+links:
+  index: /
+  products:
+    threatsonar: /products/threatsonar
+    threatvision: /products/threatvision
+  partner: /partner
+  support: /support
+  resource: /resource
+  company:
+    about-us: /about-us
+    contact-us: /contact-us
+    careers: /careers
+    newsroom: /newsroom
+  privacy-and-cookies-policy: /privacy-and-cookies-policy
+  terms-of-service: /terms-of-service
+
 # header
+
 header:
   product: Product
   threatsonar: ThreatSonar
@@ -12,6 +31,8 @@ header:
     contact-us: Contact us
     careers: Careers
     newsroom: Newsroom
+
+# footer
 
 footer:
   product: Product
@@ -36,10 +57,12 @@ footer:
   mandarin: 中文
 
 # sticky-post
+
 sticky-post:
     read-more: Read More
 
 # browse-by-type
+
 browse-by-type:
   title: Browse by type
 

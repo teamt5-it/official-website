@@ -2,7 +2,7 @@
     <div class="navbar-brand-and-menu">
 
         <div class="navbar-brand">
-            <a class="navbar-brand-logo" href="{{ site.data.links.index }}">
+            <a class="navbar-brand-logo" href="{% t links.index %}">
                 {% asset TeamT5-logo.svg %}
             </a>
             <div class="navbar-burger">
@@ -15,7 +15,7 @@
             <div class="navbar-item navbar-item-has-submenu">
                 <div class="navbar-item-link
             {% for product in site.data.links.products %}
-                {% if page.layout == product[0] %}
+                {% if page.layout contains product[0] %}
                     is-current
                 {% endif %}
             {% endfor %}
@@ -29,12 +29,12 @@
                     </div>
                 </div>
                 <div class="navbar-submenu">
-                    <a class="navbar-submenu-item-link" href="{{ site.data.links.products.threatsonar }}">
+                    <a class="navbar-submenu-item-link" href="{% t links.products.threatsonar %}">
                         <div class="navbar-submenu-item title">
                             {% t header.threatsonar %}
                         </div>
                     </a>
-                    <a class="navbar-submenu-item-link" href="{{ site.data.links.products.threatvision }}">
+                    <a class="navbar-submenu-item-link" href="{% t links.products.threatvision %}">
                         <div class="navbar-submenu-item title">
                             {% t header.threatvision %}
                         </div>
@@ -43,10 +43,10 @@
             </div>
             <div class="navbar-item">
                 <a class="navbar-item-link
-            {% if page.layout == 'partner'%}
+            {% if page.layout contains 'partner'%}
                 is-current
             {% endif %}
-            " href="{{ site.data.links.partner }}">
+            " href="{% t links.partner %}">
                     <div class="navbar-item-title title">
                         {% t header.partner %}
                     </div>
@@ -54,10 +54,10 @@
             </div>
             <div class="navbar-item">
                 <a class="navbar-item-link
-            {% if page.layout == 'support' %}
+            {% if page.layout contains 'support' %}
                 is-current
             {% endif %}
-            " href="{{ site.data.links.support }}">
+            " href="{% t links.support %}">
                     <div class="navbar-item-title title">
                         {% t header.support %}
                     </div>
@@ -65,10 +65,10 @@
             </div>
             <div class="navbar-item">
                 <a class="navbar-item-link
-            {% if page.layout == 'resource' %}
+            {% if page.layout contains 'resource' %}
                 is-current
             {% endif %}
-            " href="{{ site.data.links.resource }}">
+            " href="{% t links.resource %}">
                     <div class="navbar-item-title title">
                         {% t header.resource %}
                     </div>
@@ -77,7 +77,7 @@
             <div class="navbar-item navbar-item-has-submenu">
                 <div class="navbar-item-link
             {% for company in site.data.links.company %}
-                {% if page.layout == company[0] %}
+                {% if page.layout contains company[0] %}
                     is-current
                 {% endif %}
             {% endfor %}
@@ -90,22 +90,22 @@
                     </div>
                 </div>
                 <div class="navbar-submenu">
-                    <a class="navbar-submenu-item-link" href="{{ site.data.links.company.about-us }}">
+                    <a class="navbar-submenu-item-link" href="{% t links.company.about-us %}">
                         <div class="navbar-submenu-item title">
                             {% t header.company.about-us %}
                         </div>
                     </a>
-                    <a class="navbar-submenu-item-link" href="{{ site.data.links.company.contact-us }}">
+                    <a class="navbar-submenu-item-link" href="{% t links.company.contact-us %}">
                         <div class="navbar-submenu-item title">
                             {% t header.company.contact-us %}
                         </div>
                     </a>
-                    <a class="navbar-submenu-item-link" href="{{ site.data.links.company.careers }}">
+                    <a class="navbar-submenu-item-link" href="{% t links.company.careers %}">
                         <div class="navbar-submenu-item title">
                             {% t header.company.careers %}
                         </div>
                     </a>
-                    <a class="navbar-submenu-item-link" href="{{ site.data.links.company.newsroom }}">
+                    <a class="navbar-submenu-item-link" href="{% t links.company.newsroom %}">
                         <div class="navbar-submenu-item title">
                             {% t header.company.newsroom %}
                         </div>

@@ -10,6 +10,7 @@ $ ->
 	$(".scroll-bottom").click ->
 		window.scrollTo {top: $(".products").offset().top, behavior: 'smooth'}
 
+	# header
 
 	$(".navbar-brand").click ->
 		$(".navbar-menu").toggleClass('active')
@@ -29,6 +30,30 @@ $ ->
 
 		if (cur_navbar_submenu_active && cur_navbar_submenu_padding_active) || (!cur_navbar_submenu_active && !cur_navbar_submenu_padding_active)
 			$(".navbar-submenu-padding").toggleClass('active')
+
+	# footer
+	class Footer
+		constructor: () ->
+			@registerEventHandler()
+			@locales = ["zh"]
+		removeI18nFromPathname: (pathname) =>
+			for i in [0...@locales.length]
+				locale = @locales[i]
+				if(pathname.search(locale)==1)
+					pathname = pathname.substring(locale.length+1)
+			return pathname
+
+		registerEventHandler: () =>
+			$("#language-selector").change (e) =>
+				i18n = $(e.currentTarget).val()
+				origin = location.origin
+				pathname = location.pathname
+				pathname = @removeI18nFromPathname(pathname)
+				url = origin + '/' + i18n + pathname
+				console.log(url)
+				window.location.href = url
+
+	footer = new Footer
 
 
 	# carousel
