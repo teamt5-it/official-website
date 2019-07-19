@@ -19,9 +19,11 @@ $ ->
 		cur_navbar_submenu_active = $(e.currentTarget).children(".navbar-submenu").hasClass('active')
 		cur_navbar_submenu_padding_active = $(".navbar-submenu-padding").hasClass('active')
 		if !cur_navbar_submenu_active
+			$(".navbar-item-link").removeClass('active')
 			$(".navbar-submenu").removeClass('active')
 			$(".navbar-item-arrow").removeClass('active')
 
+		$(e.currentTarget).children(".navbar-item-link").toggleClass('active')
 		$(e.currentTarget).find(".navbar-item-arrow").toggleClass('active')
 		$(e.currentTarget).children(".navbar-submenu").toggleClass('active')
 

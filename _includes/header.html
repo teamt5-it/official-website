@@ -1,113 +1,116 @@
 <header class="navbar">
-    <div class="navbar-brand">
-        <a class="navbar-brand-logo" href="{{ site.data.links.index }}">
-            {% asset TeamT5-logo.svg %}
-        </a>
-        <div class="navbar-burger">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+    <div class="navbar-brand-and-menu">
+
+        <div class="navbar-brand">
+            <a class="navbar-brand-logo" href="{{ site.data.links.index }}">
+                {% asset TeamT5-logo.svg %}
+            </a>
+            <div class="navbar-burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </div>
         </div>
-    </div>
-    <div class="navbar-menu">
-        <div class="navbar-item navbar-item-has-submenu">
-            <div class="navbar-item-link
+        <div class="navbar-menu">
+            <div class="navbar-item navbar-item-has-submenu">
+                <div class="navbar-item-link
             {% for product in site.data.links.products %}
                 {% if page.layout == product[0] %}
                     is-current
                 {% endif %}
             {% endfor %}
             ">
-                <div class="navbar-item-title">
-                    {% t header.product %}
-                </div>
-                <div class="navbar-item-arrow-container">
-                    <div class="navbar-item-arrow">
+                    <div class="navbar-item-title title">
+                        {% t header.product %}
+                    </div>
+                    <div class="navbar-item-arrow-container">
+                        <div class="navbar-item-arrow">
+                        </div>
                     </div>
                 </div>
+                <div class="navbar-submenu">
+                    <a class="navbar-submenu-item-link" href="{{ site.data.links.products.threatsonar }}">
+                        <div class="navbar-submenu-item title">
+                            {% t header.threatsonar %}
+                        </div>
+                    </a>
+                    <a class="navbar-submenu-item-link" href="{{ site.data.links.products.threatvision }}">
+                        <div class="navbar-submenu-item title">
+                            {% t header.threatvision %}
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="navbar-submenu">
-                <a class="navbar-submenu-item-link" href="{{ site.data.links.products.threatsonar }}">
-                    <div class="navbar-submenu-item">
-                        {% t header.threatsonar %}
-                    </div>
-                </a>
-                <a class="navbar-submenu-item-link" href="{{ site.data.links.products.threatvision }}">
-                    <div class="navbar-submenu-item">
-                        {% t header.threatvision %}
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="navbar-item">
-            <a class="navbar-item-link
+            <div class="navbar-item">
+                <a class="navbar-item-link
             {% if page.layout == 'partner'%}
                 is-current
             {% endif %}
             " href="{{ site.data.links.partner }}">
-                <div class="navbar-item-title">
-                    {% t header.partner %}
-                </div>
-            </a>
-        </div>
-        <div class="navbar-item">
-            <a class="navbar-item-link
+                    <div class="navbar-item-title title">
+                        {% t header.partner %}
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-item">
+                <a class="navbar-item-link
             {% if page.layout == 'support' %}
                 is-current
             {% endif %}
             " href="{{ site.data.links.support }}">
-                <div class="navbar-item-title">
-                    {% t header.support %}
-                </div>
-            </a>
-        </div>
-        <div class="navbar-item">
-            <a class="navbar-item-link
+                    <div class="navbar-item-title title">
+                        {% t header.support %}
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-item">
+                <a class="navbar-item-link
             {% if page.layout == 'resource' %}
                 is-current
             {% endif %}
             " href="{{ site.data.links.resource }}">
-                <div class="navbar-item-title">
-                    {% t header.resource %}
-                </div>
-            </a>
-        </div>
-        <div class="navbar-item navbar-item-has-submenu">
-            <div class="navbar-item-link
+                    <div class="navbar-item-title title">
+                        {% t header.resource %}
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-item navbar-item-has-submenu">
+                <div class="navbar-item-link
             {% for company in site.data.links.company %}
                 {% if page.layout == company[0] %}
                     is-current
                 {% endif %}
             {% endfor %}
             ">
-                <div class="navbar-item-title">
-                    {% t header.company.title %}</div>
-                <div class="navbar-item-arrow-container">
-                    <div class="navbar-item-arrow">
+                    <div class="navbar-item-title title">
+                        {% t header.company.title %}</div>
+                    <div class="navbar-item-arrow-container">
+                        <div class="navbar-item-arrow">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="navbar-submenu">
-                <a class="navbar-submenu-item-link" href="{{ site.data.links.company.about-us }}">
-                    <div class="navbar-submenu-item">
-                        {% t header.company.about-us %}
-                    </div>
-                </a>
-                <a class="navbar-submenu-item-link" href="{{ site.data.links.company.contact-us }}">
-                    <div class="navbar-submenu-item">
-                        {% t header.company.contact-us %}
-                    </div>
-                </a>
-                <a class="navbar-submenu-item-link" href="{{ site.data.links.company.careers }}">
-                    <div class="navbar-submenu-item">
-                        {% t header.company.careers %}
-                    </div>
-                </a>
-                <a class="navbar-submenu-item-link" href="{{ site.data.links.company.newsroom }}">
-                    <div class="navbar-submenu-item">
-                        {% t header.company.newsroom %}
-                    </div>
-                </a>
+                <div class="navbar-submenu">
+                    <a class="navbar-submenu-item-link" href="{{ site.data.links.company.about-us }}">
+                        <div class="navbar-submenu-item title">
+                            {% t header.company.about-us %}
+                        </div>
+                    </a>
+                    <a class="navbar-submenu-item-link" href="{{ site.data.links.company.contact-us }}">
+                        <div class="navbar-submenu-item title">
+                            {% t header.company.contact-us %}
+                        </div>
+                    </a>
+                    <a class="navbar-submenu-item-link" href="{{ site.data.links.company.careers }}">
+                        <div class="navbar-submenu-item title">
+                            {% t header.company.careers %}
+                        </div>
+                    </a>
+                    <a class="navbar-submenu-item-link" href="{{ site.data.links.company.newsroom }}">
+                        <div class="navbar-submenu-item title">
+                            {% t header.company.newsroom %}
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

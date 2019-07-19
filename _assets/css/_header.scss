@@ -2,14 +2,15 @@
 
 $navbar-brand-mobile-height: 48px;
 $navbar-brand-desktop-height: 62px;
-$navbar-brand-mobile-padding: 0 10px;
 $navbar-brand-logo-height: 30px;
 $navbar-burger-side-length: $navbar-brand-logo-height;
 $navbar-burger-width: 2px;
 
-$navbar-item-desktop-height: $navbar-brand-desktop-height;
-$navbar-item-hover-box-shadow: inset 0 -5px 0 0 $primary-color;
+
 $navbar-item-mobile-border: 0.5px solid $font-color-hover;
+$navbar-item-desktop-height: $navbar-brand-desktop-height;
+$navbar-item-hover-background-color: #f7f7f7;
+$navbar-item-active-box-shadow: inset 0 -5px 0 0 $primary-color;
 $navbar-item-title-height: $navbar-brand-mobile-height;
 $navbar-item-title-margin: 0 5px;
 $navbar-item-title-mobile-padding-left: 10px;
@@ -17,6 +18,7 @@ $navbar-item-title-mobile-padding-right: 5px;
 $navbar-item-arrow-container-height: 30px;
 $navbar-item-arrow-side-length: $navbar-item-arrow-container-height / $square-root-of-two / 2;
 
+$navbar-submenu-desktop-background-color: #f7f7f7;
 $navbar-submenu-desktop-height: 40px;
 $navbar-submenu-arrow-side-length: $navbar-brand-logo-height;
 
@@ -31,10 +33,17 @@ $navbar-submenu-mobile-background-color: $background-color;
 
 .navbar {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   max-width: 1280px;
   width: 100%;
+
+  @include responsive(800px) {
+    position: relative;
+  }
+}
+
+.navbar-brand-and-menu {
+  display: flex;
+  flex-direction: column;
 
   @include responsive(800px) {
     align-items: center;
@@ -42,7 +51,6 @@ $navbar-submenu-mobile-background-color: $background-color;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: $navbar-desktop-padding;
-    position: relative;
   }
 }
 
@@ -121,12 +129,7 @@ $navbar-submenu-mobile-background-color: $background-color;
   @include responsive(800px) {
     display: grid;
     grid-auto-flow: column;
-    grid-gap: 20px;
     max-height: none;
-  }
-
-  @include responsive(1280px) {
-    grid-gap: 40px;
   }
 
   &.active {
@@ -140,6 +143,15 @@ $navbar-submenu-mobile-background-color: $background-color;
 
   @include responsive(800px) {
     height: $navbar-item-desktop-height;
+    padding: 0 10px;
+
+    &:hover {
+      background-color: $navbar-item-hover-background-color;
+    }
+  }
+
+  @include responsive(1280px) {
+    padding: 0 20px;
   }
 }
 
@@ -161,7 +173,11 @@ $navbar-submenu-mobile-background-color: $background-color;
     padding: 0;
 
     &.is-current {
-      box-shadow: $navbar-item-hover-box-shadow;
+      color: $primary-color;
+    }
+
+    &.active {
+      box-shadow: $navbar-item-active-box-shadow;
     }
   }
 }
@@ -171,10 +187,6 @@ $navbar-submenu-mobile-background-color: $background-color;
 
   @include responsive(800px) {
     line-height: $navbar-item-desktop-height;
-
-    &:hover {
-      box-shadow: $navbar-item-hover-box-shadow;
-    }
   }
 }
 
@@ -261,6 +273,7 @@ $navbar-submenu-mobile-background-color: $background-color;
 }
 
 .navbar-submenu-padding {
+  background-color: $navbar-submenu-desktop-background-color;
   height: 50px;
   max-height: 0;
   overflow: hidden;
