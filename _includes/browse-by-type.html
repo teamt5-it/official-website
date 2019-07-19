@@ -3,7 +3,7 @@
         {% t browse-by-type.title %}
     </div>
     <div class="browse-by-type-types">
-        {% assign pages = site.pages | where: "category",page.category | where_exp: "item", "item.type" %}
+        {% assign pages = site.pages | where: "locale", page.locale | where: "category",page.category | where_exp: "item", "item.type" %}
         {% for page in pages %}
         <a class="browse-by-type-type" href="{{page.url}}">
             {{ page.type }}
