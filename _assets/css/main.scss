@@ -1,31 +1,42 @@
-@import "404";
-@import "about-us";
-@import "articles";
-@import "browse-by-type";
-@import "careers";
-@import "carousel";
-@import "component";
-@import "contact-us";
-@import "contact-us-form";
+// vendor
+
 @import "font-awesome";
 @import "font-awesome-sprockets";
+@import "normalize/import-now";
+
+// base
+
+@import "layout";
+@import "component";
+
+// element
+
 @import "footer";
 @import "form";
 @import "header";
-@import "index";
-@import "layout";
-@import "newsroom";
-@import "normalize/import-now";
+@import "carousel";
+@import "browse-by-type";
+@import "contact-us-form";
+@import "sticky-post";
+@import "post-page-title";
+@import "position";
 @import "page-title";
 @import "pagination";
+@import "articles";
+
+// page
+
+@import "404";
+@import "about-us";
+@import "careers";
+@import "contact-us";
+@import "index";
+@import "newsroom";
 @import "partner";
-@import "position";
 @import "post";
-@import "post-page-title";
 @import "privacy-and-cookies-policy";
 @import "resource";
 @import "resource-browse-by-type";
-@import "sticky-post";
 @import "support";
 @import "terms-of-service";
 @import "threatsonar";
