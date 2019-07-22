@@ -1,28 +1,30 @@
+// reset
+
+@import "normalize/import-now";
+
 // vendor
 
 @import "font-awesome";
 @import "font-awesome-sprockets";
-@import "normalize/import-now";
 
 // base
 
-@import "layout";
 @import "component";
+@import "layout";
 
 // element
 
+@import "articles";
+@import "browse-by-type";
+@import "carousel";
+@import "contact-us-form";
 @import "footer";
 @import "form";
 @import "header";
-@import "carousel";
-@import "browse-by-type";
-@import "contact-us-form";
-@import "sticky-post";
-@import "post-page-title";
-@import "position";
 @import "page-title";
 @import "pagination";
-@import "articles";
+@import "post-page-title";
+@import "sticky-post";
 
 // page
 
@@ -33,6 +35,7 @@
 @import "index";
 @import "newsroom";
 @import "partner";
+@import "position";
 @import "post";
 @import "privacy-and-cookies-policy";
 @import "resource";
