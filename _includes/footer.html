@@ -34,19 +34,19 @@
         </div>
     </div>
     <hr>
-    <div class="footer-informations">
-        <div class="copyright-and-privacy-and-cookies-policy-and-terms-of-service">
-            <div class="copyright">
+    <div class="footer-informations-and-language-selector">
+        <div class="footer-informations">
+            <div class="footer-copyright">
                 {% t footer.copyright %}
             </div>
-            <div class="privacy-and-cookies-policy">
+            <div class="footer-privacy-and-cookies-policy">
                 <a href="{% t links.privacy-and-cookies-policy %}">{% t footer.privacy_and_cookies_policy %}</a>
             </div>
-            <div class="terms-of-service">
+            <div class="footer-terms-of-service">
                 <a href="{% t links.terms-of-service %}">{% t footer.terms_of_service %}</a>
             </div>
         </div>
-        <select class="language-selector" id="language-selector">
+        <select class="footer-language-selector" id="language-selector">
             <option value="en">{% t footer.english %}</option>
             <option value="zh">{% t footer.mandarin %}</option>
         </select>
