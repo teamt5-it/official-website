@@ -72,7 +72,7 @@ footer:
     contact-us: Contact us
     newsroom: Newsroom
     title: Company
-  copyright: © 2019 Team T5, Inc. All Rights Reserved.\n
+  copyright: © 2019 Team T5, Inc. All Rights Reserved.
   english: English
   mandarin: 中文
   partner: Partner
@@ -99,7 +99,7 @@ header:
   threatvision: ThreatVision
 index:
   banner:
-    content: TeamT5 is a group of hackers dedicated on cyber threat research. The team started with their outstanding research and has been delivering their cyber threat intelligence (CTI) for more than 5 years. Comparing with other CTI vendors, TeamT5 has the most and best understanding of cyber attackers in Asia Pacific region. With the leading intelligence and knowledge of cyber attackers, TeamT5 designed an unique technology and invented a methodology to help clients dealing with targeted attacks. The solution has been verified and helped many victims solve the problem.\n
+    content: TeamT5 is a group of hackers dedicated on cyber threat research. The team started with their outstanding research and has been delivering their cyber threat intelligence (CTI) for more than 5 years. Comparing with other CTI vendors, TeamT5 has the most and best understanding of cyber attackers in Asia Pacific region. With the leading intelligence and knowledge of cyber attackers, TeamT5 designed an unique technology and invented a methodology to help clients dealing with targeted attacks. The solution has been verified and helped many victims solve the problem.
     title: Persistent Cyber Threat Hunters
   learn-more: Learn More
   news:
@@ -184,7 +184,7 @@ threatsonar:
     d: Highlighting unique executables, memory attributes, abused system tools or rarely-seen digital certificates.
     title: ThreatSonar Assessment Reports
   auto-investigation:
-    content: Discovering related infection origins, lateral-movement traces and data exfiltration through graph visualization\n
+    content: Discovering related infection origins, lateral-movement traces and data exfiltration through graph visualization
     title: |-
         ThreatSonar
         Auto-investigation

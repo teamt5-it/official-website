@@ -16,7 +16,7 @@ about-us:
       name: Sung-ting Tsai (TT)
     title: TeamT5 Leadership
 banner:
-  content: TeamT5 杜浦數位安全有限公司是提供網路間諜威脅情資研究、專業威脅鑑識產品與服務的公司，協助產業對抗網路間諜威脅。藉由團隊資安研究成果，提供客戶進階持續性威脅解決方案，成員亦經常在世界頂尖資安會議發表最新最頂尖研究，包含Syscan、Code Gate、Black Hat、Code Blue、VXCON、Troopers等，於威脅情資研究與資安先進技術領域擁有世界領先地位。\n
+  content: TeamT5 杜浦數位安全有限公司是提供網路間諜威脅情資研究、專業威脅鑑識產品與服務的公司，協助產業對抗網路間諜威脅。藉由團隊資安研究成果，提供客戶進階持續性威脅解決方案，成員亦經常在世界頂尖資安會議發表最新最頂尖研究，包含Syscan、Code Gate、Black Hat、Code Blue、VXCON、Troopers等，於威脅情資研究與資安先進技術領域擁有世界領先地位。
   title: Persistent Cyber Threat Hunters
 browse-by-type:
   title: Browse by type
@@ -72,7 +72,7 @@ footer:
     contact-us: Contact us
     newsroom: Newsroom
     title: Company
-  copyright: © 2019 Team T5, Inc. All Rights Reserved.\n
+  copyright: © 2019 Team T5, Inc. All Rights Reserved.
   english: English
   mandarin: 中文
   partner: Partner
@@ -86,18 +86,37 @@ footer:
   threatvision: ThreatVision
 header:
   company:
-    about-us: 關於我們
-    careers: 職業
-    contact-us: 聯絡我們
-    newsroom: 新聞
-    title: 公司
-  partner: 合作夥伴
-  product: 產品
-  resource: 資源
-  support: 客戶支援
+    about-us: About us
+    careers: Careers
+    contact-us: Contact us
+    newsroom: Newsroom
+    title: Company
+  partner: Partner
+  product: Product
+  resource: Resource
+  support: Support
   threatsonar: ThreatSonar
   threatvision: ThreatVision
-learn-more: 了解更多
+index:
+  banner:
+    content: TeamT5 is a group of hackers dedicated on cyber threat research. The team started with their outstanding research and has been delivering their cyber threat intelligence (CTI) for more than 5 years. Comparing with other CTI vendors, TeamT5 has the most and best understanding of cyber attackers in Asia Pacific region. With the leading intelligence and knowledge of cyber attackers, TeamT5 designed an unique technology and invented a methodology to help clients dealing with targeted attacks. The solution has been verified and helped many victims solve the problem.
+    title: Persistent Cyber Threat Hunters
+  learn-more: Learn More
+  news:
+    more: More
+    title: TeamT5 News
+  products:
+    sonar:
+      name: ThreatSonar
+      subtitle: Elegant Threat Hunting Technology
+      title: UNCOVER HIDDEN THREATS
+    subtitle: Next Level Threat Visibility and Intelligence
+    title: TeamT5 Product
+    vision:
+      name: ThreatVision
+      subtitle: World-leading Threat Intelligence
+      title: KNOW YOUR ENEMIES
+  scroll_down: SCROLL
 links:
   company:
     about-us: /zh/about-us
