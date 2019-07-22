@@ -2,8 +2,8 @@
 layout: privacy-and-cookies-policy
 title: Privacy & Cookies Policy
 permalink: /privacy-and-cookies-policy
-
 ---
+
 ### Policy Overview
 
 We are committed to safeguarding the privacy of our website visitors, readers, and service users. This Privacy is provided by Team T5 Inc. (hereinafter referred to as "TeamT5" or "Company") to explain to you which personal data may be collected from the company’s website linked to this policy and how it may be used. If you have any questions or comments about this policy, please contact us. This policy only applies to the processing of personal data collected through our website. If you are a resident of the European Union, please refer to the EU Appendix below.
@@ -20,16 +20,13 @@ The collected personal data may be used to respond to your inquiry or request, t
 
 The company may be related to the above purposes in the company or affiliated companies, and in accordance with the need to go to a special authorized personnel to share the personal data collected on the company’s website.
 
-
 TeamT5 reserves the right to disclose such personal data to any other third party, whether it is required by law or in compliance with the law, including: (1) in compliance with legal procedures or at the request of the government; (2) for prevention , investigating, investigating or prosecuting criminal offences or attacks on the integrity of the company’s website or network; (3) protecting the rights, property or security of the company, the users of the website or the public.
 
 ### Your Rights
 
 Depending on the applicable law, you may be entitled to information about the processing of your personal data, to obtain your personal data, to object to or limit the processing of your personal data, and to exercise your information in the applicable circumstances. , and correct or delete your personal data, and have the right to withdraw your consent to the processing of personal data at any time.
 
-
 If you wish to exercise the above rights or learn more about the processing of your personal data, please contact us and we will respond to your request as soon as possible.
-
 
 If you believe that your personal data has not been treated in accordance with applicable laws, you also have the right to file a complaint with the regulatory authority or seek other measures in accordance with applicable law.
 
@@ -45,19 +42,15 @@ Our website and services are targeted at persons over the age of 16. If we have 
 
 A cookie is a file containing an identifier (a string of letters and numbers) that is sent by a web server to a web browser and is stored by the browser. The identifier is then sent back to the server each time the browser requests a page from the server.
 
-
 Cookies may be either "persistent" cookies or "session" cookies: a persistent cookie will be stored by a web browser and will remain valid until its set expiry date, unless deleted by the user before then; a session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed.
 
 Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from cookies.
 
 We use cookies to identify you when you visit our website, determine if you are logged in, and maintain the status of your shopping cart.
 
-
 They may also be used to help us to display advertisements relevant to you and to help us analyze the use and performance of our website and services.
 
-
 Our service providers, such as Google Analytics and Google Adsense, use cookies that may be stored on your computer when you visit our website.
-
 
 Most browsers allow you to refuse to accept cookies and to delete them. The methods for doing so vary from browser to browser, and from version to version. You can however obtain up-to-date information about blocking and deleting cookies via these links:
 
