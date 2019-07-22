@@ -24,10 +24,17 @@ defaults:
       layout: "position"
   -
     scope:
+      path: "_positions"
+      type: "positions"
+    values:
+      i18n_prefix: "position"
+  -
+    scope:
       path: "_posts"
       type: "posts"
     values:
       layout: "post"
+      i18n_prefix: "post"
 
 # Collections
 

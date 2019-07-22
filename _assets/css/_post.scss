@@ -20,4 +20,12 @@ main.post {
   .post-content {
     @include post-page-padding-horizontal;
   }
+
+  .back-button {
+    margin: 20px;
+
+    @include responsive(640px) {
+      margin: 40px 0;
+    }
+  }
 }

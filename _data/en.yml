@@ -151,6 +151,8 @@ partner:
     W: "https://www.macnica.net/english/"
     name: "Macnica Networks"
     title: Japan
+position:
+  back: "Back"
 position-form:
   available-start-date: "Available Start Date"
   chinese-name: "Chinese Name"
@@ -257,3 +259,5 @@ threatvision:
     c: "Increase Situational Awareness"
     d: "Turn Passive to Proactive"
     title: "A Cyber Threat Intelligence Platform"
+post:
+  back: Back

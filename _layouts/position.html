@@ -1,6 +1,5 @@
 ---
 layout: base
-i18n_prefix: position
 ---
 
 {% include post-page-title.html %}
@@ -20,5 +19,8 @@ i18n_prefix: position
     <div class="content">
         {{ content }}
     </div>
+    <a href="javascript:history.back()" class="back-button button">
+        {% t back %}
+    </a>
     {% include position-form.html position=page.title %}
 </main>

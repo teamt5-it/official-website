@@ -191,6 +191,16 @@ input {
   }
 }
 
+.back-button {
+  height: 50px;
+  text-align: center;
+
+  @include responsive(640px) {
+    justify-self: center;
+    width: 280px;
+  }
+}
+
 .button {
   @include flex-center-align;
   -webkit-appearance: none;
