@@ -4,49 +4,49 @@ layout: default
 
 <div class="banner-container">
 
-<div class="banner">
-    <div class="banner-slogan">
-        {% t banner.slogan %}
+    <div class="banner">
+        <div class="banner-slogan">
+            {% t banner.slogan %}
+        </div>
+        <div class="banner-logo">
+            {% asset sonar_logo_reverse.svg %}
+        </div>
+        <div class="banner-title title">
+            {% t banner.title %}
+        </div>
     </div>
-    <div class="banner-logo">
-        {% asset sonar_logo_reverse.svg %}
-    </div>
-    <div class="banner-title title">
-        {% t banner.title %}
-    </div>
-</div>
 
-<div class="banner-mac-and-strengths">
-    <div class="banner-mac">
-        {% asset sonar-mac.png %}
+    <div class="banner-mac-and-strengths">
+        <div class="banner-mac">
+            {% asset sonar-mac.png %}
+        </div>
+        <div class="banner-strengths">
+            <div class="banner-strength">
+                <div class="banner-strength-logo">
+                    {% asset powerful.svg %}
+                </div>
+                <div class="banner-strength-content">
+                    {% t strengths.powerful %}
+                </div>
+            </div>
+            <div class="banner-strength">
+                <div class="banner-strength-logo">
+                    {% asset automate.svg %}
+                </div>
+                <div class="banner-strength-content">
+                    {% t strengths.automate %}
+                </div>
+            </div>
+            <div class="banner-strength">
+                <div class="banner-strength-logo">
+                    {% asset flexible.svg %}
+                </div>
+                <div class="banner-strength-content">
+                    {% t strengths.flexible %}
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="banner-strengths">
-        <div class="banner-strength">
-            <div class="banner-strength-logo">
-                {% asset powerful.svg %}
-            </div>
-            <div class="banner-strength-content">
-                {% t strengths.powerful %}
-            </div>
-        </div>
-        <div class="banner-strength">
-            <div class="banner-strength-logo">
-                {% asset automate.svg %}
-            </div>
-            <div class="banner-strength-content">
-                {% t strengths.automate %}
-            </div>
-        </div>
-        <div class="banner-strength">
-            <div class="banner-strength-logo">
-                {% asset flexible.svg %}
-            </div>
-            <div class="banner-strength-content">
-                {% t strengths.flexible %}
-            </div>
-        </div>
-    </div>
-</div>
 </div>
 
 <div class="more-strengths">
@@ -63,9 +63,7 @@ layout: default
                 </div>
                 <div class="more-strength-content content">
                     <ul>
-                        <li>{% t more-strengths.strengths.elegant.a %}</li>
-                        <li>{% t more-strengths.strengths.elegant.b %}</li>
-                        <li>{% t more-strengths.strengths.elegant.c %}</li>
+                        {% t more-strengths.strengths.elegant.list %}
                     </ul>
                 </div>
             </div>
@@ -80,8 +78,7 @@ layout: default
                 </div>
                 <div class="more-strength-content content">
                     <ul>
-                        <li>{% t more-strengths.strengths.premise.a %}</li>
-                        <li>{% t more-strengths.strengths.premise.b %}</li>
+                        {% t more-strengths.strengths.premise.list %}
                     </ul>
                 </div>
             </div>
@@ -96,9 +93,7 @@ layout: default
                 </div>
                 <div class="more-strength-content content">
                     <ul>
-                        <li>{% t more-strengths.strengths.threat_hunting.a %} </li>
-                        <li>{% t more-strengths.strengths.threat_hunting.b %} </li>
-                        <li>{% t more-strengths.strengths.threat_hunting.c %} </li>
+                        {% t more-strengths.strengths.threat_hunting.list %}
                     </ul>
                 </div>
             </div>
@@ -113,8 +108,7 @@ layout: default
                 </div>
                 <div class="more-strength-content content">
                     <ul>
-                        <li>{% t more-strengths.strengths.auto-investigation.a %}</li>
-                        <li>{% t more-strengths.strengths.auto-investigation.b %}</li>
+                        {% t more-strengths.strengths.auto-investigation.list %}
                     </ul>
                 </div>
             </div>
@@ -129,9 +123,7 @@ layout: default
                 </div>
                 <div class="more-strength-content content">
                     <ul>
-                        <li>{% t more-strengths.strengths.orchestration.a %}</li>
-                        <li>{% t more-strengths.strengths.orchestration.b %}</li>
-                    </ul>
+                        {% t more-strengths.strengths.orchestration.list %}                   </ul>
                 </div>
             </div>
         </div>
@@ -162,7 +154,8 @@ layout: default
             {{ string-with-newlines | newline_to_br }}
         </div>
         <div class="auto-investigation-content content sonar-content">
-            {% t auto-investigation.content %}
+            {% capture string-with-newlines %}{% t auto-investigation.content %}{% endcapture %}
+            {{ string-with-newlines | newline_to_br }}
         </div>
     </div>
     <div class="auto-investigation-youtube">
@@ -183,13 +176,7 @@ layout: default
             </div>
             <div class="complementary-content content threatsonar">
                 <ul>
-                    <li>{% t complementary-to-antivirus.threatsonar.a %}</li>
-                    <li>{% t complementary-to-antivirus.threatsonar.b %}</li>
-                    <li>{% t complementary-to-antivirus.threatsonar.c %}</li>
-                    <li>{% t complementary-to-antivirus.threatsonar.d %}</li>
-                    <li>{% t complementary-to-antivirus.threatsonar.e %}</li>
-                    <li>{% t complementary-to-antivirus.threatsonar.f %}</li>
-                    <li>{% t complementary-to-antivirus.threatsonar.g %}</li>
+                    {% t complementary-to-antivirus.threatsonar.list %}
                 </ul>
             </div>
         </div>
@@ -201,13 +188,7 @@ layout: default
             </div>
             <div class="complementary-content content antivirus">
                 <ul>
-                    <li>{% t complementary-to-antivirus.antivirus.a %}</li>
-                    <li>{% t complementary-to-antivirus.antivirus.b %}</li>
-                    <li>{% t complementary-to-antivirus.antivirus.c %}</li>
-                    <li>{% t complementary-to-antivirus.antivirus.d %}</li>
-                    <li>{% t complementary-to-antivirus.antivirus.e %}</li>
-                    <li>{% t complementary-to-antivirus.antivirus.f %}</li>
-                    <li>{% t complementary-to-antivirus.antivirus.g %}</li>
+                    {% t complementary-to-antivirus.antivirus.list %}
                 </ul>
             </div>
         </div>
