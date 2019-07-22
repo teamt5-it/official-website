@@ -119,19 +119,19 @@ index:
   scroll_down: SCROLL
 links:
   company:
-    about-us: /zh/about-us
-    careers: /zh/careers
-    contact-us: /zh/contact-us
-    newsroom: /zh/newsroom
+    about-us: /zh/about-us/
+    careers: /zh/careers/
+    contact-us: /zh/contact-us/
+    newsroom: /zh/newsroom/
   index: /zh/
-  partner: /zh/partner
-  privacy-and-cookies-policy: /zh/privacy-and-cookies-policy
+  partner: /zh/partner/
+  privacy-and-cookies-policy: /zh/privacy-and-cookies-policy/
   products:
-    threatsonar: /zh/products/threatsonar
-    threatvision: /zh/products/threatvision
-  resource: /zh/resource
-  support: /zh/support
-  terms-of-service: /zh/terms-of-service
+    threatsonar: /zh/products/threatsonar/
+    threatvision: /zh/products/threatvision/
+  resource: /zh/resource/
+  support: /zh/support/
+  terms-of-service: /zh/terms-of-service/
 news:
   more: More
   title: TeamT5 News

@@ -14,11 +14,13 @@
         <div class="navbar-menu">
             <div class="navbar-item navbar-item-has-submenu">
                 <div class="navbar-item-link
-            {% for product in site.data.links.products %}
-                {% if page.layout contains product[0] %}
+            {% capture products %}
+            {% t links.products.threatsonar %}
+            {% t links.products.threatvision %}
+            {% endcapture %}
+                {% if products contains page.layout %}
                     is-current
                 {% endif %}
-            {% endfor %}
             ">
                     <div class="navbar-item-title title">
                         {% t header.product %}
@@ -76,11 +78,16 @@
             </div>
             <div class="navbar-item navbar-item-has-submenu">
                 <div class="navbar-item-link
-            {% for company in site.data.links.company %}
-                {% if page.layout contains company[0] %}
+
+            {% capture company %}
+            {% t links.company.about-us %}
+            {% t links.company.contact-us %}
+            {% t links.company.careers %}
+            {% t links.company.newsroom %}
+            {% endcapture %}
+                {% if company contains page.layout %}
                     is-current
                 {% endif %}
-            {% endfor %}
             ">
                     <div class="navbar-item-title title">
                         {% t header.company.title %}</div>

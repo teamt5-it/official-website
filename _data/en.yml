@@ -119,19 +119,19 @@ index:
   scroll_down: SCROLL
 links:
   company:
-    about-us: /about-us
-    careers: /careers
-    contact-us: /contact-us
-    newsroom: /newsroom
+    about-us: /about-us/
+    careers: /careers/
+    contact-us: /contact-us/
+    newsroom: /newsroom/
   index: /
-  partner: /partner
-  privacy-and-cookies-policy: /privacy-and-cookies-policy
+  partner: /partner/
+  privacy-and-cookies-policy: /privacy-and-cookies-policy/
   products:
-    threatsonar: /products/threatsonar
-    threatvision: /products/threatvision
-  resource: /resource
-  support: /support
-  terms-of-service: /terms-of-service
+    threatsonar: /products/threatsonar/
+    threatvision: /products/threatvision/
+  resource: /resource/
+  support: /support/
+  terms-of-service: /terms-of-service/
 newsroom:
   media-inquiries:
     email: mk@teamt5.tw
