@@ -206,7 +206,7 @@ threatsonar:
   banner:
     slogan: UNCOVER HIDDEN THREATS
     title: Elegant Threat Hunting Technology
-  complementary__to-antivirus:
+  complementary-to-antivirus:
     antivirus:
       list:
         <li>阻擋各式各樣的惡意程式執行</li>

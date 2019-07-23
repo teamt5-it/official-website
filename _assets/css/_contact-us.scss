@@ -15,16 +15,16 @@
     grid-gap: 10px;
   }
 
-  .branch__title {
+  .branch-title {
     @include page-margin-horizontal;
     justify-self: start;
   }
 
-  .branch__contact-information {
+  .branch-contact-information {
     @include page-margin-horizontal;
   }
 
-  .branch__google-map {
+  .branch-google-map {
     height: 280px;
 
     @include responsive(800px) {

@@ -58,7 +58,7 @@
     }
   }
 
-  .post__logo {
+  .post-logo {
     width: 60px;
 
     @include responsive(800px) {
@@ -70,7 +70,7 @@
     }
   }
 
-  .post__meta {
+  .post-meta {
     display: grid;
     grid-auto-flow: row;
     grid-gap: 10px;

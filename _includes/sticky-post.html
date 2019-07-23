@@ -6,18 +6,18 @@
         <img src="{{post.banner}}">
     </div>
     <div class="sticky-post-information">
-        <div class="sticky-post__meta">
-            <div class="sticky-post__date post__date">
+        <div class="sticky-post-meta">
+            <div class="sticky-post-date post-date">
                 {{ post.date | date: "%Y-%m-%d" }}
             </div>
-            <div class="sticky-post__tags post__tags tags">
+            <div class="sticky-post-tags post-tags tags">
                 {% for tag in post.tags %}
                 <span class="tag">
                     {{ tag }}
                 </span>
                 {% endfor %}
             </div>
-            <div class="sticky-post__title post__title title">
+            <div class="sticky-post-title post-title title">
                 {{ post.title }}
             </div>
         </div>

@@ -29,7 +29,7 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .banner__slogan {
+  .banner-slogan {
     @include flex-center-align;
     align-self: flex-start;
     background-color: $normal-color;
@@ -53,7 +53,7 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .banner__logo {
+  .banner-logo {
     align-self: center;
     height: 45px;
     margin-bottom: 25px;
@@ -76,7 +76,7 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .banner__title {
+  .banner-title {
     align-self: center;
     color: $white;
     font-size: 16px;
@@ -116,7 +116,7 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .strengths__title {
+  .strengths-title {
     line-height: 1.5;
     text-align: center;
   }
@@ -157,7 +157,7 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .strength__logo {
+  .strength-logo {
     height: 60px;
     width: 60px;
 
@@ -177,7 +177,7 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .strength__title {
+  .strength-title {
     font-size: 12px;
 
     @include responsive(640px) {
@@ -216,13 +216,13 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .intelligence-report__screenshot {
+  .intelligence-report-screenshot {
     img {
       width: 100%;
     }
   }
 
-  .intelligence-report__title-and-content {
+  .intelligence-report-title-and-content {
     align-content: center;
     display: grid;
     grid-auto-rows: auto;
@@ -237,7 +237,7 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .intelligence-report__content {
+  .intelligence-report-content {
     li::before {
       color: $secondary-color;
     }
@@ -268,11 +268,11 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .malware-analysis__title {
+  .malware-analysis-title {
     text-align: center;
   }
 
-  .malware-analysis__content-and-mac {
+  .malware-analysis-content-and-mac {
     display: grid;
 
     @include responsive(640px) {
@@ -281,7 +281,7 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .malware-analysis__content {
+  .malware-analysis-content {
     order: 1;
 
     @include responsive(640px) {
@@ -293,7 +293,7 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .malware-analysis__mac {
+  .malware-analysis-mac {
     img {
       width: 100%;
     }

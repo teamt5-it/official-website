@@ -3,87 +3,87 @@ layout: default
 ---
 {% include carousel.html %}
 <div class="banner">
-    <div class="banner__title title title-xl">
+    <div class="banner-title title title-xl">
         {% t banner.title %}
     </div>
-    <p class="banner__content">
+    <p class="banner-content">
         {% t banner.content %}
     </p>
     <div class="scroll-bottom">
-        <div class="scroll-bottom__square rotate-clockwise-45">
-            <div class="scroll-bottom__content rotate-counterwise-45">
-                <div class="scroll-bottom__arrow rotate-clockwise-45">
+        <div class="scroll-bottom-square rotate-clockwise-45">
+            <div class="scroll-bottom-content rotate-counterwise-45">
+                <div class="scroll-bottom-arrow rotate-clockwise-45">
                 </div>
-                <div class="scroll-bottom__text">
+                <div class="scroll-bottom-text">
                     {% t scroll_down %}
                 </div>
             </div>
         </div>
-        <div class="scroll-bottom__diamonds">
-            <div class="scroll-bottom__diamond rotate-clockwise-45">
+        <div class="scroll-bottom-diamonds">
+            <div class="scroll-bottom-diamond rotate-clockwise-45">
             </div>
-            <div class="scroll-bottom__diamond rotate-clockwise-45">
+            <div class="scroll-bottom-diamond rotate-clockwise-45">
             </div>
-            <div class="scroll-bottom__diamond rotate-clockwise-45">
+            <div class="scroll-bottom-diamond rotate-clockwise-45">
             </div>
-            <div class="scroll-bottom__diamond rotate-clockwise-45">
+            <div class="scroll-bottom-diamond rotate-clockwise-45">
             </div>
-            <div class="scroll-bottom__diamond rotate-clockwise-45">
+            <div class="scroll-bottom-diamond rotate-clockwise-45">
             </div>
         </div>
     </div>
 </div>
 <div class="products-and-latest-news">
     <div class="products">
-        <div class="products__title title title-xl title-underline">
+        <div class="products-title title title-xl title-underline">
             {% t products.title %}
         </div>
-        <div class="products__subtitle title title-lg">
+        <div class="products-subtitle title title-lg">
             {% t products.subtitle %}
         </div>
-        <div class="products__content">
+        <div class="products-content">
             <div class="product">
-                <div class="product__title">
+                <div class="product-title">
                     {% t products.sonar.title %}
                 </div>
-                <div class="product__logo">
+                <div class="product-logo">
                     {% asset sonar_logo_circle.svg %}
                 </div>
-                <div class="product__name title-xl">
+                <div class="product-name title-xl">
                     {% t products.sonar.name %}
                 </div>
-                <div class="product__subtitle">
+                <div class="product-subtitle">
                     {% t products.sonar.subtitle %}
                 </div>
-                <a class="product__learn-more button"
+                <a class="product-learn-more button"
                     href="{% t links.products.threatsonar %}">{% t learn-more %}</a>
             </div>
             <div class="product">
-                <div class="product__title">
+                <div class="product-title">
                     {% t products.vision.title %}
                 </div>
-                <div class="product__logo">
+                <div class="product-logo">
                     {% asset vision_logo_circle.svg %}
                 </div>
-                <div class="product__name title-xl">
+                <div class="product-name title-xl">
                     {% t products.vision.name %}
                 </div>
-                <div class="product__subtitle">
+                <div class="product-subtitle">
                     {% t products.vision.subtitle %}
                 </div>
-                <a class="product__learn-more button"
+                <a class="product-learn-more button"
                     href="{% t links.products.threatvision %}">{% t learn-more %}</a>
             </div>
         </div>
     </div>
     <div class="latest-news">
-        <div class="latest-news__title title title-xl title-underline">
+        <div class="latest-news-title title title-xl title-underline">
             {% t news.title %}
         </div>
-        <div class="latest-news__content">
+        <div class="latest-news-content">
             {% include articles.html %}
         </div>
-        <a class="latest-news__more-button button button-with-arrow" href="{% t links.company.newsroom %}">
+        <a class="latest-news-more-button button button-with-arrow" href="{% t links.company.newsroom %}">
             {% t news.more %}
         </a>
     </div>

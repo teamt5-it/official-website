@@ -25,11 +25,11 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .banner__title {
+  .banner-title {
     color: $primary-color;
   }
 
-  .banner__content {
+  .banner-content {
     text-align: justify;
     width: 280px;
 
@@ -55,7 +55,7 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .scroll-bottom__square {
+  .scroll-bottom-square {
     align-items: center;
     background: $primary-color;
 
@@ -67,14 +67,14 @@ $scroll-bottom-margin: 100px;
     width: $square-side-length;
   }
 
-  .scroll-bottom__content {
+  .scroll-bottom-content {
     align-items: center;
     display: flex;
     justify-content: center;
     position: relative;
   }
 
-  .scroll-bottom__arrow {
+  .scroll-bottom-arrow {
     border: solid $white;
     border-width: 0 3px 3px 0;
     height: $square-side-length / 3;
@@ -84,14 +84,14 @@ $scroll-bottom-margin: 100px;
     width: $square-side-length / 3;
   }
 
-  .scroll-bottom__text {
+  .scroll-bottom-text {
     color: $white;
     font-size: 12px;
     position: absolute;
     top: 0;
   }
 
-  .scroll-bottom__diamonds {
+  .scroll-bottom-diamonds {
     align-content: center;
     display: grid;
 
@@ -101,7 +101,7 @@ $scroll-bottom-margin: 100px;
     position: absolute;
     top: calc(100% + 20px);
 
-    .scroll-bottom__diamond {
+    .scroll-bottom-diamond {
       background: $primary-color;
       height: $diamond-side-length;
       width: $diamond-side-length;
@@ -142,15 +142,15 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .products__title {
+  .products-title {
     justify-self: start;
   }
 
-  .products__subtitle {
+  .products-subtitle {
     color: $primary-color;
   }
 
-  .products__content {
+  .products-content {
     display: grid;
     grid-auto-flow: row;
     grid-gap: 10px;
@@ -180,7 +180,7 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .product__title {
+  .product-title {
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -194,7 +194,7 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .product__logo {
+  .product-logo {
     margin-bottom: 20px;
     width: 35%;
 
@@ -203,11 +203,11 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .product__name {
+  .product-name {
     color: $primary-color;
   }
 
-  .product__subtitle {
+  .product-subtitle {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -222,7 +222,7 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .product__learn-more {
+  .product-learn-more {
     font-size: 20px;
     height: 40px;
     line-height: 40px;
@@ -243,12 +243,12 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .latest-news__title {
+  .latest-news-title {
     justify-self: start;
   }
 
 
-  .latest-news__more-button {
+  .latest-news-more-button {
     border-radius: 0;
     display: flex;
     font-size: 12px;

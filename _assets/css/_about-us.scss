@@ -14,7 +14,7 @@
     }
   }
 
-  .teamt5-leadership__title {
+  .teamt5-leadership-title {
     @include page-margin-horizontal;
     justify-self: start;
 
@@ -24,7 +24,7 @@
     }
   }
 
-  .teamt5-leadership__content {
+  .teamt5-leadership-content {
     background-color: $background-color;
     display: grid;
     grid-gap: 10px;
@@ -46,7 +46,7 @@
     }
   }
 
-  .teamt5-leadership__picture {
+  .teamt5-leadership-picture {
     height: 120px;
     width: 120px;
 
@@ -76,7 +76,7 @@
     }
   }
 
-  .teamt5-leadership__description {
+  .teamt5-leadership-description {
     display: grid;
 
     @include responsive(1024px) {
@@ -88,7 +88,7 @@
       padding: 50px;
     }
 
-    .teamt5-leadership__name {
+    .teamt5-leadership-name {
       font-size: 20px;
 
       @include responsive(800px) {
@@ -96,7 +96,7 @@
       }
     }
 
-    .teamt5-leadership__introduction {
+    .teamt5-leadership-introduction {
       text-align: justify;
     }
   }

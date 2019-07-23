@@ -17,7 +17,7 @@
     }
   }
 
-  .open-positions__title {
+  .open-positions-title {
     justify-self: start;
   }
 
@@ -43,11 +43,11 @@
     }
   }
 
-  .open-position__title {
+  .open-position-title {
     color: $primary-color;
   }
 
-  .open-position__tags-and-location {
+  .open-position-tags-and-location {
     align-items: center;
     display: grid;
     grid-auto-flow: column;
@@ -59,7 +59,7 @@
     }
   }
 
-  .open-position__location {
+  .open-position-location {
     color: $normal-color;
     font-weight: bold;
     margin-right: 20px;

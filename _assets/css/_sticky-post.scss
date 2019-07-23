@@ -60,7 +60,7 @@ $sticky-post-information-background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
-.sticky-post__meta {
+.sticky-post-meta {
   display: grid;
   grid-auto-flow: row;
   grid-column-gap: 10px;
@@ -77,7 +77,7 @@ $sticky-post-information-background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
-.sticky-post__date {
+.sticky-post-date {
   color: $white;
 
   @include responsive(1280px) {
@@ -87,14 +87,14 @@ $sticky-post-information-background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
-.sticky-post__tags {
+.sticky-post-tags {
   @include responsive(1280px) {
     bottom: calc(100% + 10px);
     position: absolute;
   }
 }
 
-.sticky-post__title {
+.sticky-post-title {
   color: $white;
   font-size: 20px;
   grid-column: 1 / span 2;

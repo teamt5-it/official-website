@@ -15,7 +15,7 @@
     display: grid;
   }
 
-  .partners-by-location__location {
+  .partners-by-location-location {
     justify-self: start;
   }
 
@@ -34,7 +34,7 @@
     }
   }
 
-  .partner__logo {
+  .partner-logo {
     @include flex-center-align;
     height: 80px;
     overflow: hidden;
@@ -55,11 +55,11 @@
     }
   }
 
-  .partner__name-and-contact-information {
+  .partner-name-and-contact-information {
     align-content: center;
     display: grid;
 
-    .partner__contact-information {
+    .partner-contact-information {
       display: grid;
       grid-gap: 10px;
 

@@ -193,7 +193,7 @@ threatsonar:
   banner:
     slogan: UNCOVER HIDDEN THREATS
     title: Elegant Threat Hunting Technology
-  complementary__to-antivirus:
+  complementary-to-antivirus:
     antivirus:
       list:
         <li>Preventing any kind of malicious program from execution.</li>

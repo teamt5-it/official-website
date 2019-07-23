@@ -8,6 +8,3 @@ linters:
     enabled: false
   NameFormat:
     enabled: false
-  SelectorFormat:
-    enabled: true
-    convention: hyphenated_BEM
