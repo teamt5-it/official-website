@@ -212,7 +212,7 @@ input {
   font-weight: bold;
   transition: background-color 1s ease-in-out;
 
-  &.button-with-arrow {
+  @at-root #{&}-with-arrow {
     border-radius: 0;
     box-sizing: border-box;
     position: relative;
@@ -252,7 +252,7 @@ input {
     cursor: not-allowed;
   }
 
-  &.success {
+  @at-root #{&}-success {
     background-color: $button-success-color;
     transition: background-color 1s ease-in-out;
   }

@@ -13,23 +13,23 @@ $ ->
 	# header
 
 	$(".navbar-brand").click ->
-		$(".navbar-menu").toggleClass('active')
-		$(".navbar-burger").toggleClass('active')
+		$(".navbar-menu").toggleClass('navbar-menu-active')
+		$(".navbar-burger").toggleClass('navbar-burger-active')
 
 	$(".navbar-item-has-submenu").click (e) ->
-		cur_navbar_submenu_active = $(e.currentTarget).children(".navbar-submenu").hasClass('active')
-		cur_navbar_submenu_padding_active = $(".navbar-submenu-padding").hasClass('active')
+		cur_navbar_submenu_active = $(e.currentTarget).children(".navbar-submenu").hasClass('navbar-submenu-active')
+		cur_navbar_submenu_padding_active = $(".navbar-submenu-padding").hasClass('navbar-submenu-padding-active')
 		if !cur_navbar_submenu_active
-			$(".navbar-item-link").removeClass('active')
-			$(".navbar-submenu").removeClass('active')
-			$(".navbar-item-arrow").removeClass('active')
+			$(".navbar-item-link").removeClass('navbar-item-link-active')
+			$(".navbar-submenu").removeClass('navbar-submenu-active')
+			$(".navbar-item-arrow").removeClass('navbar-item-arrow-active')
 
-		$(e.currentTarget).children(".navbar-item-link").toggleClass('active')
-		$(e.currentTarget).find(".navbar-item-arrow").toggleClass('active')
-		$(e.currentTarget).children(".navbar-submenu").toggleClass('active')
+		$(e.currentTarget).children(".navbar-item-link").toggleClass('navbar-item-link-active')
+		$(e.currentTarget).find(".navbar-item-arrow").toggleClass('navbar-item-arrow-active')
+		$(e.currentTarget).children(".navbar-submenu").toggleClass('navbar-submenu-active')
 
 		if (cur_navbar_submenu_active && cur_navbar_submenu_padding_active) || (!cur_navbar_submenu_active && !cur_navbar_submenu_padding_active)
-			$(".navbar-submenu-padding").toggleClass('active')
+			$(".navbar-submenu-padding").toggleClass('navbar-submenu-padding-active')
 
 	# footer
 	class Footer
@@ -59,8 +59,12 @@ $ ->
 	# carousel
 
 	class Carousel
+		item = "carousel-item"
+		itemInformationContainer = "carousel-item-information-container"
+		itemInformation = "carousel-item-information"
+		itemIndicator = "carousel-indicator"
 		duration = 200
-		timer_duration = 5000
+		timerDuration = 5000
 		constructor: () ->
 			@count = $(".carousel .carousel-items").data('count')
 			@curActiveIndex = 0
@@ -82,16 +86,16 @@ $ ->
 			-1
 
 		getItem: (index) ->
-			$(".carousel .carousel-items .carousel-item[data-index=#{index}]")
+			$(".carousel-item[data-index=#{index}]")
 
-		getItemTitleContainer: (index) ->
-			$(".carousel .carousel-items .carousel-item[data-index=#{index}] .carousel-item-information-container")
+		getItemInformationContainer: (index) ->
+			$(".carousel-item[data-index=#{index}] .carousel-item-information-container")
 
-		getItemTitle: (index) ->
-			$(".carousel .carousel-items .carousel-item[data-index=#{index}] .carousel-item-information-container .carousel-item-information")
+		getItemInformation: (index) ->
+			$(".carousel-item[data-index=#{index}] .carousel-item-information-container .carousel-item-information")
 
 		getItemIndicator: (index) ->
-			$(".carousel .carousel-indicators .carousel-indicator[data-index=#{index}]")
+			$(".carousel-indicator[data-index=#{index}]")
 
 		registerEventHandler: () =>
 			$(".carousel").on "touchstart", (e) =>
@@ -116,14 +120,14 @@ $ ->
 			.mouseleave () =>
 				@startTimer()
 
-			$(".carousel .carousel-indicators .carousel-indicator").click (e) =>
+			$(".carousel-indicator").click (e) =>
 				index = $(e.currentTarget).data('index')
 				@setActiveItem index
 
 		startTimer: () =>
 			@timer = setInterval =>
 				@setActiveItem (@curActiveIndex+1)%@count
-			, timer_duration
+			, timerDuration
 
 		stopTimer: () =>
 			clearInterval(@timer)
@@ -133,75 +137,75 @@ $ ->
 			@startTimer()
 
 		slideItemLeftAndDisappear: (index) ->
-			@getItem(index).addClass('left')
+			@getItem(index).addClass("#{item}-left")
 			new Promise((resolve)=>
 				setTimeout =>
-					@getItem(index).removeClass('active')
-					@getItem(index).removeClass('left')
+					@getItem(index).removeClass("#{item}-active")
+					@getItem(index).removeClass("#{item}-left")
 					resolve
 				, duration
 			)
 		slideItemRightAndDisappear: (index) ->
-			@getItem(index).addClass('right')
+			@getItem(index).addClass("#{item}-right")
 			new Promise((resolve)=>
 				setTimeout =>
-					@getItem(index).removeClass('active')
-					@getItem(index).removeClass('right')
+					@getItem(index).removeClass("#{item}-active")
+					@getItem(index).removeClass("#{item}-right")
 					resolve
 				, duration
 			)
 		slideItemFromRightToCenter: (index) ->
-			@getItem(index).addClass('right active')
-			@getItemTitleContainer(index).addClass('left')
-			@getItemTitle(index).addClass('bottom')
+			@getItem(index).addClass("#{item}-right #{item}-active")
+			@getItemInformationContainer(index).addClass("#{itemInformationContainer}-left")
+			@getItemInformation(index).addClass("#{itemInformation}-bottom")
 			new Promise((resolve)=>
 				setTimeout =>
-					@getItem(index).addClass('center')
+					@getItem(index).addClass("#{item}-center")
 				, 0
 				setTimeout =>
-					@getItem(index).removeClass('right')
-					@getItem(index).removeClass('center')
-					@getItemTitleContainer(index).addClass('center')
+					@getItem(index).removeClass("#{item}-right")
+					@getItem(index).removeClass("#{item}-center")
+					@getItemInformationContainer(index).addClass("#{itemInformationContainer}-center")
 				, duration
 				setTimeout =>
-					@getItemTitleContainer(index).removeClass('left')
-					@getItemTitleContainer(index).removeClass('center')
-					@getItemTitle(index).addClass('center')
+					@getItemInformationContainer(index).removeClass("#{itemInformationContainer}-left")
+					@getItemInformationContainer(index).removeClass("#{itemInformationContainer}-center")
+					@getItemInformation(index).addClass("#{itemInformation}-center")
 				, duration*2
 				setTimeout =>
-					@getItemTitle(index).removeClass('bottom')
-					@getItemTitle(index).removeClass('center')
+					@getItemInformation(index).removeClass("$itemInformation-bottom")
+					@getItemInformation(index).removeClass("$itemInformation-center")
 					resolve
 				, duration*3
 			)
 		slideItemFromLeftToCenter: (index) ->
-			@getItem(index).addClass('left active')
-			@getItemTitleContainer(index).addClass('left')
-			@getItemTitle(index).addClass('bottom')
+			@getItem(index).addClass("#{item}-left #{item}-active")
+			@getItemInformationContainer(index).addClass("#{itemInformationContainer}-left")
+			@getItemInformation(index).addClass("#{itemInformation}-bottom")
 			new Promise((resolve)=>
 				setTimeout =>
-					@getItem(index).addClass('center')
+					@getItem(index).addClass("#{item}-center")
 				, 0
 				setTimeout =>
-					@getItem(index).removeClass('left')
-					@getItem(index).removeClass('center')
-					@getItemTitleContainer(index).addClass('center')
+					@getItem(index).removeClass("#{item}-left")
+					@getItem(index).removeClass("#{item}-center")
+					@getItemInformationContainer(index).addClass("#{itemInformationContainer}-center")
 				, duration
 				setTimeout =>
-					@getItemTitleContainer(index).removeClass('left')
-					@getItemTitleContainer(index).removeClass('center')
-					@getItemTitle(index).addClass('center')
+					@getItemInformationContainer(index).removeClass("#{itemInformationContainer}-left")
+					@getItemInformationContainer(index).removeClass("#{itemInformationContainer}-center")
+					@getItemInformation(index).addClass("#{itemInformation}-center")
 				, duration*2
 				setTimeout =>
-					@getItemTitle(index).removeClass('bottom')
-					@getItemTitle(index).removeClass('center')
+					@getItemInformation(index).removeClass("#{itemInformation}-bottom")
+					@getItemInformation(index).removeClass("#{itemInformation}-center")
 					resolve
 				, duration*3
 			)
 
 		setActiveItem: (index) ->
-			@getItemIndicator(@curActiveIndex).removeClass('active')
-			@getItemIndicator(index).addClass('active')
+			@getItemIndicator(@curActiveIndex).removeClass("#{itemIndicator}-active")
+			@getItemIndicator(index).addClass("#{itemIndicator}-active")
 			if @curActiveIndex==index
 				return
 			else if @curActiveIndex < index
@@ -224,7 +228,7 @@ $ ->
 			dataType: "JSON"
 			success: (response) ->
 				$(e.currentTarget).prop('disabled', true)
-				$(e.currentTarget).addClass('success')
+				$(e.currentTarget).addClass('button-success')
 				$(e.currentTarget).text('Success')
 			error: (response) ->
 				$(e.currentTarget).addClass('error')
@@ -240,7 +244,7 @@ $ ->
 			dataType: "JSON"
 			success: (response) ->
 				$(e.currentTarget).prop('disabled', true)
-				$(e.currentTarget).addClass('success')
+				$(e.currentTarget).addClass('button-success')
 				$(e.currentTarget).text('Success')
 			error: (response) ->
 				$(e.currentTarget).addClass('error')

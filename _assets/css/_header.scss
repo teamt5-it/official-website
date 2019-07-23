@@ -103,7 +103,7 @@ $navbar-submenu-mobile-background-color: $background-color;
     }
   }
 
-  &.active {
+  @at-root #{&}-active {
     span {
       &:nth-child(1) {
         transform: translateY(6px) rotate(45deg);
@@ -132,7 +132,7 @@ $navbar-submenu-mobile-background-color: $background-color;
     max-height: none;
   }
 
-  &.active {
+  @at-root #{&}-active {
     max-height: 100vh;
   }
 }
@@ -176,7 +176,7 @@ $navbar-submenu-mobile-background-color: $background-color;
       color: $primary-color;
     }
 
-    &.active {
+    @at-root #{&}-active {
       box-shadow: $navbar-item-active-box-shadow;
     }
   }
@@ -212,7 +212,7 @@ $navbar-submenu-mobile-background-color: $background-color;
   transform: rotate(-135deg);
   width: $navbar-item-arrow-container-height / 3;
 
-  &.active {
+  @at-root #{&}-active {
     position: absolute;
     top: 50%;
     transform: rotate(45deg);
@@ -242,7 +242,7 @@ $navbar-submenu-mobile-background-color: $background-color;
     grid-gap: 40px;
   }
 
-  &.active {
+  @at-root #{&}-active {
     max-height: 100vh;
 
     @include responsive(800px) {
@@ -280,7 +280,7 @@ $navbar-submenu-mobile-background-color: $background-color;
   transition: max-height 0.5s ease-in-out;
   width: 100%;
 
-  &.active {
+  @at-root #{&}-active {
     @include responsive(800px) {
       max-height: $navbar-submenu-desktop-height;
     }
