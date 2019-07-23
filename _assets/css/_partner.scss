@@ -21,16 +21,16 @@
 
   .partner {
     align-items: center;
+    border-bottom: 1px solid $light-background-color;
     display: grid;
     justify-content: start;
-
-    @include responsive(640px) {
-      grid-gap: 20px;
-    }
+    padding-bottom: 10px;
 
     @include responsive(800px) {
+      border-bottom: transparent;
       grid-auto-flow: column;
       grid-gap: 30px;
+      padding-bottom: 0;
     }
   }
 
