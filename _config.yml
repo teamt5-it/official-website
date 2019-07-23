@@ -47,7 +47,6 @@ plugins:
   - jekyll-coffeescript
   - jekyll-assets
   - normalize-scss
-  - font-awesome-sass
   - jekyll-paginate-v2
   - jekyll-admin
   - jekyll-autoprefixer

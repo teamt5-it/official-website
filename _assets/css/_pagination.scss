@@ -4,16 +4,55 @@
   align-items: center;
   display: grid;
   font-size: 16px;
-  grid-auto-columns: 20px;
   grid-auto-flow: column;
   grid-gap: 10px;
   justify-items: center;
   margin: 20px;
 }
 
-.page-link {
-  &.is-current {
+.pagination-item {
+  @include flex-center-align;
+  height: 30px;
+  width: 30px;
+}
+
+.pagination-link {
+  @at-root #{&}-active {
     color: $primary-color;
     text-decoration: underline;
   }
+}
+
+.pagination-next-page {
+  background-color: $primary-color;
+  position: relative;
+}
+
+.pagination-next-page-arrow {
+  border: solid $white;
+  border-radius: $arrow-width;
+  border-width: $arrow-width $arrow-width 0 0;
+  height: 10px * $square-root-of-two;
+  position: absolute;
+  right: 30px / 2 - 10px / 2;
+  top: calc(50% - 10px + #{$arrow-width} / #{$square-root-of-two});
+  transform: rotate(45deg);
+  width: 10px * $square-root-of-two;
+}
+
+.pagination-previous-page {
+  background-color: $primary-color;
+  position: relative;
+}
+
+.pagination-previous-page-arrow {
+  border: solid $white;
+  border-radius: $arrow-width;
+  border-width: $arrow-width $arrow-width 0 0;
+  height: 10px * $square-root-of-two;
+  left: 30px / 2 - 10px / 2;
+  position: absolute;
+  top: calc(50% - 10px + #{$arrow-width} / #{$square-root-of-two});
+  transform: rotate(-135deg);
+  width: 10px * $square-root-of-two;
 }

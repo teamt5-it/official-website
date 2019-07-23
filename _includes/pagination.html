@@ -1,11 +1,11 @@
 {% if paginator.total_pages > 1 %}
 <div class="pagination" aria-label="Search navigation example">
-  {% include pagination/prev_page.html %}
+  {% include pagination/previous-page.html %}
   {% if paginator.page_trail %}
   {% for trail in paginator.page_trail %}
   {% include pagination/page.html trail=trail %}
   {% endfor %}
   {% endif %}
-  {% include pagination/next_page.html %}
+  {% include pagination/next-page.html %}
 </div>
 {% endif %}
