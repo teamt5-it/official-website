@@ -1,21 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="{{ page.locale | default: 'en' }}">
 {% include head.html %}
 
 <body>
   <div class="page-not-found-container">
-    <main class="page-not-found">
-        <div class="page-not-found-logo">
-          {% asset 404.svg %}
-        </div>
-        <div class="page-not-found-description">
-            {% t instruction %}
-        </div>
-        <a class="page-not-found-take-me-home-button button" href="/">
-            {% t take-me-home %}
-        </a>
-    </main>
+    <div class="page-not-found">
+      <div class="page-not-found__logo">
+        {% asset 404.svg %}
+      </div>
+      <div class="page-not-found__instruction">
+        {% t instruction %}
+      </div>
+      <a class="page-not-found__take-me-home-button button" href="/">
+        {% t take-me-home %}
+      </a>
+    </div>
   </div>
 </body>
 

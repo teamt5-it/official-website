@@ -1,7 +1,7 @@
 @import "base";
 $scroll-bottom-margin: 100px;
 
-main.index {
+.index-layout {
   grid-gap: 20px;
 
   @include responsive(1024px) {
@@ -25,11 +25,11 @@ main.index {
     }
   }
 
-  .banner-title {
+  .banner__title {
     color: $primary-color;
   }
 
-  .banner-content {
+  .banner__content {
     text-align: justify;
     width: 280px;
 
@@ -55,7 +55,7 @@ main.index {
     }
   }
 
-  .scroll-bottom-square {
+  .scroll-bottom__square {
     align-items: center;
     background: $primary-color;
 
@@ -67,14 +67,14 @@ main.index {
     width: $square-side-length;
   }
 
-  .scroll-bottom-content {
+  .scroll-bottom__content {
     align-items: center;
     display: flex;
     justify-content: center;
     position: relative;
   }
 
-  .scroll-bottom-arrow {
+  .scroll-bottom__arrow {
     border: solid $white;
     border-width: 0 3px 3px 0;
     height: $square-side-length / 3;
@@ -84,16 +84,14 @@ main.index {
     width: $square-side-length / 3;
   }
 
-  .scroll-bottom-text {
+  .scroll-bottom__text {
     color: $white;
     font-size: 12px;
     position: absolute;
     top: 0;
   }
 
-
-
-  .diamonds {
+  .scroll-bottom__diamonds {
     align-content: center;
     display: grid;
 
@@ -103,16 +101,14 @@ main.index {
     position: absolute;
     top: calc(100% + 20px);
 
-    .diamond {
+    .scroll-bottom__diamond {
       background: $primary-color;
       height: $diamond-side-length;
       width: $diamond-side-length;
     }
   }
 
-
-
-  .products-and-news {
+  .products-and-latest-news {
     display: grid;
     grid-gap: 10px;
     margin-left: 10px;
@@ -146,15 +142,15 @@ main.index {
     }
   }
 
-  .products-title {
+  .products__title {
     justify-self: start;
   }
 
-  .products-subtitle {
+  .products__subtitle {
     color: $primary-color;
   }
 
-  .products-content {
+  .products__content {
     display: grid;
     grid-auto-flow: row;
     grid-gap: 10px;
@@ -184,7 +180,7 @@ main.index {
     }
   }
 
-  .product-title {
+  .product__title {
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -198,7 +194,7 @@ main.index {
     }
   }
 
-  .product-logo {
+  .product__logo {
     margin-bottom: 20px;
     width: 35%;
 
@@ -207,11 +203,11 @@ main.index {
     }
   }
 
-  .product-name {
+  .product__name {
     color: $primary-color;
   }
 
-  .product-subtitle {
+  .product__subtitle {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -226,7 +222,7 @@ main.index {
     }
   }
 
-  .product-learn-more {
+  .product__learn-more {
     font-size: 20px;
     height: 40px;
     line-height: 40px;
@@ -247,12 +243,12 @@ main.index {
     }
   }
 
-  .latest-news-title {
+  .latest-news__title {
     justify-self: start;
   }
 
 
-  .latest-news-more-button {
+  .latest-news__more-button {
     border-radius: 0;
     display: flex;
     font-size: 12px;

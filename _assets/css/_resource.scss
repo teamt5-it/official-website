@@ -1,7 +1,7 @@
 @import "base";
 
-main.resource {
-  .posts-and-browse-by-type {
+.resource-layout {
+  .resource-posts-and-browse-by-type {
     @include page-margin-horizontal;
     align-items: start;
     display: grid;
@@ -24,7 +24,7 @@ main.resource {
     }
   }
 
-  .posts-and-pagination {
+  .resource-posts {
     display: grid;
     grid-gap: 20px;
   }
@@ -58,7 +58,7 @@ main.resource {
     }
   }
 
-  .post-logo {
+  .post__logo {
     width: 60px;
 
     @include responsive(800px) {
@@ -70,7 +70,7 @@ main.resource {
     }
   }
 
-  .post-meta {
+  .post__meta {
     display: grid;
     grid-auto-flow: row;
     grid-gap: 10px;

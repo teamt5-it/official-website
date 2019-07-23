@@ -2,11 +2,12 @@ scss_files: '_assets/css/**/*.scss'
 linters:
   NestingDepth:
     enabled: false
-  QualifyingElement:
-    enabled: false
   StringQuotes:
     enabled: false
   LeadingZero:
     enabled: false
   NameFormat:
     enabled: false
+  SelectorFormat:
+    enabled: true
+    convention: hyphenated_BEM

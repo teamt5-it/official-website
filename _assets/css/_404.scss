@@ -9,7 +9,7 @@ body {
     justify-content: center;
   }
 
-  main.page-not-found {
+  .page-not-found {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 200px;
@@ -21,7 +21,7 @@ body {
     }
   }
 
-  .page-not-found-logo {
+  .page-not-found__logo {
     width: 200px;
 
     @include responsive(800px) {
@@ -33,7 +33,7 @@ body {
     }
   }
 
-  .page-not-found-take-me-home-button {
+  .page-not-found__take-me-home-button {
     height: 40px;
     width: 200px;
 

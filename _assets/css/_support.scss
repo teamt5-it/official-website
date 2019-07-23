@@ -1,6 +1,6 @@
 @import "base";
 
-main.support {
+.support-layout {
   .global-support {
     @include page-margin-horizontal;
     display: grid;
@@ -12,11 +12,11 @@ main.support {
     }
   }
 
-  .global-support-title {
+  .global-support__title {
     justify-self: flex-start;
   }
 
-  .global-support-banner {
+  .global-support__image {
     img {
       width: 100%;
     }

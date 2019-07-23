@@ -1,6 +1,6 @@
 @import "base";
 
-main.position {
+.position-layout {
   @include post-page-padding-horizontal;
   grid-gap: 20px;
 

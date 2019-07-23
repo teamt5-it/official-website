@@ -1,6 +1,6 @@
 @import "base";
 
-main.newsroom {
+.newsroom-layout {
   .latest-news-and-media-inquiries-and-browse-by-type {
     @include page-margin-horizontal;
     display: grid;
@@ -20,11 +20,11 @@ main.newsroom {
     }
   }
 
-  .latest-news-and-media-inquiries-and-browse-by-type-title {
+  .latest-news-and-media-inquiries-and-browse-by-type__title {
     justify-self: start;
   }
 
-  .latest-news-and-media-inquiries-and-browse-by-type-content {
+  .latest-news-and-media-inquiries-and-browse-by-type__content {
     align-items: start;
     display: grid;
     grid-gap: 40px;
@@ -35,7 +35,7 @@ main.newsroom {
     }
   }
 
-  .latest-news-and-pagination {
+  .latest-news {
     display: grid;
     grid-gap: 20px;
 

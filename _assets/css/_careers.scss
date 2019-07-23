@@ -1,8 +1,9 @@
 @import "base";
 
-main.careers {
+.careers-layout {
   .banner-with-text {
     // TODO
+    // waiting text from editor
     display: none;
   }
 
@@ -16,7 +17,7 @@ main.careers {
     }
   }
 
-  .open-positions-title {
+  .open-positions__title {
     justify-self: start;
   }
 
@@ -42,11 +43,11 @@ main.careers {
     }
   }
 
-  .open-position-title {
+  .open-position__title {
     color: $primary-color;
   }
 
-  .open-position-tags-and-location {
+  .open-position__tags-and-location {
     align-items: center;
     display: grid;
     grid-auto-flow: column;
@@ -58,7 +59,7 @@ main.careers {
     }
   }
 
-  .open-position-location {
+  .open-position__location {
     color: $normal-color;
     font-weight: bold;
     margin-right: 20px;

@@ -1,9 +1,9 @@
 @import "base";
 
-main.post {
+.post-layout {
   grid-gap: 20px;
 
-  .post-meta {
+  .post__meta {
     @include post-page-padding-horizontal;
   }
 

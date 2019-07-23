@@ -1,6 +1,6 @@
 @import "base";
 
-main.resource-browse-by-type {
+.resource-browse-by-type-layout {
   .posts-and-browse-by-type {
     @include page-margin-horizontal;
     align-items: start;
@@ -23,7 +23,7 @@ main.resource-browse-by-type {
     }
   }
 
-  .posts-and-pagination {
+  .posts {
     .pagination {
       @include responsive(640px) {
         justify-self: end;

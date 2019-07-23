@@ -3,28 +3,28 @@ layout: page
 ---
 
 <div class="banner-with-text">
-    <div class="banner-title title title-xl title-underline">
+    <div class="banner-with-text__title title title-xl title-underline">
         {% t banner.title %}
     </div>
-    <div class="banner-image">
+    <div class="banner-with-text__image">
         {% asset career-banner.jpg %}
     </div>
-    <div class="banner-content">
+    <div class="banner-with-text__content">
         {% capture string_with_newlines %}{% t banner.content %}{% endcapture %}
         {{ string_with_newlines | newline_to_br }}
     </div>
 </div>
 <div class="open-positions-container">
-    <div class="open-positions-title title title-xl title-underline">
+    <div class="open-positions__title title title-xl title-underline">
         {% t positions.title %}
     </div>
     <div class="open-positions">
         {% for position in site.positions %}
         <a class="open-position" href="{{position.url | relative_url }}">
-            <div class="open-position-title">
+            <div class="open-position__title">
                 {{position.title}}
             </div>
-            <div class="open-position-tags-and-location">
+            <div class="open-position__tags-and-location">
                 <div class="tags">
                     {% for tag in position.tags %}
                     <span class="tag">
@@ -32,7 +32,7 @@ layout: page
                     </span>
                     {% endfor %}
                 </div>
-                <div class="open-position-location">
+                <div class="open-position__location">
                     {{position.location}}
                 </div>
             </div>

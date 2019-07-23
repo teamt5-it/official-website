@@ -425,7 +425,7 @@ a {
   }
 }
 
-.post-meta {
+.post__meta {
   align-items: center;
   display: grid;
   grid-auto-flow: column;
@@ -441,12 +441,12 @@ a {
     grid-gap: 20px;
   }
 
-  .banner-title {
+  .banner-with-text__title {
     @include page-margin-horizontal;
     justify-self: start;
   }
 
-  .banner-image {
+  .banner-with-text__image {
     overflow: hidden;
     position: relative;
 
@@ -468,7 +468,7 @@ a {
     }
   }
 
-  .banner-content {
+  .banner-with-text__content {
     @include page-margin-horizontal;
     background-color: $background-color;
     justify-self: center;

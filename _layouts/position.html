@@ -4,7 +4,7 @@ layout: base
 
 {% include post-page-title.html %}
 <main class="{{ page.layout }}">
-    <div class="post-meta">
+    <div class="post__meta">
         <div class="tags">
             {% for tag in page.tags %}
             <span class="tag">
@@ -12,7 +12,7 @@ layout: base
             </span>
             {% endfor %}
         </div>
-        <div class="post-location location">
+        <div class="post__location location">
             {{ page.location }}
         </div>
     </div>

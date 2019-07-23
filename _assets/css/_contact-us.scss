@@ -1,6 +1,6 @@
 @import "base";
 
-main.contact-us {
+.contact-us-layout {
   .branches {
     display: grid;
     grid-gap: 30px;
@@ -15,16 +15,16 @@ main.contact-us {
     grid-gap: 10px;
   }
 
-  .branch-title {
+  .branch__title {
     @include page-margin-horizontal;
     justify-self: start;
   }
 
-  .branch-contact-information {
+  .branch__contact-information {
     @include page-margin-horizontal;
   }
 
-  .branch-google-map {
+  .branch__google-map {
     height: 280px;
 
     @include responsive(800px) {

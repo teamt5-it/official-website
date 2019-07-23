@@ -4,7 +4,7 @@ $sonar-hero-banner-desktop-height: 450px;
 $sonar-mac-width: 800px;
 $sonar-mac-height: 400px;
 
-main.threatvision {
+.threatvision-layout {
   .banner {
     background: $secondary-color asset_url("vision_bg_circle.svg") no-repeat center bottom;
     background-size: 100% auto;
@@ -29,7 +29,7 @@ main.threatvision {
     }
   }
 
-  .banner-slogan {
+  .banner__slogan {
     @include flex-center-align;
     align-self: flex-start;
     background-color: $normal-color;
@@ -53,7 +53,7 @@ main.threatvision {
     }
   }
 
-  .banner-logo {
+  .banner__logo {
     align-self: center;
     height: 45px;
     margin-bottom: 25px;
@@ -76,7 +76,7 @@ main.threatvision {
     }
   }
 
-  .banner-title {
+  .banner__title {
     align-self: center;
     color: $white;
     font-size: 16px;
@@ -116,7 +116,7 @@ main.threatvision {
     }
   }
 
-  .strengths-title {
+  .strengths__title {
     line-height: 1.5;
     text-align: center;
   }
@@ -157,7 +157,7 @@ main.threatvision {
     }
   }
 
-  .strength-logo {
+  .strength__logo {
     height: 60px;
     width: 60px;
 
@@ -177,7 +177,7 @@ main.threatvision {
     }
   }
 
-  .strength-title {
+  .strength__title {
     font-size: 12px;
 
     @include responsive(640px) {
@@ -216,13 +216,13 @@ main.threatvision {
     }
   }
 
-  .intelligence-report-screenshot {
+  .intelligence-report__screenshot {
     img {
       width: 100%;
     }
   }
 
-  .intelligence-report-title-and-content {
+  .intelligence-report__title-and-content {
     align-content: center;
     display: grid;
     grid-auto-rows: auto;
@@ -237,7 +237,7 @@ main.threatvision {
     }
   }
 
-  .intelligence-report-content {
+  .intelligence-report__content {
     li::before {
       color: $secondary-color;
     }
@@ -268,11 +268,11 @@ main.threatvision {
     }
   }
 
-  .malware-analysis-title {
+  .malware-analysis__title {
     text-align: center;
   }
 
-  .malware-analysis-content-and-mac {
+  .malware-analysis__content-and-mac {
     display: grid;
 
     @include responsive(640px) {
@@ -281,7 +281,7 @@ main.threatvision {
     }
   }
 
-  .malware-analysis-content {
+  .malware-analysis__content {
     order: 1;
 
     @include responsive(640px) {
@@ -293,7 +293,7 @@ main.threatvision {
     }
   }
 
-  .malware-analysis-mac {
+  .malware-analysis__mac {
     img {
       width: 100%;
     }

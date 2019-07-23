@@ -4,7 +4,7 @@ layout: base
 
 {% include post-page-title.html %}
 <main class="{{ page.layout }}">
-    <div class="post-meta">
+    <div class="post__meta">
         <div class="tags">
             {% for tag in page.tags %}
             <span class="tag">
@@ -12,7 +12,7 @@ layout: base
             </span>
             {% endfor %}
         </div>
-        <div class="post-date date">
+        <div class="post__date date">
             {{ page.date | date: "%Y-%m-%d" }}
         </div>
     </div>
@@ -22,7 +22,7 @@ layout: base
     <div class="post-content content">
         {{ content }}
     </div>
-    
+
     <a href="javascript:history.back()" class="back-button button">
         {% t back %}
     </a>

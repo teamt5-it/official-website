@@ -1,7 +1,7 @@
 @import "base";
 
-main.partner {
-  .partners {
+.partner-layout {
+  .partners-by-locations {
     @include page-margin-horizontal;
     display: grid;
     grid-gap: 30px;
@@ -11,15 +11,15 @@ main.partner {
     }
   }
 
-  .partner {
+  .partners-by-location {
     display: grid;
   }
 
-  .partner-title {
+  .partners-by-location__location {
     justify-self: start;
   }
 
-  .partner-content {
+  .partner {
     align-items: center;
     display: grid;
     justify-content: start;
@@ -34,7 +34,7 @@ main.partner {
     }
   }
 
-  .partner-logo {
+  .partner__logo {
     @include flex-center-align;
     height: 80px;
     overflow: hidden;
@@ -55,11 +55,11 @@ main.partner {
     }
   }
 
-  .partner-name-and-contact-information {
+  .partner__name-and-contact-information {
     align-content: center;
     display: grid;
 
-    .partner-contact-information {
+    .partner__contact-information {
       display: grid;
       grid-gap: 10px;
 

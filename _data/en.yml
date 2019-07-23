@@ -139,18 +139,20 @@ newsroom:
   news:
     title: Lastest News
 partner:
-  asean:
+  asean: ASEAN
+  japan: Japan
+  netpoleon:
     A: 627A Aljunied Rd, Singapore 389842
     T: +65 6858 5645
     W: https://www.netpoleons.com
     name: netpoleon
-    title: ASEAN
-  japan:
-    A: ???
-    T: ???
+  macnica-networks:
     W: https://www.macnica.net/english/
     name: Macnica Networks
-    title: Japan
+  secure-brain:
+    name: Secure Brain
+  terilogy:
+    name: Terilogy
 position:
   back: Back
 position-form:
@@ -191,7 +193,7 @@ threatsonar:
   banner:
     slogan: UNCOVER HIDDEN THREATS
     title: Elegant Threat Hunting Technology
-  complementary-to-antivirus:
+  complementary__to-antivirus:
     antivirus:
       list:
         <li>Preventing any kind of malicious program from execution.</li>
