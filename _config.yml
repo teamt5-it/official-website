@@ -9,11 +9,13 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
+      type: "pages"
     values:
       locale: en
   -
     scope:
       path: "zh" # an empty string here means all files in the project
+      type: "pages"
     values:
       locale: zh
   -

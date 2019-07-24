@@ -1,6 +1,6 @@
 {% unless page.type %}
 {% assign sticky = "sticky" | prepend: '_' | prepend: page.category %}
-{% assign post = site.posts | where: category, page.category | where: sticky, true | first %}
+{% assign post = site.posts | where: "locale", page.locale | where_exp: "post", "post.categories contains page.category" | where: sticky, true | first %}
 <a class="sticky-post" href="{{ post.url }}">
     <div class="sticky-post-banner">
         <img src="{{post.banner}}">
