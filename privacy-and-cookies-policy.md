@@ -1,6 +1,5 @@
 ---
 layout: privacy-and-cookies-policy
-title: Privacy & Cookies Policy
 permalink: /privacy-and-cookies-policy/
 ---
 

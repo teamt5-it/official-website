@@ -1,274 +1,231 @@
-404:
-  instruction: Sorry, this page doesn't exist.Let's get you back on track.
-  take-me-home: Take Me Home
+'404':
+    instruction: 'Sorry, this page doesn''t exist.Let''s get you back on track.'
+    take-me-home: 'Take Me Home'
 about-us:
-  banner:
-    content: |-
-        We are the world-leading malware research and Solution provider to cyber espionage in Asia and Pacific.
-
-        We monitor, analyze and track cyber threats and helping customers to gain advantaged position facing cyber threats. And we provide Threat intrellgence and research report, cyber espionage solutions, threat analysis service and incident response / investigation services.
-
-        Our members frequently publish the latest and top research at the world's top security conferences, including Black Hat, Kaspersky Security Analyst Summit, Syscan, Code Blue/AVTokyo, Troopers, Codegate, VXCON/DragonCon, Power of Community (Korea), Hack in the Box, and FIRST.
-    title: TeamT5 World Class Team
-  teamt5-leadership:
-    content:
-      introduction: |-
-          TT is founder and CEO of TeamT5. He has more than 15 years’ experience in cyber security industry. With solid technical background and understanding of cyber threats, he has been leading the team invented and developed many unique threat hunting technologies and solutions. TeamT5 is really proud of their researches, they frequently publish papers in many global security/hacker conferences.
-
-          With great passion in cyber security, TT has volunteered himself as a core member in HITCON community more than 15 years. During his leading in HITCON, he founded association of Hackers in Taiwan, collaborating with Government, community, and security industry.
-      name: Sung-ting Tsai (TT)
-    title: TeamT5 Leadership
+    banner:
+        content: 'We are the world-leading malware research and Solution provider to cyber espionage in Asia and Pacific.\n\nWe monitor, analyze and track cyber threats and helping customers to gain advantaged position facing cyber threats. And we provide Threat intrellgence and research report, cyber espionage solutions, threat analysis service and incident response / investigation services.\n\nOur members frequently publish the latest and top research at the world''s top security conferences, including Black Hat, Kaspersky Security Analyst Summit, Syscan, Code Blue/AVTokyo, Troopers, Codegate, VXCON/DragonCon, Power of Community (Korea), Hack in the Box, and FIRST.'
+        title: 'TeamT5 World Class Team'
+    page-title: 'About us'
+    teamt5-leadership:
+        content:
+            introduction: 'TT is founder and CEO of TeamT5. He has more than 15 years’ experience in cyber security industry. With solid technical background and understanding of cyber threats, he has been leading the team invented and developed many unique threat hunting technologies and solutions. TeamT5 is really proud of their researches, they frequently publish papers in many global security/hacker conferences.\n\nWith great passion in cyber security, TT has volunteered himself as a core member in HITCON community more than 15 years. During his leading in HITCON, he founded association of Hackers in Taiwan, collaborating with Government, community, and security industry.'
+            name: 'Sung-ting Tsai (TT)'
+        title: 'TeamT5 Leadership'
 browse-by-type:
-  title: Browse by type
+    title: 'Browse by type'
 careers:
-  banner:
-    content: |-
-        TeamT5 杜浦數位安全是專注於亞太地區網路威脅分析研究的公司，旨在提供武藝高深的駭客更多溫暖和希望。
-
-
-        T5 的意思是 TAIWAN，創辦人 TT 和 Nanika 在美國工作多年，參加 Black Hat 等國際資安研討會，發表超過 50 篇研究，我們相信台灣也可以有世界首屈一指的資安研究團隊，於是 2013 離開趨勢創立
-        TeamT5 杜浦數位安全 一個研究導向的公司。
-
-
-        TeamT5 杜浦數位安全有精通資安各種領域的研究員，從事世界頂尖的網路攻擊研究、公司文化崇尚自由、福利待遇具競爭力。
-
-
-        如你對資安滿懷熱忱並相信自己充滿潛力，但礙於環境或經驗的限制而未能滿足，這裡我們提供環境帶你一起學習成長。
-
-
-        我們的 mission 是守護世界和平，如果現實世界做不到至少 cyber 還有機會。
-
-        我們的 vision 是給優秀年輕人舞台，如果台灣沉了至少 cyber 還有位元留存。
-    title: TeamT5 Careers
-  positions:
-    title: Open Positions
+    banner:
+        content: 'TeamT5 杜浦數位安全是專注於亞太地區網路威脅分析研究的公司，旨在提供武藝高深的駭客更多溫暖和希望。\n\n\nT5 的意思是 TAIWAN，創辦人 TT 和 Nanika 在美國工作多年，參加 Black Hat 等國際資安研討會，發表超過 50 篇研究，我們相信台灣也可以有世界首屈一指的資安研究團隊，於是 2013 離開趨勢創立\nTeamT5 杜浦數位安全 一個研究導向的公司。\n\n\nTeamT5 杜浦數位安全有精通資安各種領域的研究員，從事世界頂尖的網路攻擊研究、公司文化崇尚自由、福利待遇具競爭力。\n\n\n如你對資安滿懷熱忱並相信自己充滿潛力，但礙於環境或經驗的限制而未能滿足，這裡我們提供環境帶你一起學習成長。\n\n\n我們的 mission 是守護世界和平，如果現實世界做不到至少 cyber 還有機會。\n\n我們的 vision 是給優秀年輕人舞台，如果台灣沉了至少 cyber 還有位元留存。'
+        title: 'TeamT5 Careers'
+    page-title: Careers
+    positions:
+        title: 'Open Positions'
 contact-us:
-  asean:
-    M: asean@teamt5.tw
-    title: ASEAN、ANZ
-  japan:
-    M: jp@teamt5.tw
-    title: Japan
-  taiwan:
-    A: 11F., No. 44, Ln. 11, Guangfu N.Rd., Songshan Dist., 105 Taipei City, Taiwan
-    M: sales@teamt5.tw
-    T: +886.2.7706.1299
-    title: Taiwan
+    asean:
+        M: asean@teamt5.tw
+        title: ASEAN、ANZ
+    japan:
+        M: jp@teamt5.tw
+        title: Japan
+    page-title: 'Contact Us'
+    taiwan:
+        A: '11F., No. 44, Ln. 11, Guangfu N.Rd., Songshan Dist., 105 Taipei City, Taiwan'
+        M: sales@teamt5.tw
+        T: +886.2.7706.1299
+        title: Taiwan
 contact-us-form:
-  anything-you-want-to-know-about-product: Anything You Want To Know About Product
-  company-name: Company Name
-  country: Country
-  email: Email
-  first-name: First name
-  job-title: Job title
-  last-name: Last name
-  phone-number: Phone Number
-  submit: Submit
-  title: Contact Us
+    anything-you-want-to-know-about-product: 'Anything You Want To Know About Product'
+    company-name: 'Company Name'
+    country: Country
+    email: Email
+    first-name: 'First name'
+    job-title: 'Job title'
+    last-name: 'Last name'
+    phone-number: 'Phone Number'
+    submit: Submit
+    title: 'Contact Us'
 footer:
-  company:
-    about-us: About us
-    careers: Careers
-    contact-us: Contact us
-    newsroom: Newsroom
-    title: Company
-  copyright: © 2019 Team T5, Inc. All Rights Reserved.
-  english: English
-  mandarin: 中文
-  partner: Partner
-  privacy_and_cookies_policy: Privacy & Cookies Policy
-  product: Product
-  resource: Resource
-  scroll_top: TOP
-  support: Support
-  terms_of_service: Terms of Service
-  threatsonar: ThreatSonar
-  threatvision: ThreatVision
+    company:
+        about-us: 'About us'
+        careers: Careers
+        contact-us: 'Contact us'
+        newsroom: Newsroom
+        title: Company
+    copyright: '© 2019 Team T5, Inc. All Rights Reserved.'
+    english: English
+    mandarin: 中文
+    partner: Partner
+    privacy-and-cookies-policy: 'Privacy & Cookies Policy'
+    product: Product
+    resource: Resource
+    scroll-top: TOP
+    support: Support
+    terms-of-service: 'Terms of Service'
+    threatsonar: ThreatSonar
+    threatvision: ThreatVision
 header:
-  company:
-    about-us: About us
-    careers: Careers
-    contact-us: Contact us
-    newsroom: Newsroom
-    title: Company
-  partner: Partner
-  product: Product
-  resource: Resource
-  support: Support
-  threatsonar: ThreatSonar
-  threatvision: ThreatVision
+    company:
+        about-us: 'About us'
+        careers: Careers
+        contact-us: 'Contact us'
+        newsroom: Newsroom
+        title: Company
+    partner: Partner
+    product: Product
+    resource: Resource
+    support: Support
+    threatsonar: ThreatSonar
+    threatvision: ThreatVision
 index:
-  banner:
-    content: TeamT5 is a group of hackers dedicated on cyber threat research. The team started with their outstanding research and has been delivering their cyber threat intelligence (CTI) for more than 5 years. Comparing with other CTI vendors, TeamT5 has the most and best understanding of cyber attackers in Asia Pacific region. With the leading intelligence and knowledge of cyber attackers, TeamT5 designed an unique technology and invented a methodology to help clients dealing with targeted attacks. The solution has been verified and helped many victims solve the problem.
-    title: Persistent Cyber Threat Hunters
-  learn-more: Learn More
-  news:
-    more: More
-    title: TeamT5 News
-  products:
-    sonar:
-      name: ThreatSonar
-      subtitle: Elegant Threat Hunting Technology
-      title: UNCOVER HIDDEN THREATS
-    subtitle: Next Level Threat Visibility and Intelligence
-    title: TeamT5 Product
-    vision:
-      name: ThreatVision
-      subtitle: World-leading Threat Intelligence
-      title: KNOW YOUR ENEMIES
-  scroll_down: SCROLL
+    banner:
+        content: 'TeamT5 is a group of hackers dedicated on cyber threat research. The team started with their outstanding research and has been delivering their cyber threat intelligence (CTI) for more than 5 years. Comparing with other CTI vendors, TeamT5 has the most and best understanding of cyber attackers in Asia Pacific region. With the leading intelligence and knowledge of cyber attackers, TeamT5 designed an unique technology and invented a methodology to help clients dealing with targeted attacks. The solution has been verified and helped many victims solve the problem.'
+        title: 'Persistent Cyber Threat Hunters'
+    learn-more: 'Learn More'
+    news:
+        more: More
+        title: 'TeamT5 News'
+    products:
+        sonar:
+            name: ThreatSonar
+            subtitle: 'Elegant Threat Hunting Technology'
+            title: 'UNCOVER HIDDEN THREATS'
+        subtitle: 'Next Level Threat Visibility and Intelligence'
+        title: 'TeamT5 Product'
+        vision:
+            name: ThreatVision
+            subtitle: 'World-leading Threat Intelligence'
+            title: 'KNOW YOUR ENEMIES'
+    scroll-down: SCROLL
 links:
-  company:
-    about-us: /about-us/
-    careers: /careers/
-    contact-us: /contact-us/
-    newsroom: /newsroom/
-  index: /
-  partner: /partner/
-  privacy-and-cookies-policy: /privacy-and-cookies-policy/
-  products:
-    threatsonar: /products/threatsonar/
-    threatvision: /products/threatvision/
-  resource: /resource/
-  support: /support/
-  terms-of-service: /terms-of-service/
+    company:
+        about-us: /about-us/
+        careers: /careers/
+        contact-us: /contact-us/
+        newsroom: /newsroom/
+    index: /
+    partner: /partner/
+    privacy-and-cookies-policy: /privacy-and-cookies-policy/
+    products:
+        threatsonar: /products/threatsonar/
+        threatvision: /products/threatvision/
+    resource: /resource/
+    support: /support/
+    terms-of-service: /terms-of-service/
 newsroom:
-  media-inquiries:
-    email: mk@teamt5.tw
-    title: Media Inquiries
-  news:
-    title: Lastest News
+    latest-news:
+        title: 'Latest News'
+    media-inquiries:
+        email: mk@teamt5.tw
+        title: 'Media Inquiries'
+    page-title: Newsroom
+newsroom-browse-by-type-case-study:
+    page-title: 'Resource / Case Study'
+newsroom-browse-by-type-event:
+    page-title: 'Newsroom / Event'
+newsroom-browse-by-type-press-release:
+    page-title: 'Newsroom / Press Release'
+newsroom-browse-by-type-technical:
+    page-title: 'Newsroom / Technical'
 partner:
-  asean: ASEAN
-  japan: Japan
-  netpoleon:
-    A: 627A Aljunied Rd, Singapore 389842
-    T: +65 6858 5645
-    W: https://www.netpoleons.com
-    name: netpoleon
-  macnica-networks:
-    W: https://www.macnica.net/english/
-    name: Macnica Networks
-  secure-brain:
-    name: Secure Brain
-  terilogy:
-    name: Terilogy
+    asean: ASEAN
+    japan: Japan
+    macnica-networks:
+        W: 'https://www.macnica.net/english/'
+        name: 'Macnica Networks'
+    netpoleon:
+        A: '627A Aljunied Rd, Singapore 389842'
+        T: '+65 6858 5645'
+        W: 'https://www.netpoleons.com'
+        name: netpoleon
+    page-title: Partner
+    secure-brain:
+        name: 'Secure Brain'
+    terilogy:
+        name: Terilogy
 position:
-  back: Back
+    back: Back
 position-form:
-  available-start-date: Available Start Date
-  chinese-name: Chinese Name
-  currently-employed-company: Currently Employed Company
-  education-resume-url: Education, Resume URL
-  email: Email
-  english-name: English Name
-  how-do-you-know-our-company: How Do You Know Our Company?
-  job-expectation: Job Expectation
-  phone-number: Phone Number
-  portfolio-url: Portfolio URL
-  position-sought: Position Sought
-  remark-or-anything-you-want-to-tell-us: Remark or Anything You Want To Tell Us
-  submit: Apply
-  title: I'm interested
-sticky-post:
-  read-more: Read More
-support:
-  content:
-    M: support@teamt5.tw
-    T: +886.2.7706.1299
-    timezone: 0900 - 1800 (UTC+8)
-  title: Global Support
-threatsonar:
-  assessment-reports:
-    a: Organizational incident timeline.
-    b: Memory, process, network connections, registry, eventlog, task scheduler, MBR, WMI, etc.
-    c: Expand and pivot to find out hidden infections with similar TTP (tactics techniques procedures)
-    d: Highlighting unique executables, memory attributes, abused system tools or rarely-seen digital certificates.
-    title: ThreatSonar Assessment Reports
-  auto-investigation:
-    content: Discovering related infection origins, lateral-movement traces and data exfiltration through graph visualization
-    title: |-
-        ThreatSonar
-        Auto-investigation
-  banner:
-    slogan: UNCOVER HIDDEN THREATS
-    title: Elegant Threat Hunting Technology
-  complementary-to-antivirus:
-    antivirus:
-      list:
-        <li>Preventing any kind of malicious program from execution.</li>
-        <li>Detecting common (non-APT) malware. Such as botnet, worm, banking trojan, or ransomware.</li>
-        <li>Relying on signature matching which is easy to bypass. Can only detect widely spread known malware.</li>
-        <li>Unable to triage grey-area risky programs such as abused legitimate VPN tools or new threats.</li>
-        <li>Residential agent with kernel-mode driver hook often slowing down system performance or causing compatibility issues.</li>
-        <li>Can block or quarantine infected files, but usually not able to clean-up hidden backdoor automatically.</li>
-        <li>Full disk scanning always takes up to several hours</li>
-    threatsonar:
-      list:
-        <li>Performing compromise assessment on APT (Advanced Persistent Threat) risks.</li>
-        <li>Detecting malicious backdoor, hacking tools, abnormal system configurations.</li>
-        <li>Mixed dynamic + static engine, built-in indicators + external threat intelligence.</li>
-        <li>Inspecting memory, file system for unknown threats like just your CSIRT team expert.</li>
-        <li>Non-residential agent, scan on-demand via task scheduler. Driver-less, minimum performance impact and compatibility issues.</li>
-        <li>Highlighting potential risky endpoints. Incident Response team can do threat-hunting or clean-up manually.</li>
-        <li>High efficiency, only scans suspicious locations and intrusion traces. About 20 minutes per endpoint depending on hardware.</li>
-    title: ThreatSonar is Complementary to Antivirus
-  more-strengths:
-    strengths:
-      auto-investigation:
-        list:
-          <li>Infection Timeline</li>
-          <li>Lateral movement analysis</li>
-        title: Auto Investigation
-      elegant:
-        list:
-          <li>Light-weight with high detection rate</li>
-          <li>Low cost, less efforts</li>
-          <li>Low risk, non-intrusive</li>
-        title: Elegant and Efficient
-      orchestration:
-        list:
-          <li>SIEM Integration</li>
-          <li>HTTP Restful API</li>
-        title: Orchestration
-      premise:
-        list:
-          <li>Risk control</li>
-          <li>Off-line analysis</li>
-        title: On Premise
-      threat_hunting:
-        list:
-          <li>Behavior Modeling</li>
-          <li>Threat Intelligence</li>
-          <li>Outlier</li>
-        title: Threat Hunting
-    title: An Elegant Threat Hunting Solution
-  strengths:
-    automate: Automate cyber threat intelligence adoption
-    flexible: Simple and flexible to be integrated with partner’s solutions
-    powerful: Powerful threat hunting platform with advanced threat visibility
-threatvision:
-  banner:
-    slogan: KNOW YOUR ENEMIES
-    title: A Portal for Cyberspace Peacemakers
-  intelligence-report:
-    list:
-      <li>Cyber threat newsflash</li>
-      <li>Comprehensive and in-depth analysis of cyber threat campaigns, groups and actors</li>
-      <li>Asia-pacific cyberspace event analysis</li>
-    title: Asia-Pacific Cyber Threat Intelligence Reports
-  malware-analysis:
-    list:
-      <li>Automated Analysis</li>
-      <li>Malware identification and linkage discovery</li>
-      <li>Malicious indicators collection</li>
-      <li>Adversary Identification</li>
-    title: Malware Analysis
-  strengths:
-    a: Discover and Identify Potential Threats
-    b: Know the Adversary
-    c: Increase Situational Awareness
-    d: Turn Passive to Proactive
-    title: A Cyber Threat Intelligence Platform
+    available-start-date: 'Available Start Date'
+    chinese-name: 'Chinese Name'
+    currently-employed-company: 'Currently Employed Company'
+    education-resume-url: 'Education, Resume URL'
+    email: Email
+    english-name: 'English Name'
+    how-do-you-know-our-company: 'How Do You Know Our Company?'
+    job-expectation: 'Job Expectation'
+    phone-number: 'Phone Number'
+    portfolio-url: 'Portfolio URL'
+    position-sought: 'Position Sought'
+    remark-or-anything-you-want-to-tell-us: 'Remark or Anything You Want To Tell Us'
+    submit: Apply
+    title: 'I''m interested'
 post:
-  back: Back
+    back: Back
+privacy-and-cookies-policy:
+    page-title: 'Privacy & Cookies Policy'
+resource:
+    page-title: Resource
+resource-browse-by-type-case-study:
+    page-title: 'Resource / Case Study'
+resource-browse-by-type-datasheet:
+    page-title: 'Resource / Datasheet'
+resource-browse-by-type-technical:
+    page-title: 'Resource / Technical'
+sticky-post:
+    read-more: 'Read More'
+support:
+    content:
+        M: support@teamt5.tw
+        T: +886.2.7706.1299
+        timezone: '0900 - 1800 (UTC+8)'
+    page-title: Support
+    title: 'Global Support'
+terms-of-service:
+    page-title: 'Terms of Service'
+threatsonar:
+    assessment-reports:
+        a: 'Organizational incident timeline.'
+        b: 'Memory, process, network connections, registry, eventlog, task scheduler, MBR, WMI, etc.'
+        c: 'Expand and pivot to find out hidden infections with similar TTP (tactics techniques procedures)'
+        d: 'Highlighting unique executables, memory attributes, abused system tools or rarely-seen digital certificates.'
+        title: 'ThreatSonar Assessment Reports'
+    auto-investigation:
+        content: 'Discovering related infection origins, lateral-movement traces and data exfiltration through graph visualization'
+        title: ThreatSonar\nAuto-investigation
+    banner:
+        slogan: 'UNCOVER HIDDEN THREATS'
+        title: 'Elegant Threat Hunting Technology'
+    complementary-to-antivirus:
+        antivirus:
+            list: '<li>Preventing any kind of malicious program from execution.</li> <li>Detecting common (non-APT) malware. Such as botnet, worm, banking trojan, or ransomware.</li> <li>Relying on signature matching which is easy to bypass. Can only detect widely spread known malware.</li> <li>Unable to triage grey-area risky programs such as abused legitimate VPN tools or new threats.</li> <li>Residential agent with kernel-mode driver hook often slowing down system performance or causing compatibility issues.</li> <li>Can block or quarantine infected files, but usually not able to clean-up hidden backdoor automatically.</li> <li>Full disk scanning always takes up to several hours</li>'
+        threatsonar:
+            list: '<li>Performing compromise assessment on APT (Advanced Persistent Threat) risks.</li> <li>Detecting malicious backdoor, hacking tools, abnormal system configurations.</li> <li>Mixed dynamic + static engine, built-in indicators + external threat intelligence.</li> <li>Inspecting memory, file system for unknown threats like just your CSIRT team expert.</li> <li>Non-residential agent, scan on-demand via task scheduler. Driver-less, minimum performance impact and compatibility issues.</li> <li>Highlighting potential risky endpoints. Incident Response team can do threat-hunting or clean-up manually.</li> <li>High efficiency, only scans suspicious locations and intrusion traces. About 20 minutes per endpoint depending on hardware.</li>'
+        title: 'ThreatSonar is Complementary to Antivirus'
+    more-strengths:
+        strengths:
+            auto-investigation: {list: '<li>Infection Timeline</li> <li>Lateral movement analysis</li>', title: 'Auto Investigation'}
+            elegant: {list: '<li>Light-weight with high detection rate</li> <li>Low cost, less efforts</li> <li>Low risk, non-intrusive</li>', title: 'Elegant and Efficient'}
+            orchestration: {list: '<li>SIEM Integration</li> <li>HTTP Restful API</li>', title: Orchestration}
+            premise: {list: '<li>Risk control</li> <li>Off-line analysis</li>', title: 'On Premise'}
+            threat_hunting: {list: '<li>Behavior Modeling</li> <li>Threat Intelligence</li> <li>Outlier</li>', title: 'Threat Hunting'}
+        title: 'An Elegant Threat Hunting Solution'
+    strengths:
+        automate: 'Automate cyber threat intelligence adoption'
+        flexible: 'Simple and flexible to be integrated with partner’s solutions'
+        powerful: 'Powerful threat hunting platform with advanced threat visibility'
+threatvision:
+    banner:
+        slogan: 'KNOW YOUR ENEMIES'
+        title: 'A Portal for Cyberspace Peacemakers'
+    intelligence-report:
+        list: '<li>Cyber threat newsflash</li> <li>Comprehensive and in-depth analysis of cyber threat campaigns, groups and actors</li> <li>Asia-pacific cyberspace event analysis</li>'
+        title: 'Asia-Pacific Cyber Threat Intelligence Reports'
+    malware-analysis:
+        list: '<li>Automated Analysis</li> <li>Malware identification and linkage discovery</li> <li>Malicious indicators collection</li> <li>Adversary Identification</li>'
+        title: 'Malware Analysis'
+    strengths:
+        a: 'Discover and Identify Potential Threats'
+        b: 'Know the Adversary'
+        c: 'Increase Situational Awareness'
+        d: 'Turn Passive to Proactive'
+        title: 'A Cyber Threat Intelligence Platform'
