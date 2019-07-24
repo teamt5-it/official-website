@@ -1,6 +1,6 @@
 ---
 layout: terms-of-service
-i18n_prefix: terms-of-service
+i18n-prefix: terms-of-service
 permalink: /terms-of-service/
 ---
 

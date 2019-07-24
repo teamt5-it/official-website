@@ -81,10 +81,10 @@ index:
         content: 'TeamT5 is a group of hackers dedicated on cyber threat research. The team started with their outstanding research and has been delivering their cyber threat intelligence (CTI) for more than 5 years. Comparing with other CTI vendors, TeamT5 has the most and best understanding of cyber attackers in Asia Pacific region. With the leading intelligence and knowledge of cyber attackers, TeamT5 designed an unique technology and invented a methodology to help clients dealing with targeted attacks. The solution has been verified and helped many victims solve the problem.'
         title: 'Persistent Cyber Threat Hunters'
     learn-more: 'Learn More'
-    news:
+    teamt5-news:
         more: More
         title: 'TeamT5 News'
-    products:
+    teamt5-products:
         sonar:
             name: ThreatSonar
             subtitle: 'Elegant Threat Hunting Technology'

@@ -27,14 +27,14 @@ defaults:
       path: "_positions"
       type: "positions"
     values:
-      i18n_prefix: "position"
+      i18n-prefix: "position"
   -
     scope:
       path: "_posts"
       type: "posts"
     values:
       layout: "post"
-      i18n_prefix: "post"
+      i18n-prefix: "post"
 
 # Collections
 

@@ -108,7 +108,7 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .products-and-latest-news {
+  .teamt5-products-and-teamt5-news {
     display: grid;
     grid-gap: 10px;
     margin-left: 10px;
@@ -133,7 +133,7 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .products {
+  .teamt5-products {
     display: grid;
     grid-gap: 10px;
 
@@ -142,15 +142,15 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .products-title {
+  .teamt5-products-title {
     justify-self: start;
   }
 
-  .products-subtitle {
+  .teamt5-products-subtitle {
     color: $primary-color;
   }
 
-  .products-content {
+  .teamt5-products-content {
     display: grid;
     grid-auto-flow: row;
     grid-gap: 10px;
@@ -161,7 +161,7 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .product {
+  .teamt5-product {
     align-items: center;
     background-color: $background-color;
     border-radius: 6px;
@@ -180,7 +180,7 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .product-title {
+  .teamt5-product-title {
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -194,7 +194,7 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .product-logo {
+  .teamt5-product-logo {
     margin-bottom: 20px;
     width: 35%;
 
@@ -203,11 +203,11 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .product-name {
+  .teamt5-product-name {
     color: $primary-color;
   }
 
-  .product-subtitle {
+  .teamt5-product-subtitle {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -222,7 +222,7 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .product-learn-more {
+  .teamt5-product-learn-more {
     font-size: 20px;
     height: 40px;
     line-height: 40px;
@@ -234,7 +234,7 @@ $scroll-bottom-margin: 100px;
   }
 
 
-  .latest-news {
+  .teamt5-news {
     display: grid;
     grid-gap: 10px;
 
@@ -243,12 +243,12 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .latest-news-title {
+  .teamt5-news-title {
     justify-self: start;
   }
 
 
-  .latest-news-more-button {
+  .teamt5-news-more-button {
     border-radius: 0;
     display: flex;
     font-size: 12px;

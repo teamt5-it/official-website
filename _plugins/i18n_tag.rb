@@ -9,8 +9,8 @@ module Jekyll
       site = context.registers[:site]
       page = context.registers[:page]
       path = @text.split('.')
-      if site.data[page['locale']][page['i18n_prefix']]&.dig(*path)
-        site.data[page['locale']][page['i18n_prefix']].dig(*path)
+      if site.data[page['locale']][page['i18n-prefix']]&.dig(*path)
+        site.data[page['locale']][page['i18n-prefix']].dig(*path)
       else
         site.data[page['locale']].dig(*path)
       end
