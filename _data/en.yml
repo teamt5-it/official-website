@@ -78,7 +78,7 @@ header:
     threatvision: ThreatVision
 index:
     banner:
-        content: 'TeamT5 is a group of hackers dedicated on cyber threat research. The team started with their outstanding research and has been delivering their cyber threat intelligence (CTI) for more than 5 years. Comparing with other CTI vendors, TeamT5 has the most and best understanding of cyber attackers in Asia Pacific region. With the leading intelligence and knowledge of cyber attackers, TeamT5 designed an unique technology and invented a methodology to help clients dealing with targeted attacks. The solution has been verified and helped many victims solve the problem.'
+        content: "TeamT5 is a cyber security company dedicated on cyber threat research and solutions. They are a group of experienced cyber threat hunters. They help people deal with cyber attacks with their unique threat intelligence, knowledge, and technology. They are collaborating with clients and partners in many countries, including US, Japan, Singapore, Thailand, Malaysia, and Taiwan.\n\nTeamT5 started with their outstanding research and has been delivering cyber threat intelligence (CTI) for more than 5 years. Comparing with other CTI vendors, TeamT5 has the most and best understanding of cyber attackers in Asia. With the leading intelligence and knowledge of cyber attackers, TeamT5 designed an unique technology and invented a methodology to help clients dealing with targeted attacks. The solution has been verified and helped many victims in Taiwan and Japan solve the problem."
         title: 'Persistent Cyber Threat Hunters'
     learn-more: 'Learn More'
     teamt5-news:
@@ -87,7 +87,7 @@ index:
     teamt5-products:
         sonar:
             name: ThreatSonar
-            subtitle: 'Elegant Threat Hunting Technology'
+            subtitle: 'The Last Line of Your Cyber Defense'
             title: 'UNCOVER HIDDEN THREATS'
         subtitle: 'Next Level Threat Visibility and Intelligence'
         title: 'TeamT5 Product'
@@ -191,16 +191,16 @@ threatsonar:
         title: 'ThreatSonar Assessment Reports'
     auto-investigation:
         content: 'Discovering related infection origins, lateral-movement traces and data exfiltration through graph visualization'
-        title: ThreatSonar\nAuto-investigation
+        title: "ThreatSonar\nAuto-investigation"
     banner:
         slogan: 'UNCOVER HIDDEN THREATS'
-        title: 'Elegant Threat Hunting Technology'
+        title: 'The Last Line of Your Cyber Defense'
     complementary-to-antivirus:
         antivirus:
             list: '<li>Preventing any kind of malicious program from execution.</li> <li>Detecting common (non-APT) malware. Such as botnet, worm, banking trojan, or ransomware.</li> <li>Relying on signature matching which is easy to bypass. Can only detect widely spread known malware.</li> <li>Unable to triage grey-area risky programs such as abused legitimate VPN tools or new threats.</li> <li>Residential agent with kernel-mode driver hook often slowing down system performance or causing compatibility issues.</li> <li>Can block or quarantine infected files, but usually not able to clean-up hidden backdoor automatically.</li> <li>Full disk scanning always takes up to several hours</li>'
         threatsonar:
             list: '<li>Performing compromise assessment on APT (Advanced Persistent Threat) risks.</li> <li>Detecting malicious backdoor, hacking tools, abnormal system configurations.</li> <li>Mixed dynamic + static engine, built-in indicators + external threat intelligence.</li> <li>Inspecting memory, file system for unknown threats like just your CSIRT team expert.</li> <li>Non-residential agent, scan on-demand via task scheduler. Driver-less, minimum performance impact and compatibility issues.</li> <li>Highlighting potential risky endpoints. Incident Response team can do threat-hunting or clean-up manually.</li> <li>High efficiency, only scans suspicious locations and intrusion traces. About 20 minutes per endpoint depending on hardware.</li>'
-        title: 'ThreatSonar is Complementary to Antivirus'
+        title: 'ThreatSonar is Complementary to Your Existing Endpoint Solutions'
     more-strengths:
         strengths:
             auto-investigation: {list: '<li>Infection Timeline</li> <li>Lateral movement analysis</li>', title: 'Auto Investigation'}
@@ -220,9 +220,9 @@ threatvision:
     intelligence-report:
         list: '<li>Cyber threat newsflash</li> <li>Comprehensive and in-depth analysis of cyber threat campaigns, groups and actors</li> <li>Asia-pacific cyberspace event analysis</li>'
         title: 'Asia-Pacific Cyber Threat Intelligence Reports'
-    malware-analysis:
+    threat-analysis:
         list: '<li>Automated Analysis</li> <li>Malware identification and linkage discovery</li> <li>Malicious indicators collection</li> <li>Adversary Identification</li>'
-        title: 'Malware Analysis'
+        title: 'Threat Analysis'
     strengths:
         a: 'Discover and Identify Potential Threats'
         b: 'Know the Adversary'

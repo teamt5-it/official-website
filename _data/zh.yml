@@ -87,7 +87,7 @@ index:
     teamt5-products:
         sonar:
             name: ThreatSonar
-            subtitle: 'Elegant Threat Hunting Technology'
+            subtitle: 'The Last Line of Your Cyber Defense'
             title: 'UNCOVER HIDDEN THREATS'
         subtitle: 'Next Level Threat Visibility and Intelligence'
         title: 'TeamT5 的產品'
@@ -205,7 +205,7 @@ threatsonar:
         title: 'ThreatSonar 自動調查'
     banner:
         slogan: 'UNCOVER HIDDEN THREATS'
-        title: 'Elegant Threat Hunting Technology'
+        title: 'The Last Line of Your Cyber Defense'
     complementary-to-antivirus:
         antivirus:
             list: '<li>阻擋各式各樣的惡意程式執行</li> <li>偵測常見惡意程式 (非APT)，例如殭屍網路和蠕蟲、網路銀行木馬、勒索軟體。</li> <li>依靠特徵碼，只能偵測已知且大量擴散的惡意程式，容易遭 APT 攻擊者免殺或繞過</li> <li>傳統比對非黑即白，無法找出可疑灰色地帶，未知的新威脅</li> <li>常駐需要安裝，以驅動程式 hook 系統核心，容易拖慢系統效能，或產生相容性問題</li> <li>可攔截或隔離受感染的檔案，但無法自動清除隱藏的後門程式、遭竄改系統組態，易復發</li> <li>全硬碟掃描，至少需要數個小時才能完成</li>'
@@ -231,7 +231,7 @@ threatvision:
     intelligence-report:
         list: '<li>網際威脅熱點新知</li> <li>網際威脅事件、族群與攻擊來源深度分析</li> <li>亞太區網際威脅情勢分析</li>'
         title: 亞太區威脅情資報告
-    malware-analysis:
+    threat-analysis:
         list: '<li>全自動化分析</li> <li>惡意程式種類識別與關聯發掘</li> <li>惡意程式動靜態特徵彙整</li> <li>駭駸攻擊來源識別</li>'
         title: 惡意程式分析
     strengths:

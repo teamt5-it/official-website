@@ -7,7 +7,8 @@ layout: default
         {% t banner.title %}
     </div>
     <p class="banner-content">
-        {% t banner.content %}
+        {% capture string-with-newlines %}{% t banner.content %}{% endcapture %}
+        {{ string-with-newlines | newline_to_br }}
     </p>
     <div class="scroll-bottom">
         <div class="scroll-bottom-square rotate-clockwise-45">
@@ -56,7 +57,7 @@ layout: default
                     {% t teamt5-products.sonar.subtitle %}
                 </div>
                 <a class="teamt5-product-learn-more button"
-                    href="{% t links.teamt5-products.threatsonar %}">{% t learn-more %}</a>
+                    href="{% t links.products.threatsonar %}">{% t learn-more %}</a>
             </div>
             <div class="teamt5-product">
                 <div class="teamt5-product-title">
@@ -72,7 +73,7 @@ layout: default
                     {% t teamt5-products.vision.subtitle %}
                 </div>
                 <a class="teamt5-product-learn-more button"
-                    href="{% t links.teamt5-products.threatvision %}">{% t learn-more %}</a>
+                    href="{% t links.products.threatvision %}">{% t learn-more %}</a>
             </div>
         </div>
     </div>
