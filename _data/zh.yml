@@ -22,6 +22,9 @@ careers:
     positions:
         title: 職缺一覽
 contact-us:
+    global-support:
+        title: 'Global Support'
+        M: support@teamt5.tw
     asean:
         M: asean@teamt5.tw
         title: 亞太、紐澳區
@@ -59,7 +62,6 @@ footer:
     product: 'TeamT5 產品'
     resource: 技術資源
     scroll-top: TOP
-    support: 支援服務
     terms-of-service: 使用條款
     threatsonar: ThreatSonar
     threatvision: ThreatVision
@@ -73,7 +75,6 @@ header:
     partner: 合作夥伴
     product: 'TeamT5 產品'
     resource: 技術資源
-    support: 支援服務
     threatsonar: ThreatSonar
     threatvision: ThreatVision
 index:
@@ -109,7 +110,6 @@ links:
         threatsonar: /zh/products/threatsonar/
         threatvision: /zh/products/threatvision/
     resource: /zh/resource/
-    support: /zh/support/
     terms-of-service: /zh/terms-of-service/
 newsroom:
     media-inquiries:
@@ -185,12 +185,6 @@ resource-browse-by-type-technical:
 scroll-down: SCROLL
 sticky-post:
     read-more: '繼續閱讀'
-support:
-    content:
-        M: support@teamt5.tw
-        T: +886.2.7706.1299
-        timezone: '0900 - 1800 (UTC+8)'
-    title: 'Global Support'
 terms-of-service:
     page-title: 'Terms of Service'
 threatsonar:

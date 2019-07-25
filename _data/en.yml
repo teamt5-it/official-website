@@ -21,6 +21,9 @@ careers:
     positions:
         title: 'Open Positions'
 contact-us:
+    global-support:
+        title: 'Global Support'
+        M: support@teamt5.tw
     asean:
         M: asean@teamt5.tw
         title: ASEAN、ANZ
@@ -59,7 +62,6 @@ footer:
     product: Product
     resource: Resource
     scroll-top: TOP
-    support: Support
     terms-of-service: 'Terms of Service'
     threatsonar: ThreatSonar
     threatvision: ThreatVision
@@ -73,7 +75,6 @@ header:
     partner: Partner
     product: Product
     resource: Resource
-    support: Support
     threatsonar: ThreatSonar
     threatvision: ThreatVision
 index:
@@ -109,7 +110,6 @@ links:
         threatsonar: /products/threatsonar/
         threatvision: /products/threatvision/
     resource: /resource/
-    support: /support/
     terms-of-service: /terms-of-service/
 newsroom:
     latest-news:
@@ -173,13 +173,6 @@ resource-browse-by-type-technical:
     page-title: 'Resource / Technical'
 sticky-post:
     read-more: 'Read More'
-support:
-    content:
-        M: support@teamt5.tw
-        T: +886.2.7706.1299
-        timezone: '0900 - 1800 (UTC+8)'
-    page-title: Support
-    title: 'Global Support'
 terms-of-service:
     page-title: 'Terms of Service'
 threatsonar:

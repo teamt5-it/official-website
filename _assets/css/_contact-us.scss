@@ -1,6 +1,22 @@
 @import "base";
 
 .contact-us-layout {
+  grid-gap: 30px;
+
+  @include responsive(640px) {
+    grid-gap: 40px;
+  }
+
+  .global-support {
+    @include page-margin-horizontal;
+    display: grid;
+    grid-gap: 10px;
+  }
+
+  .global-support-title {
+    justify-self: start;
+  }
+
   .branches {
     display: grid;
     grid-gap: 30px;
