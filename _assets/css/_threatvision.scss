@@ -245,7 +245,7 @@ $sonar-mac-height: 400px;
 
 
 
-  .malware-analysis {
+  .threat-analysis {
     @include page-margin-horizontal;
     display: grid;
     grid-gap: 20px;
@@ -268,11 +268,11 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .malware-analysis-title {
+  .threat-analysis-title {
     text-align: center;
   }
 
-  .malware-analysis-content-and-mac {
+  .threat-analysis-content-and-mac {
     display: grid;
 
     @include responsive(640px) {
@@ -281,7 +281,7 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .malware-analysis-content {
+  .threat-analysis-content {
     order: 1;
 
     @include responsive(640px) {
@@ -293,7 +293,7 @@ $sonar-mac-height: 400px;
     }
   }
 
-  .malware-analysis-mac {
+  .threat-analysis-mac {
     img {
       width: 100%;
     }
