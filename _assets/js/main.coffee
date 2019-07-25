@@ -231,9 +231,11 @@ $ ->
 			for key,value of data
 				if value.length == 0
 					valid = false
+					$(".form-input[name=#{key}]").addClass("form-input-error")
 					$(".form-input-error-message[name=#{key}]").text("* Required field")
 			return valid
 		clearInputError: () =>
+			$(".form-input").removeClass("form-input-error")
 			$(".form-input-error-message").text("")
 		registerEventHandler: () =>
 			$("##{@formName}-submit").click (e) =>

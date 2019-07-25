@@ -74,7 +74,9 @@ $form-input-error-color: #c81432;
   padding-right: 1em;
   width: 100%;
 
-  @at-root #{&}-error {}
+  @at-root #{&}-error {
+    border-color: $form-input-error-color;
+  }
 }
 
 .form-input-error-message {
