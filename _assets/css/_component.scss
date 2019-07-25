@@ -204,13 +204,13 @@ input {
 .button {
   @include flex-center-align;
   -webkit-appearance: none;
-  background-color: $button-background-color;
+  background: linear-gradient($button-background-color);
   border: 0;
   border-radius: 4px;
   color: $button-color;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 1s ease-in-out;
+  transition: all 1s;
 
   @at-root #{&}-with-arrow {
     border-radius: 0;
@@ -241,42 +241,25 @@ input {
   }
 
   &:hover {
-    background-color: $button-hover-background-color;
+    background: linear-gradient($button-hover-background-color);
   }
 
   &:focus {
-    background-color: $button-click-background-color;
+    background: linear-gradient($button-click-background-color);
   }
 
   &:disabled {
     cursor: not-allowed;
   }
 
-  @at-root #{&}-success {
-    background-color: $button-success-color;
-    transition: background-color 1s ease-in-out;
-  }
-
-  &.loading {
-    animation-duration: 1s;
-    animation-name: shrink-to-circle;
+  @at-root #{&}-loading {
+    background-size: 0% 100%;
     cursor: wait;
   }
 
-  @keyframes shrink-to-circle {
-    0% {
-      border-radius: 4px;
-    }
-
-    50% {
-      border-radius: 25px;
-      content: "";
-      width: 50px;
-    }
-
-    100% {
-      border-radius: 4px;
-    }
+  @at-root #{&}-success {
+    background: linear-gradient($button-success-color);
+    background-size: 100% 100%;
   }
 }
 
@@ -461,9 +444,9 @@ a {
     }
 
     img {
+      height: 100%;
+      object-fit: cover;
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
       width: 100%;
     }
   }

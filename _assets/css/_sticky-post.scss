@@ -24,15 +24,18 @@ $sticky-post-information-background-color: rgba(0, 0, 0, 0.6);
 }
 
 .sticky-post-banner {
-  overflow: hidden;
-  padding-top: 56.25%;
   position: relative;
-  width: 100%;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
 
   img {
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     width: 100%;
   }
 }
