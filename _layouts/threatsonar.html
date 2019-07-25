@@ -52,76 +52,80 @@ layout: default
         {% t more-strengths.title %}
     </div>
     <div class="more-strengths-content">
-        <div class="more-strength">
-            <div class="more-strength-logo">
-                {% asset elegant.svg %}
-            </div>
-            <div class="more-strength-title-and-content">
-                <div class="more-strength-title title"> {% t more-strengths.strengths.elegant.title %}
+        <div class="more-strengths-threat-hunting-and-auto-investigation">
+            <div class="more-strength more-strength-threat-hunting">
+                <div class="more-strength-logo more-strength-logo-threat-hunting">
+                    {% asset threat-hunting.svg %}
                 </div>
-                <div class="more-strength-content content">
-                    <ul>
-                        {% t more-strengths.strengths.elegant.list %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="more-strength">
-            <div class="more-strength-logo">
-                {% asset premise.svg %}
-            </div>
-            <div class="more-strength-title-and-content">
-                <div class="more-strength-title title">
-                    {% t more-strengths.strengths.premise.title %}
-                </div>
-                <div class="more-strength-content content">
-                    <ul>
-                        {% t more-strengths.strengths.premise.list %}
-                    </ul>
+                <div class="more-strength-title-and-content">
+                    <div class="more-strength-title title">
+                        {% t more-strengths.strengths.threat-hunting.title %}
+                    </div>
+                    <div class="more-strength-content content">
+                        <ul>
+                            {% t more-strengths.strengths.threat-hunting.list %}
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="more-strength">
-            <div class="more-strength-logo">
-                {% asset threat_hunting.svg %}
-            </div>
-            <div class="more-strength-title-and-content">
-                <div class="more-strength-title title">
-                    {% t more-strengths.strengths.threat_hunting.title %}
+            <div class="more-strength more-strength-auto-investigation">
+                <div class="more-strength-logo more-strength-logo-auto-investigation">
+                    {% asset auto-investigation.svg class=logo %}
                 </div>
-                <div class="more-strength-content content">
-                    <ul>
-                        {% t more-strengths.strengths.threat_hunting.list %}
-                    </ul>
+                <div class="more-strength-title-and-content">
+                    <div class="more-strength-title title">
+                        {% t more-strengths.strengths.auto-investigation.title %}
+                    </div>
+                    <div class="more-strength-content content">
+                        <ul>
+                            {% t more-strengths.strengths.auto-investigation.list %}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="more-strength">
-            <div class="more-strength-logo">
-                {% asset auto-investigation.svg class=logo %}
-            </div>
-            <div class="more-strength-title-and-content">
-                <div class="more-strength-title title">
-                    {% t more-strengths.strengths.auto-investigation.title %}
+        <div class="more-strengths-elegant-and-premise-and-orchestration">
+            <div class="more-strength">
+                <div class="more-strength-logo">
+                    {% asset elegant.svg %}
                 </div>
-                <div class="more-strength-content content">
-                    <ul>
-                        {% t more-strengths.strengths.auto-investigation.list %}
-                    </ul>
+                <div class="more-strength-title-and-content">
+                    <div class="more-strength-title title"> {% t more-strengths.strengths.elegant.title %}
+                    </div>
+                    <div class="more-strength-content content">
+                        <ul>
+                            {% t more-strengths.strengths.elegant.list %}
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="more-strength">
-            <div class="more-strength-logo">
-                {% asset orchestration.svg class=logo %}
-            </div>
-            <div class="more-strength-title-and-content">
-                <div class="more-strength-title title">
-                    {% t more-strengths.strengths.orchestration.title %}
+            <div class="more-strength">
+                <div class="more-strength-logo">
+                    {% asset premise.svg %}
                 </div>
-                <div class="more-strength-content content">
-                    <ul>
-                        {% t more-strengths.strengths.orchestration.list %} </ul>
+                <div class="more-strength-title-and-content">
+                    <div class="more-strength-title title">
+                        {% t more-strengths.strengths.premise.title %}
+                    </div>
+                    <div class="more-strength-content content">
+                        <ul>
+                            {% t more-strengths.strengths.premise.list %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="more-strength">
+                <div class="more-strength-logo">
+                    {% asset orchestration.svg class=logo %}
+                </div>
+                <div class="more-strength-title-and-content">
+                    <div class="more-strength-title title">
+                        {% t more-strengths.strengths.orchestration.title %}
+                    </div>
+                    <div class="more-strength-content content">
+                        <ul>
+                            {% t more-strengths.strengths.orchestration.list %} </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -161,35 +165,12 @@ layout: default
         </iframe>
     </div>
 </div>
-<div class="complementary-to-antivirus">
-    <div class="complementary-to-antivirus-title title sonar-title">
-        {% t complementary-to-antivirus.title %}
+<div class="threatsonar-is-complementary-to-your-existing-endpoint-solutions">
+    <div class="threatsonar-is-complementary-to-your-existing-endpoint-solutions-title title sonar-title">
+        {% t threatsonar-is-complementary-to-your-existing-endpoint-solutions.title %}
     </div>
-    <div class="complementaries">
-        <div class="complementary">
-            <div class="complementary-title title threatsonar">
-                <div class="complementary-logo">
-                    {% asset sonar_logo_reverse.svg %}
-                </div>
-            </div>
-            <div class="complementary-content content threatsonar">
-                <ul>
-                    {% t complementary-to-antivirus.threatsonar.list %}
-                </ul>
-            </div>
-        </div>
-        <div class="complementary">
-            <div class="complementary-title title antivirus">
-                <div class="complementary-logo">
-                    {% asset antivirus.svg %}
-                </div>
-            </div>
-            <div class="complementary-content content antivirus">
-                <ul>
-                    {% t complementary-to-antivirus.antivirus.list %}
-                </ul>
-            </div>
-        </div>
+    <div class="threatsonar-is-complementary-to-your-existing-endpoint-solutions-image">
+        {% asset threatsonar-is-complementary-to-your-existing-endpoint-solutions.svg %}
     </div>
 </div>
 {% include contact-us-form.html id="threatsonar-contact-us-form" %}

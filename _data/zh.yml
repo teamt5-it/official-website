@@ -212,7 +212,7 @@ threatsonar:
             elegant: {list: '<li>輕量化 、 高效能 、 低成本</li> <li>與低風險的威脅鑑識</li>', title: 簡練高效}
             orchestration: {list: '<li>標準化 、 免客製 、 多面向</li> <li>與多樣化的架構整合</li>', title: 多樣完整}
             premise: {list: '<li>高安全 、 高隱密 、 最多元</li> <li> 與最便利的部署運作</li>', title: 獨立安全}
-            threat_hunting: {list: '<li>深入的 、 精密的 、 最及時</li> <li>與最真實的威脅獵捕</li>', title: 精準有效}
+            threat-hunting: {list: '<li>深入的 、 精密的 、 最及時</li> <li>與最真實的威脅獵捕</li>', title: 精準有效}
         title: 'An Elegant Threat Hunting Solution'
     strengths:
         automate: 自動採用即時威脅情報・主動發掘威脅感染現況

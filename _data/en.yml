@@ -188,11 +188,7 @@ threatsonar:
     banner:
         slogan: 'UNCOVER HIDDEN THREATS'
         title: 'The Last Line of Your Cyber Defense'
-    complementary-to-antivirus:
-        antivirus:
-            list: '<li>Preventing any kind of malicious program from execution.</li> <li>Detecting common (non-APT) malware. Such as botnet, worm, banking trojan, or ransomware.</li> <li>Relying on signature matching which is easy to bypass. Can only detect widely spread known malware.</li> <li>Unable to triage grey-area risky programs such as abused legitimate VPN tools or new threats.</li> <li>Residential agent with kernel-mode driver hook often slowing down system performance or causing compatibility issues.</li> <li>Can block or quarantine infected files, but usually not able to clean-up hidden backdoor automatically.</li> <li>Full disk scanning always takes up to several hours</li>'
-        threatsonar:
-            list: '<li>Performing compromise assessment on APT (Advanced Persistent Threat) risks.</li> <li>Detecting malicious backdoor, hacking tools, abnormal system configurations.</li> <li>Mixed dynamic + static engine, built-in indicators + external threat intelligence.</li> <li>Inspecting memory, file system for unknown threats like just your CSIRT team expert.</li> <li>Non-residential agent, scan on-demand via task scheduler. Driver-less, minimum performance impact and compatibility issues.</li> <li>Highlighting potential risky endpoints. Incident Response team can do threat-hunting or clean-up manually.</li> <li>High efficiency, only scans suspicious locations and intrusion traces. About 20 minutes per endpoint depending on hardware.</li>'
+    threatsonar-is-complementary-to-your-existing-endpoint-solutions:
         title: 'ThreatSonar is Complementary to Your Existing Endpoint Solutions'
     more-strengths:
         strengths:
@@ -200,7 +196,7 @@ threatsonar:
             elegant: {list: '<li>Light-weight with high detection rate</li> <li>Low cost, less efforts</li> <li>Low risk, non-intrusive</li>', title: 'Elegant and Efficient'}
             orchestration: {list: '<li>SIEM Integration</li> <li>HTTP Restful API</li>', title: Orchestration}
             premise: {list: '<li>Risk control</li> <li>Off-line analysis</li>', title: 'On Premise'}
-            threat_hunting: {list: '<li>Behavior Modeling</li> <li>Threat Intelligence</li> <li>Outlier</li>', title: 'Threat Hunting'}
+            threat-hunting: {list: '<li>Behavior Modeling</li> <li>Threat Intelligence</li> <li>Outlier</li>', title: 'Threat Hunting'}
         title: 'An Elegant Threat Hunting Solution'
     strengths:
         automate: 'Automate cyber threat intelligence adoption.'

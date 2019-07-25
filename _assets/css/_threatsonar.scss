@@ -218,6 +218,24 @@ $banner-slogan-height: 34px;
     @include responsive(1280px) {
       padding: 40px 70px;
     }
+
+    @at-root #{&}-threat-hunting-and-auto-investigation {
+      display: grid;
+      grid-gap: 20px;
+
+      @include responsive(800px) {
+        grid-gap: 30px;
+      }
+    }
+
+    @at-root #{&}-elegant-and-premise-and-orchestration {
+      display: grid;
+      grid-gap: 20px;
+
+      @include responsive(800px) {
+        grid-gap: 35px;
+      }
+    }
   }
 
   .more-strengths-title {
@@ -230,24 +248,21 @@ $banner-slogan-height: 34px;
     grid-gap: 20px;
     grid-template-columns: repeat(1, 1fr);
 
-    @include responsive(640px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
     @include responsive(800px) {
-      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   .more-strength {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-items: start;
 
     @include responsive(800px) {
-      grid-template-columns: 1fr;
-      grid-template-rows: min-content auto;
-      justify-items: center;
+      align-items: center;
     }
   }
 
@@ -274,6 +289,14 @@ $banner-slogan-height: 34px;
       height: 100%;
       width: 100%;
     }
+
+    @at-root #{&}-threat-hunting,
+    #{&}-auto-investigation {
+      @include responsive(800px) {
+        height: 200px;
+        width: 200px;
+      }
+    }
   }
 
   .more-strength-title-and-content {
@@ -285,7 +308,6 @@ $banner-slogan-height: 34px;
 
     @include responsive(800px) {
       font-size: 24px;
-      text-align: center;
     }
   }
 
@@ -413,6 +435,25 @@ $banner-slogan-height: 34px;
     }
   }
 
+  .threatsonar-is-complementary-to-your-existing-endpoint-solutions {
+    background-color: $background-color;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    padding: 30px 0;
+
+    @include responsive(640px) {
+      grid-gap: 30px;
+    }
+
+    @include responsive(1024px) {
+      padding: 60px 0;
+    }
+  }
+
+  .threatsonar-is-complementary-to-your-existing-endpoint-solutions-title {
+    text-align: center;
+  }
 
   .complementary-to-antivirus {
     background-color: $background-color;
