@@ -1,48 +1,56 @@
 <form class="contact-us-form form" id="{{include.id}}">
     <div class="form-title title">{% t contact-us-form.title %}</div>
-    <div class="form-inputs">
-        <div class="form-group">
-            <label for="first-name">{% t contact-us-form.first-name %}</label>
-            <input type="text" placeholder="{% t contact-us-form.first-name %}" name="first-name" class="form-control">
+    <div class="form-input-groups">
+        <div class="form-input-group">
+            <label class="form-input-label" for="first-name">{% t contact-us-form.first-name %}</label>
+            <input type="text" placeholder="{% t contact-us-form.first-name %}" name="first-name" class="form-input">
+            <div name="first-name" class="form-input-error-message"></div>
         </div>
 
-        <div class="form-group">
-            <label for="last-name">{% t contact-us-form.last-name %}</label>
-            <input type="text" placeholder="{% t contact-us-form.last-name %}" name="last-name" class="form-control">
+        <div class="form-input-group">
+            <label class="form-input-label" for="last-name">{% t contact-us-form.last-name %}</label>
+            <input type="text" placeholder="{% t contact-us-form.last-name %}" name="last-name" class="form-input">
+            <div name="last-name" class="form-input-error-message"></div>
         </div>
 
-        <div class="form-group">
-            <label for="email">{% t contact-us-form.email %}</label>
-            <input type="email" placeholder="{% t contact-us-form.email %}" name="email" class="form-control">
+        <div class="form-input-group">
+            <label class="form-input-label" for="email">{% t contact-us-form.email %}</label>
+            <input type="email" placeholder="{% t contact-us-form.email %}" name="email" class="form-input">
+            <div name="email" class="form-input-error-message"></div>
         </div>
 
-        <div class="form-group">
-            <label for="phone-number">{% t contact-us-form.phone-number %}</label>
+        <div class="form-input-group">
+            <label class="form-input-label" for="phone-number">{% t contact-us-form.phone-number %}</label>
             <input type="text" placeholder="{% t contact-us-form.phone-number %}" name="phone-number"
-                class="form-control">
+                class="form-input">
+            <div name="phone-number" class="form-input-error-message"></div>
         </div>
 
-        <div class="form-group">
-            <label for="company-name">{% t contact-us-form.company-name %}</label>
+        <div class="form-input-group">
+            <label class="form-input-label" for="company-name">{% t contact-us-form.company-name %}</label>
             <input type="text" placeholder="{% t contact-us-form.company-name %}" name="company-name"
-                class="form-control">
+                class="form-input">
+            <div name="company-name" class="form-input-error-message"></div>
         </div>
 
-        <div class="form-group">
-            <label for="job-title">{% t contact-us-form.job-title %}</label>
-            <input type="text" placeholder="{% t contact-us-form.job-title %}" name="job-title" class="form-control">
+        <div class="form-input-group">
+            <label class="form-input-label" for="job-title">{% t contact-us-form.job-title %}</label>
+            <input type="text" placeholder="{% t contact-us-form.job-title %}" name="job-title" class="form-input">
+            <div name="job-title" class="form-input-error-message"></div>
         </div>
 
-        <div class="form-group">
-            <label for="country">{% t contact-us-form.country %}</label>
-            <input type="text" placeholder="{% t contact-us-form.country %}" name="country" class="form-control">
+        <div class="form-input-group">
+            <label class="form-input-label" for="country">{% t contact-us-form.country %}</label>
+            <input type="text" placeholder="{% t contact-us-form.country %}" name="country" class="form-input">
+            <div name="country" class="form-input-error-message"></div>
         </div>
 
-        <div class="form-group">
-            <label
+        <div class="form-input-group">
+            <label class="form-input-label"
                 for="anything-you-want-to-know-about-product">{% t contact-us-form.anything-you-want-to-know-about-product %}</label>
             <textarea placeholder="{% t contact-us-form.anything-you-want-to-know-about-product %}"
-                name="anything-you-want-to-know-about-product" class="form-control"></textarea>
+                name="anything-you-want-to-know-about-product" class="form-input"></textarea>
+            <div name="anything-you-want-to-know-about-product" class="form-input-error-message"></div>
         </div>
 
         <button class="button form-submit" id="{{include.id}}-submit">

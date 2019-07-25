@@ -1,4 +1,5 @@
 @import "base";
+$form-input-error-color: #c81432;
 
 .form {
   background-color: $background-color;
@@ -36,10 +37,11 @@
   }
 }
 
-.form-inputs {
+.form-input-groups {
   display: grid;
   font-size: 14px;
-  grid-gap: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 5px;
   grid-template-columns: repeat(1, 1fr);
 
   @include responsive(640px) {
@@ -47,21 +49,21 @@
   }
 }
 
-.form-group {
+.form-input-group {
   align-content: start;
   display: grid;
   grid-auto-rows: auto;
   grid-gap: 5px;
 }
 
-label {
+.form-input-label {
   color: $normal-color;
   display: block;
   font-weight: bold;
   line-height: 1.5;
 }
 
-.form-control {
+.form-input {
   border: 1px solid $light-background-color;
   border-radius: 4px;
   box-sizing: border-box;
@@ -71,9 +73,16 @@ label {
   padding-left: 1em;
   padding-right: 1em;
   width: 100%;
+
+  @at-root #{&}-error {}
 }
 
-
+.form-input-error-message {
+  color: $form-input-error-color;
+  font-size: 12px;
+  height: 12px;
+  padding-left: 10px;
+}
 
 .form-submit {
   font-weight: bold;

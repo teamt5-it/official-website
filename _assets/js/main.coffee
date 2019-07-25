@@ -218,52 +218,44 @@ $ ->
 	carousel = new Carousel
 	$('textarea').autoResize();
 
-	# threatsonar-contact-us-form
-	$("#threatsonar-contact-us-form-submit").click (e) ->
-		e.preventDefault();
-		data = $("#threatsonar-contact-us-form").serializeJSON()
-		$.get
-			url: "https://script.google.com/a/teamt5.org/macros/s/AKfycbzn7LjNQ5YQR97mQERARgPmsA8n3U7EyrN63x1Adw/exec"
-			data: data
-			dataType: "JSON"
-			success: (response) ->
-				$(e.currentTarget).prop('disabled', true)
-				$(e.currentTarget).addClass('button-success')
-				$(e.currentTarget).text('Success')
-			error: (response) ->
-				$(e.currentTarget).addClass('error')
-				$(e.currentTarget).text('Error')
+	# form
 
-	# threatvision-contact-us-form
-	$("#threatvision-contact-us-form-submit").click (e) ->
-		e.preventDefault();
-		data = $("#threatvision-contact-us-form").serializeJSON()
-		$.get
-			url: "https://script.google.com/a/teamt5.org/macros/s/AKfycbw5tsN8yq4g5D5XCoIsn0DPold7kgpBbuDCXqVL/exec"
-			data: data
-			dataType: "JSON"
-			success: (response) ->
-				$(e.currentTarget).prop('disabled', true)
-				$(e.currentTarget).addClass('button-success')
-				$(e.currentTarget).text('Success')
-			error: (response) ->
-				$(e.currentTarget).addClass('error')
-				$(e.currentTarget).text('Error')
+	class Form
+		constructor: (formName,googleSheetUrl) ->
+			@formName = formName
+			@googleSheetUrl = googleSheetUrl
+			@registerEventHandler()
 
+		validateInputs: (data) =>
+			valid = true
+			for key,value of data
+				if value.length == 0
+					valid = false
+					$(".form-input-error-message[name=#{key}]").text("* Required field")
+			return valid
+		clearInputError: () =>
+			$(".form-input-error-message").text("")
+		registerEventHandler: () =>
+			$("##{@formName}-submit").click (e) =>
+				e.preventDefault();
+				@clearInputError()
+				data = $("##{@formName}").serializeJSON()
+				if !@validateInputs(data)
+					return
+				$.get
+					url: @googleSheetUrl
+					data: data
+					dataType: "JSON"
+					success: (response) ->
+						$(e.currentTarget).prop('disabled', true)
+						$(e.currentTarget).addClass('button-success')
+						$(e.currentTarget).text('Success')
+					error: (response) ->
+						$(e.currentTarget).addClass('error')
+						$(e.currentTarget).text('Error')
 
+	threatsonarContactUsForm = new Form("threatsonar-contact-us-form","https://script.google.com/a/teamt5.org/macros/s/AKfycbzn7LjNQ5YQR97mQERARgPmsA8n3U7EyrN63x1Adw/exec")
 
-	# position form
-	$("#position-form-submit").click (e) ->
-		e.preventDefault();
-		data = $("#position-form").serializeJSON()
-		$.get
-			url: "https://script.google.com/a/teamt5.org/macros/s/AKfycbyhx4Py9s91JBYEEZiKVqf7fgbaq0ENK2hwRP_S/exec"
-			data: data
-			dataType: "JSON"
-			success: (response) ->
-				$(e.currentTarget).prop('disabled', true)
-				$(e.currentTarget).addClass('success')
-				$(e.currentTarget).text('Success')
-			error: (response) ->
-				$(e.currentTarget).addClass('error')
-				$(e.currentTarget).text('Error')
+	threatvisionContactUsForm = new Form("threatvision-contact-us-form","https://script.google.com/a/teamt5.org/macros/s/AKfycbw5tsN8yq4g5D5XCoIsn0DPold7kgpBbuDCXqVL/exec")
+
+	positionForm = new Form("position-form","https://script.google.com/a/teamt5.org/macros/s/AKfycbyhx4Py9s91JBYEEZiKVqf7fgbaq0ENK2hwRP_S/exec")
