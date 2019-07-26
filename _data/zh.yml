@@ -200,19 +200,13 @@ threatsonar:
     banner:
         slogan: 'UNCOVER HIDDEN THREATS'
         title: 'The Last Line of Your Cyber Defense'
-    complementary-to-antivirus:
-        antivirus:
-            list: '<li>阻擋各式各樣的惡意程式執行</li> <li>偵測常見惡意程式 (非APT)，例如殭屍網路和蠕蟲、網路銀行木馬、勒索軟體。</li> <li>依靠特徵碼，只能偵測已知且大量擴散的惡意程式，容易遭 APT 攻擊者免殺或繞過</li> <li>傳統比對非黑即白，無法找出可疑灰色地帶，未知的新威脅</li> <li>常駐需要安裝，以驅動程式 hook 系統核心，容易拖慢系統效能，或產生相容性問題</li> <li>可攔截或隔離受感染的檔案，但無法自動清除隱藏的後門程式、遭竄改系統組態，易復發</li> <li>全硬碟掃描，至少需要數個小時才能完成</li>'
-        threatsonar:
-            list: '<li>智能鑑識 評估端點是否有 進階持續威脅 (APT) 風險</li> <li>偵測 APT 惡意程式、後門駭客工具、系統組態異常動態</li> <li>動態行為模型 + 靜態特徵 混合偵測引擎，可導入外部情資如 yara rule 增強偵測</li> <li>如同資安事件應變小組 (CSIRT) 專家，進行記憶體、檔案、系統鑑識，能夠找出未知的威脅</li> <li>無須安裝常駐程式，派送或排程啟動掃描</li> <li>無驅動程式，不影響系統效能，沒有相容性問題</li> <li>回傳風險報告給應變小組，擴大狩獵潛在威脅，鎖定受害範圍後，人工清除 APT 後門</li> <li>高效率，僅掃描可疑檔案和攻擊者留下的軌跡，平均約20分鐘完成 (依電腦效能而異)</li>'
-        title: 'ThreatSonar 與防毒軟體互補'
     more-strengths:
         strengths:
             auto-investigation: {list: '<li>長期的 、 廣泛的 、 全時段</li> <li>與全自動的調査分析</li>', title: 全面自動}
             elegant: {list: '<li>輕量化 、 高效能 、 低成本</li> <li>與低風險的威脅鑑識</li>', title: 簡練高效}
             orchestration: {list: '<li>標準化 、 免客製 、 多面向</li> <li>與多樣化的架構整合</li>', title: 多樣完整}
             premise: {list: '<li>高安全 、 高隱密 、 最多元</li> <li> 與最便利的部署運作</li>', title: 獨立安全}
-            threat_hunting: {list: '<li>深入的 、 精密的 、 最及時</li> <li>與最真實的威脅獵捕</li>', title: 精準有效}
+            threat-hunting: {list: '<li>深入的 、 精密的 、 最及時</li> <li>與最真實的威脅獵捕</li>', title: 精準有效}
         title: 'An Elegant Threat Hunting Solution'
     strengths:
         automate: 自動採用即時威脅情報・主動發掘威脅感染現況
