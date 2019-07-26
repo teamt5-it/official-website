@@ -10,11 +10,14 @@ layout: page
             <a class="post" href="{{ post.url | relative_url }}">
                 <div class="post-logo">
                     {% if post.tags contains 'case study' %}
-                    {% asset case-study.svg %}
+                    <object data="{% asset case-study.svg @path %}">
+                    </object>
                     {% elsif post.tags contains 'datasheet' %}
-                    {% asset datasheet.svg %}
+                    <object data="{% asset datasheet.svg @path %}">
+                    </object>
                     {% elsif post.tags contains 'technical' %}
-                    {% asset technical.svg %}
+                    <object data="{% asset technical.svg @path %}">
+                    </object>
                     {% endif %}
                 </div>
                 <div class="post-meta">

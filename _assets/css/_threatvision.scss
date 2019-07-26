@@ -6,7 +6,7 @@ $sonar-mac-height: 400px;
 
 .threatvision-layout {
   .banner {
-    background: $secondary-color asset_url("vision_bg_circle.svg") no-repeat center bottom;
+    background: $secondary-color asset_url("threatvision-banner-background.svg") no-repeat center bottom;
     background-size: 100% auto;
     box-sizing: border-box;
     display: flex;
@@ -171,7 +171,7 @@ $sonar-mac-height: 400px;
       width: 140px;
     }
 
-    img {
+    object {
       height: 100%;
       width: 100%;
     }

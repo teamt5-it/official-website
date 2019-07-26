@@ -7,7 +7,7 @@ layout: default
         {% t banner.slogan %}
     </div>
     <div class="banner-logo">
-        {% asset vision_logo_reverse.svg %}
+        {% asset threatvision-banner-logo.svg %}
     </div>
     <div class="banner-title title">
         {% t banner.title %}
@@ -21,7 +21,8 @@ layout: default
     <div class="strengths">
         <div class="strength">
             <div class="strength-logo">
-                {% asset discover&identify.svg %}
+                <object data="{% asset discover&identify.svg @path %}">
+                </object>
             </div>
             <div class="strength-title title">
                 {% t strengths.a %}
@@ -29,7 +30,8 @@ layout: default
         </div>
         <div class="strength">
             <div class="strength-logo">
-                {% asset adversary.svg  %}
+                <object data="{% asset adversary.svg @path %}">
+                </object>
             </div>
             <div class="strength-title title">
                 {% t strengths.b %}
@@ -37,7 +39,8 @@ layout: default
         </div>
         <div class="strength">
             <div class="strength-logo">
-                {% asset awareness.svg %}
+                <object data="{% asset awareness.svg @path %}">
+                </object>
             </div>
             <div class="strength-title title">
                 {% t strengths.c %}
@@ -45,7 +48,8 @@ layout: default
         </div>
         <div class="strength">
             <div class="strength-logo">
-                {% asset proactive.svg %}
+                <object data="{% asset proactive.svg @path %}">
+                </object>
             </div>
             <div class="strength-title title">
                 {% t strengths.d %}
@@ -55,7 +59,7 @@ layout: default
 </div>
 <div class="intelligence-report">
     <div class="intelligence-report-screenshot">
-        {% asset intelligence_report_subscription_screenshot.png %}
+        {% asset intelligence-report-screenshot.png %}
     </div>
     <div class="intelligence-report-title-and-content">
         <div class="intelligence-report-title title sonar-title">

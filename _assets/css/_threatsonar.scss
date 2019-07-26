@@ -8,7 +8,7 @@ $banner-slogan-height: 34px;
 
 .threatsonar-layout {
   .banner-slogan-and-logo-and-title {
-    background: $sonar-hero-banner-background asset_url("sonar_bg_triangle.svg") no-repeat center bottom;
+    background: $sonar-hero-banner-background asset_url("threatsonar-banner-background.svg") no-repeat center bottom;
     background-size: 100% auto;
     box-sizing: border-box;
     display: flex;
@@ -72,7 +72,7 @@ $banner-slogan-height: 34px;
       height: 120px;
     }
 
-    img {
+    object {
       height: 100%;
     }
   }
@@ -182,7 +182,7 @@ $banner-slogan-height: 34px;
       height: 80px;
     }
 
-    img {
+    object {
       height: 100%;
     }
   }
@@ -287,7 +287,7 @@ $banner-slogan-height: 34px;
       width: 120px;
     }
 
-    img {
+    object {
       height: 100%;
       width: 100%;
     }
@@ -449,14 +449,17 @@ $banner-slogan-height: 34px;
     @include responsive(1024px) {
       padding: 60px 0;
     }
-
-    img {
-      width: 100%;
-    }
   }
 
   .threatsonar-is-complementary-to-your-existing-endpoint-solutions-title {
     text-align: center;
+  }
+
+
+  .threatsonar-is-complementary-to-your-existing-endpoint-solutions-image {
+    object {
+      width: 100%;
+    }
   }
 
   .complementary-to-antivirus {
