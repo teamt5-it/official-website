@@ -1,4 +1,4 @@
-# TeamT5 Official Website 
+# TeamT5 Official Website
 
 [![Build Status](https://travis-ci.org/teamt5-it/official-website.svg?branch=master)](https://travis-ci.org/teamt5-it/official-website)
 
@@ -6,13 +6,17 @@ This website is powered by jekyll
 
 ## Installation
 
-```bash
+``` bash
 gem install jekyll
 bundle install
 jekyll serve
 ```
 
 Now browse to http://localhost:4000
+
+## Document
+
+See [document.md](./_docs/document.md) under `/_docs/` directory
 
 ## Writing
 
