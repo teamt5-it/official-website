@@ -8,7 +8,7 @@ $ ->
 		window.scrollTo {top: 0, behavior: 'smooth'}
 
 	$(".scroll-bottom").click ->
-		window.scrollTo {top: $(".products").offset().top, behavior: 'smooth'}
+		window.scrollTo {top: $(".teamt5-products").offset().top, behavior: 'smooth'}
 
 	# header
 
