@@ -159,27 +159,26 @@ input {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
 
-  li {
-    margin: 1em 0;
-    overflow-wrap: break-word;
-    padding-left: 1em;
-    position: relative;
+    li {
+      margin: 1em 0;
+      overflow-wrap: break-word;
+      padding-left: 1em;
+      position: relative;
 
-    &::before {
-      @include flex-center-align;
-      color: $primary-color;
-      content: $list-bullet;
-      font-family: initial;
-      font-weight: 1000;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 1em;
+      &::before {
+        @include flex-center-align;
+        color: $primary-color;
+        content: $list-bullet;
+        font-family: initial;
+        font-weight: 1000;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 1em;
+      }
     }
   }
-
 
   ol {
     margin: 0;
