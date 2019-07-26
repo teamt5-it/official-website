@@ -3,7 +3,13 @@
         {% t browse-by-type.title %}
     </div>
     <div class="browse-by-type-types">
-        {% assign pages = site.pages | where: "locale", page.locale | where: "category",page.category | where_exp: "item", "item.type" %}
+        {% assign arr-of-arr = site.posts | where: "locale", page.locale  | where_exp: "post", "post.categories contains page.category" | map: "tags" %}
+        {% assign tags = [] %}
+        {% for arr in arr-of-arr %}
+            {% assign tags = tags | concat: arr %}
+        {% endfor %}
+        {% assign tags = tags %}
+        {% assign pages = site.pages | where: "locale", page.locale | where: "category",page.category | where_exp: "item", "item.type" | where_exp: "item", "tags contains item.type" %}
         {% for page in pages %}
         <a class="browse-by-type-type" href="{{page.url}}">
             {{ page.type }}
