@@ -1,6 +1,6 @@
 scss_files: '_assets/css/**/*.scss'
 linters:
   NestingDepth:
-    enabled: false
+    ignore_parent_selectors: true
   NameFormat:
     enabled: false
