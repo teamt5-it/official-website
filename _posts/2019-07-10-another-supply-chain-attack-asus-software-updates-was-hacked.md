@@ -12,6 +12,8 @@ resource_sticky: false
 newsroom_sticky: false
 
 ---
+photo courtesy of: pixabay.com
+
 Asus, one of the world’s largest computer makers, was believed to be the newest victim of a supply chain attack. According to the up-to-date blog of Kaspersky \[1\], the live software update server of Asus was compromised and used for installing malicious backdoors on customers’ devices.
 
 It was alleged that the malware had been delivered to millions of computers. Due to the design logic, however, the malware will only survive in only a small set of computers if the MAC address falls in a target list defined by the actors. This phenomenon has been observed in several Chinese originated supply Chain attacks, such as CCleaner and NetSarang supply chain attacks in 2017.

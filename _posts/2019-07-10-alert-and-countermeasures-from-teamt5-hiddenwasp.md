@@ -1,6 +1,6 @@
 ---
 locale: en
-date: 2019-06-12 11:13:37 +0800
+date: 2019-06-12T03:13:37.000+00:00
 title: Alert and Countermeasures from TeamT5 – “HiddenWasp”
 banner: "/assets/images/technical01.jpg"
 categories:
@@ -12,6 +12,8 @@ resource_sticky: true
 newsroom_sticky: false
 
 ---
+photo courtesy of: pixabay.com
+
 ### **Threat Overview**
 
 (Reference: www.intezer.com )
@@ -27,7 +29,8 @@ An American Cybersecurity company, Intezer, discovered a new malware on Linux op
 Further information, please check the following link: [https://www.intezer.com/blog-hiddenwasp-malware-targeting-linux-systems/](https://www.intezer.com/blog-hiddenwasp-malware-targeting-linux-systems/ "https://www.intezer.com/blog-hiddenwasp-malware-targeting-linux-systems/")
 
 ![(Zero detection on Virustotal on 19th May)](/assets/images/img1.png "(Zero detection on Virustotal on 19th May)")
-*Zero detection on Virustotal on 19th May*
+_Zero detection on Virustotal on 19th May_
+
 ### **ThreatSonar Linux scanner**
 
 ThreatSonar scanner (ver. 20190413) supports Linux operating system such as CentOS, RHEL, Debian, Ubuntu and OpenSUSE.
@@ -35,33 +38,25 @@ ThreatSonar scanner (ver. 20190413) supports Linux operating system such as Cent
 Our analyst discovered “HiddenWasp” contains rootkit that is able to hide itself from detection. However, ThreatSonar is capable of identifying related shell script and listing them as the highest threat level.
 
 ![(ThreatSonar detects related shell script of HiddenWasp)](/assets/images/img2.png "(ThreatSonar detects related shell script of HiddenWasp)")
-*ThreatSonar detects related shell script of HiddenWasp*
-
+_ThreatSonar detects related shell script of HiddenWasp_
 
 You can find our demo video from the link below: [https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL](https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL "https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL")
-
 
 ### **Bring Your Own Intelligence**
 
 TeamT5 optimized the Intezer’s yara rule for “HiddenWasp” \[1\]. We suggest importing it to ThreatSonar as the steps below:
+
 1. Go to “Custom Yara”.
 2. Click “Add Ruleset” and paste the yara rule to the editor.
 3. Set “Ruleset Threat Level” and enable it.
 4. Click “Create Ruleset” to finish.
 
 ![(Built-in yara rule editor)](/assets/images/img3.png "(Built-in yara rule editor)")
-*Built-in yara rule editor*
-
+_Built-in yara rule editor_
 
 IoC of “HiddenWasp” \[2\] can be imported to ThreatSonar for direct match as well.
 
-
-
 Should you have any questions, please contact support@teamt5.tw
-
-
-
-
 
 \[1\] [https://drive.google.com/open?id=1zDArnZxvj2ClyJIV2NwdZv7VMAhA5bJg](https://drive.google.com/open?id=1zDArnZxvj2ClyJIV2NwdZv7VMAhA5bJg "https://drive.google.com/open?id=1zDArnZxvj2ClyJIV2NwdZv7VMAhA5bJg")
 

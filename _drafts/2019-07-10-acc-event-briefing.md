@@ -11,6 +11,8 @@ resource_sticky: false
 newsroom_sticky: false
 
 ---
+photo courtesy of: pixabay.com
+
 TeamT5 CEO TT Tsai is honored to be the one of the speakers on the topic “Respond Before Incident, intelligence-driven proactive threat hunting case-study from Taiwan” at Australia Cyber Conference
 
 **Time:** 2019 7th-9th Oct
@@ -24,5 +26,3 @@ TeamT5 CEO TT Tsai is honored to be the one of the speakers on the topic “Resp
 The Australian Information Security Association (AISA) is the premier industry body for information security professionals in Australia. As a nationally recognized not-for-profit organization, AISA champions the development of a robust information security sector by building the capacity of professionals in Australia and advancing the cyber security and safety of the Australian public, as well as businesses and government.
 
 ![](/assets/images/acc.png)
-
-cover photo courtesy of: pixabay.com
