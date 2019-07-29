@@ -203,17 +203,16 @@ input {
 .button {
   @include flex-center-align;
   -webkit-appearance: none;
-  background: linear-gradient($button-background-color);
+  background-color: $button-background-color;
   border: 0;
   border-radius: 4px;
   color: $button-color;
   cursor: pointer;
   font-weight: bold;
-  transition: all 1s;
+  transition: background-color 1s;
 
   @at-root #{&}-with-arrow {
     border-radius: 0;
-    box-sizing: border-box;
     position: relative;
 
     &::after {
@@ -240,11 +239,11 @@ input {
   }
 
   &:hover {
-    background: linear-gradient($button-hover-background-color);
+    background-color: $button-hover-background-color;
   }
 
   &:focus {
-    background: linear-gradient($button-click-background-color);
+    background-color: $button-click-background-color;
   }
 
   &:disabled {
@@ -257,8 +256,7 @@ input {
   }
 
   @at-root #{&}-success {
-    background: linear-gradient($button-success-color);
-    background-size: 100% 100%;
+    background-color: $button-success-color;
   }
 }
 
