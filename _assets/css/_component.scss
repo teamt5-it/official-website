@@ -271,7 +271,7 @@ a {
   justify-content: flex-start;
 
   >*:not(:last-child) {
-    margin-right: 0.5em;
+    margin-right: .5em;
   }
 
   .tag {
@@ -322,8 +322,8 @@ a {
 
 .title-lg {
   font-size: 16px;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
+  margin-bottom: .5em;
+  margin-top: .5em;
 
   @include responsive(640px) {
     font-size: 20px;

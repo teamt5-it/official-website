@@ -7,7 +7,7 @@ $navbar-burger-side-length: $navbar-brand-logo-height;
 $navbar-burger-width: 2px;
 
 
-$navbar-item-mobile-border: 0.5px solid $font-color-hover;
+$navbar-item-mobile-border: .5px solid $font-color-hover;
 $navbar-item-desktop-height: $navbar-brand-desktop-height;
 $navbar-item-hover-background-color: #f7f7f7;
 $navbar-item-active-box-shadow: inset 0 -5px 0 0 $primary-color;
@@ -78,7 +78,7 @@ $navbar-submenu-mobile-background-color: $background-color;
 .navbar-burger {
   height: $navbar-burger-side-length;
   position: relative;
-  transition: all 0.5s ease-in-out;
+  transition: all .5s ease-in-out;
   width: $navbar-burger-side-length;
 
   @include responsive(800px) {
@@ -99,7 +99,7 @@ $navbar-submenu-mobile-background-color: $background-color;
   @for $i from 1 through 3 {
     span:nth-child(#{$i}) {
       top: calc(5% + 20% * #{$i});
-      transition: all 0.5s ease-in-out;
+      transition: all .5s ease-in-out;
     }
   }
 
@@ -124,7 +124,7 @@ $navbar-submenu-mobile-background-color: $background-color;
   display: grid;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height .5s ease-in-out;
 
   @include responsive(800px) {
     display: grid;
@@ -224,7 +224,7 @@ $navbar-submenu-mobile-background-color: $background-color;
   display: grid;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height .5s ease-in-out;
 
   @include responsive(800px) {
     background-color: transparent;
@@ -277,7 +277,7 @@ $navbar-submenu-mobile-background-color: $background-color;
   height: 50px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height .5s ease-in-out;
   width: 100%;
 
   @at-root #{&}-active {

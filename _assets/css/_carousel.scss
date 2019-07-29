@@ -1,5 +1,5 @@
 @import "base";
-$carousel-item-information-text-shadow-color: rgba(0, 0, 0, 0.5);
+$carousel-item-information-text-shadow-color: rgba(0, 0, 0, .5);
 
 .carousel {
   background-color: $background-color;
@@ -19,7 +19,7 @@ $carousel-item-information-text-shadow-color: rgba(0, 0, 0, 0.5);
   display: none;
   height: 100%;
   position: absolute;
-  transition: all 0.2s;
+  transition: all .2s;
   width: 100%;
 
   @at-root #{&}-active {
@@ -52,7 +52,7 @@ $carousel-item-information-text-shadow-color: rgba(0, 0, 0, 0.5);
   color: $white;
   height: 100%;
   position: absolute;
-  transition: all 0.2s;
+  transition: all .2s;
   width: 70%;
 
   @include responsive(640px) {
@@ -75,7 +75,7 @@ $carousel-item-information-text-shadow-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   text-shadow: 0 2px 2px $carousel-item-information-text-shadow-color;
   transform: translate(-50%, 50%);
-  transition: all 0.2s;
+  transition: all .2s;
   width: 65%;
 
   @at-root #{&}-bottom {
