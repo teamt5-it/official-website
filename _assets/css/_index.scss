@@ -165,14 +165,26 @@ $scroll-bottom-margin: 100px;
     align-items: center;
     background-color: $background-color;
     border-radius: 6px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: start;
     padding: 30px;
-    text-align: center;
+    position: relative;
 
     @include responsive(640px) {
-      flex-wrap: nowrap;
+      grid-auto-flow: row;
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+      grid-template-columns: none;
+      grid-template-rows: none;
+      justify-items: center;
       padding: 30px 0;
+      position: static;
     }
 
     @include responsive(800px) {
@@ -182,8 +194,10 @@ $scroll-bottom-margin: 100px;
 
   .teamt5-product-title {
     font-size: 12px;
-    font-weight: bold;
-    margin-bottom: 20px;
+
+    @include responsive(640px) {
+      margin-bottom: 20px;
+    }
 
     @include responsive(800px) {
       font-size: 16px;
@@ -191,12 +205,30 @@ $scroll-bottom-margin: 100px;
 
     @include responsive(1024px) {
       font-size: 20px;
+      margin-bottom: 40px;
     }
   }
 
   .teamt5-product-logo {
-    margin-bottom: 20px;
-    width: 35%;
+    grid-column: 1 / 2;
+    grid-row: 1 / span 3;
+    width: 80px;
+
+    @include responsive(640px) {
+      grid-column: auto;
+      grid-row: auto;
+      margin-bottom: 20px;
+      width: 120px;
+    }
+
+    @include responsive(800px) {
+      width: 140px;
+    }
+
+    @include responsive(1024px) {
+      width: 200px;
+    }
+
 
     img {
       width: 100%;
@@ -205,12 +237,23 @@ $scroll-bottom-margin: 100px;
 
   .teamt5-product-name {
     color: $primary-color;
+
+    @include responsive(640px) {
+      margin-bottom: 5px;
+    }
+
+    @include responsive(1024px) {
+      margin-bottom: 10px;
+    }
   }
 
   .teamt5-product-subtitle {
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 30px;
+
+    @include responsive(640px) {
+      margin-bottom: 30px;
+    }
 
     @include responsive(800px) {
       font-size: 20px;
@@ -222,11 +265,31 @@ $scroll-bottom-margin: 100px;
     }
   }
 
-  .teamt5-product-learn-more {
-    font-size: 20px;
-    height: 40px;
-    line-height: 40px;
-    width: 200px;
+  .teamt5-product-learn-more-button-container {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+
+    @include responsive(640px) {
+      position: static;
+    }
+  }
+
+  .teamt5-product-learn-more-button {
+    font-size: 12px;
+    height: 20px;
+    width: 120px;
+
+    @include responsive(640px) {
+      border-radius: 4px;
+      font-size: 20px;
+      height: 40px;
+      width: 200px;
+
+      &::after {
+        display: none;
+      }
+    }
 
     @include responsive(1024px) {
       width: 400px;

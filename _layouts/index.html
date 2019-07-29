@@ -44,36 +44,42 @@ layout: default
         </div>
         <div class="teamt5-products-content">
             <div class="teamt5-product">
-                <div class="teamt5-product-title">
+                <div class="teamt5-product-title title">
                     {% t teamt5-products.sonar.title %}
                 </div>
                 <div class="teamt5-product-logo">
                     {% asset sonar-logo.svg %}
                 </div>
-                <div class="teamt5-product-name title-xl">
+                <div class="teamt5-product-name title title-xl">
                     {% t teamt5-products.sonar.name %}
                 </div>
                 <div class="teamt5-product-subtitle">
                     {% t teamt5-products.sonar.subtitle %}
                 </div>
-                <a class="teamt5-product-learn-more button"
-                    href="{% t links.products.threatsonar %}">{% t learn-more %}</a>
+                <div class="teamt5-product-learn-more-button-container">
+                    <a class="teamt5-product-learn-more-button button button-with-arrow" href="{% t links.products.threatsonar %}">
+                        {% t learn-more %}
+                    </a>
+                </div>
             </div>
             <div class="teamt5-product">
-                <div class="teamt5-product-title">
+                <div class="teamt5-product-title title">
                     {% t teamt5-products.vision.title %}
                 </div>
                 <div class="teamt5-product-logo">
                     {% asset vision-logo.svg %}
                 </div>
-                <div class="teamt5-product-name title-xl">
+                <div class="teamt5-product-name title title-xl">
                     {% t teamt5-products.vision.name %}
                 </div>
                 <div class="teamt5-product-subtitle">
                     {% t teamt5-products.vision.subtitle %}
                 </div>
-                <a class="teamt5-product-learn-more button"
-                    href="{% t links.products.threatvision %}">{% t learn-more %}</a>
+                <div class="teamt5-product-learn-more-button-container">
+                    <a class="teamt5-product-learn-more-button button button-with-arrow" href="{% t links.products.threatvision %}">
+                        {% t learn-more %}
+                    </a>
+                </div>
             </div>
         </div>
     </div>
