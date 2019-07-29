@@ -1,4 +1,4 @@
-@import "base";
+@import 'base';
 $scroll-bottom-margin: 100px;
 
 .index-layout {
@@ -11,7 +11,7 @@ $scroll-bottom-margin: 100px;
   .banner {
     align-items: center;
     background-color: $background-color;
-    background-image: asset_url("persistent_cyber_threat_hunters_bg.svg");
+    background-image: asset_url('persistent_cyber_threat_hunters_bg.svg');
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;

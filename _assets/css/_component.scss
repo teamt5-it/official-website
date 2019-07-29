@@ -1,4 +1,4 @@
-@import "base";
+@import 'base';
 
 html {
   color: $normal-color;
@@ -219,7 +219,7 @@ input {
       border: solid $white;
       border-radius: $arrow-width;
       border-width: $arrow-width $arrow-width 0 0;
-      content: "";
+      content: '';
       display: block;
       height: 6px * $square-root-of-two;
 
@@ -435,7 +435,7 @@ a {
     }
 
     &::after {
-      content: "";
+      content: '';
       display: block;
       padding-top: 37.5%;
     }

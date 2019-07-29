@@ -129,7 +129,7 @@ i18n-prefix key is `new`
 
 ## Add specific page style under `_assets/css/new.scss`
 
-    @import "base";
+    @import 'base';
 
     .resource-layout {
         ...
@@ -138,4 +138,3 @@ i18n-prefix key is `new`
 ## Include specific page style in `_assets/css/main.css`
 
     @import "new";
-

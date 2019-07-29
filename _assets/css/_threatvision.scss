@@ -1,4 +1,4 @@
-@import "base";
+@import 'base';
 $sonar-hero-banner-mobile-height: 300px;
 $sonar-hero-banner-desktop-height: 450px;
 $sonar-mac-width: 800px;
@@ -6,7 +6,7 @@ $sonar-mac-height: 400px;
 
 .threatvision-layout {
   .banner {
-    background: $secondary-color asset_url("threatvision-banner-background.svg") no-repeat center bottom;
+    background: $secondary-color asset_url('threatvision-banner-background.svg') no-repeat center bottom;
     background-size: 100% auto;
     box-sizing: border-box;
     display: flex;

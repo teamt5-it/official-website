@@ -9,7 +9,7 @@ $primary-opacity-color: rgba(216, 55, 81, .8);
 $secondary-color: #f6ac19;
 $figcaption-color: #848484;
 $sonar-color: #c71532;
-$list-bullet: "\2022";
+$list-bullet: '\2022';
 $button-arrow-side-length: 10px;
 
 $white: #fff;
@@ -147,7 +147,7 @@ $lg-post-padding-horizontal: $lg-post-margin-horizontal;
 }
 
 @mixin pseudo-element($width, $height, $position: relative) {
-  content: "";
+  content: '';
   display: block;
   height: $height;
   position: $position;

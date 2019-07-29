@@ -1,4 +1,4 @@
-@import "base";
+@import 'base';
 $sonar-hero-banner-mobile-height: 300px;
 $sonar-hero-banner-desktop-height: 450px;
 $sonar-hero-banner-background: $sonar-color;
@@ -8,7 +8,7 @@ $banner-slogan-height: 34px;
 
 .threatsonar-layout {
   .banner-slogan-and-logo-and-title {
-    background: $sonar-hero-banner-background asset_url("threatsonar-banner-background.svg") no-repeat center bottom;
+    background: $sonar-hero-banner-background asset_url('threatsonar-banner-background.svg') no-repeat center bottom;
     background-size: 100% auto;
     box-sizing: border-box;
     display: flex;

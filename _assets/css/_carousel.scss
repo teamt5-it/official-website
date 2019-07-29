@@ -1,4 +1,4 @@
-@import "base";
+@import 'base';
 $carousel-item-information-text-shadow-color: rgba(0, 0, 0, .5);
 
 .carousel {
@@ -9,7 +9,7 @@ $carousel-item-information-text-shadow-color: rgba(0, 0, 0, .5);
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     display: block;
     padding-top: 37.5%;
   }

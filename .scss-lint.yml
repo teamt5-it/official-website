@@ -2,7 +2,5 @@ scss_files: '_assets/css/**/*.scss'
 linters:
   NestingDepth:
     enabled: false
-  StringQuotes:
-    enabled: false
   NameFormat:
     enabled: false

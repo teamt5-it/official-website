@@ -1,4 +1,4 @@
-@import "base";
+@import 'base';
 $sticky-post-information-background-color: rgba(0, 0, 0, .6);
 
 .sticky-post {
@@ -27,7 +27,7 @@ $sticky-post-information-background-color: rgba(0, 0, 0, .6);
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     display: block;
     padding-top: 56.25%;
   }
