@@ -26,7 +26,7 @@ An American Cybersecurity company, Intezer, discovered a new malware on Linux op
 * Evidence shows in high probability that the malware is applied in targeted attacks for victims who are already under the attacker’s control, or have gone through a heavy reconnaissance.
 * Possible adversary: Winnti
 
-Further information, please check the following link: [https://www.intezer.com/blog-hiddenwasp-malware-targeting-linux-systems/](https://www.intezer.com/blog-hiddenwasp-malware-targeting-linux-systems/ "https://www.intezer.com/blog-hiddenwasp-malware-targeting-linux-systems/")
+Further information, please check the following link: https://www.intezer.com/blog-hiddenwasp-malware-targeting-linux-systems/
 
 ![(Zero detection on Virustotal on 19th May)](/assets/images/img1.png "(Zero detection on Virustotal on 19th May)")
 _Zero detection on Virustotal on 19th May_
@@ -40,7 +40,7 @@ Our analyst discovered “HiddenWasp” contains rootkit that is able to hide it
 ![(ThreatSonar detects related shell script of HiddenWasp)](/assets/images/img2.png "(ThreatSonar detects related shell script of HiddenWasp)")
 _ThreatSonar detects related shell script of HiddenWasp_
 
-You can find our demo video from the link below: [https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL](https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL "https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL")
+You can find our demo video from the link below: https://drive.google.com/open?id=13EybLqxAPeO1-E2OzjHKVvdCzHfK6FVL
 
 ### **Bring Your Own Intelligence**
 
@@ -58,6 +58,6 @@ IoC of “HiddenWasp” \[2\] can be imported to ThreatSonar for direct match as
 
 Should you have any questions, please contact support@teamt5.tw
 
-\[1\] [https://drive.google.com/open?id=1zDArnZxvj2ClyJIV2NwdZv7VMAhA5bJg](https://drive.google.com/open?id=1zDArnZxvj2ClyJIV2NwdZv7VMAhA5bJg "https://drive.google.com/open?id=1zDArnZxvj2ClyJIV2NwdZv7VMAhA5bJg")
+\[1\] https://drive.google.com/open?id=1zDArnZxvj2ClyJIV2NwdZv7VMAhA5bJg
 
-\[2\] [https://exchange.xforce.ibmcloud.com/collection/d1900ab023aa857e116f9c55fabda2fc](https://exchange.xforce.ibmcloud.com/collection/d1900ab023aa857e116f9c55fabda2fc "https://exchange.xforce.ibmcloud.com/collection/d1900ab023aa857e116f9c55fabda2fc")
+\[2\] https://exchange.xforce.ibmcloud.com/collection/d1900ab023aa857e116f9c55fabda2fc
