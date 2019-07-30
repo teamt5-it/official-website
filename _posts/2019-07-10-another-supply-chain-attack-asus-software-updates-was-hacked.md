@@ -29,7 +29,7 @@ From the C2 domain activation history, TeamT5 believes the initial campaign itse
 
 ### Reference
 
-\[1\] [https://securelist.com/operation-shadowhammer/89992/](https://securelist.com/operation-shadowhammer/89992/ "https://securelist.com/operation-shadowhammer/89992/")
+\[1\] https://securelist.com/operation-shadowhammer/89992/
 
 #### **Appendix**
 
