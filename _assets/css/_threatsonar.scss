@@ -189,10 +189,9 @@ $banner-slogan-height: 34px;
 
   .banner-strength-content {
     @include responsive(1024px) {
-      width: 200px;
+      width: 190px;
     }
   }
-
 
   .more-strengths {
     display: grid;

@@ -3,27 +3,29 @@
     take-me-home: 'Take Me Home'
 about-us:
     banner:
-        content: 'TeamT5致力發展高技術價值產品及服務，與產業資訊安全防禦進行更緊密的結合，讓產業具備高強度資安威脅鑑識與分析能力，建立一個更安全無虞的運營環境。\n\n團隊由威脅情資、客戶支援、系統開發、先進技術等部門組成，成立宗旨期待能透過優異且領先的資安研究，提供進階持續性威脅的解決方案，核心成員經常在世界頂尖資安會議發表最新最頂尖研究，包含Syscan 2011/2012、Code Gate 2012、Black Hat 2012/2013/2015、Code Blue 2015/2016、VXCON 2014/2015/2016、Troopers 2016/2017等，於威脅情資研究與資安先進技術領域面擁有世界領先的地位。\n\n我們致力發展高技術價值的產品與服務，與產業資訊安全防禦進行更緊密的結合，讓產業具備高強度的資安威脅鑑識與分析能力，從而建立一個更安全無虞的運營環境。'
+        content: "TeamT5 杜浦數位安全致力發展高技術價值產品及服務，與產業資訊安全防禦進行更緊密的結合，讓產業具備高強度資安威脅鑑識與分析能力，建立一個更安全無虞的運營環境。\n\n團隊由威脅情資、客戶支援、系統開發、先進技術等部門組成，成立宗旨期待能透過優異且領先的資安研究，提供進階持續性威脅的解決方案，核心成員經常在世界頂尖資安會議發表最新最頂尖研究，包含Syscan、Code Gate、Black Hat、Code Blue、VXCON、Troopers等，於威脅情資研究與資安先進技術領域面擁有世界領先的地位。\n\n我們致力發展高技術價值的產品與服務，與產業資訊安全防禦進行更緊密的結合，讓產業具備高強度的資安威脅鑑識與分析能力，從而建立一個更安全無虞的運營環境。"
         title: 'TeamT5 World Class Team'
+    page-title: 關於我們
     teamt5-leadership:
         content:
-            introduction: 'TeamT5 杜浦數位安全有限公司創辦人兼執行長，具備豐富開發資安產品及威脅情資研究經驗，台灣駭客協會創始成員及首任理事長，現為HITCON PACIFIC總召，並任行政院資通安全處顧問、教育部資訊安全人才培育計畫：資安實務導師制度～臺灣好厲駭之實務導師身分，經常於世界頂尖資安會議如Blackhat、Code Blue、SAS等發表最新網路間諜與安全漏洞研究成果。\n\n帶領TeamT5團隊，長期追蹤與研究網路間諜攻擊族群，將獨特APT追蹤分析與鑑識方法，結合真實惡意程式和事件處理經驗，提供客戶針對性攻擊的威脅情資報告與解決方案，在威脅情資研究與資安先進技術面擁有世界領先的地位。'
-            name: 'Sung-ting Tsai (TT)'
-        title: 'TeamT5 領導團隊'
+            introduction: "TeamT5 杜浦數位安全有限公司創辦人兼執行長，具備豐富開發資安產品及威脅情資研究經驗，台灣駭客協會創始成員及首任理事長，現為HITCON PACIFIC總召，並任行政院資通安全處顧問、教育部資訊安全人才培育計畫：資安實務導師制度～臺灣好厲駭之實務導師身分，經常於世界頂尖資安會議如Blackhat、Code Blue、SAS等發表最新網路間諜與安全漏洞研究成果。\n\n帶領TeamT5團隊，長期追蹤與研究網路間諜攻擊族群，將獨特APT追蹤分析與鑑識方法，結合真實惡意程式和事件處理經驗，提供客戶針對性攻擊的威脅情資報告與解決方案，在威脅情資研究與資安先進技術面擁有世界領先的地位。"
+            name: 蔡松廷 (TT)
+        title: 'TeamT5 創辦人'
 banner:
     content: 'TeamT5 杜浦數位安全有限公司是提供網路間諜威脅情資研究、專業威脅鑑識產品與服務的公司，協助產業對抗網路間諜威脅。藉由團隊資安研究成果，提供客戶進階持續性威脅解決方案，成員亦經常在世界頂尖資安會議發表最新最頂尖研究，包含Syscan、Code Gate、Black Hat、Code Blue、VXCON、Troopers等，於威脅情資研究與資安先進技術領域擁有世界領先地位。'
     title: 'Persistent Cyber Threat Hunters'
 browse-by-type:
-    title: 'Browse by type'
+    title: 選擇類別
 careers:
     banner:
-        content: 'TeamT5 杜浦數位安全是專注於亞太地區網路威脅分析研究的公司，旨在提供武藝高深的駭客更多溫暖和希望。\n\n\nT5 的意思是 TAIWAN，創辦人 TT 和 Nanika 在美國工作多年，參加 Black Hat 等國際資安研討會，發表超過 50 篇研究，我們相信台灣也可以有世界首屈一指的資安研究團隊，於是 2013 離開趨勢創立\nTeamT5 杜浦數位安全 一個研究導向的公司。\n\n\nTeamT5 杜浦數位安全有精通資安各種領域的研究員，從事世界頂尖的網路攻擊研究、公司文化崇尚自由、福利待遇具競爭力。\n\n\n如你對資安滿懷熱忱並相信自己充滿潛力，但礙於環境或經驗的限制而未能滿足，這裡我們提供環境帶你一起學習成長。\n\n\n我們的 mission 是守護世界和平，如果現實世界做不到至少 cyber 還有機會。\n\n我們的 vision 是給優秀年輕人舞台，如果台灣沉了至少 cyber 還有位元留存。'
+        content: "TeamT5 杜浦數位安全是專注於亞太地區網路威脅分析研究的公司，旨在提供武藝高深的駭客更多溫暖和希望。\n\n\nT5 的意思是 TAIWAN，創辦人 TT 和 Nanika 在美國工作多年，參加 Black Hat 等國際資安研討會，發表超過 50 篇研究，我們相信台灣也可以有世界首屈一指的資安研究團隊，於是 2013 離開趨勢創立\nTeamT5 杜浦數位安全 一個研究導向的公司。\n\n\nTeamT5 杜浦數位安全有精通資安各種領域的研究員，從事世界頂尖的網路攻擊研究、公司文化崇尚自由、福利待遇具競爭力。\n\n\n如你對資安滿懷熱忱並相信自己充滿潛力，但礙於環境或經驗的限制而未能滿足，這裡我們提供環境帶你一起學習成長。\n\n\n我們的 mission 是守護世界和平，如果現實世界做不到至少 cyber 還有機會。\n\n我們的 vision 是給優秀年輕人舞台，如果台灣沉了至少 cyber 還有位元留存。"
         title: 'TeamT5 Careers'
+    page-title: 工作機會
     positions:
         title: 職缺一覽
 contact-us:
     global-support:
-        title: 'Global Support'
+        title: 全球技術支援
         M: support@teamt5.tw
     asean:
         M: asean@teamt5.tw
@@ -31,6 +33,7 @@ contact-us:
     japan:
         M: jp@teamt5.tw
         title: 日本
+    page-title: 聯絡我們
     taiwan:
         A: '105 臺灣臺北市松山區光復北路 11 巷 44 號 11 樓'
         M: sales@teamt5.tw
@@ -52,7 +55,7 @@ footer:
         about-us: 關於我們
         careers: 工作機會
         contact-us: 聯絡我們
-        newsroom: 最新消息
+        newsroom: Newsroom
         title: '關於 TeamT5'
     copyright: '© 2019 Team T5, Inc. All Rights Reserved.'
     english: English
@@ -70,7 +73,7 @@ header:
         about-us: 關於我們
         careers: 工作機會
         contact-us: 聯絡我們
-        newsroom: 最新消息
+        newsroom: Newsroom
         title: '關於 TeamT5'
     partner: 合作夥伴
     product: 'TeamT5 產品'
@@ -91,7 +94,7 @@ index:
             subtitle: 'The Last Line of Your Cyber Defense'
             title: 'UNCOVER HIDDEN THREATS'
         subtitle: 'Next Level Threat Visibility and Intelligence'
-        title: 'TeamT5 的產品'
+        title: 'TeamT5 產品'
         vision:
             name: ThreatVision
             subtitle: 'World-leading Threat Intelligence'
@@ -116,8 +119,8 @@ newsroom:
         email: mk@teamt5.tw
         title: 媒體聯絡
     latest-news:
-        title: 最新消息
-    page-title: 新聞室
+        title: 新聞一覽
+    page-title: Newsroom
 newsroom-browse-by-type-case-study:
     page-title: 'Resource / Case Study'
 newsroom-browse-by-type-event:
@@ -127,8 +130,8 @@ newsroom-browse-by-type-press-release:
 newsroom-browse-by-type-technical:
     page-title: 'Newsroom / Technical'
 partner:
-    asean: ASEAN
-    japan: Japan
+    asean: 亞太區
+    japan: 日本
     macnica-networks:
         W: 'https://www.macnica.net/english/'
         name: 'Macnica Networks'
@@ -137,7 +140,7 @@ partner:
         T: '+65 6858 5645'
         W: 'https://www.netpoleons.com'
         name: netpoleon
-    page-title: Partner
+    page-title: 合作夥伴
     secure-brain:
         name: 'Secure Brain'
     terilogy:
@@ -164,7 +167,7 @@ post:
 privacy-and-cookies-policy:
     page-title: 'Privacy & Cookies Policy'
 resource:
-    page-title: Resource
+    page-title: 技術資源
 resource-browse-by-type-case-study:
     page-title: 'Resource / Case Study'
 resource-browse-by-type-datasheet:
@@ -173,29 +176,31 @@ resource-browse-by-type-technical:
     page-title: 'Resource / Technical'
 scroll-down: SCROLL
 sticky-post:
-    read-more: '繼續閱讀'
+    read-more: 繼續閱讀
 terms-of-service:
     page-title: 'Terms of Service'
 threatsonar:
     assessment-reports:
         a: '時間軸 Timeline 呈現先後'
         b: 記憶體、檔案、網路連線、系統登錄、事件紀錄、工作排程、開機磁區、WMI、啟動程序
-        c: 'Graph Auto Analysis 自動展開 調查各種攻擊手法 TTP 情境'
-        d: '組織中稀有程式或目錄 合法系統工具遭到濫用 具數位簽章的惡意程式'
+        c: 'Graph Auto Analysis 自動展開，調查各種攻擊手法 TTP 情境'
+        d: 組織中稀有程式或目錄・合法系統工具遭到濫用・具數位簽章的惡意程式
         title: 'ThreatSonar 鑑識報告'
     auto-investigation:
-        content: '發掘攻擊事件 起源及過程\n內網移動足跡 資料外流路徑'
-        title: 'ThreatSonar 自動調查'
+        content: "發掘攻擊事件・起源及過程\n內網移動足跡・資料外流路徑"
+        title: "ThreatSonar\n自動調查"
     banner:
         slogan: 'UNCOVER HIDDEN THREATS'
         title: 'The Last Line of Your Cyber Defense'
+    threatsonar-is-complementary-to-your-existing-endpoint-solutions:
+        title: 'ThreatSonar 與其他端點方案互補'
     more-strengths:
         strengths:
-            auto-investigation: {list: '<li>長期的 、 廣泛的 、 全時段</li> <li>與全自動的調査分析</li>', title: 全面自動}
-            elegant: {list: '<li>輕量化 、 高效能 、 低成本</li> <li>與低風險的威脅鑑識</li>', title: 簡練高效}
-            orchestration: {list: '<li>標準化 、 免客製 、 多面向</li> <li>與多樣化的架構整合</li>', title: 多樣完整}
-            premise: {list: '<li>高安全 、 高隱密 、 最多元</li> <li> 與最便利的部署運作</li>', title: 獨立安全}
-            threat-hunting: {list: '<li>深入的 、 精密的 、 最及時</li> <li>與最真實的威脅獵捕</li>', title: 精準有效}
+            auto-investigation: {list: '<li>長期的 、 廣泛的 、 全時段</li> <li>全自動的調査分析</li>', title: 全面自動}
+            elegant: {list: '<li>輕量化 、 高效能 、 低成本</li> <li>低風險的威脅鑑識</li>', title: 簡練高效}
+            orchestration: {list: '<li>標準化 、 免客製 、 多面向</li> <li>多樣化的架構整合</li>', title: 多樣完整}
+            premise: {list: '<li>高安全 、 高隱密 、 最多元</li> <li> 最便利的部署運作</li>', title: 獨立安全}
+            threat-hunting: {list: '<li>深入的 、 精密的 、 最及時</li> <li>最真實的威脅獵捕</li>', title: 精準有效}
         title: 'An Elegant Threat Hunting Solution'
     strengths:
         automate: 自動採用即時威脅情報・主動發掘威脅感染現況
@@ -209,11 +214,11 @@ threatvision:
         list: '<li>網際威脅熱點新知</li> <li>網際威脅事件、族群與攻擊來源深度分析</li> <li>亞太區網際威脅情勢分析</li>'
         title: 亞太區威脅情資報告
     threat-analysis:
-        list: '<li>全自動化分析</li> <li>惡意程式種類識別與關聯發掘</li> <li>惡意程式動靜態特徵彙整</li> <li>駭駸攻擊來源識別</li>'
+        list: '<li>全自動化分析</li> <li>惡意程式種類識別與關聯發掘</li> <li>惡意程式動靜態特徵彙整</li> <li>駭侵攻擊來源識別</li>'
         title: 惡意程式分析
     strengths:
-        a: 發掘與識別潛在威脅
-        b: 熟悉駭客攻擊手法
-        c: 提升威脅情勢掌握能量
-        d: 由被動防禦轉為主動防禦
+        a: 發掘識別潛在威脅
+        b: 熟悉瞭解駭客手法
+        c: 開拓威脅掌握視野
+        d: 提升主動防禦能量
         title: 網際威脅情資平台
