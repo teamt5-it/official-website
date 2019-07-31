@@ -8,7 +8,7 @@ categories:
 - newsroom
 tags:
 - case study
-resource_sticky: false
+resource_sticky: true
 newsroom_sticky: false
 
 ---
