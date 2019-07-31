@@ -6,6 +6,7 @@ $carousel-item-information-text-shadow-color: rgba(0, 0, 0, .5);
 }
 
 .carousel-items {
+  overflow: hidden;
   position: relative;
 
   &::after {
