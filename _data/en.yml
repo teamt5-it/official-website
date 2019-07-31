@@ -189,7 +189,7 @@ threatsonar:
         slogan: 'UNCOVER HIDDEN THREATS'
         title: 'The Last Line of Your Cyber Defense'
     threatsonar-is-complementary-to-your-existing-endpoint-solutions:
-        title: 'ThreatSonar is Complementary to Your Existing Endpoint Solutions'
+        title: "ThreatSonar is Complementary to\n Your Existing Endpoint Solutions"
     more-strengths:
         strengths:
             auto-investigation: {list: '<li>Infection Timeline</li> <li>Lateral movement analysis</li>', title: 'Auto Investigation'}

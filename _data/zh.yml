@@ -163,17 +163,6 @@ post:
     back: 上一頁
 privacy-and-cookies-policy:
     page-title: 'Privacy & Cookies Policy'
-products:
-    sonar:
-        name: ThreatSonar
-        subtitle: 'Elegant Threat Hunting Technology'
-        title: 'UNCOVER HIDDEN THREATS'
-    subtitle: 'Next Level Threat Visibility and Intelligence'
-    title: 'TeamT5 Product'
-    vision:
-        name: ThreatVision
-        subtitle: 'World-leading Threat Intelligence'
-        title: 'KNOW YOUR ENEMIES'
 resource:
     page-title: Resource
 resource-browse-by-type-case-study:

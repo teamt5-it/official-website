@@ -177,7 +177,8 @@ layout: default
 </div>
 <div class="threatsonar-is-complementary-to-your-existing-endpoint-solutions">
     <div class="threatsonar-is-complementary-to-your-existing-endpoint-solutions-title title sonar-title">
-        {% t threatsonar-is-complementary-to-your-existing-endpoint-solutions.title %}
+        {% capture string-with-newlines %}{% t threatsonar-is-complementary-to-your-existing-endpoint-solutions.title %}{% endcapture %}
+        {{ string-with-newlines | newline_to_br }}
     </div>
     <div class="threatsonar-is-complementary-to-your-existing-endpoint-solutions-image">
         <object data="{% asset threatsonar-is-complementary-to-your-existing-endpoint-solutions.svg @path %}">
