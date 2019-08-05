@@ -1,7 +1,7 @@
 ---
 locale: en
 date: 2019-06-12T03:13:37.000+00:00
-title: Alert and Countermeasures from TeamT5 – “HiddenWasp”
+title: 'Threats and Countermeasures: "HiddenWasp" Malware'
 banner: "/assets/images/technical01.jpg"
 categories:
 - resource
