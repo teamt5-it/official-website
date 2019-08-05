@@ -1,7 +1,7 @@
 ---
 locale: en
 date: 2019-03-28T04:10:30.000+00:00
-title: 'Another Supply Chain Attack: ASUS Software Updates was Hacked!'
+title: 'ASUS Supply-Chain Attack: A Technical Look Inside'
 banner: "/assets/images/cover_another.png"
 categories:
 - resource
@@ -14,18 +14,18 @@ newsroom_sticky: false
 ---
 photo courtesy of: pixabay.com
 
-Asus, one of the world’s largest computer makers, was believed to be the newest victim of a supply chain attack. According to the up-to-date blog of Kaspersky \[1\], the live software update server of Asus was compromised and used for installing malicious backdoors on customers’ devices.
+Asus, one of the world’s largest computer makers, was believed to be the newest victim of a supply chain attack. According to the up-to-date blog of Kaspersky \[1\], ASUS Live Software Server was compromised by attackers to install malicious backdoors on customers’ devices.
 
-It was alleged that the malware had been delivered to millions of computers. Due to the design logic, however, the malware will only survive in only a small set of computers if the MAC address falls in a target list defined by the actors. This phenomenon has been observed in several Chinese originated supply Chain attacks, such as CCleaner and NetSarang supply chain attacks in 2017.
+IIt was alleged that the malware was delivered to millions of Asus computers, although the attackers targeted only 600 specific MAC addresses. This phenomenon has been observed in several supply chain attacks associated with China-backed APT actors, such as CCleaner and NetSarang supply chain attacks in 2017.
 
-TeamT5 was able to find several samples of this serial attack and performed technical analysis on it. The C2 is https://asushotfix\[.\]com, which was shut down while analyzing. Thus, we are not able to provide further information yet.
+TeamT5 found several samples of this serial attack and performed technical analysis on it. The C2 is https://asushotfix\[.\]com, which was shut down during our analysis. Thus, we are not able to provide further information at this time.
 
-![Figure 1 Shellcode encoding routine in ASUS sample, which is the same as PlugX Fast version](/assets/images/02_01.png "Figure 1 Shellcode encoding routine in ASUS sample, which is the same as PlugX Fast version")
-_Figure 1 Shellcode encoding routine in ASUS sample, which is the same as PlugX Fast version_
+![Figure 1: Shellcode encoding routine in ASUS sample, which is the same in PlugX Fast version](/assets/images/02_01.png "Figure 1: Shellcode encoding routine in ASUS sample, which is the same in PlugX Fast version")
+_Figure 1: Shellcode encoding routine in ASUS sample, which is the same in PlugX Fast version_
 
-The result suggests China as the origin of this attack for using PlugX Crypt for the shellcode derived from the file. Besides, TeamT5 observed several similar techniques between the attack and the previous supply chain attacks, such as inserting malicious shellcode in the run-time initialization routine in C program. TeamT5 possess with high confidence that the ASUS case was China originated and linked to the CCleaner and NetSarang attacks.
+The result indicates this attack was possibly carried out by Chinese hackers since they used PlugX Crypt for the shellcode derived from the file. Besides, TeamT5 observed several similar techniques between this attack and the previous cases, such as inserting malicious shellcode in the run-time initialization routine in C program. TeamT5 strongly believes that this supply chain attack on ASUS system was backed by China government and can be linked to the CCleaner and NetSarang attacks.
 
-From the C2 domain activation history, TeamT5 believes the initial campaign itself started from May 2018 and ended in around Oct. 2018. However, the computers in the target list will be implanted with other malware and keep being controlled by the threat actors. The only knowledge regarding the targets is a list of MAC address hashes and could not be mapped to organizations or individuals. We are to inform our clients to check the IDS/IPS or try to use TeamT5’s ThreatSonar to scan for further detect and defense.
+From the C2 domain activation history, TeamT5 believes the initial campaign started from May 2018 and ended in around Oct 2018. However, the computers in the target list will be implanted with other malwares and keep being controlled by the threat actors. The only knowledge regarding the targets is a list of MAC address hashes and they could not be mapped to organizations or individuals. We urge our clients to check the IDS/IPS or try to use TeamT5’s ThreatSonar to scan for further detection and defence.
 
 ### Reference
 
@@ -124,7 +124,7 @@ _Details of abused certificate._
 
 In “Hunter” page, you are able to search “thumbprint = 626646d29c5b0e7c53aa84698a4a97be323cf17f” by switching scope to “Certificate” (Please select “Engine Version” to All).
 
-p.s. If you find any matched results, don’t be hesitate to contact with us.
+p.s. If you find any matched results, don’t hesitate to contact with us.
 
 ![Thumbprint matched endpoints and programs.](/assets/images/02_04.png "Thumbprint matched endpoints and programs.")
 _Thumbprint matched endpoints and programs._
