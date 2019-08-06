@@ -13,7 +13,7 @@ newsroom_sticky: false
 ---
 photo courtesy of: pixabay.com
 
-TeamT5 CEO TT Tsai is honored to be the one of the speakers on the topic “Respond Before Incident, intelligence-driven proactive threat hunting case-study from Taiwan” at Australia Cyber Conference
+TT Tsai, the CEO of TeamT5, is invited to be one of the keynote speakers in Australia Cyber Conference 2019. He will share his experience in cybersecurity with the topic “Respond Before Incident, intelligence-driven proactive threat hunting case-study from Taiwan” to global experts and industry leaders.
 
 **Time:** 2019 7th-9th Oct
 
