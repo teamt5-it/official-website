@@ -6,29 +6,26 @@ tags:
 - full-time
 
 ---
-## Duties
+## **Job Description**
 
-### Responsibilities
+### **Responsibilities and Duties**
 
-* 產品相關技術支援
+* Provide technical support related to our product.
 
-### Required Skills -- You need: All, or at least most, of these
+### Required Skills
 
-* 資安產品的掌握度(ex. EPP、EDR、MDR、UEBA)。
-* 了解網路架構原理、封包、DNS、VLAN 等協定。
-* 能夠進行作業系統/網路障礙排除。
-* 熟悉 Linux / Windows 作業系統。
+* Understand cybersecurity products (ex. EPP、EDR、MDR、UEBA)
+* Understand the principles of network architecture, data packets, DNS, VLANs, and more.
+* Ability to carry out network errors exclusion.
+* Familiar with Linux/Windows Operating System.
 
-### Preferred Skills -- You need: At least half of these
+### Preferred Skills
 
 * CEH / CHFI
 * Windows AD
-* 能夠清楚描述產品功能與開發人員溝通
-
-### Desired Skills -- You need: None of these, but having at least one can't hurt.
-
-* 具產品原廠工作經驗
-* 資安社群成員
+* Describe product features and communicate with developers
+* Experience in OEM
+* Member of cybersecurity community
 
 ## Compensation
 
