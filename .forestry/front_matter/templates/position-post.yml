@@ -44,6 +44,6 @@ fields:
       path: 
   label: locale
 pages:
+- _positions/research-engineer.md
 - _positions/devops-engineer.md
 - _positions/support-engineer.md
-- _positions/research-engineer.md

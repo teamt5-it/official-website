@@ -6,35 +6,33 @@ tags:
 - full-time
 
 ---
-## Duties
+## **Job Description**
 
-### Responsibilities
+### **Responsibilities and Duties**
 
-* 第一線事件回應服務
-* 協助客戶進行資安威脅狩獵
-* 事件/樣本分析判讀
+* Provide help to the frontline operator of Incident Response
+* Assist our clients to detect and respond their cyber threats
+* Analyze malicious events/samples
 
-### Required Skills -- You need: All, or at least most, of these
+### Required Skills
 
-* Windows 或 Linux 的基本惡意程式分析。
-* Windows 或 Linux 的系統記錄和執行軌跡分析 Event Log, Web server Log 等。
-* 了解網路架構原理、封包、DNS、VLAN 等協定。
-* 訪談客戶了解受害狀況、寫書面事件報告、對客戶簡報溝通。
+* basic malware analysis in Windows or Linux systems
+* system record and execution analysis (such as Event Log, Web server Log)
+* network architecture, data packets, DNS, VLANs, etc.
+* report writing
+* communication skill
 
-### Preferred Skills -- You need: At least half of these
+### Preferred Skills
 
 * CEH / CHFI
 * Wireshark / Moloch / etc.
 * Windows AD
 * SIEM
-
-### Desired Skills -- You need: None of these, but having at least one can't hurt.
-
 * IDA Pro
 * OllyDbg
 * Sysinternals
-* 事件調查經驗
+* Incident Response Experience
 
 ## Compensation
 
-* Negotiable / 面議
+* Negotiable
