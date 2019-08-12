@@ -1,8 +1,8 @@
 ---
 layout: privacy-and-cookies-policy
-permalink: /zh/privacy-and-cookies-policy/
----
+permalink: "/zh/privacy-and-cookies-policy/"
 
+---
 ### Policy Overview
 
 We are committed to safeguarding the privacy of our website visitors, readers, and service users. This Privacy is provided by Team T5 Inc. (hereinafter referred to as "TeamT5" or "Company") to explain to you which personal data may be collected from the company’s website linked to this policy and how it may be used. If you have any questions or comments about this policy, please contact us. This policy only applies to the processing of personal data collected through our website. If you are a resident of the European Union, please refer to the EU Appendix below.
