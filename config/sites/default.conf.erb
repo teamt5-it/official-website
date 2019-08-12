@@ -1,6 +1,6 @@
 server {
     listen <%= ENV["PORT"] %>;
-    server_name ~^(?<fqdn>.+\.)?teamt5.(?<tld>(org|tw))$;
+    server_name ~^(?<fqdn>.+\.)?teamt5.(?<tld>(org|net|tw))$;
     keepalive_timeout 5;
     client_max_body_size <%= ENV['NGINX_CLIENT_MAX_BODY_SIZE'] || 1 %>M;
 
