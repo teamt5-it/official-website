@@ -25,6 +25,6 @@ server {
     include locations.conf;
 
     location / {
-        rewrite ^/(.*)(\/|$) https://${fqdnsub}teamt5.org/products/threatvision break;
+        rewrite ^/(.*)(\/|$) https://${fqdnsub}teamt5.org/products/threatvision/ break;
     }
 }
