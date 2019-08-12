@@ -1,5 +1,5 @@
 ---
-date: 2019-06-09 02:07:02 +0800
+date: 2019-06-08T18:07:02.000+00:00
 locale: zh
 title: ThreatSonar 榮獲科技部『科技大擂台2：AI資安攻防戰』冠軍
 banner: "/assets/images/cover_FormosaGrandChallenge2-1.jpg"
