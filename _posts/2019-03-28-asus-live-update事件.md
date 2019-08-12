@@ -1,5 +1,5 @@
 ---
-date: 2019-03-28 12:14:02 +0800
+date: 2019-03-28T04:14:02.000+00:00
 locale: zh
 title: ASUS Live Update事件
 banner: "/assets/images/cover_another.png"
