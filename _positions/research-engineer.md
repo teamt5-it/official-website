@@ -8,7 +8,7 @@ tags:
 ---
 ## **Job Description**
 
-### **Responsibilities and Duties**
+### Responsibilities and Duties
 
 * Provide help to the frontline operator of Incident Response
 * Assist our clients to detect and respond their cyber threats

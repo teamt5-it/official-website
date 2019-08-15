@@ -44,6 +44,7 @@ fields:
       path: 
   label: locale
 pages:
+- _positions/research-engineer.md
 - _positions/systems-engineer.md
 - _positions/rails-developer.md
 - _positions/backend-engineer.md
@@ -54,4 +55,3 @@ pages:
 - _positions/junior-ui-designer.md
 - _positions/administrative-specialist.md
 - _positions/support-engineer.md
-- _positions/research-engineer.md
