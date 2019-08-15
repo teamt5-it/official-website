@@ -4,7 +4,6 @@ locale: en
 title: Junior Ui Designer
 tags:
 - full-time
-published: false
 
 ---
 ## Responsibilities and Duties
