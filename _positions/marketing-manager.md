@@ -4,7 +4,6 @@ locale: en
 title: Marketing Manager
 tags:
 - full-time
-published: false
 
 ---
 ## Responsibilities and Duties
