@@ -44,11 +44,11 @@ fields:
       path: 
   label: locale
 pages:
+- _positions/marketing-manager.md
 - _positions/ui-designer.md
 - _positions/devops-engineer.md
 - _positions/junior-ui-designer.md
 - _positions/administrative-specialist.md
-- _positions/marketing-manager.md
 - _positions/incident-response-engineer.md
 - _positions/backend-engineer.md
 - _positions/rails-developer.md

@@ -6,6 +6,7 @@ tags:
 - full-time
 
 ---
+## **Job Description**
 ## Responsibilities and Duties
 * 負責品牌行銷策略規劃與執行及市場資訊蒐集分析與建議等工作
 * 負責行銷活動與媒體活動，並對其效益進行分析與建議
