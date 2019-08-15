@@ -73,6 +73,7 @@ fields:
   label: newsroom_sticky
   default: false
 pages:
+- _posts/teamt5-lab-found-a-critical-vulnerability-in-microsoft-windows.md
 - _posts/2019-06-09-teamt5-win-the-formosa-grand-challenge-2-s-fund-finals.md
 - _posts/teamt5-受邀前往-澳洲網際網路學術論壇會議.md
 - _posts/2019-03-28-asus-live-update事件.md
