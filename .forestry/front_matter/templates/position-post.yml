@@ -44,6 +44,7 @@ fields:
       path: 
   label: locale
 pages:
+- _positions/marketing-manager.md
 - _positions/administrative-specialist.md
 - _positions/incident-response-engineer.md
 - _positions/backend-engineer.md
