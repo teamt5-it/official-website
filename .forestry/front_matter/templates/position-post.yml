@@ -44,6 +44,7 @@ fields:
       path: 
   label: locale
 pages:
+- _positions/junior-ui-designer.md
 - _positions/ui-designer.md
 - _positions/marketing-manager.md
 - _positions/administrative-specialist.md
