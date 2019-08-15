@@ -4,7 +4,6 @@ locale: en
 title: Rails Developer
 tags:
 - full-time
-published: false
 
 ---
 ## Job Description
