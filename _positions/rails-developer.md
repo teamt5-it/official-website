@@ -6,8 +6,7 @@ tags:
 - full-time
 
 ---
-## Job Description
-
+## **Job Description**
 ### Responsibilities and Duties
 
 * Build new products and features that improve our customers’ InfoSec.
