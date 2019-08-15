@@ -6,7 +6,7 @@ tags:
 - full-time
 
 ---
-## Job Description
+## **Job Description**
 
 ### Responsibilities and Duties
 
