@@ -1,7 +1,7 @@
 ---
 location: Taipei, Taiwan
 locale: en
-title: Administrative Specialist
+title: Administrative Specialist 行政專員
 tags:
 - full-time
 
