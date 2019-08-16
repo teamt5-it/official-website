@@ -8,6 +8,9 @@ tags:
 ---
 ## **Job Description**
 ## Responsibilities and Duties
+* Build new products and features that improve our customers’ InfoSec.
+* Participates in the design, development and implementation of complex applications, often using Ruby and Python
+* Help maintain code quality, organization and automatization
 
 ### Required Skills
 
