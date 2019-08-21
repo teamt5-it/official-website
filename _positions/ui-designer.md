@@ -1,7 +1,7 @@
 ---
 location: Taipei, Taiwan
 locale: en
-title: Ui Designer
+title: UI Designer
 tags:
 - full-time
 
