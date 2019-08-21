@@ -1,7 +1,7 @@
 ---
 location: Taipei, Taiwan
 locale: en
-title: Junior Ui Designer
+title: Junior UI Designer
 tags:
 - full-time
 
