@@ -81,6 +81,7 @@ $sticky-post-information-background-color: rgba(0, 0, 0, .6);
 }
 
 .sticky-post-date {
+  @include flex-center-align;
   color: $white;
 
   @include responsive(1280px) {
