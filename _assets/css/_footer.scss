@@ -71,8 +71,9 @@ $footer-desktop-padding: 60px;
   }
 }
 
-hr {
-  margin: 0 20px;
+.footer-hr {
+  border: .5px solid $light-background-color;
+  margin: 0 15px;
 }
 
 .footer-informations-and-language-selector {
