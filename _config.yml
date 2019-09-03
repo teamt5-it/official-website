@@ -48,10 +48,10 @@ collections:
 plugins:
   - jekyll-coffeescript
   - jekyll-assets
-  - normalize-scss
   - jekyll-paginate-v2
   - jekyll-admin
   - jekyll-autoprefixer
+  - normalize-scss
 
 # jekyll-assets
 
