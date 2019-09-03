@@ -122,10 +122,14 @@ $sticky-post-information-background-color: rgba(0, 0, 0, .6);
   display: none;
 
   @include responsive(1280px) {
+    align-items: center;
     align-self: flex-end;
+    box-sizing: border-box;
     display: flex;
     font-size: 20px;
     height: 36px;
+    padding-bottom: 1px;
+    padding-left: 18px;
     width: 145px;
   }
 }

@@ -22,6 +22,7 @@
   }
 
   .back-button {
+    @include flex-center-align;
     margin: 20px;
 
     @include responsive(640px) {

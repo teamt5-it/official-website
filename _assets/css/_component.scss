@@ -201,14 +201,15 @@ input {
 }
 
 .button {
-  @include flex-center-align;
   -webkit-appearance: none;
   background-color: $button-background-color;
   border: 0;
   border-radius: 4px;
   color: $button-color;
   cursor: pointer;
+  display: inline-block;
   font-weight: bold;
+  text-align: center;
   transition: background-color 1s;
 
   @at-root #{&}-with-arrow {
@@ -224,16 +225,16 @@ input {
       height: 6px * $square-root-of-two;
 
       position: absolute;
-      right: 6px;
+      right: 10px;
       top: calc(50% - 6px + #{$arrow-width} / #{$square-root-of-two});
       transform: rotate(45deg);
       width: 6px * $square-root-of-two;
 
       @include responsive(640px) {
-        height: 8px * $square-root-of-two;
-        right: 8px;
-        top: calc(50% - 8px + #{$arrow-width} / #{$square-root-of-two});
-        width: 8px * $square-root-of-two;
+        height: 7px * $square-root-of-two;
+        right: 10px;
+        top: calc(50% - 7px + #{$arrow-width} / #{$square-root-of-two});
+        width: 7px * $square-root-of-two;
       }
     }
   }

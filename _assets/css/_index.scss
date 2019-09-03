@@ -276,6 +276,7 @@ $scroll-bottom-margin: 100px;
   }
 
   .teamt5-product-learn-more-button {
+    @include flex-center-align;
     font-size: 12px;
     height: 20px;
     width: 120px;
@@ -312,7 +313,9 @@ $scroll-bottom-margin: 100px;
 
 
   .teamt5-news-more-button {
+    @include flex-center-align;
     border-radius: 0;
+    box-sizing: border-box;
     display: flex;
     font-size: 12px;
     height: 20px;
@@ -328,6 +331,8 @@ $scroll-bottom-margin: 100px;
 
     @include responsive(800px) {
       font-size: 20px;
+      // align text fix
+      padding-bottom: 2px;
       width: 145px;
     }
   }
