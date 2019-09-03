@@ -42,7 +42,7 @@ body {
     display: flex;
     flex: none;
     flex-direction: column;
-    margin-top: $square-side-length / $square-root-of-two * 4;
+    margin-top: $square-side-length / $square-root-of-two * 2;
 
     footer {
       box-sizing: border-box;
