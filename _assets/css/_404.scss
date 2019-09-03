@@ -34,6 +34,7 @@ body {
   }
 
   .page-not-found-take-me-home-button {
+    @include flex-center-align;
     height: 40px;
     width: 200px;
 
