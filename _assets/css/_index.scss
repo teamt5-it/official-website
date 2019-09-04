@@ -11,7 +11,7 @@ $scroll-bottom-margin: 100px;
   .banner {
     align-items: center;
     background-color: $background-color;
-    background-image: asset_url('persistent_cyber_threat_hunters_bg.svg');
+    background-image: asset_url('index/persistent-cyber-threat-hunters-background.svg');
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -230,7 +230,7 @@ $scroll-bottom-margin: 100px;
     }
 
 
-    img {
+    object {
       width: 100%;
     }
   }

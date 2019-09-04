@@ -7,7 +7,8 @@ layout: default
         {% t banner.slogan %}
     </div>
     <div class="banner-logo">
-        {% asset threatvision-banner-logo.svg %}
+        <object data="{% asset  threatvision/threatvision-banner-logo.svg @path %}">
+        </object>
     </div>
     <div class="banner-title title">
         {% t banner.title %}
@@ -21,7 +22,7 @@ layout: default
     <div class="strengths">
         <div class="strength">
             <div class="strength-logo">
-                <object data="{% asset discover&identify.svg @path %}">
+                <object data="{% asset threatvision/discover&identify.svg @path %}">
                 </object>
             </div>
             <div class="strength-title title">
@@ -30,7 +31,7 @@ layout: default
         </div>
         <div class="strength">
             <div class="strength-logo">
-                <object data="{% asset adversary.svg @path %}">
+                <object data="{% asset threatvision/adversary.svg @path %}">
                 </object>
             </div>
             <div class="strength-title title">
@@ -39,7 +40,7 @@ layout: default
         </div>
         <div class="strength">
             <div class="strength-logo">
-                <object data="{% asset awareness.svg @path %}">
+                <object data="{% asset threatvision/awareness.svg @path %}">
                 </object>
             </div>
             <div class="strength-title title">
@@ -48,7 +49,7 @@ layout: default
         </div>
         <div class="strength">
             <div class="strength-logo">
-                <object data="{% asset proactive.svg @path %}">
+                <object data="{% asset threatvision/proactive.svg @path %}">
                 </object>
             </div>
             <div class="strength-title title">
@@ -59,7 +60,7 @@ layout: default
 </div>
 <div class="intelligence-report">
     <div class="intelligence-report-screenshot">
-        {% asset intelligence-report-screenshot.png %}
+        {% asset threatvision/intelligence-report-screenshot.png %}
     </div>
     <div class="intelligence-report-title-and-content">
         <div class="intelligence-report-title title sonar-title">
@@ -83,7 +84,7 @@ layout: default
             </ul>
         </div>
         <div class="threat-analysis-mac">
-            {% asset vision-mac.png %}
+            {% asset threatvision/vision-mac.png %}
         </div>
     </div>
 </div>

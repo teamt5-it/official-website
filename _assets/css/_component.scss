@@ -10,6 +10,10 @@ html {
   }
 }
 
+object {
+  pointer-events: none;
+}
+
 // reset style set by webkit
 textarea,
 input {

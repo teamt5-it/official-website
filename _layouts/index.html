@@ -48,7 +48,8 @@ layout: default
                     {% t teamt5-products.sonar.title %}
                 </div>
                 <div class="teamt5-product-logo">
-                    {% asset sonar-logo.svg %}
+                    <object data="{% asset index/sonar-logo.svg @path %}">
+                    </object>
                 </div>
                 <div class="teamt5-product-name title title-xl">
                     {% t teamt5-products.sonar.name %}
@@ -57,7 +58,8 @@ layout: default
                     {% t teamt5-products.sonar.subtitle %}
                 </div>
                 <div class="teamt5-product-learn-more-button-container">
-                    <a class="teamt5-product-learn-more-button button button-with-arrow" href="{% t links.products.threatsonar %}">
+                    <a class="teamt5-product-learn-more-button button button-with-arrow"
+                        href="{% t links.products.threatsonar %}">
                         {% t learn-more %}
                     </a>
                 </div>
@@ -67,7 +69,8 @@ layout: default
                     {% t teamt5-products.vision.title %}
                 </div>
                 <div class="teamt5-product-logo">
-                    {% asset vision-logo.svg %}
+                    <object data="{% asset index/vision-logo.svg  @path %}">
+                    </object>
                 </div>
                 <div class="teamt5-product-name title title-xl">
                     {% t teamt5-products.vision.name %}
@@ -76,7 +79,8 @@ layout: default
                     {% t teamt5-products.vision.subtitle %}
                 </div>
                 <div class="teamt5-product-learn-more-button-container">
-                    <a class="teamt5-product-learn-more-button button button-with-arrow" href="{% t links.products.threatvision %}">
+                    <a class="teamt5-product-learn-more-button button button-with-arrow"
+                        href="{% t links.products.threatvision %}">
                         {% t learn-more %}
                     </a>
                 </div>
