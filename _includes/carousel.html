@@ -9,8 +9,8 @@
             <img src="{{post.banner}}">
             <div class="carousel-item-information-container">
                 <div class="carousel-item-information">
-                    <div class="carousel-item-information-date">
-                        {{post.date| date: "%Y-%m-%d"}}
+                    <div class="carousel-item-information-date date">
+                        {{post.date | date: site.date_format }}
                     </div>
                     <div class="carousel-item-information-title title">
                         {{post.title}}

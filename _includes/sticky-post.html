@@ -7,8 +7,8 @@
     </div>
     <div class="sticky-post-information">
         <div class="sticky-post-meta">
-            <div class="sticky-post-date post-date">
-                {{ post.date | date: "%Y-%m-%d" }}
+            <div class="sticky-post-date date">
+                {{ post.date | date: site.date_format }}
             </div>
             <div class="sticky-post-tags post-tags tags">
                 {% for tag in post.tags %}

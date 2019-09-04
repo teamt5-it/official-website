@@ -22,7 +22,7 @@ layout: page
                 </div>
                 <div class="post-meta">
                     <div class="post-date date">
-                        {{ post.date | date: "%Y-%m-%d" }}
+                        {{ post.date | date: site.date_format }}
                     </div>
                     <div class="post-tags tags">
                         {% for tag in post.tags %}

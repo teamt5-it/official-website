@@ -7,6 +7,10 @@
     @include post-page-padding-horizontal;
   }
 
+  .post-date {
+    color: $primary-color;
+  }
+
   .post-banner {
     @include responsive(640px) {
       @include post-page-padding-horizontal;
