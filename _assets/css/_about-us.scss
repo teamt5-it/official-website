@@ -84,8 +84,8 @@
       padding: 10px 20px;
     }
 
-    @include responsive(1024px) {
-      padding: 50px;
+    @include responsive(1280px) {
+      padding: 50px 130px;
     }
 
     .teamt5-leadership-name {
@@ -97,6 +97,7 @@
     }
 
     .teamt5-leadership-introduction {
+      line-height: 18px;
       text-align: justify;
     }
   }
