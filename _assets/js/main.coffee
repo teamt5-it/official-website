@@ -200,8 +200,8 @@ $ ->
           @getItemInformation(index).addClass("#{itemInformation}-center")
         , duration * 2
         setTimeout =>
-          @getItemInformation(index).removeClass("$itemInformation-bottom")
-          @getItemInformation(index).removeClass("$itemInformation-center")
+          @getItemInformation(index).removeClass("#{itemInformation}-bottom")
+          @getItemInformation(index).removeClass("#{itemInformation}-center")
           resolve
         , duration * 3
       )
