@@ -215,28 +215,14 @@ input {
   @at-root #{&}-with-arrow {
     border-radius: 0;
     position: relative;
+  }
 
-    &::after {
-      border: solid $white;
-      border-radius: $arrow-width;
-      border-width: $arrow-width $arrow-width 0 0;
-      content: '';
-      display: block;
-      height: 6px * $square-root-of-two;
-
-      position: absolute;
-      right: 10px;
-      top: calc(50% - 6px + #{$arrow-width} / #{$square-root-of-two});
-      transform: rotate(45deg);
-      width: 6px * $square-root-of-two;
-
-      @include responsive(640px) {
-        height: 7px * $square-root-of-two;
-        right: 10px;
-        top: calc(50% - 7px + #{$arrow-width} / #{$square-root-of-two});
-        width: 7px * $square-root-of-two;
-      }
-    }
+  .button-arrow-right {
+    height: 50%;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &:hover {
