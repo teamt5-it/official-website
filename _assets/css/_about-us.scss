@@ -1,6 +1,11 @@
 @import 'base';
 
 .about-us-layout {
+
+  .banner-with-text-content {
+    line-height: 18px;
+  }
+
   .teamt5-leadership {
     display: grid;
     grid-gap: 10px;
