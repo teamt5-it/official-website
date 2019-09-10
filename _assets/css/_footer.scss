@@ -151,19 +151,13 @@ $footer-desktop-padding: 60px;
 }
 
 .scroll-top-arrow {
-  border: solid $white;
-  border-width: 3px 0 0 3px;
-  height: $square-side-length / 3;
+  bottom: 50%;
   position: absolute;
-
-  top: -$square-side-length / 3 / $square-root-of-two;
-  width: $square-side-length / 3;
 }
 
 .scroll-top-text {
   color: $white;
   font-size: 12px;
-  padding-left: 1px;
   position: absolute;
   top: $square-side-length / $square-root-of-two / 2 - 12px;
 }
