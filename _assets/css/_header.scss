@@ -190,34 +190,23 @@ $navbar-submenu-mobile-background-color: $background-color;
   }
 }
 
-.navbar-item-arrow-container {
-  align-items: center;
-  display: flex;
+.navbar-item-arrow {
   height: $navbar-item-arrow-container-height;
-  justify-content: center;
-  position: relative;
   width: $navbar-item-arrow-container-height;
 
   @include responsive(800px) {
     display: none;
   }
-}
-
-.navbar-item-arrow {
-  border: solid $grey;
-  border-radius: $arrow-width;
-  border-width: $arrow-width 0 0 $arrow-width;
-  height: $navbar-item-arrow-container-height / 3;
-  position: absolute;
-  transform: rotate(-135deg);
-  width: $navbar-item-arrow-container-height / 3;
 
   @at-root #{&}-active {
-    position: absolute;
-    top: 50%;
-    transform: rotate(45deg);
+    transform: rotate(180deg);
+  }
+
+  object {
+    height: 100%;
   }
 }
+
 
 .navbar-submenu {
   background-color: $navbar-submenu-mobile-background-color;
