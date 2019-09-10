@@ -14,7 +14,7 @@ defaults:
       locale: en
   -
     scope:
-      path: "zh" # an empty string here means all files in the project
+      path: "zh"
       type: "pages"
     values:
       locale: zh
