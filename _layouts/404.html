@@ -6,7 +6,8 @@
   <div class="page-not-found-container">
     <div class="page-not-found">
       <div class="page-not-found-logo">
-        {% asset 404.svg %}
+        <object data="{% asset 404.svg @path %}">
+        </object>
       </div>
       <div class="page-not-found-instruction">
         {% t instruction %}
