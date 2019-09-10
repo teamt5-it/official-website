@@ -30,7 +30,7 @@ $scroll-bottom-margin: 100px;
   }
 
   .banner-content {
-    line-height: 20px;
+    line-height: 16px;
     text-align: justify;
     width: 280px;
 
@@ -39,6 +39,7 @@ $scroll-bottom-margin: 100px;
     }
 
     @include responsive(800px) {
+      line-height: 20px;
       width: 680px;
     }
   }
