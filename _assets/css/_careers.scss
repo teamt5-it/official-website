@@ -70,32 +70,18 @@
   }
 
 
-  .arrow-container {
-    @include flex-center-align;
+  .arrow-right {
     grid-column: 2;
     grid-row: 1 / span 2;
-    height: 30px;
-    width: 30px;
+    height: 27px;
 
     @include responsive(800px) {
       grid-column: auto;
       grid-row: auto;
-      height: 20px;
-      width: 20px;
     }
-  }
 
-  .arrow {
-    border: solid $primary-color;
-    border-radius: $arrow-width;
-    border-width: 0 $arrow-width $arrow-width 0;
-    height: 30px / $square-root-of-two;
-    transform: rotate(-45deg);
-    width: 30px / $square-root-of-two;
-
-    @include responsive(800px) {
-      height: 20px / $square-root-of-two;
-      width: 20px / $square-root-of-two;
+    object {
+      height: 100%;
     }
   }
 }
