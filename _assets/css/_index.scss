@@ -76,20 +76,15 @@ $scroll-bottom-margin: 100px;
   }
 
   .scroll-bottom-arrow {
-    border: solid $white;
-    border-width: 0 3px 3px 0;
-    height: $square-side-length / 3;
+    bottom: 50%;
     position: absolute;
-
-    top: -$square-side-length / 3 / $square-root-of-two * 2;
-    width: $square-side-length / 3;
   }
 
   .scroll-bottom-text {
     color: $white;
     font-size: 12px;
     position: absolute;
-    top: 0;
+    top: calc(50% + 3px);
   }
 
   .scroll-bottom-diamonds {
