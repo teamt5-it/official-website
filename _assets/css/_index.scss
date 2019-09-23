@@ -209,25 +209,30 @@ $scroll-bottom-margin: 100px;
   .teamt5-product-logo {
     grid-column: 1 / 2;
     grid-row: 1 / span 3;
+    height: 80px;
     width: 80px;
 
     @include responsive(640px) {
       grid-column: auto;
       grid-row: auto;
+      height: 120px;
       margin-bottom: 20px;
       width: 120px;
     }
 
     @include responsive(800px) {
+      height: 140px;
       width: 140px;
     }
 
     @include responsive(1024px) {
+      height: 200px;
       width: 200px;
     }
 
 
     object {
+      height: 100%;
       width: 100%;
     }
   }

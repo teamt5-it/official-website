@@ -1,9 +1,13 @@
 
 //=require 'vendor/jquery'
+//=require 'vendor/jquery.lazy.js'
+//=require 'vendor/jquery.lazy.plugins.js'
 //=require 'vendor/jquery.serializejson.js'
 //=require 'vendor/autoresize.jquery.js'
 
 $ ->
+
+  $('.lazy').Lazy()
   # ScrollTop
 
   class ScrollTop

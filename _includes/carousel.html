@@ -6,7 +6,11 @@
         carousel-item-active
         {% endif %}
         " data-index="{{ forloop.index | minus: 1 }}" href={{post.url}}>
+        {% if forloop.index == 1 %}
             <img src="{{post.banner}}">
+        {% else %}
+            <img class="lazy" data-src="{{post.banner}}">
+        {% endif %}
             <div class="carousel-item-information-container">
                 <div class="carousel-item-information">
                     <div class="carousel-item-information-date date">

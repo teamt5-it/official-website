@@ -17,7 +17,7 @@ layout: default
     </div>
     <div class="banner-mac-and-strengths">
         <div class="banner-mac">
-            {% asset threatsonar/threatsonar-mac.png %}
+            <img class="lazy" data-src="{% asset threatsonar/threatsonar-mac.png @path %}">
         </div>
         <div class="banner-strengths">
             <div class="banner-strength">
@@ -143,7 +143,7 @@ layout: default
 </div>
 <div class="assessment-reports">
     <div class="assessment-reports-screenshot">
-        {% asset threatsonar/assessment-reports-screenshot.png %}
+        <img class="lazy" data-src="{% asset threatsonar/assessment-reports-screenshot.png @path %}">
     </div>
     <div class="assessment-reports-title-and-content">
         <div class="assessment-reports-title title sonar-title">
@@ -181,7 +181,8 @@ layout: default
         {{ string-with-newlines | newline_to_br }}
     </div>
     <div class="threatsonar-is-complementary-to-your-existing-endpoint-solutions-image">
-        <object data="{% asset threatsonar/threatsonar-is-complementary-to-your-existing-endpoint-solutions.svg @path %}">
+        <object
+            data="{% asset threatsonar/threatsonar-is-complementary-to-your-existing-endpoint-solutions.svg @path %}">
         </object>
     </div>
 </div>

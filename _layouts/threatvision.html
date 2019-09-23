@@ -60,7 +60,7 @@ layout: default
 </div>
 <div class="intelligence-report">
     <div class="intelligence-report-screenshot">
-        {% asset threatvision/intelligence-report-screenshot.png %}
+        <img class="lazy" data-src="{% asset threatvision/intelligence-report-screenshot.png @path %}">
     </div>
     <div class="intelligence-report-title-and-content">
         <div class="intelligence-report-title title sonar-title">
@@ -84,7 +84,7 @@ layout: default
             </ul>
         </div>
         <div class="threat-analysis-mac">
-            {% asset threatvision/vision-mac.png %}
+            <img class="lazy" data-src="{% asset threatvision/vision-mac.png @path %}">
         </div>
     </div>
 </div>
