@@ -278,10 +278,10 @@ $ ->
         $.get @googleSheetUrl, data
           .done (response) ->
             $(e.currentTarget).prop('disabled', true)
-            $(e.currentTarget).addClass('button-success')
+            $(e.currentTarget).addClass('form-submit-success')
             $(e.currentTarget).text('Success')
           .fail (response) ->
-            $(e.currentTarget).addClass('error')
+            $(e.currentTarget).addClass('form-submit-error')
             $(e.currentTarget).text('Error')
 
   threatsonarContactUsForm = new Form "threatsonar-contact-us-form", "https://script.google.com/a/teamt5.org/macros/s/AKfycbzn7LjNQ5YQR97mQERARgPmsA8n3U7EyrN63x1Adw/exec"

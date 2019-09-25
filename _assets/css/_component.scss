@@ -217,13 +217,6 @@ input {
     position: relative;
   }
 
-  .button-arrow-right {
-    height: 50%;
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
 
   &:hover {
     background-color: $button-hover-background-color;
@@ -242,9 +235,14 @@ input {
     cursor: wait;
   }
 
-  @at-root #{&}-success {
-    background-color: $button-success-color;
-  }
+}
+
+.button-arrow-right {
+  height: 50%;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 a {

@@ -87,14 +87,28 @@ $form-input-error-color: #c81432;
 }
 
 .form-submit {
-  font-weight: bold;
   height: 50px;
-  text-align: center;
-  width: 100%;
+  transition: all 1s;
+  transition-property: background-color;
 
   @include responsive(640px) {
     grid-column: 1 / span 2;
     justify-self: center;
     width: 280px;
+  }
+
+  @at-root #{&}-loading {
+    background-color: $white;
+    border: 5px solid $primary-color;
+    border-radius: 50%;
+    width: 50px;
+  }
+
+  @at-root #{&}-success {
+    background-color: $button-success-color;
+  }
+
+  @at-root #{&}-error {
+    background-color: $button-error-color;
   }
 }
