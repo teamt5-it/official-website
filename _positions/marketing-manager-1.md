@@ -1,7 +1,7 @@
 ---
 location: Taipei, Taiwan
 locale: en
-title: Marketing Manager
+title: Marketing Specialist 行銷專員
 tags:
 - full-time
 published: false
