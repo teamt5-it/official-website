@@ -111,6 +111,8 @@ $footer-desktop-padding: 60px;
   background: $white;
   border: 1px solid $light-background-color;
   border-radius: 3px;
+  // Remove this line to display language-selector
+  display: none;
   height: 20px;
   width: 70px;
 }
