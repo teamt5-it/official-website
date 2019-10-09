@@ -44,14 +44,15 @@ fields:
       path: 
   label: locale
 pages:
-- _positions/junior-ui-designer.md
-- _positions/ui-designer.md
+- _positions/marketing-manager-1.md
 - _positions/backend-engineer.md
-- _positions/research-engineer.md
-- _positions/systems-engineer.md
 - _positions/rails-developer.md
 - _positions/incident-response-engineer.md
-- _positions/marketing-manager.md
-- _positions/devops-engineer.md
 - _positions/administrative-specialist.md
+- _positions/ui-designer.md
+- _positions/junior-ui-designer.md
+- _positions/marketing-manager.md
+- _positions/systems-engineer.md
+- _positions/research-engineer.md
+- _positions/devops-engineer.md
 - _positions/support-engineer.md
