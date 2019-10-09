@@ -15,9 +15,7 @@ tags:
 ### Required Skills
 
 * Experience in Unix/Linux environment
-
 * Familiar with Python programming
-
 * Knowledge of software security and networking
 
 ### Preferred Skills
