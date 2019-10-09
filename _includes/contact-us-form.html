@@ -54,7 +54,11 @@
         </div>
 
         <button class="button form-submit" id="{{include.id}}-submit">
-            {% t contact-us-form.submit %}
+            <object class="form-submit-loading" data="{% asset loading.svg @path %}">
+            </object>
+            <div class="form-submit-text">
+                {% t contact-us-form.submit %}
+            </div>
         </button>
     </div>
     </div>

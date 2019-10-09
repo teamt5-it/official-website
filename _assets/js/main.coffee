@@ -268,6 +268,32 @@ $ ->
     clearInputError: () =>
       $(".form-input").removeClass("form-input-error")
       $(".form-input-error-message").text("")
+    loading: (e) =>
+      new Promise((resolve) =>
+        setTimeout =>
+          $(e.currentTarget).addClass('form-submit-loading')
+        , 0
+        setTimeout =>
+          $(e.currentTarget).removeClass('form-submit-loading')
+          resolve
+        , 500
+      )
+    submitData: (googleSheetUrl, data, e) =>
+      window.requestAnimationFrame( () =>
+        $(e.currentTarget).children('.form-submit-loading').addClass('form-submit-loading-active')
+        $(e.currentTarget).children('.form-submit-text').text('')
+      )
+      $.get googleSheetUrl, data
+        .done (response) ->
+          $(e.currentTarget).prop('disabled', true)
+          $(e.currentTarget).addClass('form-submit-success')
+          $(e.currentTarget).children('.form-submit-text').text('Success')
+        .fail (response) ->
+          $(e.currentTarget).addClass('form-submit-error')
+          $(e.currentTarget).children('.form-submit-text').text('Error')
+        .always () ->
+          $(e.currentTarget).children('.form-submit-loading').removeClass('form-submit-loading-active')
+
     registerEventHandler: () =>
       $("##{@formName}-submit").click (e) =>
         e.preventDefault()
@@ -275,14 +301,7 @@ $ ->
         data = $("##{@formName}").serializeJSON()
         if !@validateInputs(data)
           return
-        $.get @googleSheetUrl, data
-          .done (response) ->
-            $(e.currentTarget).prop('disabled', true)
-            $(e.currentTarget).addClass('form-submit-success')
-            $(e.currentTarget).text('Success')
-          .fail (response) ->
-            $(e.currentTarget).addClass('form-submit-error')
-            $(e.currentTarget).text('Error')
+        @submitData @googleSheetUrl, data, e
 
   threatsonarContactUsForm = new Form "threatsonar-contact-us-form", "https://script.google.com/a/teamt5.org/macros/s/AKfycbzn7LjNQ5YQR97mQERARgPmsA8n3U7EyrN63x1Adw/exec"
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>loading_img</title>
+    <desc>Created with Sketch.</desc>
+    <g id="loading_img" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M14,28 C21.7319865,28 28,21.7319865 28,14 C28,6.2680135 21.7319865,0 14,0 C6.2680135,0 0,6.2680135 0,14 C0,21.7319865 6.2680135,28 14,28 Z M14,24 C8.4771525,24 4,19.5228475 4,14 C4,8.4771525 8.4771525,4 14,4 C19.5228475,4 24,8.4771525 24,14 C24,19.5228475 19.5228475,24 14,24 Z" id="bg" fill-opacity="0.4"></path>
+            <path d="M14,28 C21.7319865,28 28,21.7319865 28,14 C28,13.5045534 27.9741852,13.0119042 27.9229031,12.5234756 L23.94477,12.9411564 C23.9814907,13.2908964 24,13.6441286 24,14 C24,19.5228475 19.5228475,24 14,24 L14,28 Z" id="circle"></path>
+        </g>
+    </g>
+</svg>

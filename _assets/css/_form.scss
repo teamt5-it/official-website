@@ -1,5 +1,7 @@
 @import 'base';
 $form-input-error-color: #c81432;
+$form-submit-success-color: $button-success-color;
+$form-submit-error-color: $form-input-error-color;
 
 .form {
   background-color: $background-color;
@@ -88,8 +90,9 @@ $form-input-error-color: #c81432;
 
 .form-submit {
   height: 50px;
+  position: relative;
   transition: all 1s;
-  transition-property: background-color;
+  transition-property: background-color width;
 
   @include responsive(640px) {
     grid-column: 1 / span 2;
@@ -98,17 +101,34 @@ $form-input-error-color: #c81432;
   }
 
   @at-root #{&}-loading {
-    background-color: $white;
-    border: 5px solid $primary-color;
-    border-radius: 50%;
-    width: 50px;
+    animation: spinning .5s infinite linear;
+    display: none;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    transform-origin: 0% 0% 0;
+
+    @at-root #{&}-active {
+      display: block;
+    }
+  }
+
+  @keyframes spinning {
+    from {
+      transform: rotate(0deg) translate(-50%, -50%);
+    }
+
+    to {
+      transform: rotate(360deg) translate(-50%, -50%);
+    }
   }
 
   @at-root #{&}-success {
-    background-color: $button-success-color;
+    background-color: $form-submit-success-color;
   }
 
   @at-root #{&}-error {
-    background-color: $button-error-color;
+    background-color: $form-submit-error-color;
   }
 }

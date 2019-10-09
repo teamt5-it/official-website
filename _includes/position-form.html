@@ -93,7 +93,11 @@
         </div>
 
         <button class="button form-submit" id="position-form-submit">
-            {% t position-form.submit %}
+            <object class="form-submit-loading" data="{% asset loading.svg @path %}">
+            </object>
+            <div class="form-submit-text">
+                {% t position-form.submit %}
+            </div>
         </button>
     </div>
     </div>
