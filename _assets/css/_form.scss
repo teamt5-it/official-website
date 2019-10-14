@@ -2,6 +2,7 @@
 $form-input-error-color: #c81432;
 $form-submit-success-color: $button-success-color;
 $form-submit-error-color: $form-input-error-color;
+$form-submit-loading-length: 40px;
 
 .form {
   background-color: $background-color;
@@ -103,11 +104,12 @@ $form-submit-error-color: $form-input-error-color;
   @at-root #{&}-loading {
     animation: spinning .5s infinite linear;
     display: none;
-    left: 50%;
+    height: $form-submit-loading-length;
+    left: calc(50% - #{$form-submit-loading-length} / 2);
     position: absolute;
-    top: 50%;
-    transform: rotate(0deg) translate(-50%, -50%);
-    transform-origin: top left;
+    top: calc(50% - #{$form-submit-loading-length} / 2);
+    transform: rotate(0deg);
+    width: $form-submit-loading-length;
 
     @at-root #{&}-active {
       display: block;
@@ -116,11 +118,11 @@ $form-submit-error-color: $form-input-error-color;
 
   @keyframes spinning {
     from {
-      transform: rotate(0deg) translate(-50%, -50%);
+      transform: rotate(0deg);
     }
 
     to {
-      transform: rotate(360deg) translate(-50%, -50%);
+      transform: rotate(360deg);
     }
   }
 
