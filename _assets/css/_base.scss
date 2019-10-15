@@ -92,34 +92,42 @@ $md-post-padding-horizontal: $md-post-margin-horizontal;
 $lg-post-padding-horizontal: $lg-post-margin-horizontal;
 
 @mixin post-page-margin-horizontal {
-  margin: 0 $xs-post-margin-horizontal;
+  margin-left: $xs-post-margin-horizontal;
+  margin-right: $xs-post-margin-horizontal;
 
   @include responsive(640px) {
-    margin: 0 $sm-post-margin-horizontal;
+    margin-left: $sm-post-margin-horizontal;
+    margin-right: $sm-post-margin-horizontal;
   }
 
   @include responsive(800px) {
-    margin: 0 $md-post-margin-horizontal;
+    margin-left: $md-post-margin-horizontal;
+    margin-right: $md-post-margin-horizontal;
   }
 
   @include responsive(1280px) {
-    margin: 0 $lg-post-margin-horizontal;
+    margin-left: $lg-post-margin-horizontal;
+    margin-right: $lg-post-margin-horizontal;
   }
 }
 
 @mixin post-page-padding-horizontal {
-  padding: 0 $xs-post-padding-horizontal;
+  padding-left: $xs-post-padding-horizontal;
+  padding-right: $xs-post-padding-horizontal;
 
   @include responsive(640px) {
-    padding: 0 $sm-post-padding-horizontal;
+    padding-left: $sm-post-padding-horizontal;
+    padding-right: $sm-post-padding-horizontal;
   }
 
   @include responsive(800px) {
-    padding: 0 $md-post-padding-horizontal;
+    padding-left: $md-post-padding-horizontal;
+    padding-right: $md-post-padding-horizontal;
   }
 
   @include responsive(1280px) {
-    padding: 0 $lg-post-padding-horizontal;
+    padding-left: $lg-post-padding-horizontal;
+    padding-right: $lg-post-padding-horizontal;
   }
 }
 

@@ -17,6 +17,8 @@ $carousel-item-information-text-shadow-color: rgba(0, 0, 0, .5);
 }
 
 .carousel-item {
+  background-clip: content-box;
+  background-color: $primary-color;
   display: none;
   height: 100%;
   position: absolute;
@@ -42,7 +44,9 @@ $carousel-item-information-text-shadow-color: rgba(0, 0, 0, .5);
   img {
     height: 100%;
     object-fit: cover;
+    opacity: .8;
     position: absolute;
+    vertical-align: bottom;
     width: 100%;
   }
 }

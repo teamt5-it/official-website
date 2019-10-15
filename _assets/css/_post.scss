@@ -12,11 +12,16 @@
   }
 
   .post-banner {
+    background-clip: content-box;
+    background-color: $primary-color;
+
     @include responsive(640px) {
       @include post-page-padding-horizontal;
     }
 
     img {
+      opacity: .8;
+      vertical-align: bottom;
       width: 100%;
     }
   }
