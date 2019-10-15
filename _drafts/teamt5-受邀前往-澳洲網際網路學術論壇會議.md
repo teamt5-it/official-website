@@ -1,8 +1,8 @@
 ---
-date: 2019-07-30 16:11:52 +0800
-locale: 'zh     '
+date: 2019-07-30T08:11:52.000+00:00
+locale: en
 title: TeamT5 受邀前往『澳洲網際網路學術論壇會議』
-banner: "/assets/images/evnet01_cover.jpg"
+banner: "/assets/images/cover_template.jpg"
 categories:
 - newsroom
 tags:
