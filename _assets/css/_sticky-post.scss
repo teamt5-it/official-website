@@ -24,7 +24,10 @@ $sticky-post-information-background-color: rgba(0, 0, 0, .6);
 }
 
 .sticky-post-banner {
+  background-clip: content-box;
+  background-color: $primary-color;
   position: relative;
+
 
   &::after {
     content: '';
@@ -35,7 +38,9 @@ $sticky-post-information-background-color: rgba(0, 0, 0, .6);
   img {
     height: 100%;
     object-fit: cover;
+    opacity: .8;
     position: absolute;
+    vertical-align: bottom;
     width: 100%;
   }
 }
