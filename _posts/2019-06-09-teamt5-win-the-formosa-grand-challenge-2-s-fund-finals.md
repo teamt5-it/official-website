@@ -2,7 +2,7 @@
 date: 2019-06-09T08:37:08.000+00:00
 locale: en
 title: 'TeamT5 wins the "Formosa Grand Challenge 2: S-FUND" Final'
-banner: "/assets/images/cover_FormosaGrandChallenge2.jpg"
+banner: "/assets/images/2547894e7d670ec611a6410c5a99873b.jpg"
 categories:
 - newsroom
 tags:
