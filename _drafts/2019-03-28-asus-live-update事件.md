@@ -2,7 +2,7 @@
 date: 2019-03-28T04:14:02.000+00:00
 locale: zh
 title: ASUS Live Update事件
-banner: "/assets/images/cover_another.png"
+banner: "/assets/images/startup-593324_1920.jpg"
 categories:
 - resource
 - newsroom
