@@ -77,7 +77,7 @@ $form-submit-loading-length: 40px;
   padding-right: 1em;
   width: 100%;
 
-  @at-root #{&}-error {
+  &.error {
     border-color: $form-input-error-color;
   }
 }
@@ -101,7 +101,18 @@ $form-submit-loading-length: 40px;
     width: 280px;
   }
 
+
   @at-root #{&}-loading {
+    @keyframes spinning {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
     animation: spinning .5s infinite linear;
     display: none;
     height: $form-submit-loading-length;
@@ -111,26 +122,16 @@ $form-submit-loading-length: 40px;
     transform: rotate(0deg);
     width: $form-submit-loading-length;
 
-    @at-root #{&}-active {
+    &.active {
       display: block;
     }
   }
 
-  @keyframes spinning {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  @at-root #{&}-success {
+  &.success {
     background-color: $form-submit-success-color;
   }
 
-  @at-root #{&}-error {
+  &.error {
     background-color: $form-submit-error-color;
   }
 }

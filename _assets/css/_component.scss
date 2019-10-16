@@ -213,7 +213,7 @@ input {
   text-align: center;
   transition: background-color 1s;
 
-  @at-root #{&}-with-arrow {
+  &.with-arrow {
     border-radius: 0;
     position: relative;
   }
@@ -231,7 +231,7 @@ input {
     cursor: not-allowed;
   }
 
-  @at-root #{&}-loading {
+  &.-loading {
     background-size: 0% 100%;
     cursor: wait;
   }

@@ -3,7 +3,7 @@
         {% for post in paginator.posts %}
         <a class="carousel-item
         {% if forloop.index == 1 %}
-        carousel-item-active
+        active
         {% endif %}
         " data-index="{{ forloop.index | minus: 1 }}" href={{post.url}}>
         {% if forloop.index == 1 %}
@@ -28,7 +28,7 @@
         {% for post in paginator.posts %}
         <div class="carousel-indicator
         {% if forloop.index == 1 %}
-        carousel-indicator-active
+        active
         {% endif %}
         " data-index="{{ forloop.index | minus: 1 }}">
 

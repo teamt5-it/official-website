@@ -25,19 +25,19 @@ $carousel-item-information-text-shadow-color: rgba(0, 0, 0, .5);
   transition: all .2s;
   width: 100%;
 
-  @at-root #{&}-active {
+  &.active {
     display: block;
   }
 
-  @at-root #{&}-left {
+  &.left {
     left: -100%;
   }
 
-  @at-root #{&}-right {
+  &.right {
     left: 100%;
   }
 
-  @at-root #{&}-center {
+  &.center {
     left: 0;
   }
 
@@ -64,11 +64,11 @@ $carousel-item-information-text-shadow-color: rgba(0, 0, 0, .5);
     width: 40%;
   }
 
-  @at-root #{&}-left {
+  &.left {
     left: -100%;
   }
 
-  @at-root #{&}-center {
+  &.center {
     left: 0;
   }
 }
@@ -83,12 +83,12 @@ $carousel-item-information-text-shadow-color: rgba(0, 0, 0, .5);
   transition: all .2s;
   width: 65%;
 
-  @at-root #{&}-bottom {
+  &.bottom {
     bottom: -66%;
     opacity: 0;
   }
 
-  @at-root #{&}-center {
+  &.center {
     bottom: 50%;
     opacity: 1;
     transform: translate(-50%, 50%);
@@ -141,7 +141,7 @@ $carousel-item-information-text-shadow-color: rgba(0, 0, 0, .5);
   height: 10px;
   width: 10px;
 
-  @at-root #{&}-active {
+  &.active {
     background-color: $primary-color;
   }
 }

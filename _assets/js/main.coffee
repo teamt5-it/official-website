@@ -44,26 +44,27 @@ $ ->
       @registerEventHandler()
     registerEventHandler: () =>
       $(".#{brand}").click ->
-        $(".#{menu}").toggleClass("#{menu}-active")
-        $(".#{burger}").toggleClass("#{burger}-active")
+        $(".#{menu}").toggleClass("active")
+        $(".#{burger}").toggleClass("active")
       $(".navbar-item-has-submenu").click (e) ->
-        cur_navbar_submenu_active = $(e.currentTarget).children(".#{submenu}").hasClass("#{submenu}-active")
-        cur_navbar_submenu_padding_active = $(".#{submenuPadding}").hasClass("#{submenuPadding}-active")
+        cur_navbar_submenu_active = $(e.currentTarget).children(".#{submenu}").hasClass("active")
+        cur_navbar_submenu_padding_active = $(".#{submenuPadding}").hasClass("active")
         if !cur_navbar_submenu_active
-          $(".#{itemLink}").removeClass("#{itemLink}-active")
-          $(".#{submenu}").removeClass("#{submenu}-active")
-          $(".#{itemArrow}").removeClass("#{itemArrow}-active")
-        $(e.currentTarget).children(".#{itemLink}").toggleClass("#{itemLink}-active")
-        $(e.currentTarget).find(".#{itemArrow}").toggleClass("#{itemArrow}-active")
-        $(e.currentTarget).children(".#{submenu}").toggleClass("#{submenu}-active")
+          $(".#{itemLink}").removeClass("active")
+          $(".#{submenu}").removeClass("active")
+          $(".#{itemArrow}").removeClass("active")
+        $(e.currentTarget).children(".#{itemLink}").toggleClass("active")
+        $(e.currentTarget).find(".#{itemArrow}").toggleClass("active")
+        $(e.currentTarget).children(".#{submenu}").toggleClass("active")
         if (cur_navbar_submenu_active && cur_navbar_submenu_padding_active) || (!cur_navbar_submenu_active && !cur_navbar_submenu_padding_active)
-          $(".#{submenuPadding}").toggleClass("#{submenuPadding}-active")
+          $(".#{submenuPadding}").toggleClass("active")
 
   header = new Header
 
   # footer
 
   class Footer
+    languageSelector = "language-selector"
     constructor: () ->
       @registerEventHandler()
       @locales = ["zh"]
@@ -75,7 +76,7 @@ $ ->
       return pathname
 
     registerEventHandler: () =>
-      $("#language-selector").change (e) =>
+      $("##{languageSelector}").change (e) =>
         i18n = $(e.currentTarget).val()
         origin = location.origin
         pathname = location.pathname
@@ -101,7 +102,6 @@ $ ->
       @curActiveIndex = 0
       @registerEventHandler()
       @startTimer()
-      @stopTimer()
       @ongoingTouches = []
 
     copyTouch: (touch) =>
@@ -168,75 +168,77 @@ $ ->
       @startTimer()
 
     slideItemLeftAndDisappear: (index) ->
-      @getItem(index).addClass("#{item}-left")
+      @getItem(index).addClass("left")
       new Promise((resolve) =>
         setTimeout =>
-          @getItem(index).removeClass("#{item}-active")
-          @getItem(index).removeClass("#{item}-left")
+          @getItem(index).removeClass("active")
+          @getItem(index).removeClass("left")
           resolve
         , duration
       )
     slideItemRightAndDisappear: (index) ->
-      @getItem(index).addClass("#{item}-right")
+      @getItem(index).addClass("right")
       new Promise((resolve) =>
         setTimeout =>
-          @getItem(index).removeClass("#{item}-active")
-          @getItem(index).removeClass("#{item}-right")
+          @getItem(index).removeClass("active")
+          @getItem(index).removeClass("right")
           resolve
         , duration
       )
     slideItemFromRightToCenter: (index) ->
-      @getItem(index).addClass("#{item}-right #{item}-active")
-      @getItemInformationContainer(index).addClass("#{itemInformationContainer}-left")
-      @getItemInformation(index).addClass("#{itemInformation}-bottom")
+      @getItem(index).addClass("right")
+      @getItem(index).addClass("active")
+      @getItemInformationContainer(index).addClass("left")
+      @getItemInformation(index).addClass("bottom")
       new Promise((resolve) =>
         setTimeout =>
-          @getItem(index).addClass("#{item}-center")
+          @getItem(index).addClass("center")
         , 0
         setTimeout =>
-          @getItem(index).removeClass("#{item}-right")
-          @getItem(index).removeClass("#{item}-center")
-          @getItemInformationContainer(index).addClass("#{itemInformationContainer}-center")
+          @getItem(index).removeClass("right")
+          @getItem(index).removeClass("center")
+          @getItemInformationContainer(index).addClass("center")
         , duration
         setTimeout =>
-          @getItemInformationContainer(index).removeClass("#{itemInformationContainer}-left")
-          @getItemInformationContainer(index).removeClass("#{itemInformationContainer}-center")
-          @getItemInformation(index).addClass("#{itemInformation}-center")
+          @getItemInformationContainer(index).removeClass("left")
+          @getItemInformationContainer(index).removeClass("center")
+          @getItemInformation(index).addClass("center")
         , duration * 2
         setTimeout =>
-          @getItemInformation(index).removeClass("#{itemInformation}-bottom")
-          @getItemInformation(index).removeClass("#{itemInformation}-center")
+          @getItemInformation(index).removeClass("bottom")
+          @getItemInformation(index).removeClass("center")
           resolve
         , duration * 3
       )
     slideItemFromLeftToCenter: (index) ->
-      @getItem(index).addClass("#{item}-left #{item}-active")
-      @getItemInformationContainer(index).addClass("#{itemInformationContainer}-left")
-      @getItemInformation(index).addClass("#{itemInformation}-bottom")
+      @getItem(index).addClass("left")
+      @getItem(index).addClass("active")
+      @getItemInformationContainer(index).addClass("left")
+      @getItemInformation(index).addClass("bottom")
       new Promise((resolve) =>
         setTimeout =>
-          @getItem(index).addClass("#{item}-center")
+          @getItem(index).addClass("center")
         , 0
         setTimeout =>
-          @getItem(index).removeClass("#{item}-left")
-          @getItem(index).removeClass("#{item}-center")
-          @getItemInformationContainer(index).addClass("#{itemInformationContainer}-center")
+          @getItem(index).removeClass("left")
+          @getItem(index).removeClass("center")
+          @getItemInformationContainer(index).addClass("center")
         , duration
         setTimeout =>
-          @getItemInformationContainer(index).removeClass("#{itemInformationContainer}-left")
-          @getItemInformationContainer(index).removeClass("#{itemInformationContainer}-center")
-          @getItemInformation(index).addClass("#{itemInformation}-center")
+          @getItemInformationContainer(index).removeClass("left")
+          @getItemInformationContainer(index).removeClass("center")
+          @getItemInformation(index).addClass("center")
         , duration * 2
         setTimeout =>
-          @getItemInformation(index).removeClass("#{itemInformation}-bottom")
-          @getItemInformation(index).removeClass("#{itemInformation}-center")
+          @getItemInformation(index).removeClass("bottom")
+          @getItemInformation(index).removeClass("center")
           resolve
         , duration * 3
       )
 
     setActiveItem: (index) ->
-      @getItemIndicator(@curActiveIndex).removeClass("#{itemIndicator}-active")
-      @getItemIndicator(index).addClass("#{itemIndicator}-active")
+      @getItemIndicator(@curActiveIndex).removeClass("active")
+      @getItemIndicator(index).addClass("active")
       if @curActiveIndex == index
         return
       else if @curActiveIndex < index
@@ -252,6 +254,9 @@ $ ->
   # form
 
   class Form
+    formSubmit = "form-submit"
+    formSubmitLoading = "form-submit-loading"
+    formSubmitText = "form-submit-text"
     constructor: (formName, googleSheetUrl) ->
       @formName = formName
       @googleSheetUrl = googleSheetUrl
@@ -268,31 +273,21 @@ $ ->
     clearInputError: () =>
       $(".form-input").removeClass("form-input-error")
       $(".form-input-error-message").text("")
-    loading: (e) =>
-      new Promise((resolve) =>
-        setTimeout =>
-          $(e.currentTarget).addClass('form-submit-loading')
-        , 0
-        setTimeout =>
-          $(e.currentTarget).removeClass('form-submit-loading')
-          resolve
-        , 500
-      )
     submitData: (googleSheetUrl, data, e) =>
       window.requestAnimationFrame( () =>
-        $(e.currentTarget).children('.form-submit-loading').addClass('form-submit-loading-active')
-        $(e.currentTarget).children('.form-submit-text').text('')
+        $(e.currentTarget).children(".#{formSubmitLoading}").addClass('active')
+        $(e.currentTarget).children(".#{formSubmitText}").text('')
       )
       $.get googleSheetUrl, data
         .done (response) ->
           $(e.currentTarget).prop('disabled', true)
-          $(e.currentTarget).addClass('form-submit-success')
-          $(e.currentTarget).children('.form-submit-text').text('Success')
+          $(e.currentTarget).addClass('success')
+          $(e.currentTarget).children(".#{formSubmitText}").text('Success')
         .fail (response) ->
-          $(e.currentTarget).addClass('form-submit-error')
-          $(e.currentTarget).children('.form-submit-text').text('Error')
+          $(e.currentTarget).addClass('error')
+          $(e.currentTarget).children(".#{formSubmitText}").text('Error')
         .always () ->
-          $(e.currentTarget).children('.form-submit-loading').removeClass('form-submit-loading-active')
+          $(e.currentTarget).children(".#{formSubmitLoading}").removeClass('active')
 
     registerEventHandler: () =>
       $("##{@formName}-submit").click (e) =>

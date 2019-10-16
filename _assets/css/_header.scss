@@ -103,7 +103,7 @@ $navbar-submenu-mobile-background-color: $background-color;
     }
   }
 
-  @at-root #{&}-active {
+  &.active {
     span {
       &:nth-child(1) {
         transform: translateY(6px) rotate(45deg);
@@ -132,7 +132,7 @@ $navbar-submenu-mobile-background-color: $background-color;
     max-height: none;
   }
 
-  @at-root #{&}-active {
+  &.active {
     max-height: 100vh;
   }
 }
@@ -176,7 +176,7 @@ $navbar-submenu-mobile-background-color: $background-color;
       color: $primary-color;
     }
 
-    @at-root #{&}-active {
+    &.active {
       box-shadow: $navbar-item-active-box-shadow;
     }
   }
@@ -198,7 +198,7 @@ $navbar-submenu-mobile-background-color: $background-color;
     display: none;
   }
 
-  @at-root #{&}-active {
+  &.active {
     transform: rotate(180deg);
   }
 
@@ -231,7 +231,7 @@ $navbar-submenu-mobile-background-color: $background-color;
     grid-gap: 40px;
   }
 
-  @at-root #{&}-active {
+  &.active {
     max-height: 100vh;
 
     @include responsive(800px) {
@@ -269,7 +269,7 @@ $navbar-submenu-mobile-background-color: $background-color;
   transition: max-height .5s ease-in-out;
   width: 100%;
 
-  @at-root #{&}-active {
+  &.active {
     @include responsive(800px) {
       max-height: $navbar-submenu-desktop-height;
     }
