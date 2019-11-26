@@ -82,7 +82,6 @@ $ ->
         pathname = location.pathname
         pathname = @removeI18nFromPathname(pathname)
         url = origin + '/' + i18n + pathname
-        console.log(url)
         window.location.href = url
 
   footer = new Footer
@@ -280,16 +279,13 @@ $ ->
       )
       $.get googleSheetUrl, data
         .done (response) ->
-          console.log 'qoo'
           $(e.currentTarget).prop('disabled', true)
           $(e.currentTarget).addClass('success')
           $(e.currentTarget).children(".#{formSubmitText}").text('Success')
         .fail (response) ->
-          console.log 'fail'
           $(e.currentTarget).addClass('error')
           $(e.currentTarget).children(".#{formSubmitText}").text('Error')
         .always () ->
-          console.log 'always'
           $(e.currentTarget).children(".#{formSubmitLoading}").removeClass('active')
 
     registerEventHandler: () =>
