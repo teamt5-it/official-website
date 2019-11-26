@@ -280,13 +280,16 @@ $ ->
       )
       $.get googleSheetUrl, data
         .done (response) ->
+          console.log 'qoo'
           $(e.currentTarget).prop('disabled', true)
           $(e.currentTarget).addClass('success')
           $(e.currentTarget).children(".#{formSubmitText}").text('Success')
         .fail (response) ->
+          console.log 'fail'
           $(e.currentTarget).addClass('error')
           $(e.currentTarget).children(".#{formSubmitText}").text('Error')
         .always () ->
+          console.log 'always'
           $(e.currentTarget).children(".#{formSubmitLoading}").removeClass('active')
 
     registerEventHandler: () =>
