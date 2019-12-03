@@ -4,6 +4,7 @@ locale: en
 title: UI Designer
 tags:
 - full-time
+published: false
 
 ---
 ## **Job Description**
