@@ -4,10 +4,12 @@ locale: en
 title: Junior UI Designer
 tags:
 - full-time
-
 ---
+
 ## **Job Description**
+
 ## Responsibilities and Duties
+
 * Participate product Ui design.
 * Participate official website design.
 * Some graphical design.
@@ -19,25 +21,31 @@ tags:
 * Able to multitask
 
 ### Preferred Skills
+
 * Familiarity with project management software
 * Not afraid command line.
 
 ## Compensation
 
 ### Salary
+
 * Up to NTD 35,000/month
 
 ### Working Place
+
 * Taipei (Currently Near MRT Nanjing Sanmin Station)
 
 ### Working Hours
+
 * 9:00 ~ 18:00 (including one-hour lunch break)
 * Flexible working hour scheme implemented
 
 ### Leaves
+
 * Weekends off
 * Additional leaves and paid sick leave for employees after one year of seniority
 
 ### Benefits
+
 * Free snacks, drinks and regular party
 * Company Trip and Gym Compensation for employees after one year of seniority

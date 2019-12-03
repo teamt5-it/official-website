@@ -4,8 +4,8 @@ locale: en
 title: Marketing Specialist 行銷專員
 tags:
 - full-time
-
 ---
+
 ## **Job Description**
 
 ## Responsibilities and Duties
@@ -33,7 +33,7 @@ tags:
 
 ### Salary
 
-* 月薪 33,000\~35,000 元
+* 月薪 33,000 ~ 35,000 元
 
 ### Working Place
 
@@ -41,7 +41,7 @@ tags:
 
 ### Working Hours
 
-* 9:00 \~ 18:00 (including one-hour lunch break)
+* 9:00 ~ 18:00 (including one-hour lunch break)
 * Flexible working hour scheme implemented
 
 ### Leaves
