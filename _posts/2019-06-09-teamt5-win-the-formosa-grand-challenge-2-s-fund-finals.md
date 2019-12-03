@@ -9,20 +9,16 @@ tags:
 - press release
 resource_sticky: false
 newsroom_sticky: true
-
 ---
+
 ### **TeamT5’s technology “ThreatSonar” wins the finals of MOST’s “Formosa Grand Challenge 2: S-FUND”, taking home TWD 5 million in prize money as start-up funds.**
 
 _(Reference: www.most.gov.tw)_
 
 TeamT5 has won the final competition of the “Formosa Grand Challenge 2: S-FUND”, which was held by Ministry of Science and Technology (MOST) and jointly implemented by the Science & Technology Policy Research and Information Center (STPI) and the National Center for High-performance Computing (NCHC). TeamT5 was awarded TWD 5 million and received praises from the review board. The Ministry of Science and Technology looks forward to their more completed business models in addition to advancing their technologies further and having a place in the field of international information security protection.
-            
-            
 
 The “Formosa Grand Challenge 2: S-FUND” competition was held from May 2015, offering challenges for companies to solve IT security issues. Participating teams are free to propose solutions to subjects such as "Assisting in the resolution of potential threats", "Improving IoT security", "AI security threats and defense technology development", and "Other applications of cybersecurity technology". More than 20 teams registered to participate in the competition. The TeamT5 security team has performed with their AI developed technology “ThreatSonar Endpoint Intelligent Threat Identification Platform” and finally won the competition after going through all the stages over the past year.
 
-            
-            
 From：
 
 The Ministry of Science and Technology

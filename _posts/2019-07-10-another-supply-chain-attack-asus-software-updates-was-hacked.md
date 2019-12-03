@@ -10,15 +10,15 @@ tags:
 - case study
 resource_sticky: false
 newsroom_sticky: false
-
 ---
+
 photo courtesy of: pixabay.com
 
-Asus, one of the world’s largest computer makers, was believed to be the newest victim of a supply chain attack. According to the up-to-date blog of Kaspersky \[1\], ASUS Live Software Server was compromised by attackers to install malicious backdoors on customers’ devices.
+Asus, one of the world’s largest computer makers, was believed to be the newest victim of a supply chain attack. According to the up-to-date blog of Kaspersky [1], ASUS Live Software Server was compromised by attackers to install malicious backdoors on customers’ devices.
 
 IIt was alleged that the malware was delivered to millions of Asus computers, although the attackers targeted only 600 specific MAC addresses. This phenomenon has been observed in several supply chain attacks associated with China-backed APT actors, such as CCleaner and NetSarang supply chain attacks in 2017.
 
-TeamT5 found several samples of this serial attack and performed technical analysis on it. The C2 is https://asushotfix\[.\]com, which was shut down during our analysis. Thus, we are not able to provide further information at this time.
+TeamT5 found several samples of this serial attack and performed technical analysis on it. The C2 is https://asushotfix[.]com, which was shut down during our analysis. Thus, we are not able to provide further information at this time.
 
 ![Figure 1: Shellcode encoding routine in ASUS sample, which is the same in PlugX Fast version](/assets/images/02_01.png "Figure 1: Shellcode encoding routine in ASUS sample, which is the same in PlugX Fast version")
 _Figure 1: Shellcode encoding routine in ASUS sample, which is the same in PlugX Fast version_
@@ -29,7 +29,7 @@ From the C2 domain activation history, TeamT5 believes the initial campaign star
 
 ### Reference
 
-\[1\] https://securelist.com/operation-shadowhammer/89992/
+[1] https://securelist.com/operation-shadowhammer/89992/
 
 #### **Appendix**
 
@@ -37,18 +37,18 @@ Indicator of Compromise (IoC)
 
 **C2 Domains and IPs:**
 
-* asushotfix\[.\]com
-* simplexoj\[.\]com
-* homeabcd\[.\]com
-* 35.154.92\[.\]115
-* 141.105.71\[.\]116
+* asushotfix[.]com
+* simplexoj[.]com
+* homeabcd[.]com
+* 35.154.92[.]115
+* 141.105.71[.]116
 
 **Malicious download links:**
 
-* hxxp://liveupdate01.asus\[.\]com/pub/ASUS/nb/Apps_for_Win8/LiveUpdate/Liveupdate_Test_VER365.zip
-* hxxps://liveupdate01s.asus\[.\]com/pub/ASUS/nb/Apps_for_Win8/LiveUpdate/Liveupdate_Test_VER362.zip
-* hxxps://liveupdate01s.asus\[.\]com/pub/ASUS/nb/Apps_for_Win8/LiveUpdate/Liveupdate_Test_VER360.zip
-* hxxps://liveupdate01s.asus\[.\]com/pub/ASUS/nb/Apps_for_Win8/LiveUpdate/Liveupdate_Test_VER359.zip
+* hxxp://liveupdate01.asus[.]com/pub/ASUS/nb/Apps_for_Win8/LiveUpdate/Liveupdate_Test_VER365.zip
+* hxxps://liveupdate01s.asus[.]com/pub/ASUS/nb/Apps_for_Win8/LiveUpdate/Liveupdate_Test_VER362.zip
+* hxxps://liveupdate01s.asus[.]com/pub/ASUS/nb/Apps_for_Win8/LiveUpdate/Liveupdate_Test_VER360.zip
+* hxxps://liveupdate01s.asus[.]com/pub/ASUS/nb/Apps_for_Win8/LiveUpdate/Liveupdate_Test_VER359.zip
 
 Hashes（MD5）:
 
@@ -82,33 +82,25 @@ Hashes（MD5）:
 
 Yara rule:
 
-    rule apt_trojan_AsusSetup_encoder
-    
-    {
-    
-    strings:
-    
+```yara
+rule apt_trojan_AsusSetup_encoder
+{
+  strings:
     $plugx_crypt = { 55 8BEC 81EC 08010000 53 56 57 8DBD F8FEFFFF B9 42000000 B8 CCCCCCCC F3 AB C745 F8 00000000 C745 EC 00000000 8B45 08 8B08 894D E0 8B45 08 8B08 894D D4 8B45 08 8B08 894D C8 8B45 08 8B08 894D BC 8B45 E0 C1E8 03 8B4D E0 8D9401 EFEEEEEE 8955 E0 8B45 D4 C1E8 05 8B4D D4 8D9401 DEDDDDDD 8955 D4 8B45 C8 C1E0 07 B9 33333333 2BC8 034D C8 894D C8 8B45 BC C1E0 09 B9 44444444 2BC8 034D BC 894D EC 8B45 EC 8945 BC 8B45 08 0345 F8 0FB608 8B55 E0 81E2 FF000000 0FB6C2 8B55 D4 81E2 FF000000 0FB6D2 03C2 8B55 C8 81E2 FF000000 0FB6D2 03C2 8B55 EC 81E2 FF000000 0FB6D2 03C2 33C8 8B45 10 0345 F8 8808 8B45 F8 83C0 01 8945 F8 8B45 F8 3B45 0C 0F8C 50FFFFFF 5F 5E 5B 8BE5 5D C2 0C00 }
-    
-    condition:
-    
+
+  condition:
     all of them
-    
-    }
-    
-    rule apt_trojan_AsusSetup_memory
-    
-    {
-    
-    strings:
-    
+}
+
+rule apt_trojan_AsusSetup_memory
+{
+  strings:
     $plugx_crypt = { 55 8BEC 81EC 08010000 53 56 57 8DBD F8FEFFFF B9 42000000 B8 CCCCCCCC F3 AB C745 F8 00000000 C745 EC 00000000 8B45 08 8B08 894D E0 8B45 08 8B08 894D D4 8B45 08 8B08 894D C8 8B45 08 8B08 894D BC 8B45 E0 C1E8 03 8B4D E0 8D9401 EFEEEEEE 8955 E0 8B45 D4 C1E8 05 8B4D D4 8D9401 DEDDDDDD 8955 D4 8B45 C8 C1E0 07 B9 33333333 2BC8 034D C8 894D C8 8B45 BC C1E0 09 B9 44444444 2BC8 034D BC 894D EC 8B45 EC 8945 BC 8B45 08 0345 F8 0FB608 8B55 E0 81E2 FF000000 0FB6C2 8B55 D4 81E2 FF000000 0FB6D2 03C2 8B55 C8 81E2 FF000000 0FB6D2 03C2 8B55 EC 81E2 FF000000 0FB6D2 03C2 33C8 8B45 10 0345 F8 8808 8B45 F8 83C0 01 8945 F8 8B45 F8 3B45 0C 0F8C 50FFFFFF 5F 5E 5B 8BE5 5D C2 0C00 }
-    
-    condition:
-    
+
+  condition:
     all of them
-    
-    }
+}
+```
 
 #### How to use IOC in ThreatSonar
 

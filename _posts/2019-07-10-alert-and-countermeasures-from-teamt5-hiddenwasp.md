@@ -10,8 +10,8 @@ tags:
 - technical
 resource_sticky: true
 newsroom_sticky: false
-
 ---
+
 photo courtesy of: pixabay.com
 
 ### **Threat Overview**
@@ -44,7 +44,7 @@ You can find our demo video from the link below: https://drive.google.com/open?i
 
 ### **Bring Your Own Intelligence**
 
-TeamT5 optimized the Intezer’s yara rule for “HiddenWasp” \[1\]. We suggest importing it to ThreatSonar as the steps below:
+TeamT5 optimized the Intezer’s yara rule for “HiddenWasp” [1]. We suggest importing it to ThreatSonar as the steps below:
 
 1. Go to “Custom Yara”.
 2. Click “Add Ruleset” and paste the yara rule to the editor.
@@ -54,10 +54,10 @@ TeamT5 optimized the Intezer’s yara rule for “HiddenWasp” \[1\]. We sugges
 ![(Built-in yara rule editor)](/assets/images/img3.png "(Built-in yara rule editor)")
 _Built-in yara rule editor_
 
-IoC of “HiddenWasp” \[2\] can be imported to ThreatSonar for direct match as well.
+IoC of “HiddenWasp” [2] can be imported to ThreatSonar for direct match as well.
 
 Should you have any questions, please contact support@teamt5.tw
 
-\[1\] https://drive.google.com/open?id=1zDArnZxvj2ClyJIV2NwdZv7VMAhA5bJg
+[1] https://drive.google.com/open?id=1zDArnZxvj2ClyJIV2NwdZv7VMAhA5bJg
 
-\[2\] https://exchange.xforce.ibmcloud.com/collection/d1900ab023aa857e116f9c55fabda2fc
+[2] https://exchange.xforce.ibmcloud.com/collection/d1900ab023aa857e116f9c55fabda2fc
