@@ -14,11 +14,13 @@ tags:
 * Write/adapt tools to monitor services and automatically repair issues.
 * Continuous Delivery: Integrate current CI flow to automate production deployment.
 * Plan & maintain high availability deployment for production services.
+* Reading ability of technical documents.
 
 ### Required Skills
 
 * Programming: Git, Python, Ruby
 * Linux System: supervisor, systemd
+* Minimum 2 years’relevant experience.
 
 ### Preferred Skills
 
@@ -33,9 +35,6 @@ tags:
 * Service HA: Haproxy, k8s, knative
 
 ## Compensation
-
-### Salary
-* Negotiable
 
 ### Working Place
 * Taipei (Currently Near MRT Nanjing Sanmin Station)
