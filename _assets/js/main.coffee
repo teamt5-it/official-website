@@ -297,8 +297,8 @@ $ ->
           return
         @submitData @googleSheetUrl, data, e
 
-  threatsonarContactUsForm = new Form "threatsonar-contact-us-form", "https://script.google.com/a/teamt5.org/macros/s/AKfycbzn7LjNQ5YQR97mQERARgPmsA8n3U7EyrN63x1Adw/exec"
+  threatsonarContactUsForm = new Form "threatsonar-contact-us-form", "https://script.google.com/macros/s/AKfycbx533dQP94GOW3F0S2K3GEGStL-Vzr8bwFM1VQyAR4tnmHBg_Py/exec"
 
-  threatvisionContactUsForm = new Form "threatvision-contact-us-form", "https://script.google.com/a/teamt5.org/macros/s/AKfycbw5tsN8yq4g5D5XCoIsn0DPold7kgpBbuDCXqVL/exec"
+  threatvisionContactUsForm = new Form "threatvision-contact-us-form", "https://script.google.com/macros/s/AKfycbzECW0pjZ1M-AmUPcvYDknZwVNQCatPyn2kQdylaicC03JUUrk/exec"
 
   positionForm = new Form "position-form", "https://script.google.com/a/teamt5.org/macros/s/AKfycbxzOuA3U8N30yy711X_4th_2ty4WqBiepxjcPAauda1hp3cM9I/exec"
