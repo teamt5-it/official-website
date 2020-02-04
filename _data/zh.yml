@@ -205,7 +205,7 @@ threatsonar:
 threatvision:
     banner:
         slogan: 'KNOW YOUR ENEMIES'
-        title: 'A Portal for Cyberspace Peacemakers'
+        title: 'A Portal to See Through the Chaos'
     intelligence-report:
         list: '<li>Cyber threat newsflash.</li> <li>Comprehensive and in-depth analysis of cyber threat campaigns, groups and actors.</li> <li>Asia-pacific cyberspace event analysis.</li>'
         title: 'Asia-Pacific Cyber Threat Intelligence Reports'
