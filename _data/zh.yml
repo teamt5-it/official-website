@@ -3,14 +3,14 @@
     take-me-home: 'Take Me Home'
 about-us:
     banner:
-        content: "We are the world-leading malware research and Solution provider to cyber espionage in Asia and Pacific.\n\nWe monitor, analyze and track cyber threats and helping customers to gain advantaged position facing cyber threats. And we provide Threat intelligence and research report, cyber espionage solutions, threat analysis service and incident response investigation services.\n\nOur members frequently publish the latest and top research at the world's top security conferences, including Black Hat, Kaspersky Security Analyst Summit, Syscan, Code Blue AVTokyo, Troopers, Codegate, VXCON/DragonCon, Power of Community (Korea), Hack in the Box, and FIRST."
-        title: 'TeamT5 World Class Team'
+        content: "TeamT5 is a world-leading malware research team and the best solution provider of cyber espionage in Asia Pacific. We monitor, analyze and track cyber threats, supporting clients to secure their system and network while cyber threats strike. In addition, we also provide threat intelligence and research reports, cyber espionage solutions, threat analysis services and incident response / investigation services.\n\nOur members are frequent speakers in the world's top security conferences, including Black Hat, Kaspersky Security Analyst Summit, Syscan, Code Blue/AVTokyo, Troopers, Codegate, VXCON/DragonCon, Power of Community (Korea), Hack in the Box, FIRST, etc."
+        title: 'Our World-Class Team'
     page-title: 'About us'
     teamt5-leadership:
         content:
-            introduction: "TT is founder and CEO of TeamT5. He has more than 15 years’ experience in cyber security industry. With solid technical background and understanding of cyber threats, he has been leading the team invented and developed many unique threat hunting technologies and solutions. TeamT5 is really proud of their researches, they frequently publish papers in many global security/hacker conferences.\n\nWith great passion in cyber security, TT has volunteered himself as a core member in HITCON community more than 15 years. During his leading in HITCON, he founded association of Hackers in Taiwan, collaborating with Government, community, and security industry."
+            introduction: "TT is the founder and CEO of TeamT5. He has more than 15 years’ experience in the industry. With solid technical background and strong understanding of cyber threats, he has been leading the team to invent and develop unique threat hunting technologies and solutions. \n\nWith great passion for cyber security, TT has volunteered himself as a core member in HITCON community. During his leadership in HITCON, he founded Association of Hackers in Taiwan, which strengthen the collaboration between government, community, and industry."
             name: 'Sung-ting Tsai (TT)'
-        title: 'TeamT5 Leadership'
+        title: 'Our Leadership'
 browse-by-type:
     title: 'Browse by type'
 careers:
@@ -79,7 +79,7 @@ header:
     threatvision: ThreatVision
 index:
     banner:
-        content: "TeamT5 is a cyber security company dedicated on cyber threat research and solutions. They are a group of experienced cyber threat hunters. They help people deal with cyber attacks with their unique threat intelligence, knowledge, and technology. They are collaborating with clients and partners in many countries, including US, Japan, Singapore, Thailand, Malaysia, and Taiwan.\n\nTeamT5 started with their outstanding research and has been delivering cyber threat intelligence (CTI) for more than 5 years. Comparing with other CTI vendors, TeamT5 has the most and best understanding of cyber attackers in Asia. With the leading intelligence and knowledge of cyber attackers, TeamT5 designed an unique technology and invented a methodology to help clients dealing with targeted attacks. The solution has been verified and helped many victims in Taiwan and Japan solve the problem."
+        content: "TeamT5 is a group of hackers dedicated to cyber threat research. The team started out with outstanding research ability and has been delivering cyber threat intelligence (CTI) for more than 5 years. Compared with other CTI vendors, TeamT5 has the deepest and best understanding of cyber attackers in the Asia Pacific region. With leading intelligence and knowledge of cyber-attacks, TeamT5 developed unique technologies and methodology to help clients deal with targeted attacks. The solutions have been verified and have helped numerous victims to solve their problems."
         title: 'Persistent Cyber Threat Hunters'
     learn-more: 'Learn More'
     teamt5-news:
