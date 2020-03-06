@@ -47,6 +47,13 @@ contact-us-form:
     phone-number: 'Phone Number'
     submit: Submit
     title: 'Contact Us'
+blog-form:
+    title: 'I''m interested'
+    name: 'Name'
+    email: 'Email'
+    job-title: 'Job title'
+    company-name: 'Company Name'
+    submit: 'Send me full PDF'
 footer:
     company:
         about-us: 'About us'
@@ -77,6 +84,7 @@ header:
     resource: Resource
     threatsonar: ThreatSonar
     threatvision: ThreatVision
+    blog: Blog
 index:
     banner:
         content: "TeamT5 is a group of hackers dedicated to cyber threat research. The team started out with outstanding research ability and has been delivering cyber threat intelligence (CTI) for more than 5 years. Compared with other CTI vendors, TeamT5 has the deepest and best understanding of cyber attackers in the Asia Pacific region. With leading intelligence and knowledge of cyber-attacks, TeamT5 developed unique technologies and methodology to help clients deal with targeted attacks. The solutions have been verified and have helped numerous victims to solve their problems."
@@ -111,6 +119,7 @@ links:
         threatvision: /products/threatvision/
     resource: /resource/
     terms-of-service: /terms-of-service/
+    blog: /blog
 newsroom:
     latest-news:
         title: 'Latest News'
@@ -175,6 +184,8 @@ sticky-post:
     read-more: 'Read More'
 terms-of-service:
     page-title: 'Terms of Service'
+blog:
+    page-title: Blog
 threatsonar:
     assessment-reports:
         a: 'Organizational incident timeline.'

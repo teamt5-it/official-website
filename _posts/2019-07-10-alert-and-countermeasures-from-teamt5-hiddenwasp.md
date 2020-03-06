@@ -4,7 +4,6 @@ date: 2019-06-12T03:13:37.000+00:00
 title: 'Threats and Countermeasures: "HiddenWasp" Malware'
 banner: "/assets/images/laptop-820274_1920.jpg"
 categories:
-- resource
 - newsroom
 tags:
 - technical

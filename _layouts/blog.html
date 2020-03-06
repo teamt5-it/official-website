@@ -1,0 +1,25 @@
+---
+layout: page
+---
+{% include sticky-post.html %}
+<div class="latest-news-and-media-inquiries-and-browse-by-type">
+    <div class="latest-news-and-media-inquiries-and-browse-by-type-title title title-xl title-underline">
+        {% t newsroom.latest-news.title %}
+    </div>
+    <div class="latest-news-and-media-inquiries-and-browse-by-type-content">
+        <div class="latest-news">
+            {% include blog-articles.html %}
+            {% include pagination.html %}
+        </div>
+        <div class="media-inquiries-and-browse-by-type">
+            <div class="media-inquiries">
+                <div class="media-inquiries-title title">
+                    {% t newsroom.media-inquiries.title %}
+                </div>
+                <div class="media-inquiries-email">
+                    {% t newsroom.media-inquiries.email %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

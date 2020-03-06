@@ -5,6 +5,7 @@ layout: base
 {% include post-page-title.html %}
 <main class="{{page.layout}}-layout">
     <div class="post-meta">
+        {% unless page.tags contains "blog" %}
         <div class="tags">
             {% for tag in page.tags %}
             <span class="tag">
@@ -12,6 +13,7 @@ layout: base
             </span>
             {% endfor %}
         </div>
+        {% endunless %}
         <div class="post-date date">
             {{ page.date | date: site.date_format }}
         </div>
@@ -22,7 +24,11 @@ layout: base
     <div class="post-content content">
         {{ content }}
     </div>
-
+    {% if page.tags contains "blog" %}
+    <div class="blog-form-container">
+        {% include blog-form.html id="blog-form" %}
+    </div>
+    {% endif  %}
     <a href="javascript:history.back()" class="back-button button">
         {% t back %}
     </a>

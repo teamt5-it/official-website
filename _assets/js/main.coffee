@@ -301,4 +301,6 @@ $ ->
 
   threatvisionContactUsForm = new Form "threatvision-contact-us-form", "https://script.google.com/macros/s/AKfycbzECW0pjZ1M-AmUPcvYDknZwVNQCatPyn2kQdylaicC03JUUrk/exec"
 
+  blogForm = new Form "blog-form", "https://script.google.com/macros/s/AKfycbxaRLlIExspM9_2lA8Td54Fak9I3YXqTHcZKtQ97SyvcIxr3jA/exec"
+
   positionForm = new Form "position-form", "https://script.google.com/a/teamt5.org/macros/s/AKfycbxzOuA3U8N30yy711X_4th_2ty4WqBiepxjcPAauda1hp3cM9I/exec"

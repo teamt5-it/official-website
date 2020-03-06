@@ -3,6 +3,10 @@
 .post-layout {
   grid-gap: 20px;
 
+  .blog-form-container {
+    @include post-page-padding-horizontal;
+  }
+
   .post-meta {
     @include post-page-padding-horizontal;
   }

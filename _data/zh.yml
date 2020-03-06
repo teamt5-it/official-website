@@ -47,6 +47,13 @@ contact-us-form:
     phone-number: 'Phone Number'
     submit: Submit
     title: 'Contact Us'
+blog-form:
+    title: 'I''m interested'
+    name: 'Name'
+    email: 'Email'
+    job-title: 'Job title'
+    company-name: 'Company Name'
+    submit: 'Send me full PDF'
 footer:
     company:
         about-us: 'About us'
