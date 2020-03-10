@@ -1,5 +1,6 @@
 ---
 layout: privacy-and-cookies-policy
+i18n-prefix: privacy-and-cookies-policy
 permalink: /privacy-and-cookies-policy/
 ---
 
