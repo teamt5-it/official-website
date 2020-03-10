@@ -1,0 +1,17 @@
+<a class="article" href="{{ post.url | relative_url }}">
+    <div class="article-date date">
+        {{ post.date| date: site.date_format }}
+    </div>
+    {% if show-tag %}
+        <div class="article-tags tags">
+            {% for tag in post.tags %}
+            <span class="tag">
+                {{tag}}
+            </span>
+            {% endfor %}
+        </div>
+    {% endif %}
+    <div class="article-title title">
+        {{ post.title }}
+    </div>
+</a>
