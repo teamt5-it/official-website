@@ -81,7 +81,12 @@ $sticky-post-information-background-color: rgba(0, 0, 0, .6);
   }
 
   @include responsive(1280px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+
+    div {
+      padding: 5px 0;
+    }
   }
 }
 
@@ -92,14 +97,14 @@ $sticky-post-information-background-color: rgba(0, 0, 0, .6);
   @include responsive(1280px) {
     bottom: calc(100% + 40px);
     color: $primary-color;
-    position: absolute;
+    display: block;
+    position: unset;
   }
 }
 
 .sticky-post-tags {
   @include responsive(1280px) {
-    bottom: calc(100% + 10px);
-    position: absolute;
+    position: unset;
   }
 }
 

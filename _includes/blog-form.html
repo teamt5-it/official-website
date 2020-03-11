@@ -1,0 +1,37 @@
+<form class="blog-form form" id="{{include.id}}">
+    <div class="form-title title">{% t blog-form.title %}</div>
+    <div class="form-input-groups">
+        <div class="form-input-group">
+            <label class="form-input-label" for="name">{% t blog-form.name %}</label>
+            <input type="text" name="name" class="form-input">
+            <div name="name" class="form-input-error-message"></div>
+        </div>
+
+        <div class="form-input-group">
+            <label class="form-input-label" for="email">{% t blog-form.email %}</label>
+            <input type="email" name="email" class="form-input">
+            <div name="email" class="form-input-error-message"></div>
+        </div>
+
+        <div class="form-input-group">
+            <label class="form-input-label" for="job-title">{% t blog-form.job-title %}</label>
+            <input type="text" name="job-title" class="form-input">
+            <div name="job-title" class="form-input-error-message"></div>
+        </div>
+
+        <div class="form-input-group">
+            <label class="form-input-label" for="company-name">{% t blog-form.company-name %}</label>
+            <input type="text" name="company-name"
+                class="form-input">
+            <div name="company-name" class="form-input-error-message"></div>
+        </div>
+
+        <button class="button form-submit" id="{{include.id}}-submit">
+            <object class="form-submit-loading" data="{% asset loading.svg @path %}">
+            </object>
+            <div class="form-submit-text">
+                {% t blog-form.submit %}
+            </div>
+        </button>
+    </div>
+</form>

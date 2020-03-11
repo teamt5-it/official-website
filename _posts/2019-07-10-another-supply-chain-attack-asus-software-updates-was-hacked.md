@@ -4,7 +4,6 @@ date: 2019-03-28T04:10:30.000+00:00
 title: 'ASUS Supply-Chain Attack: A Technical Look Inside'
 banner: "/assets/images/startup-593324_1920.jpg"
 categories:
-- resource
 - newsroom
 tags:
 - case study
