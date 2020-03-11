@@ -11,6 +11,10 @@ about-us:
             introduction: "TT is the founder and CEO of TeamT5. He has more than 15 years’ experience in the industry. With solid technical background and strong understanding of cyber threats, he has been leading the team to invent and develop unique threat hunting technologies and solutions. \n\nWith great passion for cyber security, TT has volunteered himself as a core member in HITCON community. During his leadership in HITCON, he founded Association of Hackers in Taiwan, which strengthen the collaboration between government, community, and industry."
             name: 'Sung-ting Tsai (TT)'
         title: 'Our Leadership'
+blog:
+    latest-post:
+        title: 'Latest Post'
+    page-title: Blog
 browse-by-type:
     title: 'Browse by type'
 careers:
@@ -73,6 +77,7 @@ footer:
     threatsonar: ThreatSonar
     threatvision: ThreatVision
 header:
+    blog: Blog
     company:
         about-us: 'About us'
         careers: Careers
@@ -84,7 +89,6 @@ header:
     resource: Resource
     threatsonar: ThreatSonar
     threatvision: ThreatVision
-    blog: Blog
 index:
     banner:
         content: "TeamT5 is a group of hackers dedicated to cyber threat research. The team started out with outstanding research ability and has been delivering cyber threat intelligence (CTI) for more than 5 years. Compared with other CTI vendors, TeamT5 has the deepest and best understanding of cyber attackers in the Asia Pacific region. With leading intelligence and knowledge of cyber-attacks, TeamT5 developed unique technologies and methodology to help clients deal with targeted attacks. The solutions have been verified and have helped numerous victims to solve their problems."
@@ -119,12 +123,12 @@ links:
         threatvision: /products/threatvision/
     terms-of-service: /terms-of-service/
     blog: /blog/
+media-inquiries:
+    email: mk@teamt5.tw
+    title: 'Media Inquiries'
 newsroom:
     latest-news:
         title: 'Latest News'
-    media-inquiries:
-        email: mk@teamt5.tw
-        title: 'Media Inquiries'
     page-title: Newsroom
 newsroom-browse-by-type-case-study:
     page-title: 'Resource / Case Study'
@@ -183,8 +187,6 @@ sticky-post:
     read-more: 'Read More'
 terms-of-service:
     page-title: 'Terms of Service'
-blog:
-    page-title: Blog
 threatsonar:
     assessment-reports:
         a: 'Organizational incident timeline.'
