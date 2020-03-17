@@ -74,6 +74,9 @@ fields:
   type: boolean
   label: newsroom_sticky
   default: false
+- name: blog_sticky
+  type: boolean
+  label: blog_sticky
 pages:
 - _posts/2019-03-28-asus-live-update事件.md
 - _posts/2019-06-09-teamt5-win-the-formosa-grand-challenge-2-s-fund-finals.md
