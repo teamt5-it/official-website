@@ -13,7 +13,7 @@ about-us:
         title: 'Our Leadership'
 blog:
     latest-post:
-        title: 'Latest Post'
+        title: 'Latest Posts'
     page-title: Blog
 browse-by-type:
     title: 'Browse by type'
@@ -68,9 +68,9 @@ footer:
     copyright: '© 2019 Team T5, Inc. (Doppler Cyber Threat Solutions Inc.) All Rights Reserved.'
     english: English
     mandarin: 中文
-    partner: Partner
+    partners: Partners
     privacy-and-cookies-policy: 'Privacy & Cookies Policy'
-    product: Product
+    products: Products
     blog: Blog
     scroll-top: TOP
     terms-of-service: 'Terms of Service'
@@ -84,8 +84,8 @@ header:
         contact-us: 'Contact us'
         newsroom: Newsroom
         title: Company
-    partner: Partner
-    product: Product
+    partners: Partners
+    products: Products
     resource: Resource
     threatsonar: ThreatSonar
     threatvision: ThreatVision
@@ -116,7 +116,7 @@ links:
         contact-us: /contact-us/
         newsroom: /newsroom/
     index: /
-    partner: /partner/
+    partners: /partners/
     privacy-and-cookies-policy: /privacy-and-cookies-policy/
     products:
         threatsonar: /products/threatsonar/
@@ -138,7 +138,7 @@ newsroom-browse-by-type-press-release:
     page-title: 'Newsroom / Press Release'
 newsroom-browse-by-type-technical:
     page-title: 'Newsroom / Technical'
-partner:
+partners:
     asean: ASEAN
     japan: Japan
     macnica-networks:
@@ -149,7 +149,7 @@ partner:
         T: '+65 6858 5645'
         W: 'https://www.netpoleons.com'
         name: netpoleon
-    page-title: Partner
+    page-title: Partners
     secure-brain:
         name: 'Secure Brain'
     terilogy:

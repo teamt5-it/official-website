@@ -24,7 +24,7 @@
                 {% endif %}
             ">
                     <div class="navbar-item-title title">
-                        {% t header.product %}
+                        {% t header.products %}
                     </div>
                     <div class="navbar-item-arrow">
                         <object data="{% asset arrow-down-grey-color.svg @path %}">
@@ -46,12 +46,12 @@
             </div>
             <div class="navbar-item">
                 <a class="navbar-item-link
-            {% if page.layout contains 'partner'%}
+            {% if page.layout contains 'partners'%}
                 is-current
             {% endif %}
-            " href="{% t links.partner %}">
+            " href="{% t links.partners %}">
                     <div class="navbar-item-title title">
-                        {% t header.partner %}
+                        {% t header.partners %}
                     </div>
                 </a>
             </div>
