@@ -49,6 +49,7 @@ fields:
     options:
     - newsroom
     - resource
+    - blog
   label: categories
 - name: tags
   type: list
@@ -64,6 +65,7 @@ fields:
     - technical
     - press release
     - event
+    - blog
   label: tags
 - name: resource_sticky
   type: boolean
