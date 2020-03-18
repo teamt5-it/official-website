@@ -23,6 +23,18 @@ input {
 .content {
   line-height: 1.5;
 
+  @include responsive(0) {
+    p {
+      font-size: 12px;
+    }
+  }
+
+  @include responsive(640px) {
+    p {
+      font-size: 14px;
+    }
+  }
+
   @include responsive(800px) {
     h1 {
       font-size: 32px;
@@ -90,10 +102,6 @@ input {
 
   h6 {
     font-size: 10px;
-  }
-
-  p {
-    font-size: 12px;
   }
 
   .is-small {
