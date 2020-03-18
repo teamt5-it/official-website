@@ -1,5 +1,5 @@
 ---
-date: 2020-03-18 16:01:54 +0800
+date: 2020-03-18 11:01:54 +0800
 locale: en
 title: 'TeamT5 Information Operation White Paper: Observations on 2020 Taiwanese General
   Elections'
