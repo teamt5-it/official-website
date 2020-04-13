@@ -2,7 +2,7 @@
 date: 2020-04-15 22:00:00 +0800
 locale: en
 title: 中國駭客HUAPI的惡意後門程式BiFrost分析
-banner: ''
+banner: "/assets/images/123123.jpg"
 categories:
 - blog
 - newsroom
