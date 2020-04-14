@@ -10,8 +10,8 @@ tags:
 - blog
 - technical
 resource_sticky: false
-newsroom_sticky: false
-blog_sticky: false
+newsroom_sticky: true
+blog_sticky: true
 
 ---
 **關鍵字: HUAPI、PLEAD、GhostCat、CVE-2020-1938、Linux、BiFrost、RC4、RAT**
