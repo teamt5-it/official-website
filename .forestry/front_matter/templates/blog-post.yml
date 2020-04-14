@@ -78,5 +78,5 @@ fields:
   type: boolean
   label: blog_sticky
 pages:
-- _posts/中國駭客huapi的unix惡意後門程式bifrost分析-1.md
+- _posts/2020-04-15-中國駭客huapi的unix惡意後門程式bifrost分析-1.md
 - _posts/中國駭客huapi的unix惡意後門程式bifrost分析.md
