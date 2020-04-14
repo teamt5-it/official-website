@@ -17,11 +17,11 @@ blog_sticky: false
 
 ### 前言
 
-TeamT5近期接獲情資，於台灣某學術網路的圖書館網站上發現存有惡意程式。經過TeamT5研究員分析調查發現，該網站系統使用Tomcat 7.0.73作為網頁伺服器且開啟8009通訊埠，故推測該網站具有Ghostcat (CVE-2020-1938)漏洞，詳見下圖。
+TeamT5近期接獲情資，於台灣某學術網路的圖書館網站上發現存有惡意程式。經過TeamT5研究員分析調查發現，該網站系統使用Tomcat 7.0.73作為網頁伺服器且開啟8009通訊埠，TeamT5研究員驗證網站具有Ghostcat(CVE-2020-1938)漏洞，詳見下圖。
 
 ![](https://bin.tip.teamt5.net/hackmd-images/uploads/upload_138de179b305a67f8ac53a04e7a7b76f.png)圖一、Nmap掃描結果
 
-駭客利用Tomcat網頁伺服器預設開啟的AJP服務(預設為8009通訊埠)，可達到遠端指令執行(Romote Code Execution, RCE)並上傳檔案。於該案例中，駭客疑似透過Ghostcat漏洞上傳BiFrost惡意程式，使該圖書館系統成為惡意程式下載站(Download Site)。
+駭客利用Tomcat網頁伺服器預設開啟的AJP服務(預設為8009通訊埠)，可達到遠端指令執行(Romote Code Execution, RCE)之目的並上傳檔案。於該案例中，駭客疑似透過Ghostcat漏洞上傳BiFrost惡意程式，使該圖書館系統成為惡意程式下載站(Download Site)。
 
 ### 惡意程式分析
 
