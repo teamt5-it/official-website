@@ -25,9 +25,11 @@ layout: base
         {{ content }}
     </div>
     {% if page.tags contains "blog" %}
-    <div class="blog-form-container">
-        {% include blog-form.html id="blog-form" %}
-    </div>
+        {% if page.enable_form %}
+            <div class="blog-form-container">
+                {% include blog-form.html id="blog-form" %}
+            </div>
+        {% endif  %}
     {% endif  %}
     <a href="javascript:history.back()" class="back-button button">
         {% t back %}

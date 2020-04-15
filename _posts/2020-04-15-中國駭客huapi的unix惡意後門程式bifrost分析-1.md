@@ -9,6 +9,7 @@ categories:
 tags:
 - blog
 - technical
+enable_form: false
 resource_sticky: false
 newsroom_sticky: true
 blog_sticky: true
@@ -74,11 +75,11 @@ TeamT5建議需要立即進行版本更新，避免遭到駭客利用Ghostcat漏
           description= "HUAPI UNIX BiFrost RAT"
           author = "TeamT5"
           date = "2020-04-15"
-          
+
           strings:
           $hex1 = "25 ?? 00 00 00 85 C0 75 37 8B 45 F0 89 C1 03 4D 08 8B 45 F0 03 45 08 0F B6 10 8B 45 F8 01 C2 B8 FF FF FF FF 21 D0 88 01 8B 45 F0 89 C2 03 55 08 8B 45 F0 03 45 08 0F B6 00 32 45 FD 88 02"
           $hex2 = "8B 45 F0 03 45 08 0F B6 00 30 45 FD 8B 45 F0 89 C1 03 4D 08 8B 45 F8 89 C2 02 55 FD B8 FF FF FF FF 21 D0 88 01"
-           
+
           condition:
           all of them
       }
