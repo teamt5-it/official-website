@@ -5,6 +5,7 @@ title: 中國駭客HUAPI的惡意後門程式BiFrost分析
 banner: "/assets/images/123123.jpg"
 categories:
 - newsroom
+- blog
 tags:
 - blog
 - technical
