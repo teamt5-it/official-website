@@ -40,7 +40,7 @@ _圖三、偽裝為PNG的ELF執行檔_
 
 使用TeamT5的ThreatSonar惡意威脅鑑識系統可有效辨識出該惡意程式並可以偵測到中繼站IP位址(107.191.61.247)，詳見下圖。
 
-![](/assets/images/upload_319bf4e404f1d40461cc42acb5b7cf67.png)
+![](/assets/images/BLOG替換圖片.png)
 _圖四、ThreatSonar偵測畫面_
 
 經過逆向分析，該惡意後門程式具有上傳/下載/列舉/刪除/搬移檔案(File)、執行/結束程序(Process)、開啟/關閉遠端命令列介面程式(Remote Shell)等功能，其中惡意後門程式與中繼站的連線內容會使用修改過的RC4演算法進行加密，此專屬特徵可用來辯認出此惡意程式，詳見下圖。
