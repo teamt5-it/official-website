@@ -3,7 +3,7 @@ date: 2020-04-21 10:00:03 +0800
 locale: en
 title: 'TeamT5 Special Report: How China Utilizes Its Cyber Strength and Propaganda
   Machine to Handle the Covid-19 Pandemic'
-banner: ''
+banner: "/assets/images/20200422_cover.jpg"
 categories:
 - newsroom
 - blog
