@@ -27,25 +27,21 @@ enable_form: false
 
 The Chinese Communist Party (CCP) has collaborated with its national tech giants and telecom firms to implement a series of security measures in the name of containing the coronavirus outbreak.
 
-The regime has elevated its digital control over domestic citizens. In mid-February, China’s Ministry of Industry and Information Technology (MIIT) sent a notice to Information and Communications Technology (ICT) service providers, demanding relevant firms to strengthen monitoring and censorship over online public discussion.[\[1\]](#_ftn1) The MIIT also announced the utilization of telecom big data analysis in support of the battle against the coronavirus. [\[2\]](#_ftn2)
+The regime has elevated its digital control over domestic citizens. In mid-February, China’s Ministry of Industry and Information Technology (MIIT) sent a notice to Information and Communications Technology (ICT) service providers, demanding relevant firms to strengthen monitoring and censorship over online public discussion.\[1\] The MIIT also announced the utilization of telecom big data analysis in support of the battle against the coronavirus. \[2\]
 
 As the country tried to resume normal operations, the Chinese authorities launched Health Code System, using big data to monitor citizens’ health status and then regulate their movement. The Health Code System is developed by the Ant Financial, an affiliate company of the Chinese Alibaba Group, and Tencent in collaboration with the Chinese authorities.
 
-The system has raised privacy concerns since it connects and integrates databases of government units and private firms, forming a comprehensive surveillance system which contains real name, phone number, ID, address, travel history, health status and contact history. Moreover, only 3 out of 16 Health Code Apps list their user agreement and privacy policy at installation, while others will directly direct users to the registration page to fill out personal information.[\[3\]](#_ftn3) This shows that most of the users’ data are collected, processed, and shared without informed consent.
+The system has raised privacy concerns since it connects and integrates databases of government units and private firms, forming a comprehensive surveillance system which contains real name, phone number, ID, address, travel history, health status and contact history. Moreover, only 3 out of 16 Health Code Apps list their user agreement and privacy policy at installation, while others will directly direct users to the registration page to fill out personal information.\[3\] This shows that most of the users’ data are collected, processed, and shared without informed consent.
 
 ### Strategic Distraction and Positive Propaganda Targeting Domestic Citizens
 
-The authoritarian regime is also in another battle to shape the public opinion about the epidemic. Initially, the Chinese state media employed strategic distraction to mitigate the seriousness of the coronavirus. Before Wuhan Lockdown on January 23, Chinese state media started reporting the Influenza B in the United States.[\[4\]](#_ftn4) The topic “Influenza B outbreak in the US” (美国爆发乙型流感) reached 500 million views and 31,000 discussions on Weibo.[\[5\]](#_ftn5)
+The authoritarian regime is also in another battle to shape the public opinion about the epidemic. Initially, the Chinese state media employed strategic distraction to mitigate the seriousness of the coronavirus. Before Wuhan Lockdown on January 23, Chinese state media started reporting the Influenza B in the United States.\[4\] The topic “Influenza B outbreak in the US” (美国爆发乙型流感) reached 500 million views and 31,000 discussions on Weibo.\[5\]
 
-![](/assets/images/1.png)
+![](/assets/images/1.png)_Figure 1: News report by the China Central Television (CCTV)._
 
-_Figure 1: News report by the China Central Television (CCTV)._
+As the number confirmed cases soared in China, the Chinese state media outlets started to spread positive propaganda. For instance, they highly praised the Chinese authorities’ handling of the virus by highlighting the rapid construction of Huoshenshan Hospital.\[6\] They also promoted narratives such as “the Chinese people are sacrificing to fight the virus,” accompanied by praises from WHO Director General Tedros Adhanom Ghebreyesus.\[7\]\[8\]
 
-As the number confirmed cases soared in China, the Chinese state media outlets started to spread positive propaganda. For instance, they highly praised the Chinese authorities’ handling of the virus by highlighting the rapid construction of Huoshenshan Hospital.[\[6\]](#_ftn6) They also promoted narratives such as “the Chinese people are sacrificing to fight the virus,” accompanied by praises from WHO Director General Tedros Adhanom Ghebreyesus.[\[7\]](#_ftn7)[\[8\]](#_ftn8)
-
-![](/assets/images/2.png)
-
-_Figure 2: YouTube video by China Global Television Network (CGTN)._
+![](/assets/images/2.png)_Figure 2: YouTube video by China Global Television Network (CGTN)._
 
 The regime has seized the opportunity to demonstrate the country’s strength to contain the virus as well as the advantages of an authoritarian regime. The CCP uses the case to show that its authoritarian governance system is more effective than the liberal democracies when facing a crisis like the Covid-19 pandemic.
 
@@ -55,33 +51,27 @@ Although China was widely criticized for its delayed and opaque treatment to the
 
 In particular, Italy, the first G-7 country to join China’s Belt and Road Initiative (BRI), became a favorable environment for the regime to launch propaganda. We observed a series of propaganda was launched against Italy.
 
-![](/assets/images/3.png)
+![](/assets/images/3.png)_Figure 3: The Chinese embassy posted a series of tweets to promote China’s medical aids foe Italy, using hashtag #ForzaCinaeItalia_
 
-_Figure 3: The Chinese embassy posted a series of tweets to promote China’s medical aids foe Italy, using hashtag #ForzaCinaeItalia_ (URL: https://twitter.com/AmbCina/status/1238091838713671681)
+The campaign is revealed to have boosted by social manipulation, as the hashtag #ForzaCinaeItalia (Go China, go Italy) was promoted by Twitter bot accounts.\[9\]
 
-The campaign is revealed to have boosted by social manipulation, as the hashtag #ForzaCinaeItalia (Go China, go Italy) was promoted by Twitter bot accounts.[\[9\]](#_ftn9)
+In another case, since March 15, Chinese state media outlets as well as Chinese diplomats Hua Chunying and Zhao Lijian have promoted a video of Italian chanting “Grazie, Cina!” on their balconies with the Chinese anthem “March of the Volunteers” playing.\[10\] The video was examined by researchers and was claimed to be manufactured.
 
-In another case, since March 15, Chinese state media outlets as well as Chinese diplomats Hua Chunying and Zhao Lijian have promoted a video of Italian chanting “Grazie, Cina!” on their balconies with the Chinese anthem “March of the Volunteers” playing.[\[10\]](#_ftn10) The video was examined by researchers and was claimed to be manufactured.
-
-![](/assets/images/4.png)
-
-_Figure 4: Hua Chunying’s sharing the video on Twitter._
+![](/assets/images/4.png)_Figure 4: Hua Chunying’s sharing the video on Twitter._
 
 ### “Origin” Propaganda: Conspiracy Theories of Patient Zero
 
 Conspiracy theories of the origin of the coronavirus have emerged across social media platforms as early as January. One of the significant cases is a conspiracy theory claiming that the US military had brought the coronavirus to Wuhan during the 2019 Military World Games.
 
-Starting from March 12, 2020, Zhao Lijian, a deputy director of the Chinese Foreign Ministry’s Information Department, has posted a series of tweet to amplify the conspiracy theory on Twitter. In one of his tweets, he shared a video clip of US Centers for Disease Control (CDC) chief Robert Redfield saying some Covid-19 death might have been diagnosed as influenza in the US, using it as evidence that the virus originated in the US.[\[11\]](#_ftn11)
+Starting from March 12, 2020, Zhao Lijian, a deputy director of the Chinese Foreign Ministry’s Information Department, has posted a series of tweet to amplify the conspiracy theory on Twitter. In one of his tweets, he shared a video clip of US Centers for Disease Control (CDC) chief Robert Redfield saying some Covid-19 death might have been diagnosed as influenza in the US, using it as evidence that the virus originated in the US.\[11\]
 
-![](/assets/images/5.png)
-
-_Figure 5: A series of tweets by Zhao Lijian promoting the conspiracy theory, along with articles of “globalresearch.ca.” The website often promotes anti-US conspiracy theory._
+![](/assets/images/5.png)_Figure 5: A series of tweets by Zhao Lijian promoting the conspiracy theory, along with articles of “globalresearch.ca.” The website often promotes anti-US conspiracy theory._
 
 ![](/assets/images/6.png)_Figure 6: Global Times reporting the conspiracy theory about US military personnel bringing COVID-19 to China._
 
-Besides the US, Italy is also one of the scapegoats for China’s coronavirus origin propaganda. Starting from March 22, multiple Chinese state media outlets have published news article titled “Coronavirus may have existed in Italy since November: local researcher,” implying that Italy was the origin of Coronavirus.[\[12\]](#_ftn12)[\[13\]](#_ftn13) They cited the words of the Italian physician Giuseppe Remuzzi in an interview with NPR on March 19 [\[14\]](#_ftn14), using it as statement to prove that China is not the origin of the coronavirus.
+Besides the US, Italy is also one of the scapegoats for China’s coronavirus origin propaganda. Starting from March 22, multiple Chinese state media outlets have published news article titled “Coronavirus may have existed in Italy since November: local researcher,” implying that Italy was the origin of Coronavirus.\[12\]\[13\] They cited the words of the Italian physician Giuseppe Remuzzi in an interview with NPR on March 19 \[14\], using it as statement to prove that China is not the origin of the coronavirus.
 
-Although Remuzzi protested that his words were twisted by China, the narrative has already gone viral.[\[15\]](#_ftn15) The CCTV created a topic “Expert claims the coronavirus may have existed in Italy since November” (专家称疫情去年11月或已在意大利流行), which reached approximately 500 million views and 35,000 discussion posts.
+Although Remuzzi protested that his words were twisted by China, the narrative has already gone viral.\[15\] The CCTV created a topic “Expert claims the coronavirus may have existed in Italy since November” (专家称疫情去年11月或已在意大利流行), which reached approximately 500 million views and 35,000 discussion posts.
 
 ### Conclusion
 
