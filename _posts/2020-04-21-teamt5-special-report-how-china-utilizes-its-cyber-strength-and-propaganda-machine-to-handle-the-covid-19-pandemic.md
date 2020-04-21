@@ -77,9 +77,7 @@ Starting from March 12, 2020, Zhao Lijian, a deputy director of the Chinese Fore
 
 _Figure 5: A series of tweets by Zhao Lijian promoting the conspiracy theory, along with articles of “globalresearch.ca.” The website often promotes anti-US conspiracy theory._
 
-![](/assets/images/6.png)
-
-_Figure 6: Global Times reporting the conspiracy theory about US military personnel bringing COVID-19 to China. (_URL: https://www.globaltimes.cn/content/1183658.shtml)
+![](/assets/images/6.png)_Figure 6: Global Times reporting the conspiracy theory about US military personnel bringing COVID-19 to China._
 
 Besides the US, Italy is also one of the scapegoats for China’s coronavirus origin propaganda. Starting from March 22, multiple Chinese state media outlets have published news article titled “Coronavirus may have existed in Italy since November: local researcher,” implying that Italy was the origin of Coronavirus.[\[12\]](#_ftn12)[\[13\]](#_ftn13) They cited the words of the Italian physician Giuseppe Remuzzi in an interview with NPR on March 19 [\[14\]](#_ftn14), using it as statement to prove that China is not the origin of the coronavirus.
 
