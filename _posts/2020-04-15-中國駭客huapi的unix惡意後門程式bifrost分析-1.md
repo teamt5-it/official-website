@@ -24,7 +24,7 @@ TeamT5近期接獲情資，於台灣某學術網路的圖書館網站上發現�
 ![](/assets/images/upload_138de179b305a67f8ac53a04e7a7b76f.png)
 _圖一、Nmap掃描結果_
 
-駭客利用Tomcat網頁伺服器預設開啟的AJP服務(預設為8009通訊埠)，可達到遠端指令執行(Romote Code Execution, RCE)之目的並上傳檔案。於該案例中，駭客疑似透過Ghostcat漏洞上傳BiFrost惡意程式，使該圖書館系統成為惡意程式下載站(Download Site)。
+駭客利用Tomcat網頁伺服器預設開啟的AJP服務(預設為8009通訊埠)，可達到遠端指令執行(Remote Code Execution, RCE)之目的並上傳檔案。於該案例中，駭客疑似透過Ghostcat漏洞上傳BiFrost惡意程式，使該圖書館系統成為惡意程式下載站(Download Site)。
 
 ### 惡意程式分析
 
