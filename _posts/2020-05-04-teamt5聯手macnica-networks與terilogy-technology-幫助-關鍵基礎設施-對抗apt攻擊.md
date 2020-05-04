@@ -1,6 +1,6 @@
 ---
 date: 2020-05-04 22:00:08 +0800
-locale: zh
+locale: en
 title: TeamT5聯手Macnica Networks與Terilogy Technology，幫助「關鍵基礎設施」對抗APT攻擊
 banner: "/assets/images/evnet01_cover.jpg"
 categories:
