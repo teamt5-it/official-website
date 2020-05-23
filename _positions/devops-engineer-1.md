@@ -22,21 +22,21 @@ tags:
 
 ### Preferred Skills
 
-熟悉網路安全者優先錄取
+* 熟悉網路安全者優先錄取
 
 ## Compensation
 
 ### Working Place
-Taipei (Currently Near MRT Nanjing Sanmin Station)
+* Taipei (Currently Near MRT Nanjing Sanmin Station)
 
 ### Working Hours
-9:00 ~ 18:00 (including one-hour lunch break)
-Flexible working hour scheme implemented
+* 9:00 ~ 18:00 (including one-hour lunch break)
+* Flexible working hour scheme implemented
 
 ### Leaves
-Weekends off
-Additional leaves and paid sick leave for employees after one year of seniority
+* Weekends off
+* Additional leaves and paid sick leave for employees after one year of seniority
 
 ## Benefits
-Free snacks, drinks and regular party
-Company Trip and Gym Compensation for employees after one year of seniority
+* Free snacks, drinks and regular party
+* Company Trip and Gym Compensation for employees after one year of seniority
