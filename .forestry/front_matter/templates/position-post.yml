@@ -43,3 +43,5 @@ fields:
       file: 
       path: 
   label: locale
+pages:
+- _positions/research-engineer-1.md
