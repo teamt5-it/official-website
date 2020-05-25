@@ -18,7 +18,9 @@ tags:
 * 爬蟲撰寫經驗
 * 程式語言：Git, Python, Ｃ
 * 熟悉 SQL 語法
-* 團隊合作精神，獨立工作能力
+* 熟練使用 Linux 系統操作
+* 熟悉 Linux 程式開發
+* 擅長團隊合作，並具有獨立工作能力
 
 ### Preferred Skills
 
