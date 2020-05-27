@@ -23,5 +23,4 @@ _The attack timeline of the APT groups’ campaigns in Japan in 2019._
 
 Macnica Networks is one of the largest system integrators (SI) in Japan. As a leading network distributor, it provides a wide range of advanced network products and information technology to government offices, educational institutions, and general companies.
 
-
-To access the full report, please visit: https://www.macnica.net/mpressioncss/feature_06.html/
+To access the full report, please visit: [https://www.macnica.net/mpressioncss/feature_06.html/](https://www.macnica.net/mpressioncss/feature_06.html/ "https://www.macnica.net/mpressioncss/feature_06.html/")
