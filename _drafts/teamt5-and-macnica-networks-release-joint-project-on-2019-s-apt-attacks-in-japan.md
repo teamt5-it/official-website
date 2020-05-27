@@ -18,6 +18,9 @@ TeamT5 and Macnica Networks have published our joint research on APT attacks tar
 
 The APT groups’ highlighted in this joint project were believed to have been launching cyber espionage campaigns elsewhere in the world. To enhance APT defense strategies, we take a closer look at the four APT groups, including DarkHotel, Huapi (BlackTech), Nian (Tick), and one unclassified backdoor LODEINFO. These APT groups have been threatening crucial sectors in Japan, such as government, military and defense, manufacturing, telecommunication, education, media, and etc.
 
+![](/assets/images/apt-attack-timeline.jpg)
+*The attack timeline of the APT groups’ campaigns in Japan in 2019.*
+
 Macnica Networks is one of the largest system integrators (SI) in Japan. As a leading network distributor, it provides a wide range of advanced network products and information technology to government offices, educational institutions, and general companies.
 
 To access the full report, please visit: https://www.macnica.net/mpressioncss/feature_06.html/
