@@ -6,7 +6,13 @@
 //=require 'vendor/autoresize.jquery.js'
 
 $ ->
-
+  $('.back-button').on( "click", (e) ->
+    e.preventDefault()
+    if(history.length > 1)
+      history.back()
+    else
+      window.location.href = "/"
+  )
   $('.lazy').Lazy()
   # ScrollTop
 
