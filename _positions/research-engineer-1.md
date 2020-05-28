@@ -20,9 +20,9 @@ tags:
 
 * 爬蟲撰寫經驗
 
-* 程式語言：Git, Python, Ｃ
+* 程式語言：Python, Ｃ
 
-* 熟悉 SQL 語法
+* 熟悉 SQL 語法、Git 操作
 
 * 熟練使用 Linux 系統操作
 
