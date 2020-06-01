@@ -4,6 +4,7 @@ locale: en
 title: D39 Intern (Vulnerability Researcher)
 tags:
 - intern
+published: false
 
 ---
 D39 團隊專注於 Mobile、IoT、Linux、Windows 等安全研究，挖掘出多項重大（Critical）或重要（Important）之安全漏洞，於 Blackhat、HITCON、POC 等國際會議擔任講師，以及於 DEFCON CTF 競賽中獲得世界第二名次。
