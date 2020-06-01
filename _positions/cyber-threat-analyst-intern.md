@@ -36,3 +36,6 @@ LinkedIn: [https://www.linkedin.com/company/teamt5/](https://twitter.com/teamt5_
 ### Working Place
 
 * Taipei (Currently Near MRT Nanjing Sanmin Station)
+
+
+Please send your resume to [hr@teamt5.org](hr@teamt5.org)
