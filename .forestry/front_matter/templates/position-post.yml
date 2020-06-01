@@ -44,5 +44,6 @@ fields:
       path: 
   label: locale
 pages:
+- _positions/cyber-threat-analyst-intern.md
 - _positions/research-engineer-1.md
 - _positions/research-engineer-1.md
