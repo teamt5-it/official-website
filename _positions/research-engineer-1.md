@@ -20,7 +20,7 @@ tags:
 
 * 爬蟲撰寫經驗
 
-* 程式語言：Python, Ｃ
+* 程式語言：Python, Go, Ｃ
 
 * 熟悉 SQL 語法、Git 操作
 
