@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="index-320" transform="translate(-291.000000, -1065.000000)" fill="#d83751" stroke="#d83751" stroke-width="0.5">
+            <g id="TeamT5-Product" transform="translate(10.000000, 666.000000)">
+                <g id="vision" transform="translate(0.000000, 265.000000)">
+                    <g id="more" transform="translate(180.000000, 132.000000)">
+                        <path d="M106.439858,6.19122962 L112.817805,12.8854321 C113.060732,13.1404049 113.060732,13.5537976 112.817805,13.8087704 C112.574878,14.0637432 112.181015,14.0637432 111.938088,13.8087704 L106,7.57623703 L100.061912,13.8087704 C99.818985,14.0637432 99.4251224,14.0637432 99.1821953,13.8087704 C98.9392682,13.5537976 98.9392682,13.1404049 99.1821953,12.8854321 L105.560142,6.19122962 C105.803069,5.93625679 106.196931,5.93625679 106.439858,6.19122962 Z" id="Path" transform="translate(106.000000, 10.000000) rotate(90.000000) translate(-106.000000, -10.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

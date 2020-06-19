@@ -1,0 +1,30 @@
+server {
+    listen <%= ENV["PORT"] %>;
+    server_name ~^(?<fqdnsub>(?<subdomain>.+)\.)?(?<domain>threatsonar.(org|tw))$;
+    keepalive_timeout 5;
+    client_max_body_size <%= ENV['NGINX_CLIENT_MAX_BODY_SIZE'] || 1 %>M;
+
+    root /app/_site; # path to your app
+
+    try_files $uri $uri.html $uri/ =404;
+
+    error_page 404 451 /404.html;
+    location = /404.html {
+        internal;
+    }
+
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        internal;
+    }
+
+    location /.well-known/apple-app-site-association {
+        default_type application/json;
+    }
+
+    include locations.conf;
+
+    location / {
+        rewrite ^/(.*)(\/|$) https://${fqdnsub}teamt5.org/products/threatsonar/ break;
+    }
+}

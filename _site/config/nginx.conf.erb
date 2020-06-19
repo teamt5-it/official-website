@@ -1,0 +1,52 @@
+daemon off;
+# Heroku dynos have at least 4 cores.
+worker_processes <%= ENV['NGINX_WORKERS'] || 4 %>;
+
+events {
+  use epoll;
+  accept_mutex on;
+  worker_connections <%= ENV['NGINX_WORKER_CONNECTIONS'] || 1024 %>;
+}
+
+http {
+  gzip on;
+  gzip_comp_level 2;
+  gzip_min_length 512;
+
+  server_tokens off;
+  more_set_headers "Server: TeamT5-Landing-Server";
+
+  map $http_x_forwarded_for $realip {
+    default $remote_addr;
+    ~^([^,]+) $1;
+  }
+  map $http_cf_connecting_ip $connip {
+    default $realip;
+    ~^(.*) $1;
+  }
+  map $http_cf_ipcountry $country {
+    default "n/a";
+    ~^(.*) $1;
+  }
+  map $http_cf_ray $ray {
+    default "n/a";
+    ~^(.*) $1;
+  }
+  include allowed.conf;
+
+  log_format l2met 'measure#nginx.service=$request_time request_id=$http_x_request_id ray=$ray ip=$connip geo=$country fwd=$http_x_forwarded_for';
+  access_log logs/nginx/access.log l2met;
+  error_log logs/nginx/error.log;
+
+  include mime.types;
+  default_type application/octet-stream;
+  sendfile on;
+
+  # Must read the body in 5 seconds.
+  client_body_timeout <%= ENV['NGINX_CLIENT_BODY_TIMEOUT'] || 5 %>;
+
+  # disable absolute redirect for preventing to redirect a location include heroku internal port
+  absolute_redirect off;
+
+  include sites/*.conf;
+}
